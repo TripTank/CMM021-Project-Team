@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<wellbores xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml/3.2" version="1.3.1.1" xmlns="http://www.witsml.org/schemas/131">
+  <wellbore uidWell="RGU01-RGUWell01" uid="WB-RGUWell01-WB01">
+    <nameWell>RGUWell01</nameWell>
+    <name>RGUWell01-WB01</name>
+    <number>-WB01</number>
+    <suffixAPI>API--WB01</suffixAPI>
+    <numGovt>999324673-API--WB01</numGovt>
+    <statusWellbore>completed</statusWellbore>
+    <purposeWellbore>development</purposeWellbore>
+    <typeWellbore>initial</typeWellbore>
+    <shape>vertical</shape>
+    <dTimKickoff>2015-01-04T07:44:12</dTimKickoff>
+    <achievedTD>true</achievedTD>
+    <mdCurrent uom="ft">734</mdCurrent>
+    <tvdCurrent uom="ft">657</tvdCurrent>
+    <mdKickoff uom="ft">80</mdKickoff>
+    <tvdKickoff uom="ft">80</tvdKickoff>
+    <mdPlanned uom="ft">764</mdPlanned>
+    <tvdPlanned uom="ft">657</tvdPlanned>
+    <mdSubSeaPlanned uom="ft">654</mdSubSeaPlanned>
+    <tvdSubSeaPlanned uom="ft">577</tvdSubSeaPlanned>
+    <dayTarget uom="d">45</dayTarget>
+    <commonData>
+      <sourceName>DPL</sourceName>
+      <dTimCreation>2015-07-22T00:00:00</dTimCreation>
+      <comments>All data relating to this wellbore is unrealistic, use for testing only</comments>
+    </commonData>
+  </wellbore>
+  <wellbore uidWell="RGU01-RGUWell01" uid="WB-RGUWell01-WB02">
+    <nameWell>RGUWell01</nameWell>
+    <name>RGUWell01-WB02</name>
+    <number>-WB02</number>
+    <suffixAPI>API--WB02</suffixAPI>
+    <numGovt>999324673-API--WB02</numGovt>
+    <statusWellbore>completed</statusWellbore>
+    <purposeWellbore>development</purposeWellbore>
+    <typeWellbore>initial</typeWellbore>
+    <shape>vertical</shape>
+    <dTimKickoff>2015-01-04T07:44:12</dTimKickoff>
+    <achievedTD>true</achievedTD>
+    <mdCurrent uom="ft">463</mdCurrent>
+    <tvdCurrent uom="ft">374</tvdCurrent>
+    <mdKickoff uom="ft">80</mdKickoff>
+    <tvdKickoff uom="ft">80</tvdKickoff>
+    <mdPlanned uom="ft">493</mdPlanned>
+    <tvdPlanned uom="ft">374</tvdPlanned>
+    <mdSubSeaPlanned uom="ft">383</mdSubSeaPlanned>
+    <tvdSubSeaPlanned uom="ft">294</tvdSubSeaPlanned>
+    <dayTarget uom="d">45</dayTarget>
+    <commonData>
+      <sourceName>DPL</sourceName>
+      <dTimCreation>2015-07-22T00:00:00</dTimCreation>
+      <comments>All data relating to this wellbore is unrealistic, use for testing only</comments>
+    </commonData>
+  </wellbore>
+  <wellbore uidWell="RGU01-RGUWell01" uid="WB-RGUWell01-WB03">
+    <nameWell>RGUWell01</nameWell>
+    <name>RGUWell01-WB03</name>
+    <number>-WB03</number>
+    <suffixAPI>API--WB03</suffixAPI>
+    <numGovt>999324673-API--WB03</numGovt>
+    <statusWellbore>completed</statusWellbore>
+    <purposeWellbore>development</purposeWellbore>
+    <typeWellbore>initial</typeWellbore>
+    <shape>vertical</shape>
+    <dTimKickoff>2015-01-04T07:44:12</dTimKickoff>
+    <achievedTD>true</achievedTD>
+    <mdCurrent uom="ft">302</mdCurrent>
+    <tvdCurrent uom="ft">268</tvdCurrent>
+    <mdKickoff uom="ft">80</mdKickoff>
+    <tvdKickoff uom="ft">80</tvdKickoff>
+    <mdPlanned uom="ft">332</mdPlanned>
+    <tvdPlanned uom="ft">268</tvdPlanned>
+    <mdSubSeaPlanned uom="ft">222</mdSubSeaPlanned>
+    <tvdSubSeaPlanned uom="ft">188</tvdSubSeaPlanned>
+    <dayTarget uom="d">45</dayTarget>
+    <commonData>
+      <sourceName>DPL</sourceName>
+      <dTimCreation>2015-07-22T00:00:00</dTimCreation>
+      <comments>All data relating to this wellbore is unrealistic, use for testing only</comments>
+    </commonData>
+  </wellbore>
+</wellbores>

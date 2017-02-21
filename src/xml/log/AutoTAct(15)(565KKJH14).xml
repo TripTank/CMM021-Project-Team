@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="2KKJH14" uidLog="565KKJH14" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore4</nameWellbore>
+    <nameLog>AutoTAct</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>15</runNumber>
+      <creationDate>2007-03-12T20:47:37.0000000+01:00</creationDate>
+      <indexType>Depth</indexType>
+      <startIndex>2601.689</startIndex>
+      <endIndex>2660.235</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>2601.689</startIndex>
+        <endIndex>2660.235</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ACTHTFX</mnemonic>
+        <unit>dega</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2601.689</startIndex>
+        <endIndex>2660.235</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Actuator High Side Tool Face</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ACTINNX</mnemonic>
+        <unit>dega</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2601.689</startIndex>
+        <endIndex>2660.235</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Actuator Inclination</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>2601.689,324.84,89.91</data>
+<data>2601.689,324.84,90</data>
+<data>2601.862,324.84,89.91</data>
+<data>2601.862,,89.91</data>
+<data>2601.894,324.84,</data>
+<data>2601.914,324.84,89.91</data>
+<data>2601.914,324.84,0</data>
+<data>2601.914,,89.91</data>
+<data>2601.931,324.84,89.91</data>
+<data>2601.931,324.84,89.91</data>
+<data>2601.958,324.84,90</data>
+<data>2601.958,0,89.91</data>
+<data>2601.958,324.84,89.91</data>
+<data>2601.958,0,</data>
+<data>2602.003,324.84,90</data>
+<data>2602.016,324.84,90</data>
+<data>2602.016,324.84,90</data>
+<data>2602.016,,90</data>
+<data>2602.056,324.84,</data>
+<data>2602.104,324.84,90</data>
+<data>2602.104,324.84,90</data>
+<data>2602.104,324.84,90</data>
+<data>2602.104,324.84,90</data>
+<data>2602.256,324.84,90</data>
+<data>2602.408,327.66,</data>
+<data>2606.29,,92.11</data>
+<data>2607.1,25.31,90.97</data>
+<data>2607.1,25.31,89.91</data>
+<data>2607.1,26.72,89.91</data>
+<data>2607.1,26.72,</data>
+<data>2611.239,43.59,</data>
+<data>2611.696,,91.76</data>
+<data>2611.773,43.59,</data>
+<data>2611.841,,91.76</data>
+<data>2611.883,43.59,91.76</data>
+<data>2611.883,0,0</data>
+<data>2611.883,43.59,91.67</data>
+<data>2611.883,43.59,91.76</data>
+<data>2611.883,43.59,91.76</data>
+<data>2611.883,43.59,</data>
+<data>2612.039,,91.76</data>
+<data>2612.267,43.59,</data>
+<data>2612.27,,91.76</data>
+<data>2612.27,,92.02</data>
+<data>2612.579,277.03,</data>
+<data>2612.946,,92.11</data>
+<data>2613.184,293.91,</data>
+<data>2613.191,,91.93</data>
+<data>2613.377,298.12,</data>
+<data>2613.653,,92.11</data>
+<data>2613.877,0,92.02</data>
+<data>2613.877,317.81,</data>
+<data>2614.291,323.44,20.92</data>
+<data>2614.291,,92.02</data>
+<data>2615.633,25.31,92.02</data>
+<data>2615.633,,92.02</data>
+<data>2615.705,33.75,91.93</data>
+<data>2616.833,64.69,92.02</data>
+<data>2616.833,,91.93</data>
+<data>2617.137,64.69,91.93</data>
+<data>2617.137,66.09,91.93</data>
+<data>2617.137,66.09,</data>
+<data>2617.221,,92.02</data>
+<data>2617.223,74.53,92.02</data>
+<data>2617.236,70.31,91.93</data>
+<data>2617.236,67.5,91.93</data>
+<data>2617.236,67.5,92.02</data>
+<data>2617.236,68.91,92.02</data>
+<data>2617.236,68.91,92.02</data>
+<data>2617.236,70.31,91.93</data>
+<data>2617.266,71.72,91.93</data>
+<data>2617.266,71.72,92.02</data>
+<data>2617.312,,92.11</data>
+<data>2617.51,73.12,</data>
+<data>2617.52,82.97,</data>
+<data>2617.637,90,91.93</data>
+<data>2617.868,,91.93</data>
+<data>2618.031,122.34,</data>
+<data>2618.266,137.81,91.93</data>
+<data>2618.301,143.44,91.93</data>
+<data>2618.563,151.88,92.02</data>
+<data>2618.563,154.69,92.02</data>
+<data>2618.563,158.91,91.93</data>
+<data>2618.593,,92.02</data>
+<data>2618.637,163.13,</data>
+<data>2619.085,172.97,91.93</data>
+<data>2619.187,215.16,</data>
+<data>2619.262,,92.02</data>
+<data>2619.354,,91.93</data>
+<data>2619.402,185.63,</data>
+<data>2619.457,217.97,</data>
+<data>2619.54,,92.02</data>
+<data>2619.727,208.13,92.02</data>
+<data>2619.967,212.34,</data>
+<data>2620.009,237.66,91.85</data>
+<data>2620.009,246.09,91.93</data>
+<data>2620.113,264.37,91.93</data>
+<data>2620.23,,92.02</data>
+<data>2620.23,,91.93</data>
+<data>2620.329,264.37,</data>
+<data>2620.963,,92.02</data>
+<data>2621.005,284.06,</data>
+<data>2621.213,,92.02</data>
+<data>2621.357,277.03,0</data>
+<data>2621.357,277.03,92.02</data>
+<data>2621.357,279.84,92.02</data>
+<data>2621.462,,92.02</data>
+<data>2621.495,279.84,</data>
+<data>2621.504,281.25,92.02</data>
+<data>2621.504,282.66,92.02</data>
+<data>2621.535,300.94,0</data>
+<data>2621.535,,0</data>
+<data>2621.556,300.94,</data>
+<data>2621.593,,92.02</data>
+<data>2621.624,302.34,92.02</data>
+<data>2621.647,303.75,</data>
+<data>2621.908,307.97,92.02</data>
+<data>2622.082,310.78,92.02</data>
+<data>2622.112,320.62,92.02</data>
+<data>2622.232,0,91.85</data>
+<data>2622.516,,92.02</data>
+<data>2622.835,37.97,92.11</data>
+<data>2623.173,43.59,0</data>
+<data>2623.173,52.03,</data>
+<data>2623.345,,92.02</data>
+<data>2623.355,57.66,91.93</data>
+<data>2623.355,66.09,92.02</data>
+<data>2623.622,70.31,91.93</data>
+<data>2623.622,74.53,92.02</data>
+<data>2623.705,78.75,</data>
+<data>2623.835,,91.93</data>
+<data>2623.964,97.03,</data>
+<data>2624.391,,92.02</data>
+<data>2624.441,120.94,</data>
+<data>2624.769,,91.93</data>
+<data>2624.795,149.06,91.93</data>
+<data>2624.955,0,</data>
+<data>2625.214,161.72,92.02</data>
+<data>2625.443,167.34,91.93</data>
+<data>2625.577,181.41,92.02</data>
+<data>2625.577,,92.02</data>
+<data>2625.639,,91.93</data>
+<data>2625.783,223.59,</data>
+<data>2625.974,187.03,</data>
+<data>2626.055,196.88,92.02</data>
+<data>2626.055,205.31,92.02</data>
+<data>2626.102,,91.93</data>
+<data>2626.359,229.22,</data>
+<data>2626.483,,92.02</data>
+<data>2626.581,240.47,91.93</data>
+<data>2626.581,246.09,</data>
+<data>2626.614,,91.93</data>
+<data>2626.917,258.75,</data>
+<data>2627.028,,92.02</data>
+<data>2627.073,261.56,</data>
+<data>2627.218,,92.02</data>
+<data>2627.415,0,91.93</data>
+<data>2627.415,272.81,</data>
+<data>2627.648,282.66,91.93</data>
+<data>2628.061,296.72,91.93</data>
+<data>2628.198,,92.02</data>
+<data>2628.228,307.97,91.93</data>
+<data>2628.317,315,</data>
+<data>2628.538,326.25,92.02</data>
+<data>2628.722,331.87,92.02</data>
+<data>2628.807,,92.02</data>
+<data>2629.043,,91.93</data>
+<data>2629.215,343.12,92.02</data>
+<data>2629.278,,91.93</data>
+<data>2629.38,18.28,</data>
+<data>2629.433,350.16,</data>
+<data>2629.518,358.59,91.93</data>
+<data>2629.518,,91.93</data>
+<data>2629.554,8.44,</data>
+<data>2629.617,,92.02</data>
+<data>2629.807,23.91,91.93</data>
+<data>2629.807,30.94,</data>
+<data>2629.867,,91.93</data>
+<data>2629.896,35.16,</data>
+<data>2630.138,,91.85</data>
+<data>2630.349,281.25,</data>
+<data>2630.756,,92.02</data>
+<data>2630.849,5.63,</data>
+<data>2631.037,,91.93</data>
+<data>2631.42,,0</data>
+<data>2631.486,36.56,92.02</data>
+<data>2631.486,39.37,91.76</data>
+<data>2631.486,81.56,</data>
+<data>2631.519,88.59,91.93</data>
+<data>2631.519,0,92.11</data>
+<data>2631.541,,92.02</data>
+<data>2631.614,101.25,</data>
+<data>2631.66,,92.02</data>
+<data>2631.782,112.5,</data>
+<data>2631.791,113.91,92.02</data>
+<data>2631.81,174.38,</data>
+<data>2631.856,,92.02</data>
+<data>2632.09,126.56,</data>
+<data>2632.126,137.81,91.93</data>
+<data>2632.431,187.03,0</data>
+<data>2632.889,,92.02</data>
+<data>2632.997,295.31,</data>
+<data>2633.028,,0</data>
+<data>2633.081,,92.02</data>
+<data>2633.177,208.13,92.02</data>
+<data>2633.177,0,91.49</data>
+<data>2633.344,237.66,92.02</data>
+<data>2633.38,239.06,</data>
+<data>2633.403,,0</data>
+<data>2633.467,298.12,</data>
+<data>2633.473,250.31,91.93</data>
+<data>2633.536,260.16,</data>
+<data>2633.745,310.78,92.02</data>
+<data>2633.745,310.78,92.02</data>
+<data>2633.77,,92.11</data>
+<data>2633.813,334.69,</data>
+<data>2633.852,345.94,92.2</data>
+<data>2634.008,358.59,92.02</data>
+<data>2634.315,1.41,91.93</data>
+<data>2634.319,0,91.85</data>
+<data>2634.417,,0</data>
+<data>2634.557,37.97,</data>
+<data>2634.638,,91.93</data>
+<data>2634.661,,91.58</data>
+<data>2635.145,68.91,</data>
+<data>2635.269,,91.93</data>
+<data>2635.431,101.25,92.11</data>
+<data>2635.449,113.91,91.85</data>
+<data>2635.449,136.41,91.93</data>
+<data>2635.449,140.63,</data>
+<data>2635.541,,91.67</data>
+<data>2635.655,163.13,91.93</data>
+<data>2635.764,165.94,92.02</data>
+<data>2635.764,170.16,91.93</data>
+<data>2635.767,171.56,</data>
+<data>2636.011,,92.02</data>
+<data>2636.083,187.03,</data>
+<data>2636.189,198.28,91.93</data>
+<data>2636.419,,91.85</data>
+<data>2636.511,212.34,92.02</data>
+<data>2636.511,219.38,</data>
+<data>2636.652,241.88,92.02</data>
+<data>2636.654,243.28,91.93</data>
+<data>2636.654,247.5,92.02</data>
+<data>2636.654,247.5,92.02</data>
+<data>2636.654,,91.93</data>
+<data>2636.723,255.94,</data>
+<data>2636.991,,0</data>
+<data>2637.152,0,</data>
+<data>2637.249,,91.93</data>
+<data>2637.35,279.84,91.93</data>
+<data>2637.35,282.66,92.02</data>
+<data>2637.35,284.06,92.11</data>
+<data>2637.465,285.47,91.93</data>
+<data>2637.465,291.09,</data>
+<data>2637.564,,92.02</data>
+<data>2637.579,291.09,</data>
+<data>2637.661,,92.02</data>
+<data>2637.773,300.94,</data>
+<data>2637.828,,92.2</data>
+<data>2637.894,310.78,</data>
+<data>2638.004,319.22,91.93</data>
+<data>2638.004,322.03,91.93</data>
+<data>2638.004,326.25,91.93</data>
+<data>2638.004,,92.02</data>
+<data>2638.117,331.87,</data>
+<data>2638.316,,91.85</data>
+<data>2638.327,343.12,92.02</data>
+<data>2638.419,345.94,</data>
+<data>2638.539,354.37,92.02</data>
+<data>2638.539,357.19,91.85</data>
+<data>2638.603,5.63,91.93</data>
+<data>2638.825,,0</data>
+<data>2638.971,16.87,</data>
+<data>2639.31,,92.02</data>
+<data>2639.618,36.56,92.02</data>
+<data>2639.744,43.59,</data>
+<data>2639.894,,91.93</data>
+<data>2640.053,57.66,92.02</data>
+<data>2640.053,61.87,</data>
+<data>2640.425,75.94,92.02</data>
+<data>2640.425,,92.02</data>
+<data>2640.446,84.37,</data>
+<data>2640.852,,91.85</data>
+<data>2641.114,0,92.02</data>
+<data>2641.114,106.87,</data>
+<data>2641.305,119.53,91.93</data>
+<data>2641.354,125.16,91.93</data>
+<data>2641.548,133.59,91.93</data>
+<data>2641.77,,91.93</data>
+<data>2641.771,137.81,</data>
+<data>2642.157,150.47,92.02</data>
+<data>2642.157,154.69,0</data>
+<data>2642.157,,92.02</data>
+<data>2642.183,164.53,</data>
+<data>2642.268,,92.02</data>
+<data>2642.306,171.56,</data>
+<data>2642.977,195.47,92.02</data>
+<data>2643.24,,92.02</data>
+<data>2643.501,225,</data>
+<data>2643.952,251.72,92.02</data>
+<data>2643.952,,91.93</data>
+<data>2644.008,260.16,</data>
+<data>2644.334,,92.02</data>
+<data>2644.407,270,92.02</data>
+<data>2644.407,272.81,</data>
+<data>2644.559,281.25,91.85</data>
+<data>2644.725,,92.02</data>
+<data>2644.755,288.28,</data>
+<data>2644.862,298.12,92.02</data>
+<data>2645.216,302.34,92.02</data>
+<data>2645.282,,92.02</data>
+<data>2645.452,316.41,91.93</data>
+<data>2645.452,319.22,</data>
+<data>2645.7,329.06,91.85</data>
+<data>2645.702,,91.93</data>
+<data>2645.863,331.87,</data>
+<data>2646.077,338.91,0</data>
+<data>2646.156,341.72,91.85</data>
+<data>2646.178,347.34,91.76</data>
+<data>2646.178,350.16,91.76</data>
+<data>2646.355,351.56,91.76</data>
+<data>2646.405,,91.85</data>
+<data>2646.447,84.37,</data>
+<data>2646.655,40.78,0</data>
+<data>2646.655,42.19,91.93</data>
+<data>2646.655,0,91.93</data>
+<data>2646.655,42.19,91.93</data>
+<data>2646.655,42.19,91.93</data>
+<data>2646.655,43.59,91.93</data>
+<data>2646.655,43.59,0</data>
+<data>2646.655,43.59,91.93</data>
+<data>2646.655,43.59,91.93</data>
+<data>2646.738,37.97,</data>
+<data>2646.866,47.81,91.93</data>
+<data>2646.964,49.22,91.93</data>
+<data>2647.098,50.63,91.93</data>
+<data>2647.125,,91.93</data>
+<data>2647.15,0,</data>
+<data>2647.151,,0</data>
+<data>2647.287,52.03,</data>
+<data>2647.328,0,91.93</data>
+<data>2647.399,0,91.93</data>
+<data>2647.462,,91.93</data>
+<data>2647.477,53.44,</data>
+<data>2647.559,56.25,91.93</data>
+<data>2647.559,0,91.93</data>
+<data>2647.559,59.06,91.93</data>
+<data>2647.559,59.06,91.93</data>
+<data>2647.777,,91.85</data>
+<data>2647.925,112.5,</data>
+<data>2648.21,,91.85</data>
+<data>2648.319,118.12,</data>
+<data>2648.336,,91.85</data>
+<data>2648.337,,91.85</data>
+<data>2648.357,120.94,91.85</data>
+<data>2648.357,120.94,91.85</data>
+<data>2648.357,123.75,91.93</data>
+<data>2648.372,125.16,</data>
+<data>2648.45,127.97,91.93</data>
+<data>2648.45,,91.93</data>
+<data>2648.581,129.38,</data>
+<data>2648.764,132.19,91.93</data>
+<data>2648.764,132.19,91.93</data>
+<data>2648.764,136.41,91.93</data>
+<data>2648.764,167.34,91.93</data>
+<data>2649.223,177.19,92.2</data>
+<data>2649.223,,92.2</data>
+<data>2649.234,178.59,92.2</data>
+<data>2649.234,180,92.2</data>
+<data>2649.371,180,92.2</data>
+<data>2649.371,181.41,92.2</data>
+<data>2649.511,185.63,</data>
+<data>2649.805,272.81,92.2</data>
+<data>2650.113,,92.29</data>
+<data>2650.128,0,</data>
+<data>2650.294,,92.11</data>
+<data>2650.321,295.31,</data>
+<data>2650.394,39.37,</data>
+<data>2650.604,,92.2</data>
+<data>2650.65,306.56,</data>
+<data>2650.773,,92.11</data>
+<data>2650.89,327.66,92.11</data>
+<data>2650.89,333.28,92.11</data>
+<data>2650.89,341.72,92.11</data>
+<data>2650.89,348.75,92.02</data>
+<data>2650.897,73.12,</data>
+<data>2651.309,,92.2</data>
+<data>2651.408,,92.02</data>
+<data>2651.477,90,</data>
+<data>2651.61,97.03,92.02</data>
+<data>2651.843,,0</data>
+<data>2651.861,115.31,</data>
+<data>2652.014,,91.85</data>
+<data>2652.12,123.75,91.93</data>
+<data>2652.122,,91.93</data>
+<data>2652.256,130.78,91.93</data>
+<data>2652.62,144.84,91.93</data>
+<data>2653.053,157.5,0</data>
+<data>2653.053,163.13,92.02</data>
+<data>2653.38,,92.02</data>
+<data>2653.425,174.38,92.11</data>
+<data>2653.425,178.59,</data>
+<data>2653.68,189.84,92.11</data>
+<data>2653.859,195.47,92.02</data>
+<data>2654.072,,92.02</data>
+<data>2654.121,212.34,92.02</data>
+<data>2654.121,213.75,</data>
+<data>2654.556,,91.85</data>
+<data>2654.867,250.31,91.93</data>
+<data>2654.927,261.56,91.85</data>
+<data>2654.927,275.62,91.93</data>
+<data>2654.927,285.47,</data>
+<data>2655.561,,91.93</data>
+<data>2655.628,306.56,</data>
+<data>2655.7,,0</data>
+<data>2655.745,316.41,</data>
+<data>2655.971,330.47,92.02</data>
+<data>2655.983,337.5,92.02</data>
+<data>2656.236,,92.02</data>
+<data>2656.278,354.37,</data>
+<data>2656.946,,0</data>
+<data>2656.994,23.91,</data>
+<data>2657.634,0,91.93</data>
+<data>2657.634,40.78,91.93</data>
+<data>2657.76,,91.93</data>
+<data>2657.867,42.19,91.93</data>
+<data>2657.867,42.19,</data>
+<data>2657.939,,91.93</data>
+<data>2657.939,,91.93</data>
+<data>2658.062,52.03,91.93</data>
+<data>2658.062,53.44,</data>
+<data>2658.107,,91.93</data>
+<data>2658.252,53.44,91.93</data>
+<data>2658.252,53.44,91.93</data>
+<data>2658.252,54.84,91.93</data>
+<data>2658.252,54.84,</data>
+<data>2658.314,,92.02</data>
+<data>2658.408,54.84,92.02</data>
+<data>2658.408,56.25,</data>
+<data>2658.49,0,92.02</data>
+<data>2658.49,59.06,91.93</data>
+<data>2658.519,,91.93</data>
+<data>2658.614,60.47,92.02</data>
+<data>2658.625,60.47,92.02</data>
+<data>2658.625,60.47,92.02</data>
+<data>2658.625,61.87,92.02</data>
+<data>2658.625,63.28,92.02</data>
+<data>2658.625,63.28,</data>
+<data>2658.645,63.28,92.02</data>
+<data>2658.645,64.69,92.02</data>
+<data>2658.661,64.69,92.02</data>
+<data>2658.661,,92.02</data>
+<data>2658.82,64.69,0</data>
+<data>2658.82,66.09,92.02</data>
+<data>2658.82,66.09,92.02</data>
+<data>2658.82,66.09,92.02</data>
+<data>2658.82,67.5,92.02</data>
+<data>2658.82,67.5,92.02</data>
+<data>2658.909,67.5,</data>
+<data>2658.948,67.5,91.93</data>
+<data>2658.948,0,91.93</data>
+<data>2658.948,68.91,91.93</data>
+<data>2658.948,70.31,92.02</data>
+<data>2658.948,70.31,92.02</data>
+<data>2659.172,,92.2</data>
+<data>2659.436,150.47,92.2</data>
+<data>2659.436,0,</data>
+<data>2659.607,185.63,92.37</data>
+<data>2659.625,199.69,92.29</data>
+<data>2660.016,,92.11</data>
+<data>2660.104,278.44,</data>
+<data>2660.235,0,92.11</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:51:21.4130000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T12:33:10.7180000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T12:33:10.7340000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

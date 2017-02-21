@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<rigs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_rig.xsd" 
+	version="1.2.0">
+  <rig uidWell="Well123" uidWellbore="6KFSJ18" uidRig="8FF2K6" uidSource="Server1" xmlns="http://www.witsml.org/schemas/120">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameRig>Rig2</nameRig>
+    <owner>Owner2</owner>
+    <typeRig>SEMI-SUBMERSIBLE</typeRig>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:49:40.4910000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T11:17:12.1400000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T11:17:12.1400000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </rig>
+</rigs>
