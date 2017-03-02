@@ -5,8 +5,14 @@
  */
 package techtonic;
 
+import java.awt.Button;
+import java.awt.GridLayout;
+import java.util.List;
+import javax.swing.BoxLayout;
+import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import org.jwitsml.WitsmlWell;
 
 /**
  *
@@ -19,6 +25,7 @@ public class Techtonic extends javax.swing.JFrame {
      */
     public Techtonic() {
         initComponents();
+        loadDisplayScreen();
         
     }
 
@@ -31,6 +38,12 @@ public class Techtonic extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        wellButPannel = new javax.swing.JPanel();
+        canvas = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        displaySheet = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -46,6 +59,51 @@ public class Techtonic extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Techtonic");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("TECHTONIC");
+        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        javax.swing.GroupLayout wellButPannelLayout = new javax.swing.GroupLayout(wellButPannel);
+        wellButPannel.setLayout(wellButPannelLayout);
+        wellButPannelLayout.setHorizontalGroup(
+            wellButPannelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 162, Short.MAX_VALUE)
+        );
+        wellButPannelLayout.setVerticalGroup(
+            wellButPannelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 833, Short.MAX_VALUE)
+        );
+
+        displaySheet.setColumns(20);
+        displaySheet.setRows(5);
+        jScrollPane1.setViewportView(displaySheet);
+
+        javax.swing.GroupLayout canvasLayout = new javax.swing.GroupLayout(canvas);
+        canvas.setLayout(canvasLayout);
+        canvasLayout.setHorizontalGroup(
+            canvasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(canvasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 551, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        canvasLayout.setVerticalGroup(
+            canvasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(canvasLayout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(275, Short.MAX_VALUE))
+        );
+
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jMenu1.setText("File");
 
@@ -105,11 +163,36 @@ public class Techtonic extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1551, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(wellButPannel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(canvas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(203, 203, 203)
+                                .addComponent(jButton1))))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1017, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(wellButPannel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(canvas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addGap(69, 69, 69))))
         );
 
         pack();
@@ -128,6 +211,11 @@ public class Techtonic extends javax.swing.JFrame {
             
         }
     }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        canvas.removeAll();
+        canvas.add(new Button("Hello this is me!"));
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,8 +251,29 @@ public class Techtonic extends javax.swing.JFrame {
             }
         });
     }
-
+    private void loadDisplayScreen(){
+    
+    WitsmlXMLReader xmlreader = new WitsmlXMLReader();
+        String loadWells = "";
+        
+        List<WitsmlWell> wells = xmlreader.getWells();
+        int wellSize = wells.size();
+        wellButPannel.setLayout(new GridLayout(wellSize, 1, 5,5));
+      for(WitsmlWell well : wells){      
+          String naOP = "name:  " + well.getName() + "\noperator:  " + well.getOperator();
+        loadWells += naOP;
+        wellButPannel.add(new Button(naOP));
+                loadWells +="\n\n\n";
+        }
+      
+      displaySheet.append("Number of wells: "+ wellSize+"\n");
+      displaySheet.append("\n"+loadWells);
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel canvas;
+    private javax.swing.JTextArea displaySheet;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -177,5 +286,7 @@ public class Techtonic extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JPanel wellButPannel;
     // End of variables declaration//GEN-END:variables
 }

@@ -296,7 +296,10 @@ public final class WitsmlXMLReader {
     public void loadList() throws JDOMException, IOException{
         ClassLoader classLoader = getClass().getClassLoader(); 
         File list = new File(classLoader.getResource(xmlroot + "/list.txt").getFile());
+        
         List<String> lines = Files.readAllLines(list.toPath());
+//        System.out.println("Read all lines");
+//        System.out.println(lines);
         for(String line: lines){
             String[] bits = line.split(",");
             xmls.add(bits[0],bits[1],bits[2]);
