@@ -40,8 +40,6 @@ public class Cmm021witsml {
         System.out.println(
                 "name: " + log.getName() + "\n" +
                 "tvdunit:  " + log.getDescription() + "\n" +
-                "tvdunit:  " + log.getIndexType() + "\n" 
-            //    "tvdunit:  " + log. + "\n" 
-        );    
+                "tvdunit:  " + log.getIndexType() + "\ntvdunit:  " + log.getIndexUnit() + "\n");    
     }
 }
