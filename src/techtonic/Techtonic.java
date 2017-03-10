@@ -19,6 +19,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import org.jfree.data.general.DefaultPieDataset;
 import org.jwitsml.WitsmlWell;
 import org.jwitsml.WitsmlWellbore;
 
@@ -33,7 +34,7 @@ public class Techtonic extends javax.swing.JFrame {
      */
     public Techtonic() {
         initComponents();
-        loadDisplayScreen();        
+        loadDisplayScreen();
     }
 
     /**
@@ -45,20 +46,21 @@ public class Techtonic extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        titleBarPanel = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        operator = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
-        wellBtnPanel = new javax.swing.JScrollPane();
-        wellButtonPanel = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        wellborePanel = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
-        operatorsname = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        toolBarPanel = new javax.swing.JPanel();
+        operatorPanel = new javax.swing.JPanel();
+        combOperator = new javax.swing.JComboBox<>();
+        lblOperators = new javax.swing.JLabel();
+        jspWell = new javax.swing.JScrollPane();
+        btnWellPanel = new javax.swing.JPanel();
+        lblOperatorName = new javax.swing.JLabel();
+        jspWellBore = new javax.swing.JScrollPane();
+        wellBorePanel = new javax.swing.JPanel();
+        jspProperty = new javax.swing.JScrollPane();
+        tblProperty = new javax.swing.JTable();
+        displayAreaPanel = new javax.swing.JPanel();
+        menBarTectTonic = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -73,135 +75,164 @@ public class Techtonic extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Techtonic");
+        setName("TechTonic"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(1000, 1500));
+        setSize(new java.awt.Dimension(1000, 1500));
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        titleBarPanel.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Techtonic");
+        jLabel2.setIcon(new javax.swing.ImageIcon("H:\\NetBeansProjects\\TeckhTonic\\TeckTonic Logo.jpg")); // NOI18N
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout titleBarPanelLayout = new javax.swing.GroupLayout(titleBarPanel);
+        titleBarPanel.setLayout(titleBarPanelLayout);
+        titleBarPanelLayout.setHorizontalGroup(
+            titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(titleBarPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        titleBarPanelLayout.setVerticalGroup(
+            titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleBarPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout toolBarPanelLayout = new javax.swing.GroupLayout(toolBarPanel);
+        toolBarPanel.setLayout(toolBarPanelLayout);
+        toolBarPanelLayout.setHorizontalGroup(
+            toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 39, Short.MAX_VALUE)
+        toolBarPanelLayout.setVerticalGroup(
+            toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
+        operatorPanel.setBackground(new java.awt.Color(0, 0, 0));
 
-        operator.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        operator.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        operator.addActionListener(new java.awt.event.ActionListener() {
+        combOperator.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        combOperator.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        combOperator.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                operatorActionPerformed(evt);
+                combOperatorActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel3.setText("Operators");
+        lblOperators.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        lblOperators.setForeground(new java.awt.Color(0, 153, 153));
+        lblOperators.setText("Operators");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout operatorPanelLayout = new javax.swing.GroupLayout(operatorPanel);
+        operatorPanel.setLayout(operatorPanelLayout);
+        operatorPanelLayout.setHorizontalGroup(
+            operatorPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, operatorPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblOperators)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(operator, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(combOperator, 0, 200, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        operatorPanelLayout.setVerticalGroup(
+            operatorPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(operatorPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(operator, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(jLabel3))
+                .addGroup(operatorPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(combOperator, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(lblOperators))
                 .addContainerGap())
         );
 
-        wellBtnPanel.setBorder(null);
+        jspWell.setBorder(null);
+        jspWell.setPreferredSize(new java.awt.Dimension(1173, 2263));
 
-        javax.swing.GroupLayout wellButtonPanelLayout = new javax.swing.GroupLayout(wellButtonPanel);
-        wellButtonPanel.setLayout(wellButtonPanelLayout);
-        wellButtonPanelLayout.setHorizontalGroup(
-            wellButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 166, Short.MAX_VALUE)
+        btnWellPanel.setBorder(javax.swing.BorderFactory.createCompoundBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnWellPanel.setPreferredSize(new java.awt.Dimension(100, 100));
+
+        javax.swing.GroupLayout btnWellPanelLayout = new javax.swing.GroupLayout(btnWellPanel);
+        btnWellPanel.setLayout(btnWellPanelLayout);
+        btnWellPanelLayout.setHorizontalGroup(
+            btnWellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 167, Short.MAX_VALUE)
         );
-        wellButtonPanelLayout.setVerticalGroup(
-            wellButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 438, Short.MAX_VALUE)
-        );
-
-        wellBtnPanel.setViewportView(wellButtonPanel);
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel1.setText("Property");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        btnWellPanelLayout.setVerticalGroup(
+            btnWellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 517, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout wellborePanelLayout = new javax.swing.GroupLayout(wellborePanel);
-        wellborePanel.setLayout(wellborePanelLayout);
-        wellborePanelLayout.setHorizontalGroup(
-            wellborePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 145, Short.MAX_VALUE)
+        jspWell.setViewportView(btnWellPanel);
+
+        lblOperatorName.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+
+        jspWellBore.setBorder(null);
+        jspWellBore.setPreferredSize(new java.awt.Dimension(1173, 2263));
+
+        wellBorePanel.setBorder(new javax.swing.border.MatteBorder(null));
+        wellBorePanel.setPreferredSize(new java.awt.Dimension(100, 100));
+
+        javax.swing.GroupLayout wellBorePanelLayout = new javax.swing.GroupLayout(wellBorePanel);
+        wellBorePanel.setLayout(wellBorePanelLayout);
+        wellBorePanelLayout.setHorizontalGroup(
+            wellBorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 295, Short.MAX_VALUE)
         );
-        wellborePanelLayout.setVerticalGroup(
-            wellborePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 483, Short.MAX_VALUE)
+        wellBorePanelLayout.setVerticalGroup(
+            wellBorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 523, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 611, Short.MAX_VALUE)
+        jspWellBore.setViewportView(wellBorePanel);
+
+        jspProperty.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        jspProperty.setPreferredSize(new java.awt.Dimension(1173, 2263));
+
+        tblProperty.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        tblProperty.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Properties", ""
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jspProperty.setViewportView(tblProperty);
+
+        displayAreaPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout displayAreaPanelLayout = new javax.swing.GroupLayout(displayAreaPanel);
+        displayAreaPanel.setLayout(displayAreaPanelLayout);
+        displayAreaPanelLayout.setHorizontalGroup(
+            displayAreaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 528, Short.MAX_VALUE)
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        displayAreaPanelLayout.setVerticalGroup(
+            displayAreaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        operatorsname.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
 
         jMenu1.setText("File");
 
@@ -226,10 +257,10 @@ public class Techtonic extends javax.swing.JFrame {
         jMenuItem4.setText("Exit");
         jMenu1.add(jMenuItem4);
 
-        jMenuBar1.add(jMenu1);
+        menBarTectTonic.add(jMenu1);
 
         jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        menBarTectTonic.add(jMenu2);
 
         jMenu3.setText("Visualize");
 
@@ -250,12 +281,12 @@ public class Techtonic extends javax.swing.JFrame {
         jMenuItem7.setText("Line Graph");
         jMenu3.add(jMenuItem7);
 
-        jMenuBar1.add(jMenu3);
+        menBarTectTonic.add(jMenu3);
 
         jMenu4.setText("About");
-        jMenuBar1.add(jMenu4);
+        menBarTectTonic.add(jMenu4);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(menBarTectTonic);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -264,44 +295,44 @@ public class Techtonic extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(titleBarPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(operatorsname, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(wellBtnPanel))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(wellborePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(10, 10, 10)
+                                .addComponent(lblOperatorName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jspWell, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(operatorPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jspWellBore, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(displayAreaPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(5, 5, 5)
+                        .addComponent(jspProperty, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(toolBarPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(titleBarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addComponent(toolBarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jspProperty, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(wellborePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(operatorsname, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(wellBtnPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(37, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(operatorPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblOperatorName, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jspWellBore, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jspWell, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(displayAreaPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
         );
 
         pack();
@@ -316,38 +347,63 @@ public class Techtonic extends javax.swing.JFrame {
         FileNameExtensionFilter fnef = new FileNameExtensionFilter("xml file only", ".xml");
         chooser.setFileFilter(fnef);
         int input = chooser.showOpenDialog(this);
-        if(input == 0){
-            
+        if (input == 0) {
+
         }
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void operatorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_operatorActionPerformed
-        String op = (String)operator.getSelectedItem();
-        operatorsname.setText(op);
+    private void combOperatorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combOperatorActionPerformed
+        String op = (String) combOperator.getSelectedItem();
+        lblOperatorName.setText(op);
         loadwellBtnPanel(op);
-    }//GEN-LAST:event_operatorActionPerformed
-    private void loadwellBtnPanel(String op){  
+    }//GEN-LAST:event_combOperatorActionPerformed
+    private void loadwellBtnPanel(String op) {
         ArrayList<WitsmlWell> welllist = new ArrayList();
-        for(int x = 0; x < wells.size(); x++){
-            if(op.equals(wells.get(x).getOperator())){
-                welllist.add(wells.get(x));            
+        for (int x = 0; x < wells.size(); x++) {
+            if (op.equals(wells.get(x).getOperator())) {
+                welllist.add(wells.get(x));
             }
         }
         // load the well panel with well on a button
-       int welllistsize = welllist.size();
-        wellButtonPanel.removeAll();
-        wellButtonPanel.setLayout(new GridLayout(welllistsize, 1, 5,5));
-        for(int i = 0; i < welllistsize; i++){
-            
+        int welllistsize = welllist.size();
+        btnWellPanel.removeAll();
+        btnWellPanel.setLayout(new GridLayout(welllistsize, 1, 5, 5));
+        for (int i = 0; i < welllistsize; i++) {
+
             JButton btn = new JButton(welllist.get(i).getName());
-            btn.addActionListener(new ButtonListener(btn, welllist.get(i)));      
-            
-            
-            wellButtonPanel.add(btn); 
+            btn.addActionListener(new ButtonListener(btn, welllist.get(i)));
+            btnWellPanel.add(btn);
             repaint();
         }
-        
     }
+
+    class ButtonListener implements ActionListener {
+
+        private final JButton btn;
+        private final WitsmlWell well;
+        private WitsmlXMLReader xmlreader = new WitsmlXMLReader();
+
+        public ButtonListener(JButton btn, WitsmlWell well) {
+            this.btn = btn;
+            this.well = well;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+//            System.out.println(btn.getText());
+            List<WitsmlWellbore> wellbores = xmlreader.getWellbores(well);
+            wellBorePanel.removeAll();
+            wellBorePanel.setLayout(new GridLayout(wellbores.size(), 1, 5, 5));
+            for (int i = 0; i < wellbores.size(); i++) {
+                WitsmlWellbore wellbore = wellbores.get(i);
+                JButton btnWellbore = new JButton("Name:  " + wellbore.getName() 
+                        + " Status:  " + wellbore.getStatus());
+                wellBorePanel.add(btnWellbore);
+            }
+            //WitsmlWellbore wellbore = wellbores.get(0);
+        }
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -355,7 +411,7 @@ public class Techtonic extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -382,25 +438,26 @@ public class Techtonic extends javax.swing.JFrame {
             }
         });
     }
-    private void loadDisplayScreen(){
-    
-    WitsmlXMLReader xmlreader = new WitsmlXMLReader();
+
+    private void loadDisplayScreen() {
+
+        WitsmlXMLReader xmlreader = new WitsmlXMLReader();
         wells = xmlreader.getWells();
-        
- //       wellBtnPanel.setLayout(new GridLayout(wellSize, 1, 5,5));
-//      for(WitsmlWell well : wells){      
+
+        //       wellBtnPanel.setLayout(new GridLayout(wellSize, 1, 5,5));
+//      for(WitsmlWell well : wells){
 //          opName[] = well.getOperator();
 //        }
-      for(int i = 0; i < wells.size(); i++){
-          opName.add(new Well(i, wells.get(i).getOperator()));     
-      }
-      Iterator<Well> iterate = opName.iterator();
-      while (iterate.hasNext()){
-          arrName.add(iterate.next().getOperator());
-      }
-       aModel = new DefaultComboBoxModel<>(arrName);
-        operator.setModel(aModel);
-      
+        for (int i = 0; i < wells.size(); i++) {
+            opName.add(new Well(i, wells.get(i).getOperator()));
+        }
+        Iterator<Well> iterate = opName.iterator();
+        while (iterate.hasNext()) {
+            arrName.add(iterate.next().getOperator());
+        }
+        aModel = new DefaultComboBoxModel<>(arrName);
+        combOperator.setModel(aModel);
+
 //      displaySheet.append("Number of wells: "+ wellSize+"\n");
 //      displaySheet.append("\n"+loadWells);
     }
@@ -409,15 +466,16 @@ public class Techtonic extends javax.swing.JFrame {
     List<WitsmlWell> wells;
     private int wellIndex;
     private Vector<String> arrName = new Vector<>();
+    DefaultPieDataset data = new DefaultPieDataset();
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel btnWellPanel;
+    private javax.swing.JComboBox<String> combOperator;
+    private javax.swing.JPanel displayAreaPanel;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
@@ -425,46 +483,18 @@ public class Techtonic extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JComboBox<String> operator;
-    private javax.swing.JLabel operatorsname;
-    private javax.swing.JScrollPane wellBtnPanel;
-    private javax.swing.JPanel wellButtonPanel;
-    private javax.swing.JPanel wellborePanel;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jspProperty;
+    private javax.swing.JScrollPane jspWell;
+    private javax.swing.JScrollPane jspWellBore;
+    private javax.swing.JLabel lblOperatorName;
+    private javax.swing.JLabel lblOperators;
+    private javax.swing.JMenuBar menBarTectTonic;
+    private javax.swing.JPanel operatorPanel;
+    private javax.swing.JTable tblProperty;
+    private javax.swing.JPanel titleBarPanel;
+    private javax.swing.JPanel toolBarPanel;
+    private javax.swing.JPanel wellBorePanel;
     // End of variables declaration//GEN-END:variables
-class ButtonListener implements ActionListener {
-
-    private final JButton btn;
-    private final WitsmlWell well;
-    private WitsmlXMLReader xmlreader = new WitsmlXMLReader();
-    
-
-    public ButtonListener(JButton btn, WitsmlWell well) {
-        this.btn = btn;
-        this.well = well;
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        System.out.println(btn.getText());
-        List<WitsmlWellbore> wellbores = xmlreader.getWellbores(well);
-        WitsmlWellbore wellbore = wellbores.get(0);
-        System.out.println(
-                "name:  " + wellbore.getName() + "\n" +
-                "status:  " + wellbore.getStatus() + "\n"
-        );
-        JButton btnWellbore1 = new JButton(wellbore.getName());
-        JButton btnWellbore2 = new JButton(wellbore.getStatus());
-        wellButtonPanel.add(btnWellbore1);
-        wellButtonPanel.add(btnWellbore2);
-    }
-    
-}
-
-
 
 }
