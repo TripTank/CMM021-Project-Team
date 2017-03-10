@@ -5,27 +5,22 @@
  */
 package techtonic;
 
-import java.awt.Button;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.Vector;
-import javax.swing.BoxLayout;
+//import java.util.Vector;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import org.jwitsml.WitsmlWell;
 import org.jwitsml.WitsmlWellbore;
-import sun.reflect.annotation.AnnotationParser;
 
 /**
  *
@@ -60,7 +55,7 @@ public class Techtonic extends javax.swing.JFrame {
         wellButtonPanel = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        wellborePanel = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         operatorsname = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -149,9 +144,7 @@ public class Techtonic extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        wellBtnPanel.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-
-        wellButtonPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        wellBtnPanel.setBorder(null);
 
         javax.swing.GroupLayout wellButtonPanelLayout = new javax.swing.GroupLayout(wellButtonPanel);
         wellButtonPanel.setLayout(wellButtonPanelLayout);
@@ -161,7 +154,7 @@ public class Techtonic extends javax.swing.JFrame {
         );
         wellButtonPanelLayout.setVerticalGroup(
             wellButtonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 436, Short.MAX_VALUE)
+            .addGap(0, 438, Short.MAX_VALUE)
         );
 
         wellBtnPanel.setViewportView(wellButtonPanel);
@@ -186,14 +179,14 @@ public class Techtonic extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout wellborePanelLayout = new javax.swing.GroupLayout(wellborePanel);
+        wellborePanel.setLayout(wellborePanelLayout);
+        wellborePanelLayout.setHorizontalGroup(
+            wellborePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 145, Short.MAX_VALUE)
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        wellborePanelLayout.setVerticalGroup(
+            wellborePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 483, Short.MAX_VALUE)
         );
 
@@ -207,6 +200,8 @@ public class Techtonic extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
+
+        operatorsname.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
 
         jMenu1.setText("File");
 
@@ -277,7 +272,7 @@ public class Techtonic extends javax.swing.JFrame {
                                     .addComponent(operatorsname, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(wellBtnPanel))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(wellborePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -299,7 +294,7 @@ public class Techtonic extends javax.swing.JFrame {
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(wellborePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(operatorsname, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -340,18 +335,12 @@ public class Techtonic extends javax.swing.JFrame {
         }
         // load the well panel with well on a button
        int welllistsize = welllist.size();
-        
+        wellButtonPanel.removeAll();
         wellButtonPanel.setLayout(new GridLayout(welllistsize, 1, 5,5));
         for(int i = 0; i < welllistsize; i++){
-            wellButtonPanel.removeAll();
-            JButton btn = new JButton(welllist.get(i).getName());
-            btn.addActionListener(new ActionListener(){
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println(btn.getText());
-                }
-            });
             
+            JButton btn = new JButton(welllist.get(i).getName());
+            btn.addActionListener(new ButtonListener(btn, welllist.get(i)));      
             
             
             wellButtonPanel.add(btn); 
@@ -440,11 +429,42 @@ public class Techtonic extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JComboBox<String> operator;
     private javax.swing.JLabel operatorsname;
     private javax.swing.JScrollPane wellBtnPanel;
     private javax.swing.JPanel wellButtonPanel;
+    private javax.swing.JPanel wellborePanel;
     // End of variables declaration//GEN-END:variables
+class ButtonListener implements ActionListener {
+
+    private final JButton btn;
+    private final WitsmlWell well;
+    private WitsmlXMLReader xmlreader = new WitsmlXMLReader();
+    
+
+    public ButtonListener(JButton btn, WitsmlWell well) {
+        this.btn = btn;
+        this.well = well;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println(btn.getText());
+        List<WitsmlWellbore> wellbores = xmlreader.getWellbores(well);
+        WitsmlWellbore wellbore = wellbores.get(0);
+        System.out.println(
+                "name:  " + wellbore.getName() + "\n" +
+                "status:  " + wellbore.getStatus() + "\n"
+        );
+        JButton btnWellbore1 = new JButton(wellbore.getName());
+        JButton btnWellbore2 = new JButton(wellbore.getStatus());
+        wellButtonPanel.add(btnWellbore1);
+        wellButtonPanel.add(btnWellbore2);
+    }
+    
+}
+
+
+
 }
