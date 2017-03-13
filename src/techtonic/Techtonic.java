@@ -372,6 +372,7 @@ public class Techtonic extends javax.swing.JFrame {
                 JButton btnWellbore = new JButton("Name:  " + wellbore.getName() 
                         + " Status:  " + wellbore.getStatus());
                 wellBorePanel.add(btnWellbore);
+                btnWellbore.addActionListener(this);
             }
             //WitsmlWellbore wellbore = wellbores.get(0);
         }
