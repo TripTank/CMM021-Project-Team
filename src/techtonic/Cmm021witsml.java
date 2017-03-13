@@ -1,7 +1,6 @@
  
 package techtonic;
 
-import java.util.ArrayList;
 import java.util.List;
 import org.jwitsml.WitsmlLog;
 import org.jwitsml.WitsmlTrajectory;
