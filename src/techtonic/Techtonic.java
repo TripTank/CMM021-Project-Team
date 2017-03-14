@@ -47,6 +47,7 @@ public class Techtonic extends javax.swing.JFrame {
     public Techtonic() {
         initComponents();
         loadDisplayScreen();
+        setResizable(false);
     }
 
     /**
@@ -61,6 +62,7 @@ public class Techtonic extends javax.swing.JFrame {
         titleBarPanel = new javax.swing.JPanel();
         lblTitle = new javax.swing.JLabel();
         toolBarPanel = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
         operatorPanel = new javax.swing.JPanel();
         combOperator = new javax.swing.JComboBox<>();
         lblOperators = new javax.swing.JLabel();
@@ -97,7 +99,6 @@ public class Techtonic extends javax.swing.JFrame {
         lblTitle.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(0, 0, 255));
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitle.setIcon(new javax.swing.ImageIcon("H:\\NetBeansProjects\\TeckhTonic\\TeckTonic Logo.jpg")); // NOI18N
 
         javax.swing.GroupLayout titleBarPanelLayout = new javax.swing.GroupLayout(titleBarPanel);
         titleBarPanel.setLayout(titleBarPanelLayout);
@@ -120,15 +121,20 @@ public class Techtonic extends javax.swing.JFrame {
 
         toolBarPanel.setPreferredSize(new java.awt.Dimension(100, 65));
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/techtonic/images/max.png"))); // NOI18N
+
         javax.swing.GroupLayout toolBarPanelLayout = new javax.swing.GroupLayout(toolBarPanel);
         toolBarPanel.setLayout(toolBarPanelLayout);
         toolBarPanelLayout.setHorizontalGroup(
             toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1110, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, toolBarPanelLayout.createSequentialGroup()
+                .addContainerGap(494, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(513, 513, 513))
         );
         toolBarPanelLayout.setVerticalGroup(
             toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, Short.MAX_VALUE)
         );
 
         getContentPane().add(toolBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 111, 1110, -1));
@@ -170,7 +176,6 @@ public class Techtonic extends javax.swing.JFrame {
 
         getContentPane().add(operatorPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 182, 390, -1));
 
-        jspWell.setBorder(null);
         jspWell.setPreferredSize(new java.awt.Dimension(1173, 2263));
 
         btnWellPanel.setBorder(javax.swing.BorderFactory.createCompoundBorder(new javax.swing.border.SoftBevelBorder(0), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
@@ -195,7 +200,6 @@ public class Techtonic extends javax.swing.JFrame {
         lblOperatorName.setPreferredSize(new java.awt.Dimension(176, 62));
         getContentPane().add(lblOperatorName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 248, 175, -1));
 
-        jspWellBore.setBorder(null);
         jspWellBore.setPreferredSize(new java.awt.Dimension(1173, 2263));
 
         wellBorePanel.setBorder(new javax.swing.border.MatteBorder(null));
@@ -356,11 +360,12 @@ public class Techtonic extends javax.swing.JFrame {
 
     private void jmiExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiExitActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_jmiExitActionPerformed
 
     private void jmiExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmiExitMouseClicked
         // TODO add your handling code here:
-        System.exit(0);
+        
     }//GEN-LAST:event_jmiExitMouseClicked
     private void loadwellBtnPanel(String op) {
         ArrayList<WitsmlWell> welllist = new ArrayList();
@@ -411,79 +416,15 @@ public class Techtonic extends javax.swing.JFrame {
 
                 btnWellbore.setBounds(5, ((100 * i) + 5), wellBorePanel.getWidth() - 10, 100);
                 wellBorePanel.add(btnWellbore);
-                repaint();
-                btnWellbore.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
 
-                        try {
-                            logs = xmlreader.getLogs(wellbore);
-                            System.out.println("i gas out here ******************************************************");
-                            System.out.println("logs : " + logs.toString());
-                        } catch (NullPointerException exception) {
-                            exception.printStackTrace();
-                            System.out.println("exception.printStackTrace() ******************************************************");
-                        } catch (Exception ex) {
-                            ex.printStackTrace();
-                        }
-
-                        for (int j = 0; j < logs.size(); j++) {
-                            WitsmlLog log = logs.get(j);
-                            List<WitsmlLogCurve> curves = log.getCurves();
-                            System.out.println(
-                                    "name: " + log.getName() + "\n"
-                                    + "tvdunit:  " + log.getDescription() + "\n"
-                                    + "tvdunit:  " + log.getIndexType() + "\ntvdunit:  " + log.getIndexUnit() + "\n curve : " + log.getCurves() + "\n depth = " + curves.get(0) + "\nmeasurement = " + curves.get(j) + "\n");
-
-//                            List<WitsmlLogCurve> curves = log.getCurves();
-                            WitsmlLogCurve depth = curves.get(0);
-                            WitsmlLogCurve measurement = curves.get(j);
-                            for (WitsmlLogCurve c : curves) {
-                                System.out.println(
-                                        "curveNo: " + c.getCurveNo() + "\n"
-                                        + "name: " + c.getName() + "\n"
-                                        + "description:  " + c.getDescription() + "\n"
-                                        + "unit:  " + c.getUnit() + "\n"
-                                        + "toString:  " + c.getUnit() + "\n"
-                                );
-                                /* for each WitsmlLogCurve we can also access the values it stores */
-
-                                List<Object> values = c.getValues();
-                                for (int k = 0; k < values.size(); k++) {
-                                    System.out.print(
-                                            values.get(k) + " ");
-                                    series.add((Integer) values.get(k), (Integer) values.get(k + 1));
-                                }
-                                XYSeriesCollection data = new XYSeriesCollection();
-                                data.addSeries(series);
-                                JFreeChart chart = ChartFactory.createXYLineChart(
-                                        "Line Chart", // chart title
-                                        "x", "y", // x and y axis labels
-                                        data);
-                                ChartFrame frameChat = new ChartFrame(
-                                        "XY graph using JFreeChart", chart);
-                                frameChat.pack();
-                                frameChat.setVisible(true);
-//                                for (Object v : values) {
-//                                    System.out.print(
-//                                            v.toString() + " ");
-//                                    data.setValue(c.getName(), Integer.parseInt(v.toString()));
-//                                    JFreeChart piechart = ChartFactory.createPieChart("WitsmlLogCurve", data);
-//                                    Frame frameChat = new ChartFrame(
-//                                            "Pie Chart using JFreeChart",
-//                                            piechart);
-//                                    frameChat.pack();
-//                                    frameChat.setVisible(true);                                    
-//                                }
-                            }
-
-                        }
-                    }
-                });
+                btnWellbore.addActionListener(new WellBoreListener(i, wellbore, displayAreaPanel));
             }
+            repaint();
             //WitsmlWellbore wellbore = wellbores.get(0);
         }
     }
+
+
 
     /**
      * @param args the command line arguments
@@ -548,13 +489,13 @@ public class Techtonic extends javax.swing.JFrame {
     private int wellIndex;
     private Vector<String> arrName = new Vector<>();
 //    DefaultPieDataset data = new DefaultPieDataset();
-    XYSeries series = new XYSeries("series name");
-    List<WitsmlLog> logs = new ArrayList<>();
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel btnWellPanel;
     private javax.swing.JComboBox<String> combOperator;
     private javax.swing.JPanel displayAreaPanel;
+    private javax.swing.JButton jButton1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
