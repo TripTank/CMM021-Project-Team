@@ -1,0 +1,2280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<trajectorys 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_trajectory.xsd" 
+	version="1.2.0">
+  <trajectory uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidSource="Server1" xmlns="http://www.witsml.org/schemas/120">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore2</nameWellbore>
+    <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+    <uidTrajParent>Well123</uidTrajParent>
+    <nameTrajParent>MWD-DemoWell2-AH</nameTrajParent>
+    <dTimTrajStart>2006-09-09T05:52:21.0000000+02:00</dTimTrajStart>
+    <dTimTrajEnd>2006-09-09T05:52:21.0000000+02:00</dTimTrajEnd>
+    <mdMn uom="m">12.50</mdMn>
+    <mdMx uom="m">2219</mdMx>
+    <serviceCompany>ServiceCompany</serviceCompany>
+    <magDeclUsed uom="dega">-1.97</magDeclUsed>
+    <gridCorUsed uom="dega">-0.38</gridCorUsed>
+    <aziVertSect uom="dega">307.38</aziVertSect>
+    <dispNsVertSectOrig uom="m">62.33</dispNsVertSectOrig>
+    <dispEwVertSectOrig uom="m">-144.66</dispEwVertSectOrig>
+    <aziRef>Grid north</aziRef>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="331KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">12.50</md>
+      <tvd uom="m">12.50</tvd>
+      <incl uom="dega">0</incl>
+      <azi uom="dega">0</azi>
+      <dispNs uom="m">62.33</dispNs>
+      <dispEw uom="m">-144.66</dispEw>
+      <vertSect uom="m">0</vertSect>
+      <dls uom="dega/30m">0</dls>
+      <rateTurn uom="dega/30m">0</rateTurn>
+      <rateBuild uom="dega/30m">0</rateBuild>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="332KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">363.10</md>
+      <tvd uom="m">363.10</tvd>
+      <incl uom="dega">0</incl>
+      <azi uom="dega">0</azi>
+      <dispNs uom="m">62.33</dispNs>
+      <dispEw uom="m">-144.66</dispEw>
+      <vertSect uom="m">0</vertSect>
+      <dls uom="dega/30m">0</dls>
+      <rateTurn uom="dega/30m">0</rateTurn>
+      <rateBuild uom="dega/30m">0</rateBuild>
+      <mdDelta uom="m">350.60</mdDelta>
+      <tvdDelta uom="m">350.60</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="333KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">371.50</md>
+      <tvd uom="m">371.50</tvd>
+      <incl uom="dega">0.80</incl>
+      <azi uom="dega">336</azi>
+      <dispNs uom="m">62.38</dispNs>
+      <dispEw uom="m">-144.68</dispEw>
+      <vertSect uom="m">0.05</vertSect>
+      <dls uom="dega/30m">2.8570</dls>
+      <rateTurn uom="dega/30m">-85.7140</rateTurn>
+      <rateBuild uom="dega/30m">2.8570</rateBuild>
+      <mdDelta uom="m">8.40</mdDelta>
+      <tvdDelta uom="m">8.40</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="334KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">380.50</md>
+      <tvd uom="m">380.50</tvd>
+      <incl uom="dega">0.50</incl>
+      <azi uom="dega">232.40</azi>
+      <dispNs uom="m">62.42</dispNs>
+      <dispEw uom="m">-144.74</dispEw>
+      <vertSect uom="m">0.12</vertSect>
+      <dls uom="dega/30m">3.4610</dls>
+      <rateTurn uom="dega/30m">-345.3330</rateTurn>
+      <rateBuild uom="dega/30m">-1</rateBuild>
+      <mdDelta uom="m">9</mdDelta>
+      <tvdDelta uom="m">9</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="335KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">390.50</md>
+      <tvd uom="m">390.50</tvd>
+      <incl uom="dega">0.60</incl>
+      <azi uom="dega">252.50</azi>
+      <dispNs uom="m">62.37</dispNs>
+      <dispEw uom="m">-144.83</dispEw>
+      <vertSect uom="m">0.16</vertSect>
+      <dls uom="dega/30m">0.6470</dls>
+      <rateTurn uom="dega/30m">60.30</rateTurn>
+      <rateBuild uom="dega/30m">0.30</rateBuild>
+      <mdDelta uom="m">10</mdDelta>
+      <tvdDelta uom="m">10</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="336KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">400.50</md>
+      <tvd uom="m">400.50</tvd>
+      <incl uom="dega">0.40</incl>
+      <azi uom="dega">287.70</azi>
+      <dispNs uom="m">62.37</dispNs>
+      <dispEw uom="m">-144.91</dispEw>
+      <vertSect uom="m">0.22</vertSect>
+      <dls uom="dega/30m">1.0720</dls>
+      <rateTurn uom="dega/30m">105.60</rateTurn>
+      <rateBuild uom="dega/30m">-0.60</rateBuild>
+      <mdDelta uom="m">10</mdDelta>
+      <tvdDelta uom="m">10</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="337KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">409.50</md>
+      <tvd uom="m">409.50</tvd>
+      <incl uom="dega">0.50</incl>
+      <azi uom="dega">269.10</azi>
+      <dispNs uom="m">62.38</dispNs>
+      <dispEw uom="m">-144.98</dispEw>
+      <vertSect uom="m">0.28</vertSect>
+      <dls uom="dega/30m">0.5860</dls>
+      <rateTurn uom="dega/30m">-62</rateTurn>
+      <rateBuild uom="dega/30m">0.3330</rateBuild>
+      <mdDelta uom="m">9</mdDelta>
+      <tvdDelta uom="m">9</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="338KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">416.50</md>
+      <tvd uom="m">416.50</tvd>
+      <incl uom="dega">0.40</incl>
+      <azi uom="dega">311</azi>
+      <dispNs uom="m">62.39</dispNs>
+      <dispEw uom="m">-145.03</dispEw>
+      <vertSect uom="m">0.33</vertSect>
+      <dls uom="dega/30m">1.4360</dls>
+      <rateTurn uom="dega/30m">179.5710</rateTurn>
+      <rateBuild uom="dega/30m">-0.4290</rateBuild>
+      <mdDelta uom="m">7</mdDelta>
+      <tvdDelta uom="m">7</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="339KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">428.50</md>
+      <tvd uom="m">428.50</tvd>
+      <incl uom="dega">0.50</incl>
+      <azi uom="dega">266</azi>
+      <dispNs uom="m">62.42</dispNs>
+      <dispEw uom="m">-145.11</dispEw>
+      <vertSect uom="m">0.41</vertSect>
+      <dls uom="dega/30m">0.8910</dls>
+      <rateTurn uom="dega/30m">-112.50</rateTurn>
+      <rateBuild uom="dega/30m">0.25</rateBuild>
+      <mdDelta uom="m">12</mdDelta>
+      <tvdDelta uom="m">12</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="340KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">457.50</md>
+      <tvd uom="m">457.50</tvd>
+      <incl uom="dega">0.30</incl>
+      <azi uom="dega">315.40</azi>
+      <dispNs uom="m">62.46</dispNs>
+      <dispEw uom="m">-145.29</dispEw>
+      <vertSect uom="m">0.58</vertSect>
+      <dls uom="dega/30m">0.3940</dls>
+      <rateTurn uom="dega/30m">51.1030</rateTurn>
+      <rateBuild uom="dega/30m">-0.2070</rateBuild>
+      <mdDelta uom="m">29</mdDelta>
+      <tvdDelta uom="m">29</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="341KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">486.50</md>
+      <tvd uom="m">486.49</tvd>
+      <incl uom="dega">1.20</incl>
+      <azi uom="dega">27.90</azi>
+      <dispNs uom="m">62.79</dispNs>
+      <dispEw uom="m">-145.20</dispEw>
+      <vertSect uom="m">0.71</vertSect>
+      <dls uom="dega/30m">1.1860</dls>
+      <rateTurn uom="dega/30m">75</rateTurn>
+      <rateBuild uom="dega/30m">0.9310</rateBuild>
+      <mdDelta uom="m">29</mdDelta>
+      <tvdDelta uom="m">29</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="342KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">514.50</md>
+      <tvd uom="m">514.48</tvd>
+      <incl uom="dega">2.30</incl>
+      <azi uom="dega">28.30</azi>
+      <dispNs uom="m">63.54</dispNs>
+      <dispEw uom="m">-144.80</dispEw>
+      <vertSect uom="m">0.84</vertSect>
+      <dls uom="dega/30m">1.1790</dls>
+      <rateTurn uom="dega/30m">0.4290</rateTurn>
+      <rateBuild uom="dega/30m">1.1790</rateBuild>
+      <mdDelta uom="m">28</mdDelta>
+      <tvdDelta uom="m">27.99</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="343KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">542.50</md>
+      <tvd uom="m">542.43</tvd>
+      <incl uom="dega">4.80</incl>
+      <azi uom="dega">39.90</azi>
+      <dispNs uom="m">64.93</dispNs>
+      <dispEw uom="m">-143.78</dispEw>
+      <vertSect uom="m">0.88</vertSect>
+      <dls uom="dega/30m">2.7730</dls>
+      <rateTurn uom="dega/30m">12.4290</rateTurn>
+      <rateBuild uom="dega/30m">2.6790</rateBuild>
+      <mdDelta uom="m">28</mdDelta>
+      <tvdDelta uom="m">27.94</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="344KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">571.50</md>
+      <tvd uom="m">571.28</tvd>
+      <incl uom="dega">6.70</incl>
+      <azi uom="dega">47.20</azi>
+      <dispNs uom="m">67.01</dispNs>
+      <dispEw uom="m">-141.76</dispEw>
+      <vertSect uom="m">0.54</vertSect>
+      <dls uom="dega/30m">2.1020</dls>
+      <rateTurn uom="dega/30m">7.5520</rateTurn>
+      <rateBuild uom="dega/30m">1.9660</rateBuild>
+      <mdDelta uom="m">29</mdDelta>
+      <tvdDelta uom="m">28.85</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="345KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">599.50</md>
+      <tvd uom="m">599.03</tvd>
+      <incl uom="dega">8.40</incl>
+      <azi uom="dega">46.50</azi>
+      <dispNs uom="m">69.53</dispNs>
+      <dispEw uom="m">-139.08</dispEw>
+      <vertSect uom="m">-0.06</vertSect>
+      <dls uom="dega/30m">1.8240</dls>
+      <rateTurn uom="dega/30m">-0.75</rateTurn>
+      <rateBuild uom="dega/30m">1.8210</rateBuild>
+      <mdDelta uom="m">28</mdDelta>
+      <tvdDelta uom="m">27.76</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="346KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">628.50</md>
+      <tvd uom="m">627.64</tvd>
+      <incl uom="dega">10.50</incl>
+      <azi uom="dega">49.20</azi>
+      <dispNs uom="m">72.72</dispNs>
+      <dispEw uom="m">-135.54</dispEw>
+      <vertSect uom="m">-0.94</vertSect>
+      <dls uom="dega/30m">2.22</dls>
+      <rateTurn uom="dega/30m">2.7930</rateTurn>
+      <rateBuild uom="dega/30m">2.1720</rateBuild>
+      <mdDelta uom="m">29</mdDelta>
+      <tvdDelta uom="m">28.60</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="347KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">657.50</md>
+      <tvd uom="m">656</tvd>
+      <incl uom="dega">13.50</incl>
+      <azi uom="dega">49.60</azi>
+      <dispNs uom="m">76.64</dispNs>
+      <dispEw uom="m">-130.96</dispEw>
+      <vertSect uom="m">-2.20</vertSect>
+      <dls uom="dega/30m">3.1050</dls>
+      <rateTurn uom="dega/30m">0.4140</rateTurn>
+      <rateBuild uom="dega/30m">3.1030</rateBuild>
+      <mdDelta uom="m">29</mdDelta>
+      <tvdDelta uom="m">28.36</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="348KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">685.50</md>
+      <tvd uom="m">683.08</tvd>
+      <incl uom="dega">16</incl>
+      <azi uom="dega">49.30</azi>
+      <dispNs uom="m">81.27</dispNs>
+      <dispEw uom="m">-125.55</dispEw>
+      <vertSect uom="m">-3.69</vertSect>
+      <dls uom="dega/30m">2.68</dls>
+      <rateTurn uom="dega/30m">-0.3210</rateTurn>
+      <rateBuild uom="dega/30m">2.6790</rateBuild>
+      <mdDelta uom="m">28</mdDelta>
+      <tvdDelta uom="m">27.08</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="349KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">713.50</md>
+      <tvd uom="m">709.80</tvd>
+      <incl uom="dega">18.70</incl>
+      <azi uom="dega">48.60</azi>
+      <dispNs uom="m">86.76</dispNs>
+      <dispEw uom="m">-119.25</dispEw>
+      <vertSect uom="m">-5.36</vertSect>
+      <dls uom="dega/30m">2.9010</dls>
+      <rateTurn uom="dega/30m">-0.75</rateTurn>
+      <rateBuild uom="dega/30m">2.8930</rateBuild>
+      <mdDelta uom="m">28</mdDelta>
+      <tvdDelta uom="m">26.72</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="350KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">754.50</md>
+      <tvd uom="m">747.97</tvd>
+      <incl uom="dega">24</incl>
+      <azi uom="dega">47.10</azi>
+      <dispNs uom="m">96.79</dispNs>
+      <dispEw uom="m">-108.21</dispEw>
+      <vertSect uom="m">-8.05</vertSect>
+      <dls uom="dega/30m">3.8980</dls>
+      <rateTurn uom="dega/30m">-1.0980</rateTurn>
+      <rateBuild uom="dega/30m">3.8780</rateBuild>
+      <mdDelta uom="m">41</mdDelta>
+      <tvdDelta uom="m">38.17</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="351KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">768.50</md>
+      <tvd uom="m">760.77</tvd>
+      <incl uom="dega">23.84</incl>
+      <azi uom="dega">47.64</azi>
+      <dispNs uom="m">100.63</dispNs>
+      <dispEw uom="m">-104.03</dispEw>
+      <vertSect uom="m">-9.03</vertSect>
+      <dls uom="dega/30m">0.5810</dls>
+      <rateTurn uom="dega/30m">1.1570</rateTurn>
+      <rateBuild uom="dega/30m">-0.3430</rateBuild>
+      <mdDelta uom="m">14</mdDelta>
+      <tvdDelta uom="m">12.80</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="352KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">793.70</md>
+      <tvd uom="m">783.93</tvd>
+      <incl uom="dega">22.62</incl>
+      <azi uom="dega">48.24</azi>
+      <dispNs uom="m">107.29</dispNs>
+      <dispEw uom="m">-96.65</dispEw>
+      <vertSect uom="m">-10.85</vertSect>
+      <dls uom="dega/30m">1.4790</dls>
+      <rateTurn uom="dega/30m">0.7140</rateTurn>
+      <rateBuild uom="dega/30m">-1.4520</rateBuild>
+      <mdDelta uom="m">25.20</mdDelta>
+      <tvdDelta uom="m">23.16</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="353KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">846.70</md>
+      <tvd uom="m">832.99</tvd>
+      <incl uom="dega">22.24</incl>
+      <azi uom="dega">68.47</azi>
+      <dispNs uom="m">117.78</dispNs>
+      <dispEw uom="m">-79.69</dispEw>
+      <vertSect uom="m">-17.96</vertSect>
+      <dls uom="dega/30m">4.3550</dls>
+      <rateTurn uom="dega/30m">11.4510</rateTurn>
+      <rateBuild uom="dega/30m">-0.2150</rateBuild>
+      <mdDelta uom="m">53</mdDelta>
+      <tvdDelta uom="m">49.06</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="354KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">874.10</md>
+      <tvd uom="m">858.31</tvd>
+      <incl uom="dega">22.91</incl>
+      <azi uom="dega">80.13</azi>
+      <dispNs uom="m">120.60</dispNs>
+      <dispEw uom="m">-69.61</dispEw>
+      <vertSect uom="m">-24.26</vertSect>
+      <dls uom="dega/30m">4.9480</dls>
+      <rateTurn uom="dega/30m">12.7660</rateTurn>
+      <rateBuild uom="dega/30m">0.7340</rateBuild>
+      <mdDelta uom="m">27.40</mdDelta>
+      <tvdDelta uom="m">25.31</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="355KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">899.90</md>
+      <tvd uom="m">882.03</tvd>
+      <incl uom="dega">23.44</incl>
+      <azi uom="dega">89.31</azi>
+      <dispNs uom="m">121.52</dispNs>
+      <dispEw uom="m">-59.53</dispEw>
+      <vertSect uom="m">-31.71</vertSect>
+      <dls uom="dega/30m">4.2420</dls>
+      <rateTurn uom="dega/30m">10.6740</rateTurn>
+      <rateBuild uom="dega/30m">0.6160</rateBuild>
+      <mdDelta uom="m">25.80</mdDelta>
+      <tvdDelta uom="m">23.73</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="356KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">927.30</md>
+      <tvd uom="m">907</tvd>
+      <incl uom="dega">25.29</incl>
+      <azi uom="dega">97.57</azi>
+      <dispNs uom="m">120.81</dispNs>
+      <dispEw uom="m">-48.27</dispEw>
+      <vertSect uom="m">-41.09</vertSect>
+      <dls uom="dega/30m">4.2410</dls>
+      <rateTurn uom="dega/30m">9.0440</rateTurn>
+      <rateBuild uom="dega/30m">2.0260</rateBuild>
+      <mdDelta uom="m">27.40</mdDelta>
+      <tvdDelta uom="m">24.97</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="357KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">955.40</md>
+      <tvd uom="m">932.16</tvd>
+      <incl uom="dega">27.55</incl>
+      <azi uom="dega">102.96</azi>
+      <dispNs uom="m">118.56</dispNs>
+      <dispEw uom="m">-35.99</dispEw>
+      <vertSect uom="m">-52.22</vertSect>
+      <dls uom="dega/30m">3.5160</dls>
+      <rateTurn uom="dega/30m">5.7540</rateTurn>
+      <rateBuild uom="dega/30m">2.4130</rateBuild>
+      <mdDelta uom="m">28.10</mdDelta>
+      <tvdDelta uom="m">25.17</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="358KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">981.40</md>
+      <tvd uom="m">955.01</tvd>
+      <incl uom="dega">29.55</incl>
+      <azi uom="dega">108.34</azi>
+      <dispNs uom="m">115.20</dispNs>
+      <dispEw uom="m">-24.04</dispEw>
+      <vertSect uom="m">-63.75</vertSect>
+      <dls uom="dega/30m">3.7570</dls>
+      <rateTurn uom="dega/30m">6.2080</rateTurn>
+      <rateBuild uom="dega/30m">2.3080</rateBuild>
+      <mdDelta uom="m">26</mdDelta>
+      <tvdDelta uom="m">22.84</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="359KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1007.50</md>
+      <tvd uom="m">977.46</tvd>
+      <incl uom="dega">31.79</incl>
+      <azi uom="dega">111.73</azi>
+      <dispNs uom="m">110.63</dispNs>
+      <dispEw uom="m">-11.54</dispEw>
+      <vertSect uom="m">-76.46</vertSect>
+      <dls uom="dega/30m">3.2520</dls>
+      <rateTurn uom="dega/30m">3.8970</rateTurn>
+      <rateBuild uom="dega/30m">2.5750</rateBuild>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="360KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1034.10</md>
+      <tvd uom="m">999.77</tvd>
+      <incl uom="dega">34.18</incl>
+      <azi uom="dega">114.66</azi>
+      <dispNs uom="m">104.91</dispNs>
+      <dispEw uom="m">1.76</dispEw>
+      <vertSect uom="m">-90.50</vertSect>
+      <dls uom="dega/30m">3.24</dls>
+      <rateTurn uom="dega/30m">3.3050</rateTurn>
+      <rateBuild uom="dega/30m">2.6950</rateBuild>
+      <mdDelta uom="m">26.60</mdDelta>
+      <tvdDelta uom="m">22.31</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="361KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1060.50</md>
+      <tvd uom="m">1021.29</tvd>
+      <incl uom="dega">36.56</incl>
+      <azi uom="dega">117.49</azi>
+      <dispNs uom="m">98.19</dispNs>
+      <dispEw uom="m">15.48</dispEw>
+      <vertSect uom="m">-105.48</vertSect>
+      <dls uom="dega/30m">3.2830</dls>
+      <rateTurn uom="dega/30m">3.2160</rateTurn>
+      <rateBuild uom="dega/30m">2.7050</rateBuild>
+      <mdDelta uom="m">26.40</mdDelta>
+      <tvdDelta uom="m">21.53</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="362KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1087.20</md>
+      <tvd uom="m">1042.43</tvd>
+      <incl uom="dega">38.77</incl>
+      <azi uom="dega">121.30</azi>
+      <dispNs uom="m">90.17</dispNs>
+      <dispEw uom="m">29.68</dispEw>
+      <vertSect uom="m">-121.63</vertSect>
+      <dls uom="dega/30m">3.6060</dls>
+      <rateTurn uom="dega/30m">4.2810</rateTurn>
+      <rateBuild uom="dega/30m">2.4830</rateBuild>
+      <mdDelta uom="m">26.70</mdDelta>
+      <tvdDelta uom="m">21.14</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="363KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1114.20</md>
+      <tvd uom="m">1063.11</tvd>
+      <incl uom="dega">41.30</incl>
+      <azi uom="dega">125.04</azi>
+      <dispNs uom="m">80.66</dispNs>
+      <dispEw uom="m">44.20</dispEw>
+      <vertSect uom="m">-138.95</vertSect>
+      <dls uom="dega/30m">3.8780</dls>
+      <rateTurn uom="dega/30m">4.1560</rateTurn>
+      <rateBuild uom="dega/30m">2.8110</rateBuild>
+      <mdDelta uom="m">27</mdDelta>
+      <tvdDelta uom="m">20.67</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="364KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1140.80</md>
+      <tvd uom="m">1082.79</tvd>
+      <incl uom="dega">43.22</incl>
+      <azi uom="dega">127.35</azi>
+      <dispNs uom="m">70.09</dispNs>
+      <dispEw uom="m">58.63</dispEw>
+      <vertSect uom="m">-156.83</vertSect>
+      <dls uom="dega/30m">2.7850</dls>
+      <rateTurn uom="dega/30m">2.6050</rateTurn>
+      <rateBuild uom="dega/30m">2.1650</rateBuild>
+      <mdDelta uom="m">26.60</mdDelta>
+      <tvdDelta uom="m">19.69</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="365KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1167.40</md>
+      <tvd uom="m">1101.83</tvd>
+      <incl uom="dega">45.36</incl>
+      <azi uom="dega">128.06</azi>
+      <dispNs uom="m">58.73</dispNs>
+      <dispEw uom="m">73.33</dispEw>
+      <vertSect uom="m">-175.40</vertSect>
+      <dls uom="dega/30m">2.4770</dls>
+      <rateTurn uom="dega/30m">0.8010</rateTurn>
+      <rateBuild uom="dega/30m">2.4140</rateBuild>
+      <mdDelta uom="m">26.60</mdDelta>
+      <tvdDelta uom="m">19.04</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="366KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1194.10</md>
+      <tvd uom="m">1119.82</tvd>
+      <incl uom="dega">49.92</incl>
+      <azi uom="dega">128.97</azi>
+      <dispNs uom="m">46.45</dispNs>
+      <dispEw uom="m">88.75</dispEw>
+      <vertSect uom="m">-195.12</vertSect>
+      <dls uom="dega/30m">5.1790</dls>
+      <rateTurn uom="dega/30m">1.0220</rateTurn>
+      <rateBuild uom="dega/30m">5.1240</rateBuild>
+      <mdDelta uom="m">26.70</mdDelta>
+      <tvdDelta uom="m">17.99</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="367KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1220.10</md>
+      <tvd uom="m">1136.03</tvd>
+      <incl uom="dega">52.91</incl>
+      <azi uom="dega">129.53</azi>
+      <dispNs uom="m">33.59</dispNs>
+      <dispEw uom="m">104.49</dispEw>
+      <vertSect uom="m">-215.43</vertSect>
+      <dls uom="dega/30m">3.4870</dls>
+      <rateTurn uom="dega/30m">0.6460</rateTurn>
+      <rateBuild uom="dega/30m">3.45</rateBuild>
+      <mdDelta uom="m">26</mdDelta>
+      <tvdDelta uom="m">16.21</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="368KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1246.60</md>
+      <tvd uom="m">1151.51</tvd>
+      <incl uom="dega">55.62</incl>
+      <azi uom="dega">130.81</azi>
+      <dispNs uom="m">19.71</dispNs>
+      <dispEw uom="m">120.92</dispEw>
+      <vertSect uom="m">-236.91</vertSect>
+      <dls uom="dega/30m">3.2860</dls>
+      <rateTurn uom="dega/30m">1.4490</rateTurn>
+      <rateBuild uom="dega/30m">3.0680</rateBuild>
+      <mdDelta uom="m">26.50</mdDelta>
+      <tvdDelta uom="m">15.48</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="369KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1273.10</md>
+      <tvd uom="m">1165.96</tvd>
+      <incl uom="dega">58.28</incl>
+      <azi uom="dega">132.58</azi>
+      <dispNs uom="m">4.93</dispNs>
+      <dispEw uom="m">137.50</dispEw>
+      <vertSect uom="m">-259.06</vertSect>
+      <dls uom="dega/30m">3.4480</dls>
+      <rateTurn uom="dega/30m">2.0040</rateTurn>
+      <rateBuild uom="dega/30m">3.0110</rateBuild>
+      <mdDelta uom="m">26.50</mdDelta>
+      <tvdDelta uom="m">14.45</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="370KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1300.30</md>
+      <tvd uom="m">1179.68</tvd>
+      <incl uom="dega">61.15</incl>
+      <azi uom="dega">135.02</azi>
+      <dispNs uom="m">-11.32</dispNs>
+      <dispEw uom="m">154.45</dispEw>
+      <vertSect uom="m">-282.39</vertSect>
+      <dls uom="dega/30m">3.9270</dls>
+      <rateTurn uom="dega/30m">2.6910</rateTurn>
+      <rateBuild uom="dega/30m">3.1650</rateBuild>
+      <mdDelta uom="m">27.20</mdDelta>
+      <tvdDelta uom="m">13.72</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="371KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1327.60</md>
+      <tvd uom="m">1192.22</tvd>
+      <incl uom="dega">64.12</incl>
+      <azi uom="dega">136.37</azi>
+      <dispNs uom="m">-28.67</dispNs>
+      <dispEw uom="m">171.38</dispEw>
+      <vertSect uom="m">-306.38</vertSect>
+      <dls uom="dega/30m">3.52</dls>
+      <rateTurn uom="dega/30m">1.4840</rateTurn>
+      <rateBuild uom="dega/30m">3.2640</rateBuild>
+      <mdDelta uom="m">27.30</mdDelta>
+      <tvdDelta uom="m">12.55</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="372KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1354.20</md>
+      <tvd uom="m">1203.22</tvd>
+      <incl uom="dega">67.04</incl>
+      <azi uom="dega">136.92</azi>
+      <dispNs uom="m">-46.28</dispNs>
+      <dispEw uom="m">188</dispEw>
+      <vertSect uom="m">-330.28</vertSect>
+      <dls uom="dega/30m">3.3410</dls>
+      <rateTurn uom="dega/30m">0.62</rateTurn>
+      <rateBuild uom="dega/30m">3.2930</rateBuild>
+      <mdDelta uom="m">26.60</mdDelta>
+      <tvdDelta uom="m">11</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="373KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1379.40</md>
+      <tvd uom="m">1212.52</tvd>
+      <incl uom="dega">69.66</incl>
+      <azi uom="dega">137.91</azi>
+      <dispNs uom="m">-63.53</dispNs>
+      <dispEw uom="m">203.85</dispEw>
+      <vertSect uom="m">-353.34</vertSect>
+      <dls uom="dega/30m">3.3060</dls>
+      <rateTurn uom="dega/30m">1.1790</rateTurn>
+      <rateBuild uom="dega/30m">3.1190</rateBuild>
+      <mdDelta uom="m">25.20</mdDelta>
+      <tvdDelta uom="m">9.30</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="374KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1406.10</md>
+      <tvd uom="m">1221.75</tvd>
+      <incl uom="dega">69.88</incl>
+      <azi uom="dega">142.43</azi>
+      <dispNs uom="m">-82.76</dispNs>
+      <dispEw uom="m">219.89</dispEw>
+      <vertSect uom="m">-377.77</vertSect>
+      <dls uom="dega/30m">4.7720</dls>
+      <rateTurn uom="dega/30m">5.0790</rateTurn>
+      <rateBuild uom="dega/30m">0.2470</rateBuild>
+      <mdDelta uom="m">26.70</mdDelta>
+      <tvdDelta uom="m">9.24</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="375KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1432.60</md>
+      <tvd uom="m">1230.87</tvd>
+      <incl uom="dega">69.88</incl>
+      <azi uom="dega">144.26</azi>
+      <dispNs uom="m">-102.72</dispNs>
+      <dispEw uom="m">234.74</dispEw>
+      <vertSect uom="m">-401.69</vertSect>
+      <dls uom="dega/30m">1.9450</dls>
+      <rateTurn uom="dega/30m">2.0720</rateTurn>
+      <rateBuild uom="dega/30m">0</rateBuild>
+      <mdDelta uom="m">26.50</mdDelta>
+      <tvdDelta uom="m">9.12</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="376KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1459.20</md>
+      <tvd uom="m">1240.02</tvd>
+      <incl uom="dega">69.89</incl>
+      <azi uom="dega">145.92</azi>
+      <dispNs uom="m">-123.21</dispNs>
+      <dispEw uom="m">249.04</dispEw>
+      <vertSect uom="m">-425.48</vertSect>
+      <dls uom="dega/30m">1.7580</dls>
+      <rateTurn uom="dega/30m">1.8720</rateTurn>
+      <rateBuild uom="dega/30m">0.0110</rateBuild>
+      <mdDelta uom="m">26.60</mdDelta>
+      <tvdDelta uom="m">9.15</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="377KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1485.10</md>
+      <tvd uom="m">1248.93</tvd>
+      <incl uom="dega">69.86</incl>
+      <azi uom="dega">149.08</azi>
+      <dispNs uom="m">-143.71</dispNs>
+      <dispEw uom="m">262.10</dispEw>
+      <vertSect uom="m">-448.31</vertSect>
+      <dls uom="dega/30m">3.4370</dls>
+      <rateTurn uom="dega/30m">3.66</rateTurn>
+      <rateBuild uom="dega/30m">-0.0350</rateBuild>
+      <mdDelta uom="m">25.90</mdDelta>
+      <tvdDelta uom="m">8.91</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="378KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1511.90</md>
+      <tvd uom="m">1258.22</tvd>
+      <incl uom="dega">69.60</incl>
+      <azi uom="dega">151.57</azi>
+      <dispNs uom="m">-165.55</dispNs>
+      <dispEw uom="m">274.55</dispEw>
+      <vertSect uom="m">-471.46</vertSect>
+      <dls uom="dega/30m">2.6310</dls>
+      <rateTurn uom="dega/30m">2.7870</rateTurn>
+      <rateBuild uom="dega/30m">-0.2910</rateBuild>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="379KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1539.20</md>
+      <tvd uom="m">1268.29</tvd>
+      <incl uom="dega">67.13</incl>
+      <azi uom="dega">154.98</azi>
+      <dispNs uom="m">-188.21</dispNs>
+      <dispEw uom="m">285.96</dispEw>
+      <vertSect uom="m">-494.29</vertSect>
+      <dls uom="dega/30m">4.4160</dls>
+      <rateTurn uom="dega/30m">3.7470</rateTurn>
+      <rateBuild uom="dega/30m">-2.7140</rateBuild>
+      <mdDelta uom="m">27.30</mdDelta>
+      <tvdDelta uom="m">10.07</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="380KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1565.80</md>
+      <tvd uom="m">1278.77</tvd>
+      <incl uom="dega">66.45</incl>
+      <azi uom="dega">159.74</azi>
+      <dispNs uom="m">-210.76</dispNs>
+      <dispEw uom="m">295.37</dispEw>
+      <vertSect uom="m">-515.45</vertSect>
+      <dls uom="dega/30m">4.9930</dls>
+      <rateTurn uom="dega/30m">5.3680</rateTurn>
+      <rateBuild uom="dega/30m">-0.7670</rateBuild>
+      <mdDelta uom="m">26.60</mdDelta>
+      <tvdDelta uom="m">10.49</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="381KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1592.50</md>
+      <tvd uom="m">1289.57</tvd>
+      <incl uom="dega">65.88</incl>
+      <azi uom="dega">163.03</azi>
+      <dispNs uom="m">-233.90</dispNs>
+      <dispEw uom="m">303.17</dispEw>
+      <vertSect uom="m">-535.70</vertSect>
+      <dls uom="dega/30m">3.4410</dls>
+      <rateTurn uom="dega/30m">3.6970</rateTurn>
+      <rateBuild uom="dega/30m">-0.64</rateBuild>
+      <mdDelta uom="m">26.70</mdDelta>
+      <tvdDelta uom="m">10.79</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="382KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1619.90</md>
+      <tvd uom="m">1300.88</tvd>
+      <incl uom="dega">65.37</incl>
+      <azi uom="dega">166.70</azi>
+      <dispNs uom="m">-257.99</dispNs>
+      <dispEw uom="m">309.68</dispEw>
+      <vertSect uom="m">-555.50</vertSect>
+      <dls uom="dega/30m">3.7020</dls>
+      <rateTurn uom="dega/30m">4.0180</rateTurn>
+      <rateBuild uom="dega/30m">-0.5580</rateBuild>
+      <mdDelta uom="m">27.40</mdDelta>
+      <tvdDelta uom="m">11.31</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="383KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1646.60</md>
+      <tvd uom="m">1312.11</tvd>
+      <incl uom="dega">64.88</incl>
+      <azi uom="dega">169.52</azi>
+      <dispNs uom="m">-281.69</dispNs>
+      <dispEw uom="m">314.67</dispEw>
+      <vertSect uom="m">-573.85</vertSect>
+      <dls uom="dega/30m">2.9270</dls>
+      <rateTurn uom="dega/30m">3.1690</rateTurn>
+      <rateBuild uom="dega/30m">-0.5510</rateBuild>
+      <mdDelta uom="m">26.70</mdDelta>
+      <tvdDelta uom="m">11.23</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="384KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1673.40</md>
+      <tvd uom="m">1323.61</tvd>
+      <incl uom="dega">64.30</incl>
+      <azi uom="dega">172.72</azi>
+      <dispNs uom="m">-305.60</dispNs>
+      <dispEw uom="m">318.41</dispEw>
+      <vertSect uom="m">-591.34</vertSect>
+      <dls uom="dega/30m">3.30</dls>
+      <rateTurn uom="dega/30m">3.5820</rateTurn>
+      <rateBuild uom="dega/30m">-0.6490</rateBuild>
+      <mdDelta uom="m">26.80</mdDelta>
+      <tvdDelta uom="m">11.50</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="385KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1700.10</md>
+      <tvd uom="m">1335.27</tvd>
+      <incl uom="dega">63.95</incl>
+      <azi uom="dega">175.94</azi>
+      <dispNs uom="m">-329.50</dispNs>
+      <dispEw uom="m">320.79</dispEw>
+      <vertSect uom="m">-607.74</vertSect>
+      <dls uom="dega/30m">3.2790</dls>
+      <rateTurn uom="dega/30m">3.6180</rateTurn>
+      <rateBuild uom="dega/30m">-0.3930</rateBuild>
+      <mdDelta uom="m">26.70</mdDelta>
+      <tvdDelta uom="m">11.65</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="386KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1719.10</md>
+      <tvd uom="m">1343.60</tvd>
+      <incl uom="dega">64.05</incl>
+      <azi uom="dega">177.63</azi>
+      <dispNs uom="m">-346.55</dispNs>
+      <dispEw uom="m">321.74</dispEw>
+      <vertSect uom="m">-618.85</vertSect>
+      <dls uom="dega/30m">2.4040</dls>
+      <rateTurn uom="dega/30m">2.6680</rateTurn>
+      <rateBuild uom="dega/30m">0.1580</rateBuild>
+      <mdDelta uom="m">19</mdDelta>
+      <tvdDelta uom="m">8.33</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="387KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1747.20</md>
+      <tvd uom="m">1355.87</tvd>
+      <incl uom="dega">64.14</incl>
+      <azi uom="dega">178.49</azi>
+      <dispNs uom="m">-371.82</dispNs>
+      <dispEw uom="m">322.60</dispEw>
+      <vertSect uom="m">-634.86</vertSect>
+      <dls uom="dega/30m">0.8310</dls>
+      <rateTurn uom="dega/30m">0.9180</rateTurn>
+      <rateBuild uom="dega/30m">0.0960</rateBuild>
+      <mdDelta uom="m">28.10</mdDelta>
+      <tvdDelta uom="m">12.28</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="388KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1753.30</md>
+      <tvd uom="m">1358.56</tvd>
+      <incl uom="dega">63.66</incl>
+      <azi uom="dega">177.54</azi>
+      <dispNs uom="m">-377.29</dispNs>
+      <dispEw uom="m">322.79</dispEw>
+      <vertSect uom="m">-638.34</vertSect>
+      <dls uom="dega/30m">4.8140</dls>
+      <rateTurn uom="dega/30m">-4.6720</rateTurn>
+      <rateBuild uom="dega/30m">-2.3610</rateBuild>
+      <mdDelta uom="m">6.10</mdDelta>
+      <tvdDelta uom="m">2.68</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="389KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1782.60</md>
+      <tvd uom="m">1371.60</tvd>
+      <incl uom="dega">63.47</incl>
+      <azi uom="dega">180.93</azi>
+      <dispNs uom="m">-403.52</dispNs>
+      <dispEw uom="m">323.14</dispEw>
+      <vertSect uom="m">-654.54</vertSect>
+      <dls uom="dega/30m">3.1140</dls>
+      <rateTurn uom="dega/30m">3.4710</rateTurn>
+      <rateBuild uom="dega/30m">-0.1950</rateBuild>
+      <mdDelta uom="m">29.30</mdDelta>
+      <tvdDelta uom="m">13.05</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="390KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1809.60</md>
+      <tvd uom="m">1383.67</tvd>
+      <incl uom="dega">63.47</incl>
+      <azi uom="dega">185.05</azi>
+      <dispNs uom="m">-427.64</dispNs>
+      <dispEw uom="m">321.88</dispEw>
+      <vertSect uom="m">-668.18</vertSect>
+      <dls uom="dega/30m">4.0960</dls>
+      <rateTurn uom="dega/30m">4.5780</rateTurn>
+      <rateBuild uom="dega/30m">0</rateBuild>
+      <mdDelta uom="m">27</mdDelta>
+      <tvdDelta uom="m">12.06</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="391KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1836.70</md>
+      <tvd uom="m">1395.78</tvd>
+      <incl uom="dega">63.43</incl>
+      <azi uom="dega">189.42</azi>
+      <dispNs uom="m">-451.68</dispNs>
+      <dispEw uom="m">318.83</dispEw>
+      <vertSect uom="m">-680.35</vertSect>
+      <dls uom="dega/30m">4.3270</dls>
+      <rateTurn uom="dega/30m">4.8380</rateTurn>
+      <rateBuild uom="dega/30m">-0.0440</rateBuild>
+      <mdDelta uom="m">27.10</mdDelta>
+      <tvdDelta uom="m">12.12</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="392KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1863.80</md>
+      <tvd uom="m">1407.96</tvd>
+      <incl uom="dega">63.22</incl>
+      <azi uom="dega">193.87</azi>
+      <dispNs uom="m">-475.39</dispNs>
+      <dispEw uom="m">313.94</dispEw>
+      <vertSect uom="m">-690.86</vertSect>
+      <dls uom="dega/30m">4.4080</dls>
+      <rateTurn uom="dega/30m">4.9260</rateTurn>
+      <rateBuild uom="dega/30m">-0.2320</rateBuild>
+      <mdDelta uom="m">27.10</mdDelta>
+      <tvdDelta uom="m">12.17</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="393KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1890.90</md>
+      <tvd uom="m">1420.15</tvd>
+      <incl uom="dega">63.31</incl>
+      <azi uom="dega">198.43</azi>
+      <dispNs uom="m">-498.62</dispNs>
+      <dispEw uom="m">307.21</dispEw>
+      <vertSect uom="m">-699.62</vertSect>
+      <dls uom="dega/30m">4.5090</dls>
+      <rateTurn uom="dega/30m">5.0480</rateTurn>
+      <rateBuild uom="dega/30m">0.10</rateBuild>
+      <mdDelta uom="m">27.10</mdDelta>
+      <tvdDelta uom="m">12.20</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="394KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1918.30</md>
+      <tvd uom="m">1432.43</tvd>
+      <incl uom="dega">63.46</incl>
+      <azi uom="dega">202.77</azi>
+      <dispNs uom="m">-521.55</dispNs>
+      <dispEw uom="m">298.60</dispEw>
+      <vertSect uom="m">-706.69</vertSect>
+      <dls uom="dega/30m">4.2510</dls>
+      <rateTurn uom="dega/30m">4.7520</rateTurn>
+      <rateBuild uom="dega/30m">0.1640</rateBuild>
+      <mdDelta uom="m">27.40</mdDelta>
+      <tvdDelta uom="m">12.28</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="395KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1945.10</md>
+      <tvd uom="m">1444.22</tvd>
+      <incl uom="dega">64.39</incl>
+      <azi uom="dega">206.72</azi>
+      <dispNs uom="m">-543.40</dispNs>
+      <dispEw uom="m">288.52</dispEw>
+      <vertSect uom="m">-711.95</vertSect>
+      <dls uom="dega/30m">4.1060</dls>
+      <rateTurn uom="dega/30m">4.4220</rateTurn>
+      <rateBuild uom="dega/30m">1.0410</rateBuild>
+      <mdDelta uom="m">26.80</mdDelta>
+      <tvdDelta uom="m">11.78</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="396KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1972.10</md>
+      <tvd uom="m">1455.78</tvd>
+      <incl uom="dega">64.89</incl>
+      <azi uom="dega">210.67</azi>
+      <dispNs uom="m">-564.80</dispNs>
+      <dispEw uom="m">276.81</dispEw>
+      <vertSect uom="m">-715.64</vertSect>
+      <dls uom="dega/30m">4.0050</dls>
+      <rateTurn uom="dega/30m">4.3890</rateTurn>
+      <rateBuild uom="dega/30m">0.5560</rateBuild>
+      <mdDelta uom="m">27</mdDelta>
+      <tvdDelta uom="m">11.57</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="397KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">1999.20</md>
+      <tvd uom="m">1467.28</tvd>
+      <incl uom="dega">64.92</incl>
+      <azi uom="dega">214.41</azi>
+      <dispNs uom="m">-585.48</dispNs>
+      <dispEw uom="m">263.61</dispEw>
+      <vertSect uom="m">-717.71</vertSect>
+      <dls uom="dega/30m">3.7490</dls>
+      <rateTurn uom="dega/30m">4.14</rateTurn>
+      <rateBuild uom="dega/30m">0.0330</rateBuild>
+      <mdDelta uom="m">27.10</mdDelta>
+      <tvdDelta uom="m">11.50</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="398KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">2026.30</md>
+      <tvd uom="m">1478.59</tvd>
+      <incl uom="dega">65.78</incl>
+      <azi uom="dega">218.58</azi>
+      <dispNs uom="m">-605.27</dispNs>
+      <dispEw uom="m">248.96</dispEw>
+      <vertSect uom="m">-718.08</vertSect>
+      <dls uom="dega/30m">4.3020</dls>
+      <rateTurn uom="dega/30m">4.6160</rateTurn>
+      <rateBuild uom="dega/30m">0.9520</rateBuild>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="399KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">2053.70</md>
+      <tvd uom="m">1489.59</tvd>
+      <incl uom="dega">66.87</incl>
+      <azi uom="dega">222.38</azi>
+      <dispNs uom="m">-624.35</dispNs>
+      <dispEw uom="m">232.67</dispEw>
+      <vertSect uom="m">-716.72</vertSect>
+      <dls uom="dega/30m">3.9930</dls>
+      <rateTurn uom="dega/30m">4.1610</rateTurn>
+      <rateBuild uom="dega/30m">1.1930</rateBuild>
+      <mdDelta uom="m">27.40</mdDelta>
+      <tvdDelta uom="m">11.01</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="400KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">2080.40</md>
+      <tvd uom="m">1499.96</tvd>
+      <incl uom="dega">67.44</incl>
+      <azi uom="dega">225.99</azi>
+      <dispNs uom="m">-641.99</dispNs>
+      <dispEw uom="m">215.53</dispEw>
+      <vertSect uom="m">-713.81</vertSect>
+      <dls uom="dega/30m">3.7920</dls>
+      <rateTurn uom="dega/30m">4.0560</rateTurn>
+      <rateBuild uom="dega/30m">0.64</rateBuild>
+      <mdDelta uom="m">26.70</mdDelta>
+      <tvdDelta uom="m">10.37</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="401KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">2107.50</md>
+      <tvd uom="m">1510.04</tvd>
+      <incl uom="dega">68.89</incl>
+      <azi uom="dega">229.64</azi>
+      <dispNs uom="m">-658.88</dispNs>
+      <dispEw uom="m">196.89</dispEw>
+      <vertSect uom="m">-709.25</vertSect>
+      <dls uom="dega/30m">4.08</dls>
+      <rateTurn uom="dega/30m">4.0410</rateTurn>
+      <rateBuild uom="dega/30m">1.6050</rateBuild>
+      <mdDelta uom="m">27.10</mdDelta>
+      <tvdDelta uom="m">10.08</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="402KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">2135.40</md>
+      <tvd uom="m">1519.96</tvd>
+      <incl uom="dega">69.50</incl>
+      <azi uom="dega">233.87</azi>
+      <dispNs uom="m">-675.02</dispNs>
+      <dispEw uom="m">176.41</dispEw>
+      <vertSect uom="m">-702.77</vertSect>
+      <dls uom="dega/30m">4.3020</dls>
+      <rateTurn uom="dega/30m">4.5480</rateTurn>
+      <rateBuild uom="dega/30m">0.6560</rateBuild>
+      <mdDelta uom="m">27.90</mdDelta>
+      <tvdDelta uom="m">9.91</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="403KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">2161.70</md>
+      <tvd uom="m">1528.84</tvd>
+      <incl uom="dega">71.05</incl>
+      <azi uom="dega">237.28</azi>
+      <dispNs uom="m">-689.01</dispNs>
+      <dispEw uom="m">155.99</dispEw>
+      <vertSect uom="m">-695.04</vertSect>
+      <dls uom="dega/30m">4.0660</dls>
+      <rateTurn uom="dega/30m">3.89</rateTurn>
+      <rateBuild uom="dega/30m">1.7680</rateBuild>
+      <mdDelta uom="m">26.30</mdDelta>
+      <tvdDelta uom="m">8.88</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="404KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">2189</md>
+      <tvd uom="m">1537.46</tvd>
+      <incl uom="dega">72.13</incl>
+      <azi uom="dega">241.21</azi>
+      <dispNs uom="m">-702.25</dispNs>
+      <dispEw uom="m">133.73</dispEw>
+      <vertSect uom="m">-685.39</vertSect>
+      <dls uom="dega/30m">4.2660</dls>
+      <rateTurn uom="dega/30m">4.3190</rateTurn>
+      <rateBuild uom="dega/30m">1.1870</rateBuild>
+      <mdDelta uom="m">27.30</mdDelta>
+      <tvdDelta uom="m">8.62</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <trajectoryStation uidWell="Well123" uidWellbore="5KFSJ18" uidTraj="4KFSJ18" uidTrajStn="405KFSJ18" uidSource="Server1">
+      <nameWell>DemoWell2</nameWell>
+      <nameWellbore>Wellbore2</nameWellbore>
+      <nameTraj>MWD-DemoWell2 BY1H T2</nameTraj>
+      <dTimStn>2006-09-09T04:52:21.0000000+02:00</dTimStn>
+      <typeTrajStation>MagneticMwd</typeTrajStation>
+      <md uom="m">2219</md>
+      <tvd uom="m">1546.35</tvd>
+      <incl uom="dega">73.39</incl>
+      <azi uom="dega">244.84</azi>
+      <dispNs uom="m">-715.24</dispNs>
+      <dispEw uom="m">108.20</dispEw>
+      <vertSect uom="m">-672.99</vertSect>
+      <dls uom="dega/30m">3.6890</dls>
+      <rateTurn uom="dega/30m">3.63</rateTurn>
+      <rateBuild uom="dega/30m">1.26</rateBuild>
+      <mdDelta uom="m">30</mdDelta>
+      <tvdDelta uom="m">8.89</tvdDelta>
+      <statusTrajStation>Position</statusTrajStation>
+      <corUsed>
+        <dirSensorOffset uom="m">0</dirSensorOffset>
+      </corUsed>
+      <commonData>
+        <nameSource>SC001</nameSource>
+        <dTimStamp>2007-06-11T14:18:17.5380000+02:00</dTimStamp>
+        <dTimCreation>2007-06-07T11:17:03.2810000+02:00</dTimCreation>
+        <dTimLastChange>2007-06-07T11:17:03.2810000+02:00</dTimLastChange>
+        <itemState>Actual</itemState>
+      </commonData>
+    </trajectoryStation>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:18:17.1160000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T11:17:01.2340000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T11:17:01.2340000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </trajectory>
+</trajectorys>

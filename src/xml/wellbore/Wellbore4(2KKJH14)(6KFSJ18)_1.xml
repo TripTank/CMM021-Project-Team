@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<wellbores 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_wellbore.xsd" 
+	version="1.2.0">
+  <wellbore uidWell="Well123" uidWellbore="2KKJH14" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore4</nameWellbore>
+    <uidParentWellbore>6KFSJ18</uidParentWellbore>
+    <nameParentWellbore>Wellbore3</nameParentWellbore>
+    <statusWellbore>Active</statusWellbore>
+    <typeWellbore>Re-entry</typeWellbore>
+    <shape>Deviated</shape>
+    <dTimKickoff>2007-03-09T22:08:11.0000000+01:00</dTimKickoff>
+    <mdKickoff uom="m">2611</mdKickoff>
+    <tvdKickoff uom="m">0</tvdKickoff>
+    <mdPlanned uom="m">16000</mdPlanned>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:49:54.6010000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T12:33:04.5150000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T12:33:04.5150000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </wellbore>
+</wellbores>

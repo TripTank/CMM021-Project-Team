@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="2KKJH14" uidLog="571KKJH14" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore4</nameWellbore>
+    <nameLog>DrillDepth</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>15</runNumber>
+      <creationDate>2007-03-12T20:47:52.0000000+01:00</creationDate>
+      <indexType>Depth</indexType>
+      <startIndex>2616</startIndex>
+      <endIndex>2664.6</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_DIST</mnemonic>
+        <unit>m</unit>
+        <mnemAlias>distBit</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Bit Distance Drilled</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_RPM_AVG</mnemonic>
+        <unit>c/min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Bit RPM - Total RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_RPM_MAX</mnemonic>
+        <unit>c/min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>4</columnIndex>
+        <curveDescription>Bit RPM - Total RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_RPM_MIN</mnemonic>
+        <unit>c/min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>5</columnIndex>
+        <curveDescription>Bit RPM - Total RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CUM_COST</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>costPerDistAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>6</columnIndex>
+        <curveDescription>Cumulative Cost/Dist for Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CUTRETDEPTH</mnemonic>
+        <unit>m</unit>
+        <mnemAlias>mdReturn</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>7</columnIndex>
+        <curveDescription>Lagged Cuttings Returns Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DX</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>8</columnIndex>
+        <curveDescription>Drilling Exponent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DXC</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>9</columnIndex>
+        <curveDescription>Corrected Drilling Exponent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DXMW</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>10</columnIndex>
+        <curveDescription>EQMD from Corrected Drilling Exponent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DXN</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>11</columnIndex>
+        <curveDescription>Normal Trendline Corrected Drilling Exponent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ECDBIT</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>ecdBit</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>12</columnIndex>
+        <curveDescription>ECD at Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ECDCS</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>ecdCsg</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>13</columnIndex>
+        <curveDescription>ECD at Casing Shoe</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ECDTD</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>ecdTd</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>14</columnIndex>
+        <curveDescription>ECD at Total Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ECDWKDEP</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>15</columnIndex>
+        <curveDescription>ECD at Weakest Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWIN</mnemonic>
+        <unit>L/min</unit>
+        <mnemAlias>flowInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>16</columnIndex>
+        <curveDescription>Mud Flow In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUT</mnemonic>
+        <unit>L/min</unit>
+        <mnemAlias>flowOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>17</columnIndex>
+        <curveDescription>Mud Flow Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUTPC</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>flowOutPc</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>18</columnIndex>
+        <curveDescription>Mud Flow Out Percent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FRAC_EQMD</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>mffp</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>19</columnIndex>
+        <curveDescription>Estimated Fracture Pressure EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_AVG</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>20</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_MAX</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>21</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_MIN</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>22</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>INST_COST</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>costPerDist</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>23</columnIndex>
+        <curveDescription>Instantaneous Cost/Dist for Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>KICKTOL1</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>24</columnIndex>
+        <curveDescription>Kick Tolerance for Influx Volume 1</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>KICKTOL2</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>25</columnIndex>
+        <curveDescription>Kick Tolerance for Influx Volume 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>KICKTOL3</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>26</columnIndex>
+        <curveDescription>Kick Tolerance for Influx Volume 3</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MIN_2M</mnemonic>
+        <unit>min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>27</columnIndex>
+        <curveDescription>Minutes/last 2 m</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MIN_5FT</mnemonic>
+        <unit>min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>28</columnIndex>
+        <curveDescription>Minutes/last 5 feet</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MOTOR_RPM</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>mmrpm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>29</columnIndex>
+        <curveDescription>Motor RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MRIN</mnemonic>
+        <unit>ohm.m</unit>
+        <mnemAlias>condMudInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>30</columnIndex>
+        <curveDescription>Mud Resistivity In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MROUT</mnemonic>
+        <unit>ohm.m</unit>
+        <mnemAlias>condMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>31</columnIndex>
+        <curveDescription>Mud Resistivity Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MTIN</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>tempMudInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>32</columnIndex>
+        <curveDescription>Mud Temperature In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MTOUT</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>tempMudOAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>33</columnIndex>
+        <curveDescription>Mud Temperature Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MUDRETDEPTH</mnemonic>
+        <unit>m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>34</columnIndex>
+        <curveDescription>Lagged Mud Returns Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWIN</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>wtMudInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>35</columnIndex>
+        <curveDescription>Mud Weight In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWINANN</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>36</columnIndex>
+        <curveDescription>Mud Weight in Annulus</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWOUT</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>wtMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>37</columnIndex>
+        <curveDescription>Mud Weight Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ONBOTTOM_TIME</mnemonic>
+        <unit>h</unit>
+        <mnemAlias>cTimBit</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>38</columnIndex>
+        <curveDescription>Cumulative On-Bottom Time</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PIT_DRILL</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>39</columnIndex>
+        <curveDescription>Drill Pit Group Cumulative Volume</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PIT_EQMD</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>40</columnIndex>
+        <curveDescription>Pressure Integrity Test EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>POR_EQMD</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>mfpp</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>41</columnIndex>
+        <curveDescription>Estimated Pore Pressure EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PUMP_AVG</mnemonic>
+        <unit>bar</unit>
+        <mnemAlias>presPumpAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>42</columnIndex>
+        <curveDescription>Pump Pressure - Stand Pipe</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PUMP_MAX</mnemonic>
+        <unit>bar</unit>
+        <mnemAlias>presPumpAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>43</columnIndex>
+        <curveDescription>Pump Pressure - Stand Pipe</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PUMP_MIN</mnemonic>
+        <unit>bar</unit>
+        <mnemAlias>presPumpAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>44</columnIndex>
+        <curveDescription>Pump Pressure - Stand Pipe</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ROP_AVG</mnemonic>
+        <unit>m/h</unit>
+        <mnemAlias>ropAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>45</columnIndex>
+        <curveDescription>Depth Averaged ROP</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ROP_BIT</mnemonic>
+        <unit>m/h</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>46</columnIndex>
+        <curveDescription>ROP for the Bit - Distance Over Time (On Bottom)</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ROT_TIME</mnemonic>
+        <unit>h</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>47</columnIndex>
+        <curveDescription>Cumulative Rotating Time</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SIGMA_CORR</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>48</columnIndex>
+        <curveDescription>Corrected Sigma</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SIGMA_RAW</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>49</columnIndex>
+        <curveDescription>Raw Sigma</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SIGMA_ZERO</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>50</columnIndex>
+        <curveDescription>Zero Sigma</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STRATESUM</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>spmTot</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>51</columnIndex>
+        <curveDescription>Pump Total Stroke Rate</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SURF_RPM</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>rpmAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>52</columnIndex>
+        <curveDescription>Surface RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TBR</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>bitRevCm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>53</columnIndex>
+        <curveDescription>Total Bit Revolutions</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TIME_DIST</mnemonic>
+        <unit>min/m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>54</columnIndex>
+        <curveDescription>Time/Distance ROP  - Instantaneous</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TORQUE_AVG</mnemonic>
+        <unit>kN.m</unit>
+        <mnemAlias>tqAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>55</columnIndex>
+        <curveDescription>Surface Torque Average</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TORQUE_MAX</mnemonic>
+        <unit>kN.m</unit>
+        <mnemAlias>tqAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>56</columnIndex>
+        <curveDescription>Surface Torque Average</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TORQUE_MIN</mnemonic>
+        <unit>kN.m</unit>
+        <mnemAlias>tqAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>57</columnIndex>
+        <curveDescription>Surface Torque Average</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_AVG</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>58</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_MAX</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>59</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS2_AVG</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>60</columnIndex>
+        <curveDescription>Total Gas 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS2_MAX</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>61</columnIndex>
+        <curveDescription>Total Gas 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>WOB_AVG</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>wobAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>62</columnIndex>
+        <curveDescription>Weight On Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>WOB_MAX</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>wobAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>63</columnIndex>
+        <curveDescription>Weight On Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>WOB_MIN</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>wobAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2616</startIndex>
+        <endIndex>2664.6</endIndex>
+        <columnIndex>64</columnIndex>
+        <curveDescription>Weight On Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>2616,0,0,0,0,0,0,0,0,0,0,1.19,1.19,1.19,1.12,1774.404,0,38.16,0,49.71,81.02,49.51,0,1.12,1.12,1.12,0,0,0,0,10.284,11.9,16.2,2616,1.12,1.12,1.12,0,83.11,0,0,106,107,101,0,0,0,0,0,0,95,0,0,7477.4,0.08,0.16,-0.06,0.0484,0.0485,0,0,4.19,4.51,-25.44</data>
+<data>2616.3,0,0,0,0,0,0,0,0,0,0,1.19,1.19,1.19,1.12,1774.404,0,38.16,0,49.24,49.71,49.35,0,1.12,1.12,1.12,0,0,0,0,10.284,11.9,16.2,2616,1.12,1.12,1.12,0,83.11,0,0,103,106,104,0,0,0,0,0,0,95,0,0,7477.4,0.01,0.08,0.03,0.0484,0.0484,0,0,4.92,4.75,4.75</data>
+<data>2616.6,0.53,0,0,0,0,0,0,0,0,0,1.19,1.19,1.19,1.12,1774.326,0,36.43,0,49.93,52.91,49.35,59.37,1.12,1.12,1.12,0,0,0,0,10.284,11.9,16.2,2616,1.12,1.12,1.12,0,83.11,0,0,104,106,104,66.54,172.9,0,0,0,0,95,0,0,7477.4,0.02,0.08,0.02,0.0484,0.0485,0,0,4.13,4.75,1.44</data>
+<data>2616.9,0.88,18,53,0,0,0,0.189,0.163,0,0,1.19,1.19,1.19,1.12,1773.036,182.114,27,0,59.84,71.51,52.08,88.13,1.12,1.12,1.12,0,0,0,0,10.287,12,16.2,2616,1.12,1.12,1.12,0,83.39,0,0,105,108,51,48.15,58.64,0,0,0,0,95,18,3,62.4,4.98,28.5,-0.06,0.0482,0.0489,0,0,-2.99,3.58,-17.16</data>
+<data>2617.2,1.12,44,52,51,0,0,0.408,0.353,0,0,1.19,1.19,1.19,1.12,1773.444,38.927,32.05,0,60.47,61.41,59.62,52.94,1.12,1.12,1.12,0,0,0,0,10.285,12,16.2,2616,1.12,1.12,1.12,0,83.78,0,0,104,104,103,74.43,70.93,0.1,0.203,0.084,0.175,95,44,7,62.4,13.2,17,14.3,0.0477,0.0476,0,0,0.3,2.14,0.65</data>
+<data>2617.5,1.47,51,52,50,0,0,0.484,0.419,0,0,1.19,1.19,1.19,1.12,1773.858,1.415,28.33,0,60.26,61.65,59.62,52.15,1.12,1.12,1.12,0,0,0,0,10.284,12.1,16.2,2616,1.12,1.12,1.12,0,83.94,0,0,104,105,104,64.14,69.56,0.1,0.287,0.137,0.251,95,51,23,0.8,15.43,17.98,12.53,0.0475,0.0476,0,0,1.68,2.56,0.61</data>
+<data>2617.8,1.76,52,52,51,0,0,0.441,0.382,0,0,1.19,1.19,1.19,1.12,1773.204,0.033,34.29,0,61.25,62.65,60.01,59.98,1.12,1.12,1.12,0,16.2,0,0,10.287,12.1,16.2,2616,1.12,1.12,1.12,0,83.92,0,0,105,106,103,55.48,62.28,0.1,0.191,0.073,0.163,95,52,46,1.7,13.91,15.13,12.34,0.0475,0.0476,0,0,0.76,1.86,-0.51</data>
+<data>2618.1,2.03,51,52,51,0,0,0.405,0.35,0,0,1.19,1.19,1.19,1.12,1774.104,-0.003,23.69,0,61.23,62.79,59.86,71.84,1.12,1.12,1.12,0,16.7,0,0,10.286,12.1,16.2,2616,1.12,1.12,1.12,0,83.88,0,0,104,106,103,48.47,56.31,0.1,0.164,0.057,0.138,95,51,69,1.2,14.39,17.05,13.02,0.0473,0.0475,0,0,0.73,2.33,-0.7</data>
+<data>2618.4,2.32,51,52,50,0,0,0.527,0.456,0,0,1.19,1.19,1.19,1.12,1774.056,0,21.52,0,59.75,62.99,58.83,69.18,1.12,1.12,1.12,17,16.2,0,0,10.284,12.1,16.2,2616,1.12,1.12,1.12,0,83.87,0,0,104,105,104,52.94,57.6,0.1,0.283,0.133,0.247,95,51,82,0.8,15.26,18.28,13.5,0.0474,0.0474,0,0,2.15,3.16,-1.02</data>
+<data>2618.7,2.5,51,52,49,0,0,0.412,0.356,0,0,1.19,1.19,1.19,1.12,1773.486,0,21.87,0,61.45,63.19,57.89,81.09,1.12,1.12,1.12,17,16.2,0,0,10.285,12.1,16.2,2616,1.12,1.12,1.12,0.1,83.84,0,0,103,106,102,43.87,49.51,0.1,0.295,0.145,0.26,95,51,114,1.6,14.86,20.2,12.97,0.0473,0.0474,0,0,0.82,3.81,-1.3</data>
+<data>2619,2.97,51,52,50,0,0,0.494,0.427,0,0,1.19,1.19,1.19,1.12,1774.17,1006.422,15.79,0,61.06,63.19,58.83,95.43,1.12,1.12,1.12,17.3,2.3,0,0,10.284,12.1,16.2,2616,1.12,1.12,1.12,0.1,83.81,0,0,104,106,102,35.83,47.8,0.1,0.242,0.091,0.206,95,51,149,4.8,14.45,18.63,11.97,0.0474,0.0476,0,0,0.87,3.35,-0.88</data>
+<data>2619.3,3.29,52,52,52,0,0,0.494,0.427,0,0,1.19,1.19,1.19,1.12,1774.2,1747.848,20.4,0,61.02,62.2,60.41,46.13,1.12,1.12,1.12,2.8,2.1,0,0,10.285,12.1,16.2,2616,1.12,1.12,1.12,0.1,83.83,0,0,103,103,103,64.22,52.16,0.1,0.274,0.123,0.239,95,52,151,4.8,13.27,13.61,12.97,0.0475,0.0476,0,0,1.26,1.72,0.7</data>
+<data>2619.6,3.59,51,52,50,0,0,0.531,0.459,0,0,1.19,1.19,1.19,1.12,1773.594,1790.532,27.02,0,61.11,62.6,59.62,96.72,1.12,1.12,1.12,3.3,2.6,0,0,10.285,12.1,16.2,2616,1.12,1.12,1.12,0.1,83.8,0,0,104,105,103,34.72,46.59,0.1,0.265,0.115,0.23,95,51,195,8.2,14.57,17,12.53,0.0475,0.0475,0,0,1.01,2.37,-0.09</data>
+<data>2619.9,3.82,51,52,50,0,0,0.473,0.409,0,0,1.19,1.19,1.19,1.12,1773.654,132.194,31.15,0,61.97,62.6,59.67,95.79,1.12,1.12,1.12,3.2,2.7,0,0,10.287,12.1,16.2,2616,1.12,1.12,1.12,0.1,83.86,0,0,104,105,103,36.94,46.46,0.1,0.058,0.025,0.05,95,51,211,1.5,14.03,16.5,12.72,0.0475,0.0475,0,0,0.11,2.51,-0.42</data>
+<data>2620.2,4.15,51,52,49,0,0,0.574,0.496,0,0,1.19,1.19,1.19,1.12,1773.522,-12.814,32.1,0,60.48,62.39,59.08,84.59,1.12,1.12,1.12,3,2.7,0,0,10.288,12.1,16.2,2616,1.12,1.12,1.12,0.1,83.85,0,0,103,106,102,41.79,47.59,0.1,0.308,0.145,0.269,95,51,226,0.9,15.86,19.32,12.87,0.0474,0.0475,0,0,1.44,2.98,-0.42</data>
+<data>2620.5,4.49,51,52,50,0,0,0.544,0.47,0,0,1.19,1.19,1.19,1.12,1773.456,2250.552,27.63,0,60.68,61.85,59.42,92.91,1.12,1.12,1.12,3.4,2.4,0,0,10.285,12.1,16.2,2616,1.12,1.12,1.12,0.1,83.75,0,0,105,107,103,35.65,44.53,0.2,0.272,0.121,0.237,95,51,267,4.9,16.11,18.48,12.91,0.0473,0.0477,0,0,1.18,2.51,0.19</data>
+<data>2620.8,4.76,51,51,49,0,0,0.562,0.486,0,0,1.19,1.19,1.19,1.12,1773.498,2980.02,28.81,0,60.51,62.39,59.42,98.04,1.12,1.12,1.12,3.1,2.4,0,0,10.286,12.2,16.2,2616,1.12,1.12,1.12,0.1,83.77,0,0,105,106,103,34.58,44.4,0.2,0.273,0.13,0.239,95,51,287,1,15.97,19.12,13.46,0.047,0.0471,0,0,1.62,2.14,-0.37</data>
+<data>2621.1,4.98,51,51,50,0,0,0.585,0.505,0,0,1.19,1.19,1.19,1.12,1774.158,473.383,29.83,0,60.64,62.65,59.22,97.44,1.12,1.12,1.12,3.2,2.3,0,0,10.285,12.1,16.2,2616,1.12,1.12,1.12,0.1,83.87,0,0,104,106,102,37.61,44.69,0.2,0.274,0.134,0.241,95,51,299,1.7,15.54,17.64,14.44,0.0468,0.0468,0,0,1.35,2.7,-0.47</data>
+<data>2621.4,5.33,51,51,50,0,0,0.572,0.494,0,0,1.19,1.19,1.19,1.12,1774.278,36.325,21.85,0,60.82,62.79,59.42,84.47,1.12,1.12,1.12,3,1.8,0,0,10.286,12.1,16.2,2616,1.12,1.12,1.12,0.1,83.88,0,0,103,105,103,40.63,45.79,0.2,0.289,0.138,0.253,95,51,315,0.8,15.86,17.93,13.99,0.0467,0.0467,0,0,1.46,2.47,-0.51</data>
+<data>2621.7,5.59,51,51,49,0,0,0.545,0.471,0,0,1.19,1.19,1.19,1.12,1773.498,-2.107,14.42,0,60.46,62.99,58.43,86.7,1.12,1.12,1.12,2.8,2.4,0,0,10.286,12.2,16.2,2616,1.12,1.12,1.12,0.1,83.95,0,0,104,105,103,42.4,45.51,0.2,0.277,0.125,0.241,95,51,335,2.4,15.88,21.09,14.38,0.0469,0.0469,0,0,1.81,3.44,-0.88</data>
+<data>2622,5.92,50,51,49,0,0,0.826,0.713,0,0,1.19,1.19,1.19,1.12,1773.99,-0.124,9.72,0,57.61,61.41,55.84,184.74,1.12,1.12,1.12,6.9,6,0,0,10.286,12.2,16.2,2616,1.12,1.12,1.12,0.2,83.99,0,0,104,106,102,15.93,28.97,0.2,0.43,0.279,0.394,95,50,578,7.7,17.35,19.37,15.08,0.0469,0.0472,0,0,4.44,6.42,0.56</data>
+<data>2622.3,6.25,50,51,49,0,0,1.023,0.884,0,0,1.19,1.19,1.19,1.12,1773.912,0.017,29.45,0,57.02,60.27,55.06,343.59,1.12,1.12,1.12,12.5,11.6,0,0,10.286,12.4,16.2,2616,1.12,1.12,1.12,0.2,83.95,0,0,104,106,101,10.55,28.32,0.3,0.499,0.348,0.463,95,50,630,12.6,17.62,20.65,15.62,0.0467,0.0472,0,0,4.86,6.93,1.95</data>
+<data>2622.6,6.53,50,51,46,0,0,0.972,0.839,0,0,1.19,1.19,1.19,1.12,1773.336,0,12.79,0,56.68,59.03,54.66,225.08,1.12,1.12,1.12,12.4,11.6,0,0,10.286,12.4,16.2,2616,1.12,1.12,1.12,0.2,83.85,0,0,105,105,104,20.72,28.94,0.4,0.496,0.345,0.46,95,49,644,1.5,19.34,28.35,9.72,0.0466,0.0466,0,0,5.24,7.4,2.93</data>
+<data>2622.9,6.88,51,52,48,0,0,0.662,0.572,0,0,1.19,1.19,1.19,1.12,1773.9,0,11.58,0,59.66,63.39,55.84,139.85,1.12,1.12,1.12,12.2,11.9,0,0,10.286,12.4,16.2,2616,1.12,1.12,1.12,0.2,83.85,0,0,103,105,102,25.43,29.26,0.4,0.304,0.157,0.269,95,51,672,1.1,15.12,23.5,11.4,0.0467,0.0468,0,0,2.33,6.19,-2</data>
+<data>2623.2,7.17,51,52,50,0,0,0.584,0.504,0,0,1.19,1.19,1.19,1.12,1774.266,342.947,18.81,0,61.34,64.77,59.22,177.54,1.12,1.12,1.12,12.7,12,0,0,10.286,12.4,16.2,2616,1.12,1.12,1.12,0.3,83.86,0,0,104,106,102,19.56,27.27,0.4,0.131,0.056,0.113,95,51,758,5.6,13.04,16.07,11.53,0.0467,0.0471,0,0,0.45,2.79,-2.65</data>
+<data>2623.5,7.33,51,51,51,0,0,0.585,0.506,0,0,1.19,1.19,1.19,1.12,1773.486,-12.85,37.82,0,62.74,64.17,60.05,161.39,1.12,1.12,1.12,14.1,13.4,0,0,10.286,12.4,16.2,2616,1.12,1.12,1.12,0.3,83.85,0,0,103,105,102,31.19,27.37,0.4,0.119,0.051,0.103,95,51,773,4.7,12.92,14.94,12.52,0.0469,0.0471,0,0,-1.62,1.81,-2.14</data>
+<data>2623.8,7.7,51,52,50,0,0,0.608,0.525,0,0,1.19,1.19,1.19,1.12,1773.624,865.578,15.53,0,62.13,63.84,59.27,170.8,1.12,1.12,1.12,13.8,8.8,0,0,10.284,12.4,16.2,2616,1.12,1.12,1.12,0.3,83.8,0,0,104,105,102,21.41,26.66,0.4,0.08,0.03,0.068,95,51,838,49.3,13.12,16.12,12.28,0.0468,0.0468,0,0,0.05,2.51,-1.81</data>
+<data>2624.1,8.01,51,52,50,0,0,0.482,0.417,0,0,1.19,1.19,1.19,1.12,1774.236,1460.664,19.15,0,61.98,64.03,60.01,136.78,1.12,1.12,1.12,10.6,4.3,0,0,10.284,12.4,16.2,2616,1.12,1.12,1.12,0.3,83.75,0,0,104,105,103,27.58,27.26,0.4,0.107,0.035,0.09,95,51,853,49.3,13.39,16.07,12.82,0.0469,0.047,0,0,-0.06,2.05,-2.05</data>
+<data>2624.4,8.34,51,52,50,0,0,0.522,0.451,0,0,1.19,1.19,1.19,1.12,1773.786,1994.046,20.63,0,61.57,63.62,59.42,162.58,1.12,1.12,1.12,5.5,5,0,0,10.286,12.4,16.2,2616,1.12,1.12,1.12,0.3,83.78,0,0,104,106,102,21,26.28,0.4,0.134,0.043,0.113,95,51,924,0.8,14.17,17.64,12.23,0.0466,0.0469,0,0,0.38,2.74,-1.68</data>
+<data>2624.7,8.58,51,51,50,0,0,0.577,0.498,0,0,1.19,1.19,1.19,1.12,1773.96,1754.166,3.74,0,61.79,64.58,59.22,134.96,1.12,1.12,1.12,5.5,4.7,0,0,10.284,12.4,16.2,2616,1.12,1.12,1.12,0.3,83.78,0,0,104,105,103,33.75,26.62,0.5,0.192,0.07,0.163,95,51,939,0.9,15.52,18.17,13.66,0.0468,0.047,0,0,0.24,2.98,-2.7</data>
+<data>2625,8.95,51,52,48,0,0,0.503,0.435,0,0,1.19,1.19,1.19,1.12,1774.02,406.999,15.28,0,61.28,64.77,57.24,94.88,1.12,1.12,1.12,7.4,5.4,0,0,10.284,12.5,16.2,2616,1.12,1.12,1.12,0.3,83.78,0,0,104,106,102,39.9,27.18,0.5,0.181,0.08,0.157,95,51,963,64.3,15.24,24.47,10.66,0.0467,0.047,0,0,0.61,4.79,-2.37</data>
+<data>2625.3,9.21,51,51,50,0,0,0.485,0.419,0,0,1.19,1.19,1.19,1.12,1774.014,-43.991,11.91,0,61.75,64.38,58.83,76.55,1.12,1.12,1.12,7.3,5.9,0,0,10.286,12.5,16.2,2616,1.12,1.12,1.12,0.3,83.67,0,0,105,105,104,48.23,27.58,0.5,0.094,0.035,0.08,95,51,976,1.3,15.49,17.55,14.49,0.0464,0.0464,0,0,0.85,3.49,-2.14</data>
+<data>2625.6,9.58,51,51,49,0,0,0.463,0.4,0,0,1.19,1.19,1.19,1.12,1774.482,239.617,5.79,0,59.93,63.19,53.67,67.07,1.12,1.12,1.12,5.9,4.4,0,0,10.285,12.5,16.2,2616,1.12,1.12,1.12,0.3,83.69,0,0,105,107,101,52.11,28.21,0.5,0.283,0.141,0.249,95,51,995,14.2,15.49,20.31,13.9,0.0463,0.047,0,0,2.55,8.09,-1.16</data>
+<data>2625.9,9.71,50,51,50,0,0,0.586,0.506,0,0,1.19,1.19,1.19,1.12,1773.87,1337.862,22.73,0,57.86,58.22,57.03,58.46,1.12,1.12,1.12,12.1,9.7,0,0,10.284,12.5,16.2,2616,1.12,1.12,1.12,0.3,83.71,0,0,105,105,104,76.57,28.54,0.6,0.349,0.199,0.313,95,51,997,14.2,15.93,16.66,15.66,0.0461,0.0461,0,0,3.55,4.14,2.88</data>
+<data>2626.2,10.11,50,52,49,0,0,0.75,0.647,0,0,1.19,1.19,1.19,1.12,1773.81,1250.61,15.44,0,56.4,60.22,54.27,138.61,1.12,1.12,1.12,12.3,10.9,0,0,10.284,12.5,16.2,2616,1.12,1.12,1.12,0.4,83.64,0,0,104,105,102,23.08,26.77,0.6,0.414,0.263,0.378,95,50,1109,2.4,17.26,20.52,14.88,0.0461,0.0464,0,0,4.83,7.95,2.05</data>
+<data>2626.5,10.41,50,51,48,0,0,0.94,0.812,0,0,1.19,1.19,1.19,1.12,1773.744,1483.854,25.43,0,55.31,59.62,52.08,156.59,1.12,1.12,1.12,19.7,17,0,0,10.284,12.6,16.2,2616,1.12,1.12,1.12,0.4,83.68,0,0,104,106,101,24.67,26.89,0.8,0.5,0.348,0.463,95,50,1140,2.7,18.61,22.17,15.63,0.0459,0.0465,0,0,6.3,9.77,2.33</data>
+<data>2626.8,10.74,50,51,49,0,0,0.914,0.789,0,0,1.19,1.19,1.19,1.12,1773.798,1728.966,19.25,0,55.34,58.08,53.67,166.67,1.12,1.12,1.12,19.4,17,0,0,10.284,12.6,16.3,2616,1.12,1.12,1.12,0.4,83.73,0,0,104,106,102,21.66,26.46,0.8,0.494,0.343,0.458,95,49,1195,11.8,19.08,22.06,16.26,0.0462,0.0465,0,0,6.1,8.56,3.81</data>
+<data>2627.1,11.06,50,52,44,0,0,0.891,0.769,0,0,1.19,1.19,1.19,1.12,1773.954,539.996,13.31,0,56.45,59.46,53.32,146.11,1.12,1.12,1.12,18.1,17.9,0,0,10.284,12.6,16.2,2616,1.12,1.12,1.12,0.4,83.89,0,0,103,105,102,24.01,26.65,0.8,0.478,0.327,0.442,95,49,1222,1.6,19.12,30.42,11.97,0.0467,0.0469,0,0,5.45,8.75,2.93</data>
+<data>2627.4,11.32,51,51,49,0,0,0.66,0.57,0,0,1.19,1.19,1.19,1.12,1774.608,2786.682,25.76,0,60.18,60.46,57.03,118.5,1.12,1.12,1.12,18.4,11.9,0,0,10.286,12.6,16.2,2616,1.12,1.12,1.12,0.4,83.92,0,0,103,104,101,49.61,27.02,0.8,0.344,0.193,0.308,95,51,1234,1.6,14.46,18.96,13.02,0.0467,0.0469,0,0,1.92,5.02,1.16</data>
+<data>2627.7,11.61,51,52,50,0,0,0.509,0.44,0,0,1.19,1.19,1.19,1.12,1772.856,2573.682,23.78,0,61.31,63.62,58.27,84.73,1.12,1.12,1.12,18.6,11,0,0,10.284,12.6,16.2,2616,1.12,1.12,1.12,0.4,83.88,0,0,103,105,103,53.89,27.43,0.8,0.249,0.098,0.213,95,51,1248,0.9,14.11,18.2,11.25,0.0465,0.0465,0,0,0.94,3.91,-1.67</data>
+<data>2628,11.96,51,52,49,0,0,0.496,0.429,0,0,1.19,1.19,1.19,1.12,1773.72,920.724,13.85,0,61.37,63.98,58.63,146.74,1.12,1.12,1.12,12.8,2.8,0,0,10.286,12.6,16.3,2616,1.12,1.12,1.12,0.5,84.05,0,0,104,105,102,23.42,26.49,0.8,0.219,0.088,0.188,95,51,1336,1.9,13.09,18.23,11.3,0.0468,0.0471,0,0,0.5,3.44,-1.81</data>
+<data>2628.3,12.23,51,52,51,0,0,0.496,0.428,0,0,1.19,1.19,1.19,1.12,1773.48,1375.068,14.6,0,61.5,62.99,59.82,158.75,1.12,1.12,1.12,12.4,3.6,0,0,10.285,12.6,16.2,2616,1.12,1.12,1.12,0.5,84,0,0,104,106,103,21.74,26.37,0.8,0.114,0.054,0.1,95,51,1372,1.3,13.38,15.21,12.52,0.0468,0.047,0,0,0.47,2.42,-0.93</data>
+<data>2628.6,12.57,51,52,51,0,0,0.624,0.539,0,0,1.19,1.19,1.19,1.12,1773.696,643.59,21.99,0,61.04,63.58,59.42,168.3,1.12,1.12,1.12,5.3,3.9,0,0,10.286,12.6,16.2,2616,1.12,1.12,1.12,0.5,83.83,0,0,104,106,102,21,26.08,0.9,0.21,0.101,0.184,95,51,1430,2.7,13.47,15.18,12.27,0.047,0.0471,0,0,0.9,2.56,-1.39</data>
+<data>2628.9,12.81,51,52,51,0,0,0.578,0.499,0,0,1.19,1.19,1.19,1.12,1773.798,51.054,27.01,0,61.09,62.43,60.22,120.84,1.12,1.12,1.12,5.4,3.9,0,0,10.284,12.6,16.2,2616,1.12,1.12,1.12,0.5,83.91,0,0,104,105,103,32.94,26.53,0.9,0.141,0.052,0.12,95,51,1432,2.7,13.47,13.8,12.97,0.0469,0.0469,0,0,0.7,1.67,0.23</data>
+<data>2629.2,13.18,51,52,50,0,0,0.648,0.56,0,0,1.19,1.19,1.19,1.12,1774.002,348.747,18.28,0,60.03,62.99,58.48,142.49,1.12,1.12,1.12,5.1,4.6,0,0,10.286,12.6,16.2,2616,1.12,1.12,1.12,0.5,83.85,0,0,104,105,102,24.39,26.11,0.9,0.308,0.156,0.272,95,51,1497,2.7,15.29,19.21,11.69,0.0472,0.0475,0,0,1.77,3.49,-0.79</data>
+<data>2629.5,13.41,51,51,50,0,0,0.672,0.58,0,0,1.19,1.19,1.19,1.12,1773.84,-13.678,18.4,0,60.01,62.6,58.43,122.37,1.12,1.12,1.12,5.2,4.9,0,0,10.285,12.6,16.2,2616,1.12,1.12,1.12,0.5,83.69,0,0,104,106,103,26.23,25.97,0.9,0.322,0.171,0.286,95,51,1533,7.9,14.84,16.97,13.76,0.0476,0.0478,0,0,2.13,3.35,-0.6</data>
+<data>2629.8,13.74,51,52,50,0,0,0.604,0.522,0,0,1.19,1.19,1.19,1.12,1773.66,-1.327,24.21,0,60.81,62.84,59.42,129.7,1.12,1.12,1.12,6,4.2,0,0,10.284,12.6,16.2,2616,1.12,1.12,1.12,0.5,83.77,0,0,105,106,102,26.66,26.24,0.9,0.274,0.123,0.238,95,51,1555,2.2,13.91,16.51,13.15,0.0476,0.0476,0,0,1.49,2.79,-0.84</data>
+<data>2630.1,14.09,51,51,50,0,0,0.601,0.519,0,0,1.19,1.19,1.19,1.12,1773.63,0.115,21.55,0,60.4,62.79,58.27,123.11,1.12,1.12,1.12,5.6,3.2,0,0,10.284,12.6,16.2,2616,1.12,1.12,1.12,0.5,83.74,0,0,103,106,102,27.8,26.42,0.9,0.287,0.136,0.251,95,51,1585,1.5,14.74,17.04,13.69,0.0477,0.0477,0,0,1.3,3.95,-1.02</data>
+<data>2630.4,14.25,52,52,50,0,0,0.62,0.535,0,0,1.19,1.19,1.19,1.12,1773.678,1552.536,21.97,0,61.59,63.79,58.22,147.02,1.12,1.12,1.12,5.6,3.8,0,0,10.286,12.7,16.2,2616,1.12,1.12,1.12,0.5,83.58,0,0,104,106,102,36.89,26.09,0.9,0.293,0.141,0.257,95,51,1625,30.6,13.15,17.5,12.87,0.0478,0.048,0,0,0.21,3.77,-1.67</data>
+<data>2630.7,14.66,51,52,50,0,0,0.542,0.468,0,0,1.19,1.19,1.19,1.12,1773.72,1129.59,15.92,0,60.57,63.22,58.48,140.93,1.12,1.12,1.12,4.6,3.3,0,0,10.284,12.7,16.2,2616,1.12,1.12,1.12,0.6,83.61,0,0,104,106,102,24.17,26.15,0.9,0.268,0.117,0.232,95,51,1670,4.3,13.56,17.15,12.91,0.0478,0.0478,0,0,1.43,3.67,-0.98</data>
+<data>2631,14.89,52,52,50,0,0,0.601,0.519,0,0,1.19,1.19,1.19,1.12,1773.756,-36.465,2.84,0,60.29,64.03,58.43,127.98,1.12,1.12,1.12,4.9,3.6,0,0,10.287,12.7,16.2,2616,1.12,1.12,1.12,0.6,83.78,0,0,104,104,102,30.55,26.35,1,0.149,0.067,0.129,95,52,1681,4.3,13.01,17.29,12.72,0.0478,0.0478,0,0,0.79,3.53,-2.14</data>
+<data>2631.3,15.19,51,52,49,0,0,0.521,0.449,0,0,1.19,1.19,1.19,1.12,1773.918,1398.45,22.41,0,62.05,64.17,57.64,129.15,1.12,1.12,1.12,5.2,4,0,0,10.286,12.7,16.2,2616,1.12,1.12,1.12,0.6,83.59,0,0,104,106,102,30.78,26.32,1,0.163,0.074,0.142,95,51,1721,4.7,13.22,18.47,12.43,0.0477,0.048,0,0,-0.05,4.28,-2.23</data>
+<data>2631.6,15.36,52,52,51,0,0,0.495,0.428,0,0,1.19,1.19,1.19,1.12,1774.044,1696.566,15.11,0,61.24,62.84,60.41,108.27,1.12,1.12,1.12,5,3.9,0,0,10.285,12.7,16.2,2616,1.12,1.12,1.12,0.6,83.57,0,0,104,104,104,145.68,26.59,1,0.163,0.074,0.142,95,52,1723,4.7,12.81,13.08,12.72,0.0477,0.0477,0,0,0.5,1.86,-0.56</data>
+<data>2631.9,15.86,51,52,49,0,0,0.479,0.413,0,0,1.19,1.19,1.19,1.12,1774.176,455.103,21,0,61.05,64.43,58.04,97.09,1.12,1.12,1.12,4.9,3.6,0,0,10.285,12.7,16.2,2616,1.12,1.12,1.12,0.6,83.74,0,0,104,106,102,36.97,26.9,1,0.137,0.058,0.118,95,51,1761,2.4,13.15,18.73,11.79,0.048,0.0481,0,0,0.66,4.09,-2.7</data>
+<data>2632.2,16.2,52,52,51,0,0,0.552,0.476,0,0,1.19,1.19,1.19,1.12,1773.882,544.39,26.07,0,61.12,63.19,59.62,104.92,1.12,1.12,1.12,5.4,4.3,0,0,10.285,12.7,16.2,2616,1.12,1.12,1.12,0.6,83.74,0,0,104,106,103,32.34,26.9,1,0.195,0.087,0.17,95,51,1800,1.8,13.13,15.37,12.52,0.0478,0.0479,0,0,0.82,2.65,-0.93</data>
+<data>2632.5,16.49,51,52,50,0,0,0.565,0.488,0,0,1.19,1.19,1.19,1.12,1773.42,-28.692,14.74,0,61.04,63.39,58.83,114.45,1.12,1.12,1.12,5.3,4.2,0,0,10.285,12.7,16.2,2616,1.12,1.12,1.12,0.6,83.66,0,0,105,105,101,39.07,26.86,1,0.179,0.081,0.156,95,51,1836,9.7,13.13,16.06,12.13,0.0481,0.0483,0,0,0.82,3.58,-1.4</data>
+<data>2632.8,16.79,51,52,49,0,0,0.426,0.367,0,0,1.19,1.19,1.19,1.12,1773.606,-3.512,16.23,0,60.95,62.79,59.62,134.26,1.12,1.12,1.12,5.6,4,0,0,10.284,12.7,16.2,2616,1.12,1.12,1.12,0.6,83.61,0,0,104,105,101,24.78,26.47,1,0.22,0.076,0.186,95,51,1898,0.9,13.56,20.01,10.5,0.048,0.0484,0,0,0.77,2.56,-0.6</data>
+<data>2633.1,17.06,51,52,50,0,0,0.675,0.582,0,0,1.19,1.19,1.19,1.12,1773.828,-0.01,25.25,0,60.38,62.2,58.63,158.69,1.12,1.12,1.12,6.5,5.1,0,0,10.285,12.7,16.2,2616,1.12,1.12,1.12,0.7,83.53,0,0,105,106,103,21.02,26.16,1.1,0.315,0.164,0.279,95,51,1953,3.8,13.98,16.55,12.77,0.048,0.0481,0,0,1.52,3.3,0.05</data>
+<data>2633.4,17.33,51,52,50,0,0,0.669,0.577,0,0,1.19,1.19,1.19,1.12,1773.762,0,21.08,0,60.57,62.99,59.03,169.74,1.12,1.12,1.12,5.4,4.4,0,0,10.285,12.7,16.2,2616,1.12,1.12,1.12,0.7,83.5,0,0,104,105,103,20.01,26.22,1.1,0.248,0.13,0.22,95,51,1981,1.6,13.89,16.26,12.53,0.0477,0.0479,0,0,1.33,3.02,-0.84</data>
+<data>2633.7,17.47,51,52,50,0,0,0.63,0.543,0,0,1.19,1.19,1.19,1.12,1774.11,0,23.52,0,61.74,63.43,59.27,192.49,1.12,1.12,1.12,6.3,4.9,0,0,10.286,12.7,16.2,2616,1.12,1.12,1.12,0.7,83.55,0,0,104,105,102,125.12,26.02,1.1,0.253,0.133,0.224,95,51,2013,1.3,13.11,17.5,12.31,0.0475,0.0476,0,0,0.22,2.74,-1.3</data>
+<data>2634,17.89,51,52,50,0,0,0.454,0.392,0,0,1.19,1.19,1.19,1.12,1774.062,0,20.43,0,61.03,63.04,58.22,90.55,1.12,1.12,1.12,5.5,4,0,0,10.285,12.7,16.2,2616,1.12,1.12,1.12,0.7,83.54,0,0,105,106,104,51.1,26.44,1.1,0.183,0.065,0.155,95,51,2029,0.9,13.26,15.97,12.77,0.0477,0.0478,0,0,1.32,3.63,-0.93</data>
+<data>2634.3,18.22,51,52,50,0,0,0.59,0.509,0,0,1.19,1.19,1.19,1.12,1773.876,2167.416,21.14,0,60.71,64.17,58.08,114.06,1.12,1.12,1.12,5.3,4.6,0,0,10.287,12.7,16.2,2616,1.12,1.12,1.12,0.7,83.49,0,0,103,105,102,38.2,26.35,1.1,0.19,0.077,0.163,95,52,2073,9.7,13.27,17.14,12.47,0.0478,0.0479,0,0,0.98,3.95,-2.19</data>
+<data>2634.6,18.52,51,52,50,0,2610.25,0.514,0.444,0,0,1.19,1.19,1.19,1.12,1773.678,1544.742,21.68,0,60.61,63.62,58.04,87.27,1.12,1.12,1.12,6.3,4.1,0,0,10.285,12.7,16.2,2616,1.12,1.12,1.12,0.7,83.49,0,0,103,105,102,53.28,26.57,1.1,0.246,0.101,0.212,95,51,2094,4.4,13.41,17.83,11.84,0.0478,0.0483,0,0,1.33,4,-1.44</data>
+<data>2634.9,18.85,51,52,51,0,2611.33,0.451,0.389,0,0,1.19,1.19,1.19,1.12,1773.48,2084.046,25.96,0,61.02,62.65,59.82,88.25,1.12,1.12,1.12,5.6,4.3,0,0,10.286,12.7,16.2,2616,1.12,1.12,1.12,0.7,83.5,0,0,103,105,102,39.22,26.69,1.1,0.19,0.074,0.162,95,51,2120,1.4,13.73,15.73,12.77,0.0477,0.0477,0,0,0.91,2.42,-0.7</data>
+<data>2635.2,19.13,93,101,0,0,2616.59,0.672,0.58,0,0,1.19,1.19,1.19,1.12,1807.344,1458.636,30.58,0,60.19,80.48,19.19,83.68,1.12,1.12,1.12,24,22.8,0,0,10.286,12.7,16.2,2616.88,1.12,1.12,1.12,0.7,82.71,0,0,108,110,2,42.76,26.88,1.3,0.286,0.155,0.254,97,93,2153,76,15.93,46.11,0.02,0.0434,0.0506,0,0,1.82,42.93,-18.79</data>
+<data>2635.5,19.46,101,101,100,0,2616.59,0.608,0.525,0,0,1.19,1.19,1.19,1.12,1813.428,632.76,27.13,0,60.68,62.39,59.27,82.5,1.12,1.12,1.12,23.8,22.9,0,0,10.285,12.7,16.2,2616.88,1.12,1.12,1.12,0.7,82.56,0,0,109,110,107,42.7,27.04,1.3,0.3,0.148,0.264,97,101,2199,1,15.26,17.25,14.28,0.0454,0.0476,0,0,1.23,2.89,-0.65</data>
+<data>2635.8,19.78,100,101,100,0,2616.59,0.49,0.422,0,0,1.19,1.19,1.19,1.12,1812.654,10.662,24.78,0,61.29,63.43,58.83,75.11,1.12,1.12,1.12,23.4,22.2,0,0,10.284,12.7,16.2,2616.88,1.12,1.12,1.12,0.7,82.56,0,0,110,110,108,45.57,27.28,1.3,0.21,0.097,0.183,97,100,2233,1.6,15.55,17.74,14.69,0.0484,0.0509,0,0,0.79,3.3,-1.16</data>
+<data>2636.1,20.1,100,101,99,0,2616.59,0.541,0.467,0,0,1.19,1.19,1.19,1.12,1813.842,154.322,22.1,0,61.18,64.38,58.63,108.53,1.12,1.12,1.12,23.6,21.1,0,0,10.285,12.7,16.2,2616.88,1.12,1.12,1.12,0.7,82.55,0,0,109,111,107,30.45,26.83,1.3,0.053,0.024,0.046,97,100,2375,3.3,16.06,18.23,13.37,0.0529,0.0679,0,0,0.31,3.35,-2.14</data>
+<data>2636.4,20.39,100,101,99,0,2616.59,0.648,0.559,0,0,1.19,1.19,1.19,1.12,1813.314,75.113,21.92,0,61.16,63.79,59.22,166.7,1.12,1.12,1.12,25.5,23.3,0,0,10.285,12.7,16.2,2616.88,1.12,1.12,1.12,0.8,82.55,0,0,110,112,107,19.8,26.28,1.4,0.239,0.106,0.208,97,100,2538,2.9,16.49,18.33,14.21,0.0903,0.1028,0,0,0.83,2.47,-1.49</data>
+<data>2636.7,20.7,100,101,100,0,2616.59,0.653,0.563,0,0,1.19,1.19,1.19,1.12,1813.254,-4.358,23.33,0,61.24,62.99,59.62,78.77,1.12,1.12,1.12,24.5,4.6,0,0,10.285,12.7,16.2,2616.88,1.12,1.12,1.12,0.8,82.39,0,0,108,111,108,50.87,26.25,1.4,0.21,0.086,0.181,97,100,2613,5.4,16.61,17.25,15.42,0.1214,0.1221,0,0,0.65,2.61,-1.3</data>
+<data>2637,21,100,100,99,0,2616.59,0.615,0.531,0,0,1.19,1.19,1.19,1.12,1813.98,0.622,2.3,0,60.86,63.98,57.89,118.04,1.12,1.12,1.12,24.5,4.8,0,0,10.285,12.7,16.2,2616.88,1.12,1.12,1.12,0.8,82.37,0,0,109,110,108,32.82,26.33,1.4,0.258,0.119,0.225,97,100,2666,1.5,16.39,19.81,14.74,0.1333,0.1382,0,0,1.11,3.91,-2.46</data>
+<data>2637.3,21.26,100,101,99,0,2617.18,0.575,0.496,0,0,1.19,1.19,1.19,1.12,1813.362,0.1,16.88,0,61.38,64.38,57.64,101.86,1.12,1.12,1.12,7.2,6.7,0,0,10.285,12.7,16.2,2617.26,1.12,1.12,1.12,0.8,82.41,0,0,109,111,107,35.65,26.41,1.4,0.236,0.104,0.205,97,100,2716,10.2,16.71,20.38,14.42,0.1776,0.2293,0,0,0.58,4.23,-2.09</data>
+<data>2637.6,21.59,100,100,100,0,2617.22,0.492,0.424,0,0,1.19,1.19,1.19,1.12,1813.356,-0.001,25.69,0,61.84,62.65,60.46,58.96,1.12,1.12,1.12,7,6.6,0,0,10.284,12.7,16.2,2617.31,1.12,1.12,1.12,0.8,82.7,0,0,109,111,108,57.12,26.78,1.4,0.08,0.03,0.068,97,100,2723,1.8,16.54,16.94,16.32,0.2311,0.2312,0,0,0.23,1.16,-0.42</data>
+<data>2637.9,21.79,100,101,99,0,2617.77,0.53,0.457,0,0,1.19,1.19,1.19,1.12,1812.936,0,9.18,0,60.56,64.22,58.08,69.32,1.12,1.12,1.12,7.2,4.6,0,0,10.287,12.7,16.2,2618.01,1.12,1.12,1.12,0.8,82.64,0,0,111,114,109,44.81,26.49,1.5,0.24,0.092,0.205,97,100,2819,0.8,16.41,18.71,14.35,0.2463,0.2579,0,0,1.56,4.05,-2.05</data>
+<data>2638.2,22.15,100,101,98,0,2618.58,0.632,0.545,0,0,1.19,1.19,1.19,1.12,1813.584,146.695,18.58,0,61.04,64.96,58.27,100.76,1.12,1.12,1.12,8.5,5.1,0,0,10.284,12.7,16.2,2619.02,1.12,1.12,1.12,0.8,82.55,0,0,110,113,107,30.61,26.19,1.5,0.274,0.123,0.238,97,100,2959,5,16.82,20.99,13.31,0.2792,0.2863,0,0,0.79,3.54,-2.51</data>
+<data>2638.5,22.33,100,100,100,0,2618.6,0.598,0.516,0,0,1.19,1.19,1.19,1.12,1813.686,16.537,2.74,0,61.6,62.79,60.41,116.72,1.12,1.12,1.12,6.7,5.3,0,0,10.284,12.7,16.2,2619.04,1.12,1.12,1.12,0.8,82.57,0,0,110,109,109,25.67,26.39,1.5,0.274,0.123,0.238,97,100,2962,0.8,17.11,17.25,17,0.2857,0.287,0,0,0.2,1.3,-0.6</data>
+<data>2638.8,22.76,100,101,98,0,2620.59,0.631,0.545,0,0,1.19,1.19,1.19,1.12,1812.972,516.148,29.87,0,61.52,65.17,57.64,129.69,1.12,1.12,1.12,8.4,5.8,0,0,10.285,12.8,16.2,2621.04,1.12,1.12,1.12,0.9,82.44,0,0,110,112,106,31.11,26.64,1.5,0.209,0.089,0.18,97,100,3016,4.3,17.12,20.79,14.28,0.3116,0.313,0,0,0.67,4.28,-2.7</data>
+<data>2639.1,22.93,100,100,99,0,2620.89,0.658,0.568,0,0,1.19,1.19,1.19,1.12,1813.296,737.418,23.43,0,61.65,63.98,59.08,134.87,1.12,1.12,1.12,8.2,5.6,0,0,10.287,12.8,16.2,2621.28,1.12,1.12,1.12,0.9,82.44,0,0,109,111,108,26.69,26.45,1.5,0.232,0.102,0.201,97,100,3090,1.2,17.4,18.23,15.77,0.3057,0.3109,0,0,0.3,2.93,-1.72</data>
+<data>2639.4,23.39,100,101,98,0,2621.56,0.612,0.528,0,0,1.19,1.19,1.19,1.12,1813.668,274.207,22.89,0,62.19,64.38,58.48,101.27,1.12,1.12,1.12,8,7,0,0,10.286,12.8,16.2,2621.82,1.12,1.12,1.12,0.9,82.41,0,0,108,113,106,36.72,26.8,1.6,0.181,0.083,0.158,97,100,3129,4.9,16.96,20.29,13.69,0.2854,0.3025,0,0,0.18,3.58,-2.09</data>
+<data>2639.7,23.67,100,100,100,0,2621.58,0.65,0.561,0,0,1.19,1.19,1.19,1.12,1813.506,57.624,33.87,0,61.89,62.6,60.22,75,1.12,1.12,1.12,8,6.1,0,0,10.287,12.8,16.2,2621.83,1.12,1.12,1.12,0.9,82.41,0,0,108,108,106,73.96,27.1,1.6,0.08,0.041,0.071,97,100,3132,4.9,16.88,17,16.71,0.2807,0.28,0,0,0.5,1.63,-0.14</data>
+<data>2640,23.88,100,101,98,0,2621.78,0.656,0.566,0,0,1.19,1.19,1.19,1.12,1813.386,1215.558,11.35,0,60.2,64.22,57.99,92.15,1.12,1.12,1.12,8,6.1,0,0,10.284,12.8,16.2,2621.96,1.12,1.12,1.12,0.9,82.5,0,0,109,111,106,34.53,26.74,1.6,0.251,0.13,0.222,97,100,3252,4.5,17.1,20.4,12.58,0.2661,0.2792,0,0,1.75,4.37,-2.37</data>
+<data>2640.3,24.27,100,101,99,0,2622.02,0.663,0.572,0,0,1.19,1.19,1.19,1.12,1813.458,142.713,23.72,0,60.43,64.22,58.43,140.71,1.12,1.12,1.12,8.8,5.5,0,0,10.285,12.8,16.2,2622.12,1.12,1.12,1.12,0.9,82.44,0,0,108,112,105,22.2,26.24,1.6,0.236,0.092,0.202,97,100,3441,1.7,17.08,19.66,13.86,0.2295,0.257,0,0,1.43,3.72,-2.42</data>
+<data>2640.6,24.52,100,101,99,0,2622.02,0.808,0.697,0,0,1.19,1.19,1.19,1.12,1813.47,17.159,20.63,0,60.42,63.19,59.08,220.36,1.12,1.12,1.12,10.1,7,0,0,10.284,12.8,16.2,2622.12,1.12,1.12,1.12,0.9,82.54,0,0,109,111,107,13.33,25.86,1.6,0.259,0.139,0.23,97,100,3581,4.2,16.88,20.09,14.2,0.2087,0.225,0,0,1.68,3.12,-0.93</data>
+<data>2640.9,24.8,100,100,99,0,2622.02,0.73,0.63,0,0,1.19,1.19,1.19,1.12,1813.308,1370.16,15.95,0,61.07,63.84,58.22,226.61,1.12,1.12,1.12,7.3,6.5,0,0,10.286,12.8,16.2,2622.12,1.12,1.12,1.12,1,82.56,0,0,110,111,107,17.82,25.91,1.7,0.297,0.157,0.264,97,100,3634,1.9,17.36,20.38,15.87,0.1986,0.2019,0,0,0.85,3.58,-1.72</data>
+<data>2641.2,25.15,100,100,99,0,2622.16,0.713,0.615,0,0,1.19,1.19,1.19,1.12,1813.32,1327.464,25.64,0,60.72,63.98,58.63,199.14,1.12,1.12,1.12,7.9,5.4,0,0,10.286,12.8,16.2,2622.17,1.12,1.12,1.12,1,82.49,0,0,109,111,107,17.99,25.78,1.7,0.253,0.126,0.223,97,100,3745,11.6,17.14,19.71,15.37,0.1945,0.1964,0,0,1.06,3.44,-2.09</data>
+<data>2641.5,25.42,99,100,99,0,2622.37,0.785,0.677,0,0,1.19,1.19,1.19,1.12,1812.894,278.397,20.07,0,60.84,63.43,59.03,260.07,1.12,1.12,1.12,8.3,8,0,0,10.285,12.8,16.2,2622.44,1.12,1.12,1.12,1,82.37,0,0,110,112,107,13.94,25.13,1.7,0.286,0.147,0.253,97,100,3957,5.1,17.27,18.53,16.3,0.2003,0.2029,0,0,1.14,3.02,-1.53</data>
+<data>2641.8,25.76,99,100,99,0,2622.78,0.725,0.626,0,0,1.19,1.19,1.19,1.12,1813.314,-12.603,9.03,0,60.77,63.39,59.03,251.8,1.12,1.12,1.12,9.1,6.5,0,0,10.285,12.8,16.2,2622.92,1.12,1.12,1.12,1,82.33,0,0,109,111,107,14.1,24.9,1.7,0.276,0.131,0.242,97,99,4097,2.2,17.62,18.28,15.81,0.213,0.2216,0,0,1.17,3.35,-1.4</data>
+<data>2642.1,26.08,99,100,99,0,2623.6,0.715,0.616,0,0,1.19,1.19,1.19,1.12,1812.96,-0.245,25.16,0,60.9,63.19,59.22,295.74,1.12,1.12,1.12,10.2,6.9,0,0,10.285,12.8,16.2,2623.87,1.12,1.12,1.12,1.1,82.29,0,0,109,111,107,11.41,24.24,1.8,0.26,0.114,0.225,97,99,4342,3,17.74,18.78,16.12,0.2434,0.2616,0,0,0.96,2.79,-1.16</data>
+<data>2642.4,26.38,99,100,99,0,2623.83,0.77,0.665,0,0,1.19,1.19,1.19,1.12,1812.984,-0.002,13.4,0,60.52,63.79,59.03,272.43,1.12,1.12,1.12,9.7,8,0,0,10.285,12.8,16.2,2624.08,1.12,1.12,1.12,1.1,82.34,0,0,110,111,108,12.49,24.26,1.8,0.273,0.13,0.239,97,99,4411,4.3,17.66,18.53,16.16,0.2648,0.2676,0,0,1.21,3.02,-1.58</data>
+<data>2642.7,26.66,99,100,99,0,2624.44,0.763,0.658,0,0,1.19,1.19,1.19,1.12,1813.602,0,12.47,0,60.92,63.84,58.83,306.69,1.12,1.12,1.12,10.2,9.3,0,0,10.284,12.8,16.2,2624.7,1.12,1.12,1.12,1.1,82.34,0,0,108,112,107,20.09,23.84,1.8,0.243,0.128,0.216,97,99,4595,2,17.98,19.41,15.43,0.2706,0.2781,0,0,1.12,3.16,-2</data>
+<data>2643,26.94,99,100,99,0,2624.82,0.67,0.578,0,0,1.19,1.19,1.19,1.12,1813.488,0,17.83,0,61.37,63.84,59.62,271.08,1.12,1.12,1.12,9.9,6.9,0,0,10.286,12.8,16.2,2625.07,1.12,1.12,1.12,1.1,82.39,0,0,109,111,106,13.94,23.72,1.8,0.128,0.059,0.112,97,99,4700,25.7,18.11,18.38,16.06,0.276,0.2782,0,0,0.43,2.56,-1.53</data>
+<data>2643.3,27.28,99,100,99,0,2625.31,0.69,0.595,0,0,1.19,1.19,1.19,1.12,1813.386,0,26.78,0,61.09,63.19,59.42,272.87,1.12,1.12,1.12,11.1,8.2,0,0,10.285,12.8,16.2,2625.56,1.12,1.12,1.12,1.2,82.47,0,0,109,111,106,12.41,23.39,1.9,0.251,0.102,0.215,97,99,4884,5.4,18.12,18.43,16.06,0.2632,0.2723,0,0,0.69,2.47,-1.3</data>
+<data>2643.6,27.58,99,100,99,0,2625.31,0.858,0.74,0,0,1.19,1.19,1.19,1.12,1813.38,0,34.39,0,60.11,63.19,58.63,223.43,1.12,1.12,1.12,9.8,6.7,0,0,10.286,12.8,16.2,2625.56,1.12,1.12,1.12,1.2,82.49,0,0,109,109,107,15.36,23.39,1.9,0.357,0.206,0.321,97,100,4958,2.4,17.01,18.53,15.42,0.2476,0.2516,0,0,2.05,3.44,-1.07</data>
+<data>2643.9,27.89,100,100,99,0,2625.31,0.8,0.69,0,0,1.19,1.19,1.19,1.12,1813.08,0,27.44,0,60.95,61.8,59.62,165.27,1.12,1.12,1.12,8.8,6.7,0,0,10.286,12.8,16.2,2625.56,1.12,1.12,1.12,1.2,82.32,0,0,109,111,106,20.41,23.4,1.9,0.329,0.178,0.293,97,100,5035,2.8,17.26,18.43,16.3,0.2392,0.2456,0,0,1.12,2.65,0.37</data>
+<data>2644.2,28.1,100,100,99,0,2625.31,0.755,0.651,0,0,1.19,1.19,1.19,1.12,1812.384,0,24.38,0,60.9,62.43,58.83,129.51,1.12,1.12,1.12,8,6.3,0,0,10.285,12.8,16.2,2625.56,1.12,1.12,1.12,1.2,82.38,0,0,109,110,106,32.69,23.48,1.9,0.206,0.116,0.185,97,100,5064,1.1,16.95,18.28,16.02,0.2347,0.2375,0,0,1.51,2.93,-0.42</data>
+<data>2644.5,28.48,100,100,99,0,2625.31,0.727,0.627,0,0,1.19,1.19,1.19,1.12,1813.746,0,22.45,0,59.77,63.04,58.48,90.33,1.12,1.12,1.12,7,4.9,0,0,10.285,12.8,16.2,2625.56,1.12,1.12,1.12,1.2,82.38,0,0,109,111,107,38.18,23.63,1.9,0.344,0.193,0.308,97,100,5114,1.1,16.69,18.82,15.62,0.2304,0.2344,0,0,2.02,3.63,-0.88</data>
+<data>2644.8,28.76,100,101,99,0,2625.31,0.668,0.576,0,0,1.19,1.19,1.19,1.12,1813.104,1157.64,21.92,0,60.53,62.84,58.22,98.97,1.12,1.12,1.12,5.8,4.4,0,0,10.285,12.8,16.2,2625.56,1.12,1.12,1.12,1.2,82.39,0,0,109,110,107,34.18,23.59,1.9,0.305,0.16,0.27,97,100,5197,2.2,16.59,18.91,14.92,0.223,0.2284,0,0,1.49,3.77,-0.84</data>
+<data>2645.1,29.06,100,100,99,0,2625.31,0.656,0.565,0,0,1.19,1.19,1.19,1.12,1813.488,675.372,25.61,0,61.14,63.39,58.83,113.46,1.12,1.12,1.12,5,2.9,0,0,10.283,12.8,16.2,2625.56,1.12,1.12,1.12,1.2,82.42,0,0,109,111,106,30.21,23.56,1.9,0.293,0.143,0.257,97,100,5284,15.2,16.78,18.22,15.28,0.2112,0.2167,0,0,0.58,3.12,-1.49</data>
+<data>2645.4,29.29,100,100,100,0,2625.31,0.66,0.569,0,0,1.19,1.19,1.19,1.12,1814.262,119.03,26,0,60.93,61.8,59.82,100.86,1.12,1.12,1.12,4.3,2.6,0,0,10.283,12.8,16.2,2625.56,1.12,1.12,1.12,1.2,82.32,0,0,108,109,108,36.29,23.74,1.9,0.146,0.066,0.127,97,100,5287,15.2,16.35,16.5,16.02,0.2061,0.2052,0,0,0.61,1.81,-0.14</data>
+<data>2645.7,29.6,100,100,98,0,2625.31,0.704,0.607,0,0,1.19,1.19,1.19,1.12,1813.446,16.955,14.82,0,60.22,64.17,58.04,86.7,1.12,1.12,1.12,3.8,2.5,0,0,10.284,12.8,16.2,2625.56,1.12,1.12,1.12,1.2,82.25,0,0,107,109,107,42.54,23.9,1.9,0.126,0.073,0.114,97,100,5314,0.9,15.99,19.81,15.63,0.2031,0.2048,0,0,1.7,4.05,-2.05</data>
+<data>2646,29.96,100,100,99,0,2625.63,0.618,0.533,0,0,1.19,1.19,1.19,1.12,1813.086,420.102,22.56,0,60.99,63.19,58.22,96.45,1.12,1.12,1.12,3.9,3.1,0,0,10.284,12.8,16.2,2625.65,1.12,1.12,1.12,1.3,82.28,0,0,108,112,106,33.27,23.77,2,0.249,0.112,0.217,97,100,5446,7.1,17,20.06,15.18,0.1873,0.2025,0,0,0.84,3.81,-1.16</data>
+<data>2646.3,30.26,100,100,99,0,2625.72,0.678,0.585,0,0,1.19,1.19,1.19,1.12,1813.476,4.007,19.29,0,60.79,62.6,59.08,114.46,1.12,1.12,1.12,4.3,3.3,0,0,10.284,12.8,16.2,2625.76,1.12,1.12,1.12,1.3,82.35,0,0,109,109,108,28.72,23.84,2,0.256,0.129,0.226,97,100,5496,1.8,16.87,18.78,15.81,0.178,0.1818,0,0,1.33,3.12,-0.51</data>
+<data>2646.6,30.48,100,100,99,0,2625.78,0.624,0.538,0,0,1.19,1.19,1.19,1.12,1813.404,0.75,19.24,0,60.97,62.99,58.83,124.69,1.12,1.12,1.12,4.1,3.2,0,0,10.286,12.8,16.2,2625.84,1.12,1.12,1.12,1.3,82.37,0,0,109,109,107,27.03,23.93,2,0.222,0.093,0.192,97,100,5525,1.6,16.8,18.53,16.56,0.1734,0.1753,0,0,0.97,3.21,-0.88</data>
+<data>2646.9,30.88,100,100,99,0,2626.04,0.704,0.607,0,0,1.19,1.19,1.19,1.12,1813.776,0.015,20.73,0,61.03,63.19,59.03,144.49,1.12,1.12,1.12,4.6,3.7,0,0,10.285,12.8,16.2,2626.17,1.12,1.12,1.12,1.3,82.37,0,0,108,112,107,22.82,23.8,2,0.278,0.135,0.244,97,100,5667,2.6,17.37,18.28,16.11,0.1617,0.1714,0,0,1.14,3.26,-0.88</data>
+<data>2647.2,30.95,100,100,99,0,2626.09,0.584,0.504,0,0,1.19,1.19,1.19,1.12,1812.972,-0.003,30.98,0,62.39,63.84,59.03,150.51,1.12,1.12,1.12,4.9,4,0,0,10.284,12.8,16.2,2626.23,1.12,1.12,1.12,1.3,82.4,0,0,109,110,108,24.08,23.78,2,0.281,0.137,0.247,97,99,5692,1.9,16.72,18.78,16.17,0.1499,0.1532,0,0,-0.16,2.98,-1.63</data>
+<data>2647.5,31.41,100,100,98,0,2626.1,0.557,0.48,0,0,1.19,1.19,1.19,1.12,1813.326,0,10.54,0,61.04,63.19,58.22,133.76,1.12,1.12,1.12,4.1,3.1,0,0,10.284,12.8,16.2,2626.25,1.12,1.12,1.12,1.3,82.34,0,0,108,109,107,27.21,24.04,2,0.252,0.102,0.217,97,100,5722,1.9,16.87,21.32,15.62,0.15,0.1513,0,0,1.01,3.91,-1.21</data>
+<data>2647.8,31.74,100,100,98,0,2626.1,0.673,0.58,0,0,1.19,1.19,1.19,1.12,1813.488,0,21.4,0,61.02,63.04,58.22,138.67,1.12,1.12,1.12,4.9,3.5,0,0,10.286,12.9,16.2,2626.25,1.12,1.12,1.12,1.3,82.25,0,0,109,111,107,44.84,24.03,2,0.234,0.103,0.203,97,100,5807,28.4,17.25,21,16.12,0.1429,0.1481,0,0,1.12,3.95,-0.79</data>
+<data>2648.1,32.01,100,100,99,0,2626.1,0.589,0.508,0,0,1.19,1.19,1.19,1.12,1813.458,0,5.28,0,60.95,63.22,58.63,102.69,1.12,1.12,1.12,4.2,3.1,0,0,10.285,12.8,16.2,2626.25,1.12,1.12,1.12,1.3,82.27,0,0,108,109,108,39.7,24.14,2,0.163,0.059,0.138,97,100,5837,1.3,17.11,18.78,16.4,0.1396,0.1415,0,0,0.73,3.44,-1.16</data>
+<data>2648.4,32.28,100,100,99,0,2626.1,0.71,0.612,0,0,1.19,1.19,1.19,1.12,1812.996,0,27.35,0,61.3,63.79,58.83,129.78,1.12,1.12,1.12,4.5,3.5,0,0,10.286,12.8,16.2,2626.25,1.12,1.12,1.12,1.3,82.27,0,0,109,110,107,30.97,24.07,2,0.11,0.046,0.095,97,100,5925,16.7,17.23,18.28,16.02,0.1347,0.1389,0,0,0.31,3.54,-1.58</data>
+<data>2648.7,32.67,100,100,99,0,2626.1,0.579,0.499,0,0,1.19,1.19,1.19,1.12,1813.956,0,18.52,0,60.93,63.84,58.48,123.47,1.12,1.12,1.12,4.8,3.2,0,0,10.285,12.8,16.2,2626.25,1.12,1.12,1.12,1.4,82.32,0,0,108,111,106,29.29,24.11,2.1,0.207,0.075,0.176,97,100,6009,6.2,17,19.01,15.76,0.1326,0.1342,0,0,0.74,3.4,-1.63</data>
+<data>2649,32.96,100,100,99,0,2626.1,0.573,0.494,0,0,1.19,1.19,1.19,1.12,1814.31,0,4.18,0,60.86,63.19,58.43,103.87,1.12,1.12,1.12,3.5,3.2,0,0,10.284,12.8,16.2,2626.25,1.12,1.12,1.12,1.4,82.33,0,0,108,109,108,35.18,24.23,2.1,0.278,0.129,0.242,97,100,6041,1.1,16.93,20.2,15.67,0.1312,0.1313,0,0,1.31,3.35,-1.16</data>
+<data>2649.3,33.26,100,100,99,0,2626.1,0.734,0.633,0,0,1.19,1.19,1.19,1.12,1812.78,0,21.03,0,60.77,62.84,58.43,132.46,1.12,1.12,1.12,4.6,3.5,0,0,10.286,12.8,16.2,2626.25,1.12,1.12,1.12,1.4,82.24,0,0,109,110,105,26.27,24.11,2.1,0.307,0.156,0.271,97,100,6155,2.3,17.48,18.97,16.36,0.1298,0.1307,0,0,1.2,3.63,-0.7</data>
+<data>2649.6,33.47,100,100,99,0,2626.1,0.635,0.548,0,0,1.19,1.19,1.19,1.12,1813.434,0,25.38,0,61.25,63.19,58.83,144.27,1.12,1.12,1.12,4.8,3.9,0,0,10.286,12.8,16.2,2626.25,1.12,1.12,1.12,1.4,82.33,0,0,109,110,106,25.14,24.08,2.1,0.3,0.149,0.264,97,100,6222,3.3,17.57,20.25,16.26,0.132,0.1331,0,0,0.86,3.07,-0.98</data>
+<data>2649.9,33.89,99,100,99,0,2626.3,0.589,0.508,0,0,1.19,1.19,1.19,1.12,1813.434,0,13.8,0,60.52,63.19,58.83,126.71,1.12,1.12,1.12,4.7,3.8,0,0,10.285,12.8,16.2,2626.32,1.12,1.12,1.12,1.4,82.36,0,0,108,109,106,26.03,24.15,2.1,0.08,0.039,0.07,97,100,6301,5.3,17.55,19.66,16.5,0.1347,0.1385,0,0,1.37,3.35,-1.16</data>
+<data>2650.2,34.19,100,100,99,0,2626.42,0.662,0.57,0,0,1.19,1.19,1.19,1.12,1813.29,0,32.1,0,60.81,62.99,59.46,139.99,1.12,1.12,1.12,4.7,3.6,0,0,10.285,12.8,16.2,2626.46,1.12,1.12,1.12,1.4,82.38,0,0,108,109,106,23.98,24.15,2.1,0.279,0.126,0.243,97,100,6371,2.1,17.76,18.97,16.66,0.1434,0.1473,0,0,1.1,2.61,-0.98</data>
+<data>2650.5,34.47,99,100,98,0,2626.56,0.676,0.583,0,0,1.19,1.19,1.19,1.12,1813.11,0,31.6,0,60.9,62.79,58.43,158.24,1.12,1.12,1.12,4.8,4,0,0,10.284,12.8,16.2,2626.65,1.12,1.12,1.12,1.4,82.33,0,0,108,110,107,21.23,24.1,2.1,0.196,0.101,0.173,97,99,6459,2.1,17.86,21.45,16.84,0.1518,0.1635,0,0,0.92,3.58,-0.88</data>
+<data>2650.8,34.79,99,100,97,0,2626.91,0.82,0.707,0,0,1.19,1.19,1.19,1.12,1813.368,0,21.14,0,59.41,62.39,57.03,152.28,1.12,1.12,1.12,4.8,3.6,0,0,10.284,12.8,16.2,2627.06,1.12,1.12,1.12,1.5,82.21,0,0,108,110,106,21.59,23.93,2.1,0.358,0.207,0.322,97,100,6599,15.7,18.11,23.06,16.94,0.1661,0.1847,0,0,2.58,5.26,-0.32</data>
+<data>2651.1,35.06,98,100,60,0,2634.89,1.23,1.06,0,0,1.19,1.19,1.19,1.12,1813.74,0,4.56,0,54.32,65.81,54.32,187.77,1.12,1.12,1.12,6.8,5.2,0,0,10.288,12.8,16.3,2634.96,1.12,1.12,1.12,1.5,81.97,0,0,108,111,104,16.87,23.68,2.6,0.43,0.279,0.394,97,99,6759,346.3,19.81,20.84,12.08,0.1893,0.3244,0,0,7.4,7.44,-3.77</data>
+<data>2651.4,35.35,99,99,98,0,2634.89,1.136,0.979,0,0,1.19,1.19,1.19,1.12,1813.764,0,2.61,0,55.37,59.86,53.72,203.29,1.12,1.12,1.12,31.5,31.1,0,0,10.288,12.8,16.2,2634.96,1.12,1.12,1.12,1.5,81.98,0,0,107,108,105,17.02,23.83,2.6,0.464,0.313,0.428,97,99,6782,346.3,19.54,19.96,16.3,0.1901,0.1911,0,0,6.02,8.37,2.37</data>
+<data>2651.7,35.6,99,99,99,0,2634.89,1.111,0.958,0,0,1.19,1.19,1.19,1.12,1813.542,0,0.98,0,55.37,56.05,54.91,184.84,1.12,1.12,1.12,31.3,30.3,0,0,10.288,12.8,16.2,2634.96,1.12,1.12,1.12,1.5,81.97,0,0,106,106,106,20.17,23.99,2.6,0.544,0.392,0.507,97,98,6784,346.3,19.71,20.01,19.37,0.191,0.1912,0,0,6.2,7.07,4.65</data>
+<data>2652,35.94,99,100,97,0,2638.45,1.093,0.942,0,0,1.19,1.19,1.19,1.12,1813.488,0,17.18,0,55.94,61.65,52.13,175.36,1.12,1.12,1.12,43.1,42.1,0,0,10.286,12.8,16.2,2638.62,1.12,1.12,1.12,1.5,81.9,0,0,107,110,104,22.48,23.95,2.8,0.574,0.423,0.538,97,99,6885,2,20.04,23.06,15.53,0.2631,0.2827,0,0,6.18,10.19,0.33</data>
+<data>2652.3,36.29,99,99,98,0,2639.14,1.173,1.011,0,0,1.19,1.19,1.19,1.12,1813.38,0,17.97,0,56.47,58.83,54.07,248.44,1.12,1.12,1.12,45.2,44,0,0,10.286,12.8,16.2,2639.31,1.12,1.12,1.12,1.5,81.99,0,0,108,109,104,13.43,23.46,2.9,0.595,0.444,0.559,97,98,7157,4.3,20.03,21.18,19.12,0.2673,0.2713,0,0,5.91,7.77,2.84</data>
+<data>2652.6,36.54,99,100,97,0,2639.99,1.132,0.976,0,0,1.19,1.19,1.19,1.12,1813.128,1734.336,19.31,0,57.06,61.24,53.88,235.95,1.12,1.12,1.12,48.2,46.8,0,0,10.288,12.8,16.2,2640.13,1.12,1.12,1.12,1.6,81.84,0,0,108,109,105,15.03,23.53,2.9,0.564,0.413,0.528,97,98,7193,18.4,20,26.83,13.9,0.2382,0.2667,0,0,5.1,8.33,0.74</data>
+<data>2652.9,36.82,99,99,98,0,2640.2,1.11,0.957,0,0,1.19,1.19,1.19,1.12,1813.044,1281.354,16.97,0,57.55,59.82,56.05,238.83,1.12,1.12,1.12,48.9,46.6,0,0,10.286,12.8,16.2,2640.33,1.12,1.12,1.12,1.6,81.86,0,0,106,109,105,15.9,23.44,3,0.535,0.384,0.499,97,99,7305,17.5,19.24,20.3,18.38,0.2356,0.2375,0,0,4.73,6.14,2.19</data>
+<data>2653.2,37.19,98,99,97,0,2641.02,1.325,1.143,0,0,1.19,1.19,1.19,1.12,1813.488,702.654,28.23,0,54.59,59.03,52.48,292.82,1.12,1.12,1.12,49.7,23.6,0,0,10.287,12.8,16.2,2641.23,1.12,1.12,1.12,1.6,81.93,0,0,107,109,105,11.4,22.93,3,0.696,0.545,0.66,97,98,7605,2.7,20.27,21.62,18.71,0.2311,0.2382,0,0,7.97,9.77,3.07</data>
+<data>2653.5,37.37,98,99,91,0,2641.4,1.324,1.142,0,0,1.19,1.19,1.19,1.12,1813.284,185.917,18.29,0,55.23,58.27,51.9,330.8,1.12,1.12,1.12,50.2,24.1,0,0,10.286,12.8,16.3,2641.57,1.12,1.12,1.12,1.6,81.82,0,0,107,108,105,10.27,22.67,3,0.68,0.528,0.643,97,98,7759,4.2,19.67,29.58,11.05,0.2241,0.2288,0,0,7.07,10.14,3.86</data>
+<data>2653.8,37.76,98,99,97,0,2641.49,1.192,1.028,0,0,1.19,1.19,1.19,1.12,1813.47,1.614,22.37,0,57.54,59.67,56.05,304.4,1.12,1.12,1.12,25.8,10.3,0,0,10.284,12.9,16.3,2641.66,1.12,1.12,1.12,1.7,81.69,0,0,106,108,105,11.39,22.81,3,0.58,0.429,0.544,97,98,7800,1.4,20.04,23.84,17.88,0.2214,0.2223,0,0,4.38,5.95,2.42</data>
+<data>2654.1,38.01,98,99,98,0,2642,1.176,1.013,0,0,1.19,1.19,1.19,1.12,1813.476,668.436,20.12,0,57.06,60.65,55.46,334.08,1.12,1.12,1.12,15.8,9.2,0,0,10.285,12.8,16.2,2642.12,1.12,1.12,1.12,1.7,81.85,0,0,107,110,105,9.87,22.33,3.1,0.57,0.418,0.533,97,98,8078,2.6,19.97,21.53,18.71,0.2183,0.2225,0,0,4.88,6.79,1.72</data>
+<data>2654.4,38.37,99,99,93,0,2642.18,1.26,1.086,0,0,1.2,1.19,1.2,1.12,1813.422,1263.306,2.38,0,55.95,61.01,52.69,306.62,1.12,1.12,1.12,13.3,8.4,0,0,10.285,12.8,16.3,2642.29,1.12,1.12,1.12,1.7,81.84,0,0,107,109,105,11.32,22.45,3.1,0.58,0.428,0.543,97,99,8115,3,19.59,27.76,16.26,0.2133,0.2145,0,0,6.56,9.26,0.98</data>
+<data>2654.7,38.68,99,99,98,0,2642.23,1.041,0.897,0,0,1.2,1.19,1.2,1.12,1813.386,2160.966,20.19,0,59.19,60.22,57.03,223.76,1.12,1.12,1.12,10.3,6.9,0,0,10.284,12.8,16.2,2642.34,1.12,1.12,1.12,1.7,81.77,0,0,109,110,107,15.49,22.59,3.1,0.487,0.336,0.451,97,99,8138,3,18.34,20.78,18.04,0.2128,0.2134,0,0,3.05,5.63,1.72</data>
+<data>2655,38.94,99,99,98,0,2642.4,0.832,0.717,0,0,1.2,1.19,1.2,1.12,1812.948,91.181,24.67,0,60.24,62.99,57.64,197.24,1.12,1.12,1.12,9.8,6.5,0,0,10.284,12.8,16.2,2642.52,1.12,1.12,1.12,1.7,81.85,0,0,108,110,106,21.21,22.56,3.1,0.398,0.247,0.362,97,99,8219,1.2,17.65,18.92,16.91,0.2122,0.2128,0,0,2.12,4,-1.02</data>
+<data>2655.3,39.26,99,99,98,0,2642.45,0.81,0.698,0,0,1.2,1.19,1.2,1.12,1813.2,-4.535,2.37,0,60,62.99,57.64,107.37,1.12,1.12,1.12,7.2,5,0,0,10.285,12.8,16.2,2642.58,1.12,1.12,1.12,1.7,81.84,0,0,108,109,106,37.33,22.69,3.1,0.396,0.245,0.36,97,99,8245,1.2,17.31,19.22,16.81,0.2125,0.213,0,0,3.1,4.37,-0.88</data>
+<data>2655.6,39.54,99,100,98,0,2642.85,0.798,0.688,0,0,1.2,1.19,1.2,1.12,1813.272,36.318,12.7,0,59.58,62.99,58.43,188.92,1.12,1.12,1.12,5.9,4.4,0,0,10.286,12.8,16.2,2643,1.12,1.12,1.12,1.8,81.85,0,0,109,110,107,18.72,22.46,3.1,0.375,0.223,0.338,97,99,8425,7.4,18,20.32,16.86,0.2123,0.2154,0,0,2.58,3.91,-0.98</data>
+<data>2655.9,39.84,98,100,98,0,2642.91,0.873,0.752,0,0,1.2,1.19,1.2,1.12,1813.152,4.861,4.32,0,59.82,62.03,57.24,142.24,1.12,1.12,1.12,7.3,4.2,0,0,10.285,12.9,16.2,2643.06,1.12,1.12,1.12,1.8,81.82,0,0,108,110,106,30.26,22.57,3.2,0.405,0.254,0.369,97,99,8453,2.2,18.65,21.52,16.75,0.21,0.2106,0,0,2.73,4.51,-0.09</data>
+<data>2656.2,40.15,99,100,97,0,2643.15,0.832,0.717,0,0,1.2,1.19,1.2,1.12,1813.296,697.566,3.32,0,59.73,64.58,55.06,109.92,1.12,1.12,1.12,5.5,4.2,0,0,10.286,12.9,16.2,2643.31,1.12,1.12,1.12,1.8,81.87,0,0,109,110,106,33,22.66,3.2,0.314,0.163,0.278,97,99,8499,27.9,17.72,22.87,14.64,0.2137,0.2146,0,0,2.59,7.3,-2.42</data>
+<data>2656.5,40.47,99,100,99,0,2643.38,0.737,0.636,0,0,1.2,1.19,1.2,1.12,1813.122,40.942,28.61,0,60.4,63.39,58.63,131.35,1.12,1.12,1.12,5,4.2,0,0,10.286,12.9,16.2,2643.54,1.12,1.12,1.12,1.8,81.63,0,0,109,110,106,26.35,22.62,3.2,0.342,0.191,0.306,97,99,8598,2.5,17.9,18.88,16.65,0.2214,0.2298,0,0,1.8,3.12,-1.12</data>
+<data>2656.8,40.75,99,99,98,0,2643.79,0.795,0.685,0,0,1.2,1.19,1.2,1.12,1813.548,514.103,14.92,0,60.2,62.99,58.83,150.46,1.12,1.12,1.12,5.5,4.7,0,0,10.285,12.9,16.2,2643.99,1.12,1.12,1.12,1.8,81.71,0,0,109,111,106,23.72,22.56,3.2,0.367,0.216,0.331,97,99,8702,17.3,18.49,19.47,17.25,0.2366,0.2462,0,0,2,3.21,-1.12</data>
+<data>2657.1,40.94,99,99,98,0,2644.24,0.756,0.651,0,0,1.2,1.19,1.2,1.12,1813.518,384.136,27.7,0,60.21,62.84,58.63,151.01,1.12,1.12,1.12,6.5,6,0,0,10.286,12.9,16.2,2644.51,1.12,1.12,1.12,1.8,81.6,0,0,109,110,107,21.72,22.46,3.2,0.357,0.206,0.321,97,99,8805,4.6,18.05,19.32,17.35,0.259,0.2641,0,0,1.78,3.54,-0.56</data>
+<data>2657.4,41.34,99,100,99,0,2644.7,0.876,0.755,0,0,1.2,1.19,1.2,1.12,1813.068,-36.595,18.14,0,60.26,62.43,59.03,171.9,1.12,1.12,1.12,7,5,0,0,10.284,12.9,16.2,2645.03,1.12,1.12,1.12,1.8,81.58,0,0,108,109,106,20.04,22.46,3.2,0.391,0.239,0.354,97,99,8907,3.2,18.22,18.82,17,0.275,0.2829,0,0,2.03,3.07,-0.33</data>
+<data>2657.7,41.66,99,100,99,0,2645.27,0.699,0.602,0,0,1.2,1.19,1.2,1.12,1813.434,528.664,23.32,0,60.34,62.99,58.63,192.28,1.12,1.12,1.12,7.3,4.5,0,0,10.284,12.9,16.2,2645.62,1.12,1.12,1.12,1.9,81.51,0,0,108,111,107,17.77,22.42,3.3,0.298,0.147,0.262,97,99,9014,3.3,18.24,18.91,17.29,0.2924,0.3138,0,0,1.49,3.63,-0.98</data>
+<data>2658,41.99,99,100,99,0,2645.45,0.789,0.68,0,0,1.2,1.19,1.2,1.12,1813.944,828.306,16.12,0,60.29,61.8,58.27,159.4,1.12,1.12,1.12,5.5,4.7,0,0,10.284,12.9,16.2,2645.8,1.12,1.12,1.12,1.9,81.27,0,0,109,110,107,20.9,22.53,3.3,0.352,0.201,0.316,97,99,9046,1.1,18.23,19.01,16.38,0.3131,0.3241,0,0,2.05,3.95,0.42</data>
+<data>2658.3,42.29,99,100,99,0,2645.99,0.774,0.667,0,0,1.2,1.19,1.2,1.12,1813.152,1361.856,26.44,0,60.46,61.8,58.22,171.14,1.12,1.12,1.12,6.3,5,0,0,10.286,12.9,16.2,2646.37,1.12,1.12,1.12,1.9,81.37,0,0,109,110,106,20.27,22.47,3.3,0.317,0.166,0.281,97,99,9150,1.4,18.42,19.12,17,0.3506,0.3578,0,0,1.71,3.58,0.05</data>
+<data>2658.6,42.59,99,99,99,0,2646.18,0.84,0.724,0,0,1.2,1.19,1.2,1.12,1813.452,295.695,22.81,0,60.31,62.24,58.43,135.82,1.12,1.12,1.12,5.9,3.8,0,0,10.288,12.9,16.2,2646.57,1.12,1.12,1.12,1.9,81.33,0,0,109,111,108,25.58,22.56,3.3,0.388,0.237,0.352,97,99,9184,2,18.39,19.02,17.34,0.3606,0.3639,0,0,2.11,3.4,-0.37</data>
+<data>2658.9,42.86,99,100,99,0,2646.65,0.783,0.675,0,0,1.2,1.19,1.2,1.12,1813.038,13.316,21.23,0,60.49,62.39,58.63,150.49,1.12,1.12,1.12,5.9,4.3,0,0,10.287,12.9,16.2,2647.02,1.12,1.12,1.12,1.9,81.34,0,0,109,109,107,31.45,22.5,3.3,0.301,0.185,0.274,97,99,9288,5.9,17.68,18.68,16.99,0.3751,0.3838,0,0,1.87,3.49,-0.33</data>
+<data>2659.2,43.17,99,100,98,0,2646.77,0.674,0.581,0,0,1.2,1.19,1.2,1.12,1813.266,105.035,18.85,0,59.98,63.19,57.03,91.55,1.12,1.12,1.12,4.9,3.9,0,0,10.286,12.9,16.2,2647.14,1.12,1.12,1.12,1.9,81.36,0,0,109,109,107,40.27,22.61,3.3,0.359,0.208,0.323,97,99,9315,0.9,17.53,19.34,16.46,0.385,0.3887,0,0,2.84,4.7,-1.26</data>
+<data>2659.5,43.49,99,100,98,0,2646.91,0.738,0.636,0,0,1.2,1.19,1.2,1.12,1813.272,723.048,10.07,0,59.31,62.39,57.29,64.95,1.12,1.12,1.12,4.4,3,0,0,10.284,12.9,16.2,2647.26,1.12,1.12,1.12,1.9,81.48,0,0,110,111,109,52.83,22.72,3.3,0.392,0.241,0.356,97,99,9343,1.1,17.38,20.24,15.9,0.3897,0.3951,0,0,3.48,4.79,-0.19</data>
+<data>2659.8,43.79,99,100,98,0,2647.42,0.721,0.621,0,0,1.2,1.19,1.2,1.12,1813.122,204.327,27.44,0,60.13,62.43,57.64,101.34,1.12,1.12,1.12,5,3.1,0,0,10.284,12.9,16.2,2647.74,1.12,1.12,1.12,1.9,81.37,0,0,108,111,107,36.14,22.66,3.3,0.353,0.202,0.317,97,99,9454,1.4,17.71,21.04,17.04,0.4147,0.4161,0,0,1.22,4.42,-0.47</data>
+<data>2660.1,44.03,99,99,99,0,2647.43,0.678,0.584,0,0,1.2,1.19,1.2,1.12,1813.416,697.512,28.43,0,59.39,59.42,58.63,28.76,1.12,1.12,1.12,4.4,2.8,0,0,10.282,12.9,16.2,2647.75,1.12,1.12,1.12,1.9,81.39,0,0,109,110,108,122.7,22.77,3.3,0.161,0.087,0.143,97,99,9457,1.4,17.43,17.45,17.14,0.4158,0.4164,0,0,1.21,1.95,-0.23</data>
+<data>2660.4,44.31,99,100,99,0,2647.71,0.652,0.562,0,0,1.2,1.19,1.2,1.12,1812.564,1702.434,19.08,0,59.74,62.24,57.64,86.83,1.12,1.12,1.12,3.7,2.7,0,0,10.286,12.9,16.2,2648.02,1.12,1.12,1.12,1.9,81.27,0,0,109,110,106,42.29,22.8,3.4,0.325,0.174,0.289,97,99,9520,2.5,17.55,19.43,17,0.4212,0.4253,0,0,2.26,4.33,-0.42</data>
+<data>2660.7,44.7,99,99,99,0,2648.15,0.776,0.669,0,0,1.2,1.19,1.2,1.12,1813.398,2082.888,23.61,0,59.46,61.65,58.48,109.94,1.12,1.12,1.12,4.2,3.1,0,0,10.284,12.9,16.2,2648.45,1.12,1.12,1.12,2,81.31,0,0,109,110,107,30.06,22.79,3.4,0.376,0.225,0.34,97,99,9626,3.3,18.08,19.7,17.2,0.4272,0.4289,0,0,2.56,3.72,0.37</data>
+<data>2661,44.95,99,99,99,0,2648.3,0.743,0.64,0,0,1.2,1.19,1.2,1.12,1813.29,1481.904,32.74,0,60.06,61.6,58.83,82.42,1.12,1.12,1.12,3.8,3.5,0,0,10.286,12.9,16.2,2648.6,1.12,1.12,1.12,2,81.36,0,0,109,110,108,47.77,22.84,3.4,0.338,0.187,0.302,97,99,9664,2.4,17.91,18.38,17.39,0.4283,0.4285,0,0,1.9,3.21,0.74</data>
+<data>2661.3,45.24,99,100,98,0,2648.45,0.731,0.63,0,0,1.2,1.19,1.2,1.12,1813.62,399.708,26.08,0,59.78,61.6,58.43,85.08,1.12,1.12,1.12,4.1,2.7,0,0,10.284,12.9,16.2,2648.75,1.12,1.12,1.12,2,81.38,0,0,109,110,108,44.15,22.92,3.4,0.362,0.211,0.326,97,99,9698,1.2,18.16,20.84,17.3,0.4281,0.4283,0,0,2.27,3.54,0.51</data>
+<data>2661.6,45.56,99,100,99,0,2648.68,0.771,0.664,0,0,1.2,1.19,1.2,1.12,1813.368,3.405,19.01,0,59.25,61.8,57.84,87.9,1.12,1.12,1.12,4.1,2.8,0,0,10.286,12.9,16.2,2648.98,1.12,1.12,1.12,2,81.26,0,0,108,110,107,39.42,22.97,3.4,0.376,0.225,0.34,97,99,9756,1.3,18.18,19.81,17.5,0.4291,0.4303,0,0,2.8,4.28,0.05</data>
+<data>2661.9,45.82,99,100,99,0,2648.82,0.649,0.559,0,0,1.2,1.19,1.2,1.12,1812.426,-0.217,37.95,0,60.17,62.65,58.04,75.13,1.12,1.12,1.12,3.5,3,0,0,10.284,12.9,16.2,2649.11,1.12,1.12,1.12,2,81.31,0,0,107,109,107,49.5,23.05,3.4,0.151,0.078,0.134,97,99,9782,1.3,17.39,19.26,17.24,0.4252,0.4266,0,0,1.61,4.19,-0.42</data>
+<data>2662.2,46.17,99,100,99,0,2649.07,0.69,0.594,0,0,1.2,1.19,1.2,1.12,1812.972,-0.005,10.18,0,59.8,62.79,57.44,75.81,1.12,1.12,1.12,3.5,2.2,0,0,10.284,12.9,16.2,2649.36,1.12,1.12,1.12,2,81.18,0,0,108,110,107,44.09,23.12,3.4,0.33,0.18,0.294,97,99,9839,1.7,17.82,19.47,16.46,0.4238,0.4253,0,0,2.19,4.47,-0.74</data>
+<data>2662.5,46.48,99,100,99,0,2649.86,0.889,0.765,0,0,1.2,1.19,1.2,1.12,1813.746,567.332,18.64,0,57.08,61.6,55.26,111.72,1.12,1.12,1.12,4.3,3.1,0,0,10.284,12.9,16.2,2650.17,1.12,1.12,1.12,2,81.16,0,0,108,111,106,29,22.92,3.4,0.45,0.298,0.413,97,99,10018,3.3,18.52,19.7,17.19,0.422,0.4238,0,0,4.74,6.74,0.19</data>
+<data>2662.8,46.67,99,99,97,0,2651.01,1.12,0.965,0,0,1.2,1.19,1.2,1.12,1813.194,20.423,20.2,0,55.05,59.46,52.88,148.12,1.12,1.12,1.12,11.8,11,0,0,10.284,12.9,16.2,2651.06,1.12,1.12,1.12,2,81.03,0,0,107,111,105,19.77,22.84,3.6,0.511,0.359,0.474,97,99,10119,3,19.41,21.37,17.79,0.2627,0.4194,0,0,7.4,9.49,2.51</data>
+<data>2663.1,47.1,99,99,98,0,2651.01,1.268,1.092,0,0,1.2,1.19,1.2,1.12,1813.236,0.09,12.97,0,54.64,57.64,52.88,308.08,1.12,1.12,1.12,15.6,15,0,0,10.285,12.9,16.2,2651.06,1.12,1.12,1.12,2.1,80.97,0,0,107,109,105,10.81,22.35,3.6,0.666,0.514,0.63,97,99,10494,2.2,19.61,20.89,18.71,0.1903,0.2236,0,0,7.56,9.07,4.37</data>
+<data>2663.4,47.4,99,99,97,0,2651.01,1.458,1.256,0,0,1.2,1.19,1.2,1.12,1812.924,35.047,19.97,0,52.84,58.04,51.9,422.36,1.12,1.12,1.12,21.8,21,0,0,10.285,12.9,16.2,2651.06,1.12,1.12,1.12,2.2,80.95,0,0,108,109,104,7.81,21.39,3.7,0.788,0.637,0.752,97,98,11134,21.7,19.76,21.32,18.33,0.1317,0.1657,0,0,9.4,10.19,3.91</data>
+<data>2663.7,47.67,98,99,90,0,2651.17,1.508,1.299,0,0,1.2,1.19,1.2,1.12,1813.014,915.264,6.77,0,53.37,58.22,51.09,611.5,1.12,1.12,1.12,26.5,25.9,0,0,10.286,12.9,16.2,2651.29,1.12,1.12,1.12,2.3,80.77,0,0,108,110,104,4.87,20.68,3.9,0.753,0.602,0.717,97,98,11661,333.5,20.42,35.74,13.84,0.1112,0.1226,0,0,8.53,11.02,3.49</data>
+<data>2664,47.83,99,99,97,0,2651.19,1.432,1.234,0,0,1.2,1.19,1.2,1.12,1813.716,1305.342,19.57,0,55.08,58.04,53.27,725.66,1.12,1.12,1.12,32.4,31.8,0,0,10.285,13,16.3,2651.33,1.12,1.12,1.12,2.3,80.83,0,0,108,109,107,24.62,20.73,3.9,0.707,0.555,0.67,97,98,11679,333.5,19.52,21.63,18.43,0.1129,0.1135,0,0,6.45,8.51,4.23</data>
+<data>2664.3,48.29,99,100,97,0,2651.34,1.34,1.154,0,0,1.2,1.19,1.2,1.12,1813.428,1717.29,29.04,0,55.82,58.48,54.07,380.33,1.12,1.12,1.12,33.1,23.8,0,0,10.285,13,16.2,2651.63,1.12,1.12,1.12,2.3,80.78,0,0,108,110,106,8.91,20.73,4,0.706,0.555,0.67,97,98,11804,19.2,19.86,24.28,17.39,0.1158,0.1176,0,0,6.13,7.95,3.54</data>
+<data>2664.6,48.47,99,100,98,0,2651.37,1.031,0.888,0,0,1.2,1.19,1.2,1.12,1813.266,-0.851,25.51,0,58.52,60.27,56.25,242,1.12,1.12,1.12,32.2,21.5,0,0,10.284,13,16.2,2651.68,1.12,1.12,1.12,2.3,80.77,0,0,108,109,108,19.26,20.78,4,0.475,0.323,0.439,97,99,11823,19.2,17.91,20.06,16.51,0.1179,0.118,0,0,3.32,5.91,1.77</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:51:30.1010000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T12:37:21.2960000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T12:37:21.3130000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

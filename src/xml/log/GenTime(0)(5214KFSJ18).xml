@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="5KFSJ18" uidLog="5214KFSJ18" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore2</nameWellbore>
+    <nameLog>GenTime</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>0</runNumber>
+      <indexType>DateTime</indexType>
+      <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+      <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Time</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>unitless</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Time</mnemonic>
+        <unit>unitless</unit>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>DateTime</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STRATE4</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>spm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Pump 4 Stroke Rate</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STRATE3</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>spm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Pump 3 Stroke Rate</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWIN</mnemonic>
+        <unit>L/min</unit>
+        <mnemAlias>flowInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>4</columnIndex>
+        <curveDescription>Mud Flow In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STRATE2</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>spm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>5</columnIndex>
+        <curveDescription>Pump 2 Stroke Rate</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PUMP</mnemonic>
+        <unit>bar</unit>
+        <mnemAlias>presPumpAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>6</columnIndex>
+        <curveDescription>Pump Pressure - Stand Pipe</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STRATE1</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>spm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>7</columnIndex>
+        <curveDescription>Pump 1 Stroke Rate</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAG_TIME_RISER</mnemonic>
+        <unit>min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>8</columnIndex>
+        <curveDescription>Lag Time Well Head to Surface</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_RPM_MIN</mnemonic>
+        <unit>c/min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>9</columnIndex>
+        <curveDescription>Bit RPM - Total RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FRAC_EQMD</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>mffp</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>10</columnIndex>
+        <curveDescription>Estimated Fracture Pressure EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ONBOTTOM_TIME</mnemonic>
+        <unit>h</unit>
+        <mnemAlias>cTimBit</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>11</columnIndex>
+        <curveDescription>Cumulative On-Bottom Time</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_AVG</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>12</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>OFFBOTTOM_TIME</mnemonic>
+        <unit>h</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>13</columnIndex>
+        <curveDescription>Cumulative Off-Bottom Time</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MOTOR_RPM</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>mmrpm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>14</columnIndex>
+        <curveDescription>Motor RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LINEWEAR</mnemonic>
+        <unit>mJ</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>15</columnIndex>
+        <curveDescription>Line Wear</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ROT_TIME</mnemonic>
+        <unit>h</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>16</columnIndex>
+        <curveDescription>Cumulative Rotating Time</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TORQUE_MIN</mnemonic>
+        <unit>kN.m</unit>
+        <mnemAlias>tqAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>17</columnIndex>
+        <curveDescription>Surface Torque Average</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MTIN</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>tempMudInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>18</columnIndex>
+        <curveDescription>Mud Temperature In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>KILL_HIGH</mnemonic>
+        <unit>bar</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>19</columnIndex>
+        <curveDescription>Kill Pressure</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_RPM_AVG</mnemonic>
+        <unit>c/min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>20</columnIndex>
+        <curveDescription>Bit RPM - Total RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BITDEP</mnemonic>
+        <unit>m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>21</columnIndex>
+        <curveDescription>Bit Measured Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>RUNCIRC</mnemonic>
+        <unit>h</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>22</columnIndex>
+        <curveDescription>Run Circulating Hours</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAG_TIME_WELLHD</mnemonic>
+        <unit>min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>23</columnIndex>
+        <curveDescription>Lag Time from Bit to Wellhead</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>WOB_MIN</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>wobAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>24</columnIndex>
+        <curveDescription>Weight On Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TORQUE_AVG</mnemonic>
+        <unit>kN.m</unit>
+        <mnemAlias>tqAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>25</columnIndex>
+        <curveDescription>Surface Torque Average</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_MAX</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>26</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PITTOT</mnemonic>
+        <unit>m3</unit>
+        <mnemAlias>tvol</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>27</columnIndex>
+        <curveDescription>Total Pit Volume</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SURF_RPM</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>rpmAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>28</columnIndex>
+        <curveDescription>Surface RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MUDRETDEPTH</mnemonic>
+        <unit>m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>29</columnIndex>
+        <curveDescription>Lagged Mud Returns Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MRIN</mnemonic>
+        <unit>ohm.m</unit>
+        <mnemAlias>condMudInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>30</columnIndex>
+        <curveDescription>Mud Resistivity In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAG_RSR_STKS</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>31</columnIndex>
+        <curveDescription>Lag Strokes Wellhead to Surface</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGSTROKES</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>stkLag</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>32</columnIndex>
+        <curveDescription>Lag Strokes</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>RIGHEAVE</mnemonic>
+        <unit>m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>33</columnIndex>
+        <curveDescription>Rig Heave</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STROKESUM</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>stkTot</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>34</columnIndex>
+        <curveDescription>Pump Total Cumulative Stroke Sum</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_RPM_MAX</mnemonic>
+        <unit>c/min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>35</columnIndex>
+        <curveDescription>Bit RPM - Total RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>WOB_AVG</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>wobAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>36</columnIndex>
+        <curveDescription>Weight On Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUTPC</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>flowOutPc</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>37</columnIndex>
+        <curveDescription>Mud Flow Out Percent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MIN_5FT</mnemonic>
+        <unit>min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>38</columnIndex>
+        <curveDescription>Minutes/last 5 feet</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MTOUT</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>tempMudOAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>39</columnIndex>
+        <curveDescription>Mud Temperature Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>GAINLOSSTOT</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>40</columnIndex>
+        <curveDescription>Total Pit Gain/Loss Volume</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TORQUE_MAX</mnemonic>
+        <unit>kN.m</unit>
+        <mnemAlias>tqAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>41</columnIndex>
+        <curveDescription>Surface Torque Average</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MIN_2M</mnemonic>
+        <unit>min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>42</columnIndex>
+        <curveDescription>Minutes/last 2 m</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BLOCKCOMP</mnemonic>
+        <unit>m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>43</columnIndex>
+        <curveDescription>Block/Topdrive Position Compensated</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUT</mnemonic>
+        <unit>L/min</unit>
+        <mnemAlias>flowOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>44</columnIndex>
+        <curveDescription>Mud Flow Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ROP_AVG</mnemonic>
+        <unit>m/h</unit>
+        <mnemAlias>ropAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>45</columnIndex>
+        <curveDescription>Depth Averaged ROP</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHOKE_HIGH</mnemonic>
+        <unit>bar</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>46</columnIndex>
+        <curveDescription>Choke Pressure</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CASPR</mnemonic>
+        <unit>bar</unit>
+        <mnemAlias>chkPrAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>47</columnIndex>
+        <curveDescription>Casing Pressure</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAG_WELLHD_STKS</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>48</columnIndex>
+        <curveDescription>Lag Strokes Bit to Wellhead</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TIME_DIST</mnemonic>
+        <unit>min/m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>49</columnIndex>
+        <curveDescription>Time/Distance ROP  - Instantaneous</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MROUT</mnemonic>
+        <unit>ohm.m</unit>
+        <mnemAlias>condMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>50</columnIndex>
+        <curveDescription>Mud Resistivity Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STRATESUM</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>spmTot</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>51</columnIndex>
+        <curveDescription>Pump Total Stroke Rate</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>POR_EQMD</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>mfpp</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>52</columnIndex>
+        <curveDescription>Estimated Pore Pressure EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_MIN</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>53</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWOUT</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>wtMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>54</columnIndex>
+        <curveDescription>Mud Weight Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>WOB_MAX</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>wobAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>55</columnIndex>
+        <curveDescription>Weight On Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWIN</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>wtMudInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>56</columnIndex>
+        <curveDescription>Mud Weight In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PIT_EQMD</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>57</columnIndex>
+        <curveDescription>Pressure Integrity Test EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>58</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BST_STROKESUM</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>59</columnIndex>
+        <curveDescription>Booster Strokes Cumulative Total</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS2</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>60</columnIndex>
+        <curveDescription>Total Gas 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STRATE6</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>spm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>61</columnIndex>
+        <curveDescription>Pump 6 Stroke Rate</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STRATE5</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>spm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2006-08-02T22:46:45.000+02:00</startIndex>
+        <endIndex>2006-08-03T00:48:40.000+02:00</endIndex>
+        <columnIndex>62</columnIndex>
+        <curveDescription>Pump 5 Stroke Rate</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>2006-08-02T22:46:45.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52.97,0,18.3,0,0,0,0,950.838,0,1,0,0,0,-0.014,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:46:50.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52.93,0,18.3,0,0,0,0,986.736,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:47:00.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52.75,0,18.3,0,0,0,0,3000.132,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:47:10.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52.83,0,18.3,0,0,0,0,3096.846,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:47:20.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,25.39,0,0,0,0,0,0,0,0,0,52.79,0,18.3,0,0,0,0,3267.222,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:47:30.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,254.92,0,0,0,0,0,0,0,0,0,52.81,0,18.3,1.06,0,0,0,2556.624,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:47:40.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.83,0,0,0,0,0,0,0,0,0,52.86,0,18.3,-0.03,0,0,0,967.578,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:47:50.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.67,0,0,0,0,0,0,0,0,0,52.75,0,18.3,-0.2,0,0,0,769.542,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:48:00.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.65,0,0,0,0,0,0,0,0,0,52.92,0,18.3,-0.22,0,0,0,0,0,2,0,0,0,-0.013,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:48:10.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.65,0,0,0,0,0,0,0,0,0,52.81,0,18.3,-0.22,0,0,0,0,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:48:20.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.72,0,-3.3,-0.21,0,0,0,0,0,2,0,0,0,1.885,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:48:30.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.72,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:48:40.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.87,0,18.3,-0.21,0,0,0,0,0,1,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:48:50.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.85,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:49:00.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.78,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:49:10.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.87,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:49:20.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.85,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:49:30.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.86,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.01,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:49:40.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.81,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:49:50.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.77,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:50:00.000+02:00,58,88,0,46,-24,245,0,0,0,0,0,0,0,0,0,0,19,-50,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.9,0,18.3,-0.21,0,0,0,0,0,-50,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:50:10.000+02:00,6,9,0,5,-1,25,0,0,0,0,0,0,0,0,0,0,23.3,-4,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.85,0,18.3,-0.21,0,0,0,0,0,-4,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:50:20.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.85,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:50:30.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.79,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:50:40.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.87,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:50:50.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.82,0,14,-0.21,0,0,0,0,0,2,0,0,0,0.368,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:51:00.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.9,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.78,0,14,-0.21,0,0,0,0,0,2,0,0,0,0.367,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:51:10.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.83,0,17.9,-0.21,0,0,0,0,0,2,0,0,0,0.027,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:51:20.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.79,0,18.3,-0.21,0,0,0,0,0,2,0,0,0,-0.007,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:51:30.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.66,0,0,0,0,0,0,0,0,0,52.94,0,18.3,-0.21,0,0,0,158.817,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:51:40.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.96,0,0,0,0,0,0,0,0,0,52.81,0,9.7,0,0,0,0,2340.816,0,2,0,0,0,0.746,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:51:50.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,254.09,0,0,0,0,0,0,0,0,0,52.84,0,18.3,0.11,0,0,0,3044.76,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:52:00.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,254.08,0,0,0,0,0,0,0,0,0,52.85,0,18.3,0.1,0,0,0,2699.316,0,2,0,0,0,-0.011,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:52:10.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,254.07,0,0,0,0,0,0,0,0,0,52.85,0,18.3,0.09,0,0,0,2697.654,0,2,0,0,0,-0.012,0,0,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:52:20.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,254.03,0,0,0,0,0,0,0,0,0,52.82,0,18.3,0.05,0,0,0,2698.206,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:52:30.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.96,0,0,0,0,0,0,0,0,0,52.78,0,18.3,-0.02,0,0,0,2698.206,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:52:40.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,0,0,0,0,0,0,253.96,0,0,0,0,0,0,0,0,0,52.87,0,18.3,-0.02,0,0,0,2504.79,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:52:50.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.97,0,0,0,0,0,0,0,0,0,52.83,0,18.3,-0.01,0,0,0,1687.602,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:53:00.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,254,0,0,0,0,0,0,0,0,0,52.85,0,18.3,0.02,0,0,0,1861.962,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:53:10.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,1,0,10,0,0,0,0,0,253.99,0,0,0,0,0,0,0,0,0,52.83,0,18.3,0.01,0,0,0,3666.66,0,2,0,0,0,-0.012,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:53:20.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,254.32,0,0,0,0,0,0,0,0,0,52.83,0,18.3,0.34,0,0,0,4108.206,0,2,0,0,0,-0.012,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:53:30.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,255.29,0,0,0,0,0,0,0,0,0,52.78,0,18.3,1.31,0,0,0,4029.75,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:53:40.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,254.02,0,0,0,0,0,0,0,0,0,52.86,0,14,0.04,0,0,0,3942.018,0,2,0,0,0,0.367,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:53:50.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.87,0,0,0,0,0,0,0,0,0,52.84,0,17.9,-0.11,0,0,0,4483.812,0,2,0,0,0,0.027,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:54:00.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.86,0,0,0,0,0,0,0,0,0,52.81,0,18.3,-0.11,0,0,0,4585.452,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:54:10.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.91,0,0,0,0,0,0,0,0,0,52.83,0,18.3,-0.06,0,0,0,4583.502,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:54:20.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.98,0,0,0,0,0,0,0,0,0,52.83,0,18.3,0.01,0,0,0,4260.18,0,2,0,0,0,-0.012,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:54:30.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.99,0,0,0,0,0,0,0,0,0,52.74,0,18.3,0.01,0,0,0,3011.832,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:54:40.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.98,0,0,0,0,0,0,0,0,0,52.85,0,18.3,0,0,0,0,2590.404,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:54:50.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.98,0,0,0,0,0,0,0,0,0,52.76,0,18.3,0,0,0,0,1272.678,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:55:00.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,254.99,0,0,0,0,0,0,0,0,0,52.81,0,18.3,1.01,0,0,0,0,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:55:10.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,254.52,0,0,0,0,0,0,0,0,0,52.88,0,18.3,0.54,0,0,0,901.56,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:55:20.000+02:00,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.92,0,0,0,0,0,0,0,0,0,52.91,0,18.3,-0.06,0,0,0,4079.97,0,2,0,0,0,-0.012,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:55:30.000+02:00,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,23.8,2,0,10,0,0,0,0,0,253.9,0,0,0,0,0,0,0,0,0,52.84,0,18.3,-0.07,0,0,0,4308.078,0,2,0,0,0,-0.013,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:55:40.000+02:00,0,0,0,0,2,0,0,0,0,0,4.5,0,0,0,0,0,23.8,2,0,10,0,0,0,0.05,22.6,300.31,0,0,0,0,0,0,0,0,0,52.84,0,18.3,46.34,0.23,0,0,4199.472,0,2,0,0,0,-0.011,0,1.03,0,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:55:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.24,22.76,485.99,0,0,0,0,0,0,0,0,0,52.84,0,18.3,232.01,0.28,0,1.62,4244.142,0,2,0,0,0,-0.01,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:56:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.24,22.6,485.76,0,0,0,0,0,0,0,0,0,52.83,0,18.3,231.78,0.28,0,1.6,4233.252,0,2,0,0,0,-0.013,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:56:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,485.75,0,0,0,0,0,0,0,0,0,52.87,0,18.3,231.77,0.27,0,1.6,3874.602,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:56:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.5,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.8,485.59,0,0,0,0,0,0,0,0,0,52.82,0,18.3,231.61,0.23,0,1.6,3515.58,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:56:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,485.95,0,0,0,0,0,0,0,0,0,52.88,0,18.3,231.98,0.23,0,1.62,2907.36,0,2,0,0,0,-0.012,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:56:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,487.43,0,0,0,0,0,0,0,0,0,52.89,0,18.3,233.45,0.28,0,1.62,2861.136,0,2,0,0,0,-0.01,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:56:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.24,22.6,486.1,0,0,0,0,0,0,0,0,0,52.81,0,18.3,232.12,0.28,0,1.62,1665.87,0,2,0,0,0,-0.01,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:57:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.24,22.6,485.9,0,0,0,0,0,0,0,0,0,52.85,0,18.3,231.92,0.28,0,1.62,0,0,2,0,0,0,-0.01,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:57:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.52,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.24,22.8,485.51,0,0,0,0,0,0,0,0,0,52.78,0,18.3,231.53,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:57:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.5,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.76,485.57,0,0,0,0,0,0,0,0,0,52.87,0,18.3,231.59,0.28,0,1.62,79.453,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:57:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.64,0,0,0,0,0,0,0,0,0,52.8,0,18.3,232.66,0.28,0,1.62,2427.744,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:57:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.3,0,0,0,0,0,0,0,0,0,52.74,0,18.3,232.32,0.28,0,1.6,4416.738,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:57:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.47,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,487.2,0,0,0,0,0,0,0,0,0,52.82,0,18.3,233.22,0.28,0,1.6,4150.362,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:58:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.48,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.24,22.6,486.09,0,0,0,0,0,0,0,0,0,52.85,0,18.3,232.11,0.28,0,1.62,3623.1,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:58:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.2,0,0,0,0,0,0,0,0,0,52.8,0,18.3,232.22,0.23,0,1.62,2904.636,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:58:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.24,22.6,486.19,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.21,0.28,0,1.62,2887.242,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:58:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.25,22.6,486.03,0,0,0,0,0,0,0,0,0,52.88,0,18.3,232.05,0.28,0,1.62,2957.226,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:58:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.56,486.69,0,0,0,0,0,0,0,0,0,52.78,0,18.3,232.71,0.27,0,1.62,2680.008,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:58:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.24,22.6,486.47,0,0,0,0,0,0,0,0,0,52.78,0,18.3,232.49,0.28,0,1.62,2247.588,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:59:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.17,0,0,0,0,0,0,0,0,0,52.96,0,18.3,232.19,0.28,0,1.62,667.518,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:59:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.14,0,0,0,0,0,0,0,0,0,52.78,0,18.3,232.16,0.23,0,1.62,106.757,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:59:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.18,0,0,0,0,0,0,0,0,0,52.79,0,18.3,232.2,0.28,0,1.6,3.568,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:59:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.22,22.6,486.1,0,0,0,0,0,0,0,0,0,52.81,0,18.3,232.13,0.22,0,1.62,172.574,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:59:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.12,0,0,0,0,0,0,0,0,0,52.87,0,18.3,232.14,0.28,0,1.6,155.783,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T22:59:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.8,486.31,0,0,0,0,0,0,0,0,0,52.88,0,18.4,232.33,0.23,0,1.6,136.825,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:00:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.39,486.6,0,0,0,0,0,0,0,0,0,52.85,0,18.3,232.63,0.23,0,1.62,248.863,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:00:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.22,22.39,486.24,0,0,0,0,0,0,0,0,0,52.82,0,18.3,232.26,0.23,0,1.6,496.384,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:00:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.22,22.6,486.24,0,0,0,0,0,0,0,0,0,52.79,0,18.3,232.27,0.23,0,1.6,82.102,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:00:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,0.1,0,0,0,0.22,23.8,1,0,10,0.1,0,0,0.24,22.6,486.12,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.15,0.28,0,1.6,8.21,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:00:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.27,0,0,0,0,0,0,0,0,0,52.84,0,18.3,232.29,0.22,0,1.62,0.821,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:00:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.24,22.6,486.3,0,0,0,0,0,0,0,0,0,52.78,0,18.3,232.33,0.28,0,1.62,0.082,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:01:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.38,0,0,0,0,0,0,0,0,0,52.78,0,18.3,232.4,0.23,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:01:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.22,22.6,486.31,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.33,0.22,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:01:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.26,0,0,0,0,0,0,0,0,0,52.89,0,18.3,232.28,0.23,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:01:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,486.3,0,0,0,0,0,0,0,0,0,52.71,0,18.3,232.33,0.23,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:01:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,0.1,0,0,0,0.22,23.8,2,0,10,0.1,0,0,0.23,22.6,487.58,0,0,0,0,0,0,0,0,0,52.86,0,18.3,233.6,0.27,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:01:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,486.25,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.27,0.23,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:02:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,486.16,0,0,0,0,0,0,0,0,0,52.81,0,18.3,232.18,0.28,0,1.62,0,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:02:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.2,0,0,0,0.18,23.8,2,0,10,0.2,0,0,0.23,22.6,485.88,0,0,0,0,0,0,0,0,0,52.8,0,18.3,231.9,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:02:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,487.23,0,0,0,0,0,0,0,0,0,52.87,0,18.3,233.26,0.23,0,1.62,0,0,1,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:02:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.39,487.05,0,0,0,0,0,0,0,0,0,52.78,0,18.3,233.07,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:02:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.39,486.2,0,0,0,0,0,0,0,0,0,52.89,0,18.3,232.23,0.23,0,1.62,0,0,1,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:02:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.56,486.63,0,0,0,0,0,0,0,0,0,52.91,0,18.3,232.65,0.28,0,1.62,0,0,2,0,0,0,-0.012,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:03:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.36,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.39,486.41,0,0,0,0,0,0,0,0,0,52.91,0,18.3,232.43,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:03:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,486.29,0,0,0,0,0,0,0,0,0,52.8,0,18.3,232.31,0.23,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:03:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.39,486.07,0,0,0,0,0,0,0,0,0,52.85,0,18.3,232.09,0.27,0,1.62,0,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:03:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.22,22.56,486.2,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.22,0.27,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:03:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.6,486.13,0,0,0,0,0,0,0,0,0,52.77,0,18.3,232.15,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:03:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.6,486.07,0,0,0,0,0,0,0,0,0,52.89,0,18.3,232.09,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:04:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.6,485.98,0,0,0,0,0,0,0,0,0,52.87,0,18.3,232,0.28,0,1.62,0,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:04:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,486.11,0,0,0,0,0,0,0,0,0,52.77,0,18.3,232.13,0.23,0,1.6,0,0,2,0,0,0,-0.012,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:04:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.34,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.6,486.72,0,0,0,0,0,0,0,0,0,52.94,0,18.3,232.75,0.28,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:04:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.6,486.15,0,0,0,0,0,0,0,0,0,52.76,0,18.3,232.17,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:04:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.39,486.35,0,0,0,0,0,0,0,0,0,52.78,0,18.3,232.37,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:04:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,486.29,0,0,0,0,0,0,0,0,0,52.8,0,18.3,232.31,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:05:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.47,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.8,486.17,0,0,0,0,0,0,0,0,0,52.81,0,18.3,232.19,0.28,0,1.62,0,0,2,0,0,0,-0.013,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:05:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.5,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.8,486.3,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.32,0.28,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:05:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.36,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,486.28,0,0,0,0,0,0,0,0,0,52.79,0,18.3,232.31,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:05:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.39,486.28,0,0,0,0,0,0,0,0,0,52.85,0,18.3,232.3,0.28,0,1.62,353.699,0,2,0,0,0,-0.012,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:05:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.76,486.18,0,0,0,0,0,0,0,0,0,52.96,0,18.3,232.2,0.27,0,1.62,1710.744,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:05:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.51,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.76,487.47,0,0,0,0,0,0,0,0,0,52.88,0,18.3,233.49,0.27,0,1.62,1598.352,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:06:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.49,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.8,486.42,0,0,0,0,0,0,0,0,0,52.89,0,18.3,232.44,0.28,0,1.62,1296.882,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:06:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.8,487.4,0,0,0,0,0,0,0,0,0,52.87,0,18.3,233.42,0.23,0,1.62,565.27,0,1,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:06:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.49,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.8,486.13,0,0,0,0,0,0,0,0,0,52.85,0,18.3,232.15,0.23,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:06:30.000+02:00,0,0,0,0,1,0,0,0,0,0,22.49,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.76,486.73,0,0,0,0,0,0,0,0,0,52.8,0,18.3,232.75,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:06:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.6,486.77,0,0,0,0,0,0,0,0,0,52.85,0,18.3,232.8,0.28,0,1.6,0,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:06:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.24,22.6,486.78,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.8,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:07:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.51,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.8,488.09,0,0,0,0,0,0,0,0,0,52.81,0,18.3,234.11,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:07:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.25,22.76,488.73,0,0,0,0,0,0,0,0,0,52.75,0,18.3,234.75,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:07:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,486.92,0,0,0,0,0,0,0,0,0,52.86,0,18.3,232.95,0.28,0,1.62,10.526,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:07:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,486.43,0,0,0,0,0,0,0,0,0,52.87,0,18.3,232.45,0.28,0,1.6,2026.89,0,2,0,0,0,-0.012,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:07:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,0.2,0,0,0,0.22,23.8,2,0,10,0.2,0,0,0.23,22.6,486.32,0,0,0,0,0,0,0,0,0,52.89,0,18.3,232.34,0.28,0,1.6,3909.342,0,2,0,0,0,-0.012,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:07:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.24,22.6,487,0,0,0,0,0,0,0,0,0,52.92,0,18.3,233.02,0.28,0,1.62,3833.256,0,2,0,0,0,-0.013,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:08:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,487.07,0,0,0,0,0,0,0,0,0,52.76,0,18.3,233.09,0.23,0,1.6,3445.968,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:08:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.24,22.6,487.55,0,0,0,0,0,0,0,0,0,52.89,0,18.3,233.57,0.28,0,1.62,3475.914,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:08:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.39,487.36,0,0,0,0,0,0,0,0,0,52.89,0,18.3,233.38,0.23,0,1.62,3946.002,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:08:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.92,0,0,0,0,0,0,0,0,0,52.78,0,18.3,232.94,0.23,0,1.62,4253.676,0,2,0,0,0,-0.012,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:08:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.25,22.6,486.49,0,0,0,0,0,0,0,0,0,52.84,0,18.3,232.51,0.28,0,1.62,4240.314,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:08:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.54,0,0,0,0,0,0,0,0,0,52.81,0,18.3,232.56,0.23,0,1.6,4256.298,0,1,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:09:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.56,486.49,0,0,0,0,0,0,0,0,0,52.76,0,18.3,232.52,0.28,0,1.6,4242.684,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,-99990,0,0,0,0</data>
+<data>2006-08-02T23:09:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.33,0.3,0,0,0,0.22,23.8,1,0,10,0.3,0,0,0.23,22.8,486.42,0,0,0,0,0,0,0,0,0,52.85,0,18.3,232.44,0.28,0,1.6,4119.45,0,2,0,0,0,-0.011,0,1.03,21.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:09:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.24,22.56,486.34,0,0,0,0,0,0,0,0,0,52.82,0,18.3,232.36,0.28,0,1.62,4115.466,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:09:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.22,22.6,486.25,0,0,0,0,0,0,0,0,0,52.82,0,18.3,232.27,0.28,0,1.62,4105.23,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:09:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.24,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.26,0.23,0,1.62,3919.074,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:09:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.39,486.5,0,0,0,0,0,0,0,0,0,52.81,0,18.3,232.53,0.23,0,1.62,2982.54,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:10:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.3,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.39,486.75,0,0,0,0,0,0,0,0,0,52.84,0,18.3,232.77,0.23,0,1.62,2732.898,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:10:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.41,0,0,0,0,0,0,0,0,0,52.76,0,18.3,232.43,0.23,0,1.62,2210.832,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:10:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.32,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.34,0.27,0,1.62,883.14,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:10:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.43,0,0,0,0,0,0,0,0,0,52.79,0,18.3,232.45,0.23,0,1.62,88.314,0,1,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:10:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.46,0,0,0,0,0,0,0,0,0,52.87,0,18.3,232.48,0.23,0,1.6,0,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:10:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.22,22.6,486.56,0,0,0,0,0,0,0,0,0,52.79,0,18.3,232.58,0.22,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:11:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.48,0,0,0,0,0,0,0,0,0,52.83,0,18.3,232.5,0.23,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:11:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.22,22.39,486.29,0,0,0,0,0,0,0,0,0,52.75,0,18.3,232.31,0.23,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:11:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.24,22.6,486.04,0,0,0,0,0,0,0,0,0,52.81,0,18.3,232.06,0.28,0,1.62,0,0,2,0,0,0,-0.012,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:11:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.02,0,0,0,0,0,0,0,0,0,52.84,0,18.3,232.04,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:11:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.36,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.39,489.09,0,0,0,0,0,0,0,0,0,52.78,0,18.3,235.11,0.28,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:11:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.22,22.6,486.15,0,0,0,0,0,0,0,0,0,52.88,0,18.3,232.17,0.22,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:12:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.8,485.95,0,0,0,0,0,0,0,0,0,52.78,0,18.3,231.97,0.28,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:12:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.57,0,0,0,0,0,0,0,0,0,52.84,0,18.3,232.59,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:12:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.34,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.12,0,0,0,0,0,0,0,0,0,52.89,0,18.3,232.14,0.23,0,1.6,0,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:12:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.34,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.24,22.39,485.96,0,0,0,0,0,0,0,0,0,52.87,0,18.3,231.98,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:12:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.34,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,485.92,0,0,0,0,0,0,0,0,0,52.86,0,18.3,231.94,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:12:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.47,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.16,0,0,0,0,0,0,0,0,0,52.89,0,18.3,232.19,0.23,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:13:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.56,486.43,0,0,0,0,0,0,0,0,0,52.75,0,18.3,232.45,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:13:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.22,22.6,486.46,0,0,0,0,0,0,0,0,0,52.82,0,18.3,232.48,0.22,0,1.62,505.169,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:13:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.36,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,486.27,0,0,0,0,0,0,0,0,0,52.85,0,18.3,232.29,0.27,0,1.61,400.279,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:13:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.3,0,0,0,0.22,23.8,2,0,10,0.3,0,0,0.23,22.6,485.86,0,0,0,0,0,0,0,0,0,52.81,0,18.3,231.89,0.27,0,1.6,207.819,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:13:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,0.3,0,0,0,0.22,23.8,1,0,10,0.3,0,0,0.23,22.6,485.82,0,0,0,0,0,0,0,0,0,52.83,0,18.3,231.84,0.23,0,1.62,147.766,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:13:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.95,0,0,0,0,0,0,0,0,0,52.88,0,18.3,231.98,0.28,0,1.62,497.68,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:14:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.22,22.6,485.96,0,0,0,0,0,0,0,0,0,52.85,0,18.3,231.98,0.23,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:14:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.78,0,0,0,0,0,0,0,0,0,52.83,0,18.4,231.8,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:14:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.39,485.65,0,0,0,0,0,0,0,0,0,52.89,0,18.4,231.68,0.27,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:14:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.64,0,0,0,0,0,0,0,0,0,52.82,0,18.3,231.66,0.28,0,1.6,582.012,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:14:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.5,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.8,485.62,0,0,0,0,0,0,0,0,0,52.84,0,18.3,231.64,0.23,0,1.62,413.466,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:14:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.22,22.6,485.68,0,0,0,0,0,0,0,0,0,52.77,0,18.3,231.7,0.22,0,1.62,47.234,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:15:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.8,485.83,0,0,0,0,0,0,0,0,0,52.84,0,18.3,231.85,0.23,0,1.62,4.723,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:15:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.8,485.79,0,0,0,0,0,0,0,0,0,52.81,0,18.3,231.81,0.28,0,1.62,0.472,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:15:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.24,22.6,485.59,0,0,0,0,0,0,0,0,0,52.81,0,18.3,231.61,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:15:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.49,0,0,0,0,0,0,0,0,0,52.83,0,18.3,231.52,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:15:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.36,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.38,0,0,0,0,0,0,0,0,0,52.86,0,18.3,231.4,0.28,0,1.62,0.883,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:15:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.24,22.6,485.41,0,0,0,0,0,0,0,0,0,52.82,0,18.3,231.43,0.28,0,1.6,2.939,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:16:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.34,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.24,22.39,485.45,0,0,0,0,0,0,0,0,0,52.85,0,18.3,231.47,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:16:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.24,22.6,485.41,0,0,0,0,0,0,0,0,0,52.85,0,18.3,231.43,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:16:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.48,0,0,0,0,0,0,0,0,0,52.8,0,18.3,231.5,0.28,0,1.62,0,0,2,0,0,0,-0.01,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:16:30.000+02:00,0,0,0,0,1,0,0,0,0,0,22.45,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.8,485.29,0,0,0,0,0,0,0,0,0,52.84,0,18.3,231.31,0.28,0,1.62,0,0,2,0,0,0,-0.01,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:16:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.51,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.8,486.43,0,0,0,0,0,0,0,0,0,52.84,0,18.3,232.45,0.28,0,1.62,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:16:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.36,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.99,0,0,0,0,0,0,0,0,0,52.81,0,18.3,232.01,0.23,0,1.59,0,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:17:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.24,22.6,485.85,0,0,0,0,0,0,0,0,0,52.84,0,18.3,231.88,0.28,0,1.61,0,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:17:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.24,22.39,485.96,0,0,0,0,0,0,0,0,0,52.91,0,18.3,231.99,0.28,0,1.6,0,0,2,0,0,0,-0.01,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:17:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.33,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.98,0,0,0,0,0,0,0,0,0,52.78,0,18.3,232,0.23,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:17:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.36,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.92,0,0,0,0,0,0,0,0,0,52.82,0,18.4,231.94,0.23,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:17:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.28,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.39,485.86,0,0,0,0,0,0,0,0,0,52.87,0,18.4,231.88,0.23,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:17:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.26,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.39,485.97,0,0,0,0,0,0,0,0,0,52.84,0,18.3,232,0.23,0,1.6,0,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:18:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.32,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.39,485.9,0,0,0,0,0,0,0,0,0,52.78,0,18.3,231.92,0.23,0,1.6,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:18:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.3,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.39,485.98,0,0,0,0,0,0,0,0,0,52.89,0,18.3,232,0.28,0,1.6,0,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:18:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.32,0.4,0,0,0,0.22,23.8,1,0,10,0.4,0,0,0.24,22.39,485.97,0,0,0,0,0,0,0,0,0,52.89,0,18.3,231.99,0.28,0,1.6,0,0,2,0,0,0,-0.012,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:18:30.000+02:00,0,0,0,0,1,0,0,0,0,0,22.37,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.8,0,0,0,0,0,0,0,0,0,52.82,0,18.3,231.82,0.23,0,1.6,0,0,2,0,0,0,-0.01,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:18:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.32,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.22,22.6,485.62,0,0,0,0,0,0,0,0,0,52.81,0,18.3,231.65,0.22,0,1.59,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:18:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.31,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.24,22.6,485.38,0,0,0,0,0,0,0,0,0,52.78,0,18.3,231.4,0.28,0,1.59,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:19:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.51,0,0,0,0,0,0,0,0,0,52.8,0,18.3,231.53,0.28,0,1.59,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:19:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.27,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.22,22.39,485.72,0,0,0,0,0,0,0,0,0,52.79,0,18.3,231.74,0.22,0,1.59,0,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:19:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.19,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.6,485.6,0,0,0,0,0,0,0,0,0,52.68,0,18.3,231.62,0.28,0,1.59,0,0,2,0,0,0,-0.011,0,1.03,21.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:19:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.58,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.23,22.99,485.46,0,0,0,0,0,0,0,0,0,52.83,0,18.4,231.48,0.23,0,2.5,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:19:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.61,0.4,0,0,0,0.22,23.8,2,0,10,0.4,0,0,0.22,23.19,485.78,0,0,0,0,0,0,0,0,0,52.8,0,14,231.8,0.23,0,3.51,0,0,2,0,0,0,0.371,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:19:50.000+02:00,29,44,0,23,2,123,0,0,0,0,22.61,0.5,0,0,0,0.22,23.8,-24,0,10,0.5,0,0,0.24,23.19,485.86,0,0,0,0,0,0,0,0,0,52.9,0,17.9,231.88,0.28,0,3.51,1385.898,0,-24,0,0,0,0.028,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:20:00.000+02:00,3,4,0,2,2,12,0,0,0,0,22.63,0.5,0,0,0,0.22,23.8,-1,0,10,0.5,0,0,0.23,22.99,486.28,0,0,0,0,0,0,0,0,0,52.87,0,18.3,232.31,0.22,0,3.53,1120.854,0,-1,0,0,0,-0.008,0,1.03,21.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:20:10.000+02:00,0,0,0,0,2,1,0,0,0,0,22.59,0.5,0,0,0,0.22,23.8,1,0,10,0.5,0,0,0.23,23.19,486.07,0,0,0,0,0,0,0,0,0,52.8,0,18.3,232.09,0.28,0,4.23,1790.574,0,1,0,0,0,-0.011,0,1.03,21.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:20:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.59,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,22.8,485.55,0,0,0,0,0,0,0,0,0,52.92,0,18.3,231.57,0.23,0,4.25,3127.248,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:20:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.59,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,22.76,485.35,0,0,0,0,0,0,0,0,0,52.87,0,18.3,231.37,0.28,0,4.25,3826.218,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:20:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.56,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.24,22.8,485.38,0,0,0,0,0,0,0,0,0,52.84,0,18.3,231.4,0.28,0,4.25,4093.314,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:20:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.59,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.24,22.8,485.42,0,0,0,0,0,0,0,0,0,52.79,0,18.3,231.45,0.28,0,4.25,3904.5,0,2,0,0,0,-0.01,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:21:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.58,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,22.8,485.03,0,0,0,0,0,0,0,0,0,52.76,0,18.3,231.05,0.23,0,4.25,3757.32,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:21:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.62,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,22.8,485.4,0,0,0,0,0,0,0,0,0,52.85,0,18.3,231.42,0.23,0,4.25,4209.96,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:21:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.62,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,22.8,485.69,0,0,0,0,0,0,0,0,0,52.85,0,18.3,231.71,0.23,0,4.25,4061.766,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:21:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.5,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,22.8,485.65,0,0,0,0,0,0,0,0,0,52.85,0,18.3,231.68,0.28,0,4.25,3997.128,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:21:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.63,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,22.8,485.5,0,0,0,0,0,0,0,0,0,52.81,0,18.4,231.53,0.23,0,4.25,3895.83,0,2,0,0,0,-0.012,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:21:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.59,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,22.8,485.34,0,0,0,0,0,0,0,0,0,52.87,0,18.4,231.36,0.28,0,4.25,3902.838,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:22:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.49,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,22.8,485.45,0,0,0,0,0,0,0,0,0,52.83,0,18.3,231.48,0.23,0,4.25,3923.862,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:22:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.99,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.24,23.58,485.62,0,0,0,0,0,0,0,0,0,52.83,0,18.3,231.64,0.28,0,4.73,3916.908,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:22:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.24,23.58,485.85,0,0,0,0,0,0,0,0,0,52.9,0,18.3,231.87,0.28,0,5.9,3978.876,0,2,0,0,0,-0.013,0,1.03,22.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:22:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.34,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.58,485.85,0,0,0,0,0,0,0,0,0,52.9,0,18.3,231.87,0.23,0,6.35,4033.146,0,2,0,0,0,-0.012,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:22:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.54,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.79,485.88,0,0,0,0,0,0,0,0,0,52.8,0,18.3,231.9,0.28,0,6.34,4022.994,0,2,0,0,0,-0.012,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:22:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.65,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.98,485.75,0,0,0,0,0,0,0,0,0,52.84,0,18.3,231.77,0.23,0,6.33,3335.544,0,2,0,0,0,-0.011,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:23:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.67,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,24.02,485.66,0,0,0,0,0,0,0,0,0,52.82,0,18.3,231.68,0.23,0,6.89,2728.464,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:23:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.52,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,24.52,485.67,0,0,0,0,0,0,0,0,0,53.4,0,18.3,231.69,0.28,0,7.65,2355.39,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:23:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.58,485.8,0,0,0,0,0,0,0,0,0,53.65,0,18.3,231.82,0.27,0,7.65,2260.548,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:23:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.5,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.24,24.14,484.37,0,0,0,0,0,0,0,0,0,53.8,0,18.3,230.39,0.28,0,7.74,1701.168,0,1,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:23:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.47,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.58,485.44,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.46,0.28,0,7.77,1092.858,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:23:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.66,0.5,0,0,0,0.22,23.8,1,0,10,0.5,0,0,0.23,23.79,485.42,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.44,0.28,0,7.76,0,0,2,0,0,0,-0.011,0,1.03,23.55,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:24:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.66,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.79,485.36,0,0,0,0,0,0,0,0,0,53.8,0,18.3,231.39,0.28,0,7.77,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:24:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.51,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.24,23.79,485.49,0,0,0,0,0,0,0,0,0,53.94,0,18.3,231.51,0.28,0,7.78,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:24:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.98,485.51,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.53,0.28,0,7.67,0,0,2,0,0,0,-0.011,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:24:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.41,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.79,485.45,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.47,0.23,0,7.01,0,0,2,0,0,0,-0.011,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:24:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.24,23.79,485.46,0,0,0,0,0,0,0,0,0,53.84,0,18.3,231.48,0.28,0,6.28,0,0,2,0,0,0,-0.011,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:24:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.52,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.79,485.43,0,0,0,0,0,0,0,0,0,53.8,0,18.3,231.45,0.28,0,6.2,0,0,2,0,0,0,-0.012,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:25:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.49,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.79,485.53,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.55,0.28,0,6.2,0,0,2,0,0,0,-0.011,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:25:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.61,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.24,23.79,485.53,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.55,0.28,0,6.47,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:25:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.58,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.98,485.4,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.42,0.28,0,6.99,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:25:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.6,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.23,23.98,485.35,0,0,0,0,0,0,0,0,0,53.84,0,18.3,231.37,0.28,0,7.51,0,0,2,0,0,0,-0.012,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:25:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.6,0.5,0,0,0,0.22,23.8,2,0,10,0.5,0,0,0.24,23.98,485.35,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.37,0.28,0,8.03,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:25:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.7,0.6,0,0,0,0.22,23.8,1,0,10,0.6,0,0,0.23,23.79,485.38,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.4,0.23,0,8.55,0,0,2,0,0,0,-0.011,0,1.03,23.55,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:26:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.66,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.44,0,0,0,0,0,0,0,0,0,53.79,0,18.3,231.46,0.28,0,9.05,0,0,2,0,0,0,-0.01,0,1.03,23.55,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:26:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.61,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.82,0,0,0,0,0,0,0,0,0,53.79,0,18.3,231.84,0.28,0,9.58,0,0,1,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:26:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.55,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,486.09,0,0,0,0,0,0,0,0,0,53.72,0,18.3,232.11,0.28,0,9.98,0,0,2,0,0,0,-0.012,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:26:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.24,23.58,486.08,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.1,0.28,0,9.98,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:26:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.56,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.24,23.79,485.66,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.68,0.28,0,9.99,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:26:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.62,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.42,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.44,0.28,0,9.99,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:27:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.47,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.24,23.58,485.46,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.49,0.28,0,9.97,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:27:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.58,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.58,485.51,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.53,0.27,0,9.98,0,0,2,0,0,0,-0.01,0,1.03,23.58,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:27:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.52,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.22,23.79,485.49,0,0,0,0,0,0,0,0,0,53.94,0,18.3,231.51,0.22,0,9.98,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:27:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.52,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.3,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.32,0.28,0,9.99,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:27:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.49,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.24,23.79,485.58,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.6,0.28,0,9.98,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:27:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.83,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.85,0.23,0,9.99,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:28:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.69,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.71,0.27,0,9.97,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:28:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.55,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.58,485.64,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.66,0.23,0,9.99,0,0,2,0,0,0,-0.01,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:28:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.5,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.58,485.56,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.58,0.28,0,9.98,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:28:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.61,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.62,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.65,0.28,0,9.98,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:28:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.52,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.74,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.76,0.23,0,10,0,0,2,0,0,0,-0.012,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:28:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.58,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.84,0,0,0,0,0,0,0,0,0,53.95,0,18.3,231.86,0.23,0,10,0,0,2,0,0,0,-0.012,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:29:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.56,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.74,0,0,0,0,0,0,0,0,0,53.77,0,18.3,231.76,0.27,0,10,0,0,2,0,0,0,-0.011,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:29:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.54,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.98,485.59,0,0,0,0,0,0,0,0,0,53.93,0,18.3,231.61,0.28,0,10.32,0,0,2,0,0,0,-0.011,0,1.03,22.56,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:29:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.29,0.6,0,0,0,0.18,23.8,2,0,10,0.6,0,0,0.22,23.58,485.61,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.63,0.28,0,10.62,0,0,2,0,0,0,-0.011,0,1.03,22.56,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:29:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.59,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.59,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.62,0.28,0,10.63,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:29:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.72,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.24,24.52,485.63,0,0,0,0,0,0,0,0,0,53.76,0,18.3,231.65,0.28,0,10.64,0,0,2,0,0,0,-0.012,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:29:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.52,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.24,23.58,485.91,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.93,0.28,0,10.63,0,0,2,0,0,0,-0.012,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:30:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.58,486.01,0,0,0,0,0,0,0,0,0,53.86,0,18.4,232.03,0.28,0,10.63,1791.132,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:30:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.75,485.66,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.68,0.27,0,10.64,1863.372,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:30:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.52,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.79,485.48,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.5,0.28,0,10.63,1752.9,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:30:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.55,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.22,23.79,485.37,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.39,0.22,0,10.63,2879.982,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:30:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.53,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,24.14,485.74,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.76,0.28,0,10.63,3581.046,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:30:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.51,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,24.34,485.64,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.66,0.23,0,11.18,3553.416,0,2,0,0,0,-0.011,0,1.03,21.92,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:31:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.43,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.58,485.56,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.58,0.28,0,11.35,3565.968,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:31:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.47,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.58,485.58,0,0,0,0,0,0,0,0,0,53.78,0,18.3,231.6,0.23,0,11.35,3392.214,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:31:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.5,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.22,23.79,485.5,0,0,0,0,0,0,0,0,0,53.8,0,18.3,231.52,0.22,0,11.36,2444.436,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:31:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.72,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.24,24.38,485.52,0,0,0,0,0,0,0,0,0,53.96,0,18.3,231.54,0.28,0,11.37,2211.786,0,2,0,0,0,-0.011,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:31:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.54,0.6,0,0,0,0.22,23.8,2,0,10,0.6,0,0,0.23,23.98,485.5,0,0,0,0,0,0,0,0,0,53.8,0,18.3,231.52,0.28,0,11.98,2210.832,0,2,0,0,0,-0.012,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:31:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.79,485.43,0,0,0,0,0,0,0,0,0,53.82,0,18.3,231.45,0.28,0,12.27,1998.048,0,2,0,0,0,-0.012,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:32:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.4,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.44,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.46,0.28,0,12.6,452.399,0,2,0,0,0,-0.011,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:32:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.24,23.58,485.37,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.39,0.28,0,12.62,0,0,2,0,0,0,-0.01,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:32:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.53,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.55,0.23,0,12.62,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:32:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.24,23.58,485.53,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.55,0.28,0,12.61,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:32:40.000+02:00,29,44,0,23,-24,123,0,0,0,0,23.43,0.7,0,0,0,0.22,18.9,-24,0,10,0.7,0,0,0.23,23.58,482.98,0,0,0,0,0,0,0,0,0,53.83,0,18.3,229,0.22,0,12.62,0,0,-24,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:32:50.000+02:00,0,0,0,0,-24,0,0,0,0,0,23.46,0.7,0,0,0,0.22,18.9,2,0,10,0.7,0,0,0.24,23.58,481.38,0,0,0,0,0,0,0,0,0,53.8,0,18.4,227.4,0.28,0,12.63,2470.152,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:33:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.31,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.24,23.38,485.33,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.35,0.28,0,12.62,2562.726,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:33:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.41,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.98,485.23,0,0,0,0,0,0,0,0,0,53.76,0,18.3,231.25,0.28,0,12.61,3504.546,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:33:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.4,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,24.18,485.33,0,0,0,0,0,0,0,0,0,53.72,0,18.3,231.35,0.23,0,12.75,4072.158,0,2,0,0,0,-0.012,0,1.03,22.76,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:33:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.44,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,24.34,485.42,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.44,0.28,0,13.02,3977.712,0,2,0,0,0,-0.011,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:33:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.33,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.32,0,0,0,0,0,0,0,0,0,53.92,0,18.3,231.34,0.23,0,13.02,4046.34,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:33:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.4,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.22,23.58,485.42,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.44,0.23,0,13.02,4099.128,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:34:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.45,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.22,23.58,485.48,0,0,0,0,0,0,0,0,0,53.82,0,18.3,231.5,0.22,0,13.02,3751.02,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:34:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.56,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.7,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.73,0.28,0,13.02,3467.394,0,2,0,0,0,-0.011,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:34:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.52,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.24,23.79,485.66,0,0,0,0,0,0,0,0,0,53.92,0,18.3,231.68,0.28,0,13.02,3184.278,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:34:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.35,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.52,0,0,0,0,0,0,0,0,0,53.94,0,18.3,231.54,0.28,0,13.02,3513.834,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:34:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.51,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.53,0.28,0,13.02,3161.838,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:34:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.31,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.38,485.69,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.71,0.27,0,13.01,2754.582,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:35:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.37,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.82,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.84,0.27,0,13.02,2858.298,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:35:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.35,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.2,0,0,0,0,0,0,0,0,0,53.84,0,18.3,231.23,0.23,0,13.02,2759.07,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:35:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.4,0.7,0,0,0,0.18,23.8,2,0,10,0.7,0,0,0.23,23.58,484.9,0,0,0,0,0,0,0,0,0,53.91,0,18.3,230.92,0.28,0,13.02,1198.104,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:35:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.37,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.79,485.28,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.3,0.28,0,13.01,1104.624,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:35:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.34,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.22,23.79,485.82,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.84,0.22,0,13.02,1104.27,0,2,0,0,0,-0.013,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:35:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.95,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.96,0.23,0,13.02,1153.836,0,2,0,0,0,-0.01,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:36:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.45,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.79,485.84,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.86,0.28,0,13.02,1786.002,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:36:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.45,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,486.01,0,0,0,0,0,0,0,0,0,53.79,0,18.3,232.03,0.28,0,13.02,3039.936,0,2,0,0,0,-0.012,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:36:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.58,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,24.02,486.45,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.47,0.23,0,13,3666.21,0,2,0,0,0,-0.011,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:36:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.22,23.79,485.85,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.87,0.28,0,12.62,3558.708,0,2,0,0,0,-0.012,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:36:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.4,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.79,485.62,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.64,0.28,0,12.17,3559.314,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:36:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.79,485.5,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.52,0.28,0,11.79,3647.802,0,2,0,0,0,-0.012,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:37:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.79,485.44,0,0,0,0,0,0,0,0,0,53.78,0,18.3,231.46,0.23,0,11.37,3627.99,0,2,0,0,0,-0.012,0,1.03,22.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:37:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.47,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.47,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.49,0.23,0,11.19,3319.152,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:37:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.44,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.23,23.58,485.42,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.44,0.28,0,11.2,2864.346,0,2,0,0,0,-0.013,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:37:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.5,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.22,23.58,485.67,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.69,0.22,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:37:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.47,0.7,0,0,0,0.22,23.8,2,0,10,0.7,0,0,0.24,23.58,485.6,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.62,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:37:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.54,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.66,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.68,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:38:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.34,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.66,0,0,0,0,0,0,0,0,0,53.98,0,18.3,231.68,0.27,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:38:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.41,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.61,0,0,0,0,0,0,0,0,0,53.78,0,18.3,231.64,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:38:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.54,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.56,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:38:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.5,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.22,23.79,485.69,0,0,0,0,0,0,0,0,0,53.94,0,18.3,231.71,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:38:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,487.83,0,0,0,0,0,0,0,0,0,53.84,0,18.3,233.86,0.23,0,11.2,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:38:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.74,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.76,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:39:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.45,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.74,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.76,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:39:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.38,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.58,0,0,0,0,0,0,0,0,0,53.9,0,14,231.6,0.22,0,11.21,0,0,2,0,0,0,0.369,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:39:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.44,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,487.92,0,0,0,0,0,0,0,0,0,53.85,0,18.3,233.94,0.23,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:39:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.37,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,486.75,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.78,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:39:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.41,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.8,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.82,0.28,0,11.2,0,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:39:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.44,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.66,0,0,0,0,0,0,0,0,0,53.94,0,18.3,231.68,0.28,0,11.2,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:40:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.57,0,0,0,0,0,0,0,0,0,53.93,0,18.3,231.59,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:40:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.46,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.48,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:40:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.79,485.34,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.36,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:40:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.47,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.38,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.4,0.23,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:40:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.47,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.35,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.37,0.28,0,11.2,0,0,2,0,0,0,-0.01,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:40:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.37,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.36,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.38,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:41:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.32,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.34,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:41:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.46,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.48,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:41:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.33,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.53,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.55,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:41:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.37,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.79,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.81,0.28,0,11.2,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:41:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.37,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.22,23.58,485.62,0,0,0,0,0,0,0,0,0,53.84,0,18.3,231.64,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:41:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.56,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.58,0.28,0,11.2,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:42:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.72,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.74,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:42:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.98,0,0,0,0,0,0,0,0,0,53.84,0,18.3,232,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:42:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.79,485.97,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.99,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:42:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.72,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.74,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:42:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.58,0,0,0,0,0,0,0,0,0,53.93,0,18.3,231.6,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:42:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.37,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.68,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.7,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:43:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.37,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.9,0,0,0,0,0,0,0,0,0,53.9,0,18.3,231.92,0.23,0,11.2,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:43:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.52,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.24,23.58,485.82,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.84,0.27,0,11.21,0,0,2,0,0,0,-0.01,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:43:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.33,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.55,485.82,0,0,0,0,0,0,0,0,0,53.8,0,18.3,231.84,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:43:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.35,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.76,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.78,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:43:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,0.8,0,0,0,0.22,23.8,2,0,10,0.8,0,0,0.23,23.58,485.94,0,0,0,0,0,0,0,0,0,53.77,0,18.3,231.97,0.23,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:43:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.24,23.75,486.03,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.05,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:44:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.45,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.79,486.01,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.03,0.23,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:44:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.46,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,485.89,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.91,0.28,0,11.2,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:44:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.33,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.22,23.58,485.98,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232,0.22,0,11.21,0,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:44:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.44,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.24,23.58,486.11,0,0,0,0,0,0,0,0,0,53.9,0,18.3,232.13,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:44:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.08,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.11,0.23,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:44:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.35,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,485.91,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.94,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:45:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.5,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,485.58,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.6,0.28,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:45:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.43,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.24,23.79,485.82,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.84,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:45:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.79,485.85,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.87,0.27,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:45:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,485.96,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.98,0.23,0,11.21,0,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:45:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.33,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.24,23.38,486.09,0,0,0,0,0,0,0,0,0,53.92,0,18.3,232.11,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:45:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.45,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.19,0,0,0,0,0,0,0,0,0,53.77,0,18.3,232.21,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:46:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.14,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.16,0.23,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:46:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.24,23.58,486.04,0,0,0,0,0,0,0,0,0,53.9,0,18.3,232.06,0.28,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:46:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.41,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.03,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.05,0.23,0,11.2,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:46:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.38,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.22,23.58,486.01,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.03,0.22,0,11.21,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:46:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.3,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,485.6,0,0,0,0,0,0,0,0,0,53.82,0,18.3,231.62,0.23,0,11.21,0,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:46:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.43,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.24,24.22,485.58,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.6,0.28,0,11.07,0,0,2,0,0,0,-0.011,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:47:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.79,485.8,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.82,0.28,0,10.24,0,0,2,0,0,0,-0.011,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:47:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.23,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.38,486.18,0,0,0,0,0,0,0,0,0,53.82,0,18.3,232.2,0.28,0,9.67,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:47:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.28,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.79,486.43,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.45,0.28,0,9.14,0,0,2,0,0,0,-0.011,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:47:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.32,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.75,486.68,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.71,0.23,0,8.72,0,0,2,0,0,0,-0.01,0,1.03,22.56,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:47:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.32,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.16,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.18,0.28,0,8.74,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:47:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.26,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.29,0.28,0,8.74,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:48:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.38,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.24,23.58,486.31,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.33,0.28,0,8.72,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:48:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.25,23.58,486.3,0,0,0,0,0,0,0,0,0,53.81,0,18.3,232.32,0.28,0,8.74,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:48:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.32,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.19,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.21,0.23,0,8.73,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:48:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.23,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.13,0,0,0,0,0,0,0,0,0,53.91,0,18.3,232.16,0.28,0,8.74,0,0,2,0,0,0,-0.011,0,1.03,22.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:48:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.28,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,485.94,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.97,0.28,0,8.73,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:48:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.34,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,485.88,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.9,0.28,0,8.74,965.532,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:49:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.31,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.17,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.19,0.27,0,8.74,1514.052,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:49:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.24,23.79,486.32,0,0,0,0,0,0,0,0,0,53.81,0,18.3,232.34,0.28,0,8.73,1464.786,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:49:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.29,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.22,23.55,486.28,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.3,0.22,0,8.73,1115.16,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:49:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.23,23.58,486.17,0,0,0,0,0,0,0,0,0,53.84,0,18.3,232.19,0.28,0,8.74,1102.254,0,2,0,0,0,-0.01,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:49:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.43,0.9,0,0,0,0.22,23.8,2,0,10,0.9,0,0,0.22,23.58,485.96,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.98,0.23,0,8.74,1473.258,0,2,0,0,0,-0.012,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:49:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.32,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.72,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.75,0.28,0,8.73,2895.708,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:50:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.38,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.86,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.88,0.23,0,8.72,3974.388,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:50:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.97,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.99,0.27,0,8.73,4093.182,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:50:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.4,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.92,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.94,0.28,0,8.73,4073.616,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:50:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.22,23.58,485.73,0,0,0,0,0,0,0,0,0,53.8,0,18.3,231.75,0.22,0,8.72,4368.486,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:50:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.3,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.24,23.38,485.62,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.65,0.28,0,8.73,4387.542,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:50:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,486.03,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.05,0.28,0,8.73,4219.992,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:51:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.33,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,486.45,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.47,0.28,0,8.74,3977.31,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:51:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.33,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,486.48,0,0,0,0,0,0,0,0,0,53.8,0,18.3,232.5,0.28,0,8.73,3611.01,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:51:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.44,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.85,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.88,0.28,0,8.74,4067.97,0,2,0,0,0,-0.01,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:51:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.53,0,0,0,0,0,0,0,0,0,53.78,0,18.3,231.55,0.28,0,8.74,3383.496,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:51:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.35,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.62,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.64,0.28,0,8.73,2936.148,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:51:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.34,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.75,0,0,0,0,0,0,0,0,0,53.8,0,18.3,231.77,0.28,0,8.73,2654.592,0,2,0,0,0,-0.01,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:52:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.88,0,0,0,0,0,0,0,0,0,53.9,0,18.3,231.9,0.28,0,8.73,530.918,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:52:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.4,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,486.06,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.08,0.23,0,8.73,0,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:52:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.32,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,486.1,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.12,0.28,0,8.74,0,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:52:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.41,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,486.06,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.08,0.28,0,8.73,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:52:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,485.86,0,0,0,0,0,0,0,0,0,53.84,0,18.3,231.88,0.28,0,8.73,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:52:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.27,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.38,485.71,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.74,0.28,0,8.73,0,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:53:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.34,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,486.04,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.07,0.28,0,8.73,0,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:53:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.33,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,486.15,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.17,0.28,0,8.72,0,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:53:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.27,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.58,486.17,0,0,0,0,0,0,0,0,0,53.8,0,18.3,232.2,0.28,0,8.74,0,0,2,0,0,0,-0.011,0,1.03,22.76,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:53:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.31,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,24.07,486.24,0,0,0,0,0,0,0,0,0,53.93,0,18.3,232.26,0.23,0,8.57,840.018,0,2,0,0,0,-0.011,0,1.03,22.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:53:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.25,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.24,23.58,486.11,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.13,0.28,0,7.17,3137.28,0,2,0,0,0,-0.01,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:53:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.21,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.24,23.58,486.13,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.15,0.28,0,5.64,3933.744,0,2,0,0,0,-0.01,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:54:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.45,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.22,24.41,486.43,0,0,0,0,0,0,0,0,0,53.78,0,18.3,232.46,0.23,0,4.15,3686.43,0,2,0,0,0,-0.01,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:54:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.39,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.98,486.47,0,0,0,0,0,0,0,0,0,53.84,0,18.3,232.49,0.23,0,3.2,3632.85,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:54:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.28,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.24,23.58,486.02,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.04,0.28,0,3.17,4369.038,0,2,0,0,0,-0.01,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:54:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.24,23.35,486.1,0,0,0,0,0,0,0,0,0,53.94,0,18.3,232.12,0.28,0,3.12,3673.026,0,2,0,0,0,-0.01,0,1.03,22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:54:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.22,22.6,486.47,0,0,0,0,0,0,0,0,0,53.79,0,18.3,232.49,0.22,0,3.11,619.314,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:54:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.23,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.24,23.98,486.31,0,0,0,0,0,0,0,0,0,53.63,0,18.3,232.33,0.28,0,3.11,15.607,0,2,0,0,0,-0.011,0,1.03,20.61,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:55:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.32,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,22.6,486.12,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.14,0.23,0,4.03,27.419,0,2,0,0,0,-0.011,0,1.03,21.43,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:55:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,22.6,487.64,0,0,0,0,0,0,0,0,0,53.78,0,18.3,233.67,0.28,0,4.01,1302.228,0,1,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:55:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.48,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,23.98,486.26,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.28,0.27,0,3.39,4024.962,0,2,0,0,0,-0.011,0,1.03,21.37,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:55:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.23,22.6,486.09,0,0,0,0,0,0,0,0,0,53.76,0,18.3,232.12,0.28,0,3,3247.356,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:55:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,1,0,0,0,0.22,23.8,2,0,10,1,0,0,0.24,22.39,485.81,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.83,0.28,0,2.99,2823.558,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:55:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.22,22.8,485.99,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.01,0.22,0,2.98,1575.714,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:56:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.47,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.22,22.8,485.95,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.97,0.22,0,2.98,1678.776,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:56:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.8,487.38,0,0,0,0,0,0,0,0,0,53.85,0,18.3,233.4,0.28,0,3,2639.868,0,2,0,0,0,-0.013,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:56:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.76,486.12,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.14,0.28,0,3,3775.974,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:56:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,488.6,0,0,0,0,0,0,0,0,0,53.89,0,18.3,234.63,0.28,0,3,2418.318,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:56:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.24,22.6,486.28,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.3,0.28,0,2.98,252.388,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:56:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.36,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.85,0,0,0,0,0,0,0,0,0,53.92,0,18.3,231.87,0.28,0,3,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:57:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.29,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.24,22.6,485.87,0,0,0,0,0,0,0,0,0,53.82,0,18.3,231.9,0.28,0,2.98,0,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:57:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.56,485.8,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.82,0.23,0,3,1240.494,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:57:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.39,485.94,0,0,0,0,0,0,0,0,0,53.93,0,18.3,231.96,0.28,0,3,3766.902,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:57:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.24,22.6,485.75,0,0,0,0,0,0,0,0,0,53.84,0,18.3,231.77,0.28,0,3,3802.854,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:57:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.47,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.86,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.88,0.28,0,2.98,3919.224,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:57:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,486.24,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.26,0.28,0,3.01,4556.61,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:58:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.24,22.6,487.44,0,0,0,0,0,0,0,0,0,53.87,0,18.3,233.46,0.28,0,3.01,4546.32,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:58:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.24,22.39,485.99,0,0,0,0,0,0,0,0,0,53.76,0,18.3,232.01,0.28,0,3.01,4341.054,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:58:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.83,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.85,0.27,0,3.01,4359.408,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:58:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.75,0,0,0,0,0,0,0,0,0,53.77,0,18.3,231.77,0.23,0,3,4522.674,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:58:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.22,22.6,485.94,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.96,0.22,0,3.01,4571.784,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:58:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.76,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.78,0.23,0,3,4504.974,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:59:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.68,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.7,0.28,0,3.01,4281.252,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:59:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.22,22.6,485.5,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.52,0.23,0,3.01,4258.062,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:59:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.44,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.46,0.23,0,3.01,4089.402,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:59:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.42,0,0,0,0,0,0,0,0,0,53.95,0,18.3,231.44,0.28,0,3.01,3526.692,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:59:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.22,22.6,485.43,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.46,0.22,0,3.01,3028.572,0,2,0,0,0,-0.012,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-02T23:59:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.48,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.5,0.23,0,3.01,3198.24,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:00:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.59,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.61,0.23,0,3,2214.408,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:00:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.65,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.68,0.23,0,3,2149.014,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:00:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.87,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.89,0.28,0,3,1884.012,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:00:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,22.6,485.82,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.84,0.23,0,3.01,1531.482,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:00:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.43,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.24,22.6,485.78,0,0,0,0,0,0,0,0,0,53.93,0,18.3,231.8,0.28,0,3.01,1197.402,0,2,0,0,0,-0.011,0,1.03,21.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:00:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,23.15,485.72,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.74,0.23,0,3.86,18.586,0,2,0,0,0,-0.011,0,1.03,21.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:01:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.39,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.24,22.8,485.63,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.66,0.28,0,4.67,3.858,0,2,0,0,0,-0.012,0,1.03,21.57,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:01:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.49,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.22,23.58,485.74,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.76,0.23,0,4.44,0,0,2,0,0,0,-0.012,0,1.03,21.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:01:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.58,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,24.38,485.77,0,0,0,0,0,0,0,0,0,53.78,0,18.3,231.79,0.23,0,7.31,0,0,2,0,0,0,-0.011,0,1.03,21.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:01:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,24.38,485.74,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.76,0.28,0,13.13,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:01:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.96,1.1,0,0,0,0.22,23.8,2,0,10,1.1,0,0,0.23,23.38,485.69,0,0,0,0,0,0,0,0,0,53.84,0,18.3,231.71,0.28,0,20.49,0,0,2,0,0,0,-0.011,0,1.03,22.76,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:01:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.49,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.22,22.99,485.76,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.78,0.23,0,27.88,0,0,2,0,0,0,-0.011,0,1.03,22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:02:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.26,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.24,23.19,485.69,0,0,0,0,0,0,0,0,0,53.8,0,18.3,231.71,0.28,0,30.27,0,0,2,0,0,0,-0.011,0,1.03,21.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:02:10.000+02:00,0,0,0,0,2,0,0,0,0,0,21.73,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,22.19,485.71,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.74,0.28,0,30.1,0,0,2,0,0,0,-0.01,0,1.03,20.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:02:20.000+02:00,0,0,0,0,2,0,0,0,0,0,21.44,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,21.8,485.9,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.92,0.28,0,29.91,0,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:02:30.000+02:00,0,0,0,0,2,0,0,0,0,0,21.34,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,21.41,485.74,0,0,0,0,0,0,0,0,0,53.93,0,18.3,231.76,0.23,0,29.93,0,0,2,0,0,0,-0.012,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:02:40.000+02:00,0,0,0,0,2,0,0,0,0,0,21.31,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,21.6,485.64,0,0,0,0,0,0,0,0,0,53.79,0,18.3,231.66,0.28,0,29.94,0,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:02:50.000+02:00,0,0,0,0,2,0,0,0,0,0,21.38,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,21.6,485.63,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.65,0.23,0,29.92,0,0,2,0,0,0,-0.011,0,1.03,21,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:03:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.5,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,25.76,485.77,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.79,0.28,0,29.98,0,0,2,0,0,0,-0.011,0,1.03,21.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:03:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.01,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,485.75,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.77,0.28,0,30.06,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:03:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.08,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,485.76,0,0,0,0,0,0,0,0,0,53.76,0,18.3,231.78,0.23,0,30.06,0,0,2,0,0,0,-0.012,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:03:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.1,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,485.82,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.84,0.23,0,30.06,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:03:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.08,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,485.8,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.82,0.28,0,30.06,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:03:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.08,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.38,485.88,0,0,0,0,0,0,0,0,0,53.91,0,18.3,231.9,0.23,0,30.08,0,0,2,0,0,0,-0.012,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:04:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.09,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.24,23.19,485.77,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.8,0.28,0,30.06,2363.736,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:04:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.09,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,485.97,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.99,0.28,0,30.08,3284.97,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:04:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.12,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.24,23.38,485.93,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.95,0.28,0,30.08,3221.082,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:04:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.05,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.07,0,0,0,0,0,0,0,0,0,53.8,0,18.3,232.09,0.28,0,30.08,3298.38,0,2,0,0,0,-0.011,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:04:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.05,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.12,0,0,0,0,0,0,0,0,0,53.84,0,18.3,232.14,0.23,0,30.08,3414.906,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:04:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.28,0,0,0,0,0,0,0,0,0,53.91,0,18.3,232.3,0.28,0,30.08,3726.612,0,2,0,0,0,-0.012,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:05:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.06,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.26,0,0,0,0,0,0,0,0,0,53.91,0,18.3,232.28,0.28,0,30.08,4420.62,0,2,0,0,0,-0.012,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:05:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.02,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.32,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.34,0.23,0,30.08,4393.596,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:05:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.09,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.34,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.36,0.28,0,30.08,4371.258,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:05:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.1,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.4,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.42,0.28,0,30.08,4420.572,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:05:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.14,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.35,486.66,0,0,0,0,0,0,0,0,0,53.91,0,18.3,232.68,0.28,0,30.08,4257.306,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:05:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.17,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.38,486.64,0,0,0,0,0,0,0,0,0,53.91,0,18.3,232.66,0.28,0,30.08,4224.18,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:06:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.1,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.38,486.4,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.42,0.27,0,30.08,4021.08,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:06:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.08,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.43,0,0,0,0,0,0,0,0,0,53.8,0,18.3,232.45,0.27,0,30.08,3740.682,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:06:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.12,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.38,486.46,0,0,0,0,0,0,0,0,0,53.78,0,18.3,232.48,0.28,0,30.08,2276.682,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:06:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.07,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.24,23.19,486.46,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.49,0.28,0,30.08,380.726,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:06:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.12,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.38,486.47,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.49,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:06:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.06,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.27,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.3,0.23,0,30.08,0,0,2,0,0,0,-0.012,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:07:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.14,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.24,23.38,486.2,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.22,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:07:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.08,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.19,486.1,0,0,0,0,0,0,0,0,0,53.9,0,18.3,232.12,0.28,0,30.08,0,0,2,0,0,0,-0.012,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:07:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.1,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.24,23.38,485.98,0,0,0,0,0,0,0,0,0,53.97,0,18.3,232,0.28,0,30.08,0,0,2,0,0,0,-0.012,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:07:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.1,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.38,485.98,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232,0.23,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:07:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.13,1.2,0,0,0,0.22,23.8,2,0,10,1.2,0,0,0.23,23.38,485.72,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.74,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:07:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.11,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.19,485.79,0,0,0,0,0,0,0,0,0,53.85,0,18.3,231.81,0.28,0,30.08,0,0,2,0,0,0,-0.012,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:08:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.12,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,485.91,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.93,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:08:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.13,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.24,23.19,486.26,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.28,0.28,0,30.08,42.594,0,2,0,0,0,-0.012,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:08:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.09,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.19,486.18,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.21,0.28,0,30.08,2045.346,0,2,0,0,0,-0.011,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:08:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.17,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.14,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.16,0.28,0,30.08,2171.4,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:08:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.05,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.19,486.04,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.06,0.23,0,30.08,1937.238,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:08:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.04,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.24,23.19,486.07,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.09,0.28,0,30.08,1011.9,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:09:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.06,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.08,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.1,0.23,0,30.08,32.762,0,2,0,0,0,-0.011,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:09:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.06,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.24,23.19,486.05,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.07,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:09:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.02,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.19,486.15,0,0,0,0,0,0,0,0,0,53.77,0,18.3,232.18,0.23,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:09:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.06,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.22,23.19,486.38,0,0,0,0,0,0,0,0,0,53.75,0,18.3,232.41,0.22,0,30.08,0,0,2,0,0,0,-0.013,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:09:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.09,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.19,486.36,0,0,0,0,0,0,0,0,0,53.81,0,18.3,232.38,0.23,0,30.08,0,0,2,0,0,0,-0.013,0,1.03,22.76,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:09:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.01,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.19,486.37,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.39,0.28,0,30.08,0,0,2,0,0,0,-0.012,0,1.03,22.76,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:10:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.03,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.19,486.37,0,0,0,0,0,0,0,0,0,53.95,0,18.3,232.39,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:10:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.21,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.24,23.38,486.22,0,0,0,0,0,0,0,0,0,53.8,0,18.3,232.24,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:10:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.11,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.22,0,0,0,0,0,0,0,0,0,53.92,0,18.3,232.24,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:10:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.08,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.19,486.18,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.2,0.28,0,30.08,0,0,2,0,0,0,-0.01,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:10:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.1,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.15,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.17,0.23,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:10:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.04,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.24,23.19,486.33,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.36,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:11:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.12,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.44,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.47,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:11:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.06,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.37,0,0,0,0,0,0,0,0,0,53.92,0,18.3,232.39,0.28,0,30.08,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:11:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.1,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.22,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.25,0.23,0,30.08,0,0,2,0,0,0,-0.01,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:11:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.07,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,24.14,485.99,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.02,0.28,0,29.7,0,0,2,0,0,0,-0.011,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:11:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.97,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.08,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.1,0.23,0,28.97,0,0,2,0,0,0,-0.012,0,1.03,22.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:11:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.95,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.24,24.14,486.1,0,0,0,0,0,0,0,0,0,53.92,0,18.3,232.12,0.28,0,26.75,0,0,2,0,0,0,-0.011,0,1.03,21.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:12:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.11,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.22,23.38,485.91,0,0,0,0,0,0,0,0,0,53.82,0,18.3,231.93,0.28,0,22.56,0,0,2,0,0,0,-0.012,0,1.03,22.56,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:12:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.08,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.22,23.19,485.94,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.96,0.22,0,18.42,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:12:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.16,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.02,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.04,0.23,0,14.11,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:12:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.45,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.24,23.79,485.79,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.81,0.28,0,9.63,0,0,2,0,0,0,-0.01,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:12:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.55,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.24,23.79,485.83,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.85,0.28,0,5.83,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:12:50.000+02:00,0,0,0,0,2,0,0,0,0,0,24.21,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,25.17,486.02,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.04,0.23,0,3.15,0,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:13:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.62,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,24.57,486.28,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.31,0.28,0,3.07,0,0,2,0,0,0,-0.012,0,1.03,20.22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:13:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.77,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,24.77,486.33,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.35,0.28,0,4.28,0,0,2,0,0,0,-0.012,0,1.03,20.22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:13:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.36,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.24,25.17,486.2,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.22,0.28,0,6.43,0,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:13:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.79,486,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.02,0.23,0,11.91,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:13:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.27,1.3,0,0,0,0.22,23.8,2,0,10,1.3,0,0,0.23,23.38,486.12,0,0,0,0,0,0,0,0,0,53.91,0,18.3,232.14,0.28,0,17.54,0,0,2,0,0,0,-0.011,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:13:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.85,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,23.19,486.52,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.54,0.28,0,22.5,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:14:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.64,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,23.15,486.7,0,0,0,0,0,0,0,0,0,53.81,0,18.3,232.72,0.27,0,28.45,0,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:14:10.000+02:00,0,0,0,0,2,0,0,0,0,0,21.98,1.4,0,0,0,0.22,23.7,2,0,10,1.4,0,0,0.23,22.99,486.72,0,0,0,0,0,0,0,0,0,53.84,0,18.3,232.74,0.23,0,30.36,0,0,2,0,0,0,-0.012,0,1.03,20.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:14:20.000+02:00,0,0,0,0,2,0,0,0,0,0,21.67,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,22.39,486.31,0,0,0,0,0,0,0,0,0,53.85,0,18.3,232.33,0.28,0,30.07,0,0,2,0,0,0,-0.011,0,1.03,20.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:14:30.000+02:00,0,0,0,0,2,0,0,0,0,0,21.31,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.25,21.41,486.11,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.13,0.28,0,30.05,0,0,2,0,0,0,-0.012,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:14:40.000+02:00,0,0,0,0,2,0,0,0,0,0,21.37,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.24,21.6,486.15,0,0,0,0,0,0,0,0,0,53.82,0,18.3,232.17,0.28,0,30.04,0,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:14:50.000+02:00,0,0,0,0,2,0,0,0,0,0,21.97,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,24.38,486.77,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.79,0.28,0,30.03,0,0,2,0,0,0,-0.011,0,1.03,21,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:15:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.35,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,26.56,486.5,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.52,0.23,0,28.67,0,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:15:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.61,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,25.37,486.32,0,0,0,0,0,0,0,0,0,53.86,0,18.3,232.34,0.28,0,28.25,0,0,2,0,0,0,-0.012,0,1.03,22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:15:20.000+02:00,0,0,0,0,2,0,0,0,0,0,24.24,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,25.37,486.3,0,0,0,0,0,0,0,0,0,53.89,0,18.3,232.32,0.23,0,26.09,0,0,2,0,0,0,-0.011,0,1.03,22.56,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:15:30.000+02:00,0,0,0,0,2,0,0,0,0,0,24.15,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,25.76,486.01,0,0,0,0,0,0,0,0,0,53.91,0,18.3,232.04,0.28,0,26.11,0,0,2,0,0,0,-0.012,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:15:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.47,1.4,0,0,0,0.22,23.7,2,0,10,1.4,0,0,0.23,24.38,485.98,0,0,0,0,0,0,0,0,0,53.93,0,18.3,232,0.28,0,24.09,0,0,2,0,0,0,-0.011,0,1.03,21.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:15:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.72,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.24,23.98,485.92,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.95,0.28,0,19.08,0,0,2,0,0,0,-0.012,0,1.03,23.58,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:16:00.000+02:00,0,0,0,0,2,0,0,0,0,0,24.06,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,25.53,486.14,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.16,0.28,0,15.06,0,0,2,0,0,0,-0.01,0,1.03,21.73,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:16:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.98,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,24.38,486.18,0,0,0,0,0,0,0,0,0,53.93,0,18.3,232.2,0.27,0,10.63,0,0,2,0,0,0,-0.011,0,1.03,23.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:16:20.000+02:00,0,0,0,0,2,0,0,0,0,0,24.13,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,24.74,486.37,0,0,0,0,0,0,0,0,0,53.92,0,18.3,232.4,0.28,0,5.48,0,0,2,0,0,0,-0.01,0,1.03,23.95,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:16:30.000+02:00,0,0,0,0,2,0,0,0,0,0,24.73,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,25.17,486.48,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.5,0.28,0,3.69,0,0,2,0,0,0,-0.011,0,1.03,23.75,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:16:40.000+02:00,0,0,0,0,2,0,0,0,0,0,24.76,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,25.3,486.4,0,0,0,0,0,0,0,0,0,53.91,0,18.3,232.42,0.23,0,3.28,0,0,2,0,0,0,-0.012,0,1.03,24.18,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:16:50.000+02:00,0,0,0,0,2,0,0,0,0,0,24.26,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,25.96,486.45,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.47,0.28,0,3.22,0,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:17:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.67,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,25.96,486.56,0,0,0,0,0,0,0,0,0,53.82,0,18.3,232.58,0.28,0,3.55,0,0,2,0,0,0,-0.012,0,1.03,21.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:17:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.48,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.22,23.98,486.56,0,0,0,0,0,0,0,0,0,53.84,0,18.3,232.58,0.22,0,4.48,0,0,2,0,0,0,-0.012,0,1.03,19.42,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:17:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.6,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.24,24.77,486.66,0,0,0,0,0,0,0,0,0,53.84,0,18.3,232.68,0.28,0,10.46,0,0,2,0,0,0,-0.01,0,1.03,22.56,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:17:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.17,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,23.38,486.7,0,0,0,0,0,0,0,0,0,53.73,0,18.3,232.72,0.28,0,17.14,0,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:17:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.96,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,23.35,486.74,0,0,0,0,0,0,0,0,0,53.96,0,14,232.76,0.23,0,24.51,0,0,2,0,0,0,0.369,0,1.03,22.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:17:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.23,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.24,22.76,486.46,0,0,0,0,0,0,0,0,0,53.91,0,14,232.48,0.28,0,30.7,0,0,2,0,0,0,0.369,0,1.03,21.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:18:00.000+02:00,0,0,0,0,2,0,0,0,0,0,21.91,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,22.99,486.45,0,0,0,0,0,0,0,0,0,53.82,0,18.3,232.47,0.28,0,30.25,0,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:18:10.000+02:00,0,0,0,0,2,0,0,0,0,0,21.31,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.24,21.41,486.31,0,0,0,0,0,0,0,0,0,53.77,0,18.3,232.33,0.28,0,30.26,920.61,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:18:20.000+02:00,0,0,0,0,2,0,0,0,0,0,21.32,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.24,21.41,486.37,0,0,0,0,0,0,0,0,0,53.84,0,18.3,232.39,0.28,0,30.28,660.204,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:18:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.76,1.4,0,0,0,0.22,23.7,2,0,10,1.4,0,0,0.23,28.55,486.42,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.44,0.28,0,30.3,220.858,0,2,0,0,0,-0.011,0,1.03,21.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:18:40.000+02:00,0,0,0,0,2,0,0,0,0,0,24.49,1.4,0,0,0,0.22,23.7,2,0,10,1.4,0,0,0.24,25.17,486.41,0,0,0,0,0,0,0,0,0,53.93,0,18.3,232.43,0.28,0,30.4,1167.048,0,2,0,0,0,-0.012,0,1.03,24.14,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:18:50.000+02:00,0,0,0,0,2,0,0,0,0,0,24.47,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,24.57,486.37,0,0,0,0,0,0,0,0,0,53.92,0,18.3,232.39,0.23,0,30.41,2681.004,0,2,0,0,0,-0.011,0,1.03,24.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:19:00.000+02:00,0,0,0,0,2,0,0,0,0,0,24.45,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,24.57,486.3,0,0,0,0,0,0,0,0,0,53.8,0,18.3,232.33,0.27,0,30.41,3793.926,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:19:10.000+02:00,0,0,0,0,2,0,0,0,0,0,24.49,1.4,0,0,0,0.22,23.8,2,0,10,1.4,0,0,0.23,24.57,486.78,0,0,0,0,0,0,0,0,0,53.84,0,18.3,232.81,0.28,0,30.42,4019.598,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:19:20.000+02:00,0,0,0,0,2,0,0,0,0,0,24.46,1.4,0,0,0,0.22,23.7,2,0,10,1.4,0,0,0.23,24.57,486.85,0,0,0,0,0,0,0,0,0,53.76,0,18.3,232.87,0.28,0,30.41,3555.48,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:19:30.000+02:00,0,0,0,0,2,0,0,0,0,0,24.43,1.4,0,0,0,0.22,23.7,2,0,10,1.4,0,0,0.23,24.77,486.66,0,0,0,0,0,0,0,0,0,53.75,0,18.3,232.68,0.23,0,30.42,3202.716,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:19:40.000+02:00,0,0,0,0,2,0,0,0,0,0,24.49,1.4,0,0,0,0.22,23.7,2,0,10,1.4,0,0,0.23,24.77,486.1,0,0,0,0,0,0,0,0,0,53.8,0,18.3,232.12,0.28,0,30.42,3376.686,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:19:50.000+02:00,0,0,0,0,2,0,0,0,0,0,24.75,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.24,25.76,486,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.02,0.28,0,30.43,4048.152,0,2,0,0,0,-0.012,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:20:00.000+02:00,0,0,0,0,2,0,0,0,0,0,25.25,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,25.76,486.09,0,0,0,0,0,0,0,0,0,53.87,0,18.3,232.11,0.28,0,30.42,3037.752,0,2,0,0,0,-0.011,0,1.03,23.79,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:20:10.000+02:00,0,0,0,0,2,0,0,0,0,0,24.44,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.22,24.57,486.03,0,0,0,0,0,0,0,0,0,53.83,0,18.3,232.05,0.28,0,30.42,2765.922,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:20:20.000+02:00,0,0,0,0,2,0,0,0,0,0,24.49,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.25,24.57,486.07,0,0,0,0,0,0,0,0,0,53.93,0,18.3,232.09,0.28,0,30.43,2194.188,0,2,0,0,0,-0.012,0,1.03,24.14,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:20:30.000+02:00,0,0,0,0,2,0,0,0,0,0,24.53,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.77,486.22,0,0,0,0,0,0,0,0,0,53.94,0,18.3,232.24,0.28,0,30.42,1589.226,0,2,0,0,0,-0.011,0,1.03,24.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:20:40.000+02:00,0,0,0,0,2,0,0,0,0,0,24.69,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.22,25.53,486,0,0,0,0,0,0,0,0,0,53.8,0,18.3,232.02,0.22,0,30.43,998.688,0,2,0,0,0,-0.013,0,1.03,24.18,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:20:50.000+02:00,0,0,0,0,2,0,0,0,0,0,24.46,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.24,24.57,485.65,0,0,0,0,0,0,0,0,0,53.88,0,18.3,231.67,0.28,0,30.42,422.768,0,2,0,0,0,-0.01,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:21:00.000+02:00,0,0,0,0,2,0,0,0,0,0,24.57,1.5,0,0,0,0.22,23.7,2,0,10,1.5,0,0,0.23,24.57,485.62,0,0,0,0,0,0,0,0,0,53.75,0,18.3,231.64,0.23,0,30.43,2915.88,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:21:10.000+02:00,0,0,0,0,2,0,0,0,0,0,24.51,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.57,485.79,0,0,0,0,0,0,0,0,0,53.86,0,18.3,231.81,0.23,0,30.43,3590.826,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:21:20.000+02:00,0,0,0,0,2,0,0,0,0,0,24.4,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.57,485.88,0,0,0,0,0,0,0,0,0,53.83,0,18.3,231.9,0.28,0,30.43,3737.304,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:21:30.000+02:00,0,0,0,0,2,0,0,0,0,0,24.51,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.24,24.57,485.57,0,0,0,0,0,0,0,0,0,53.89,0,18.3,231.59,0.28,0,30.43,4137.15,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:21:40.000+02:00,0,0,0,0,2,0,0,0,0,0,24.5,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.57,485.62,0,0,0,0,0,0,0,0,0,53.84,0,18.3,231.64,0.28,0,30.43,4516.188,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:21:50.000+02:00,0,0,0,0,2,0,0,0,0,0,24.49,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.57,485.95,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.97,0.28,0,30.42,4214.04,0,2,0,0,0,-0.012,0,1.03,24.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:22:00.000+02:00,0,0,0,0,2,0,0,0,0,0,24.46,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.57,485.98,0,0,0,0,0,0,0,0,0,53.88,0,18.3,232.01,0.28,0,30.44,2909.97,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:22:10.000+02:00,0,0,0,0,2,0,0,0,0,0,24.53,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.24,24.57,485.68,0,0,0,0,0,0,0,0,0,53.81,0,18.3,231.7,0.28,0,30.43,3326.286,0,2,0,0,0,-0.012,0,1.03,24.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:22:20.000+02:00,0,0,0,0,2,0,0,0,0,0,24.55,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.77,485.4,0,0,0,0,0,0,0,0,0,53.75,0,18.3,231.42,0.27,0,30.43,4416.546,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:22:30.000+02:00,0,0,0,0,2,0,0,0,0,0,24.48,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.24,24.57,485.51,0,0,0,0,0,0,0,0,0,53.87,0,18.3,231.53,0.28,0,30.43,4538.304,0,2,0,0,0,-0.012,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:22:40.000+02:00,0,0,0,0,2,0,0,0,0,0,24.45,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.77,485.63,0,0,0,0,0,0,0,0,0,53.8,0,18.3,115.64,0.28,0,30.43,4388.25,0,2,0,0,0,-0.012,0,1.03,24.14,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:22:50.000+02:00,0,0,0,0,2,0,0,0,0,0,24.68,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.25,25.56,485.78,0,0,0,0,0,0,0,0,0,53.88,0,18.3,-0.22,0.28,0,30.43,3634.542,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:23:00.000+02:00,0,0,0,0,2,0,0,0,0,0,24.48,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.57,485.32,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.68,0.28,0,30.43,3724.044,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:23:10.000+02:00,0,0,0,0,2,0,0,0,0,0,24.46,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.57,485.33,0,0,0,0,0,0,0,0,0,53.91,0,18.3,-0.67,0.23,0,30.44,4197.102,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:23:20.000+02:00,0,0,0,0,2,0,0,0,0,0,24.49,1.5,0,0,0,0.22,23.7,2,0,10,1.5,0,0,0.23,24.57,484.94,0,0,0,0,0,0,0,0,0,53.88,0,18.3,-1.06,0.28,0,30.44,3890.082,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:23:30.000+02:00,0,0,0,0,2,0,0,0,0,0,24.51,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.24,24.57,484.93,0,0,0,0,0,0,0,0,0,53.88,0,18.3,-1.06,0.28,0,30.43,1538.406,0,2,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:23:40.000+02:00,0,0,0,0,2,0,0,0,0,0,24.46,1.5,0,0,0,0.22,23.7,2,0,10,1.5,0,0,0.23,24.57,485.24,0,0,0,0,0,0,0,0,0,53.96,0,18.3,-0.76,0.23,0,30.43,142.472,0,1,0,0,0,-0.011,0,1.03,24.14,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:23:50.000+02:00,0,0,0,0,2,0,0,0,0,0,24.48,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.22,24.57,485.15,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-0.85,0.23,0,30.43,0,0,1,0,0,0,-0.011,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:24:00.000+02:00,0,0,0,0,2,0,0,0,0,0,24.53,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.24,24.57,485.37,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.63,0.28,0,30.43,0,0,1,0,0,0,-0.012,0,1.03,24.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:24:10.000+02:00,0,0,0,0,2,0,0,0,0,0,24.52,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,24.57,485.18,0,0,0,0,0,0,0,0,0,53.77,0,18.3,-0.81,0.28,0,30.43,0,0,1,0,0,0,-0.011,0,1.03,24.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:24:20.000+02:00,0,0,0,0,2,0,0,0,0,0,24.41,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.22,24.98,485.27,0,0,0,0,0,0,0,0,0,53.93,0,18.3,-0.72,0.22,0,30.43,956.316,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:24:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.84,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,25.37,485.31,0,0,0,0,0,0,0,0,0,53.82,0,18.3,-0.69,0.28,0,26.51,3957.498,0,1,0,0,0,-0.011,0,1.03,21.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:24:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.57,1.5,0,0,0,0.22,23.7,2,0,10,1.5,0,0,0.22,24.22,485.37,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.63,0.22,0,17.4,4484.154,0,2,0,0,0,-0.011,0,1.03,23.35,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:24:50.000+02:00,0,0,0,0,2,0,0,0,0,0,24.3,1.5,0,0,0,0.22,23.7,2,0,10,1.5,0,0,0.23,24.57,485.37,0,0,0,0,0,0,0,0,0,53.91,0,18.3,-0.63,0.23,0,7.81,1960.698,0,1,0,0,0,-0.011,0,1.03,23.95,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:25:00.000+02:00,0,0,0,0,2,0,0,0,0,0,24.99,1.5,0,0,0,0.22,23.7,2,0,10,1.5,0,0,0.24,26.17,485.36,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-0.63,0.28,0,3.25,196.07,0,1,0,0,0,-0.011,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:25:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.64,1.5,0,0,0,0.22,23.7,2,0,10,1.5,0,0,0.23,23.98,485.14,0,0,0,0,0,0,0,0,0,53.88,0,18.2,-0.86,0.28,0,3.22,19.607,0,2,0,0,0,-0.011,0,1.03,21.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:25:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.32,1.5,0,0,0,0.22,23.7,2,0,10,1.5,0,0,0.22,23.38,485.27,0,0,0,0,0,0,0,0,0,53.86,0,18.2,-0.73,0.23,0,3.13,572.809,0,2,0,0,0,-0.011,0,1.03,20.81,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:25:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.51,1.5,0,0,0,0.22,23.8,2,0,10,1.5,0,0,0.23,23.62,485.43,0,0,0,0,0,0,0,0,0,53.84,0,18.3,-0.57,0.23,0,4.34,4017.954,0,2,0,0,0,-0.012,0,1.03,21.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:25:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,1.5,0,0,0,0.22,23.7,2,0,10,1.5,0,0,0.23,24.66,485.5,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.5,0.28,0,9.11,4380.684,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:25:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.28,1.6,0,0,0,0.22,23.7,2,0,10,1.6,0,0,0.24,23.58,485.39,0,0,0,0,0,0,0,0,0,53.85,0,18.2,-0.61,0.28,0,16.37,4209.15,0,1,0,0,0,-0.011,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:26:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.85,1.6,0,0,0,0.22,23.8,2,0,10,1.6,0,0,0.23,22.99,485.2,0,0,0,0,0,0,0,0,0,53.85,0,18.2,-0.8,0.23,0,23.84,3212.058,0,2,0,0,0,-0.011,0,1.03,22.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:26:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.01,1.6,0,0,0,0.22,23.7,2,0,10,1.6,0,0,0.24,22.8,485.34,0,0,0,0,0,0,0,0,0,53.81,0,18.3,-0.66,0.28,0,30.27,1890.396,0,2,0,0,0,-0.01,0,1.03,19.79,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:26:20.000+02:00,0,0,0,0,2,0,0,0,0,0,21.97,1.6,0,0,0,0.22,23.7,2,0,10,1.6,0,0,0.23,22.6,485.43,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-0.56,0.23,0,29.92,882.498,0,2,0,0,0,-0.011,0,1.03,20.57,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:26:30.000+02:00,0,0,0,0,2,0,0,0,0,0,21.41,1.6,0,0,0,0.22,23.8,2,0,10,1.6,0,0,0.23,21.6,485.74,0,0,0,0,0,0,0,0,0,53.81,0,18.3,-0.26,0.23,0,29.83,0,0,2,0,0,0,-0.01,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:26:40.000+02:00,0,0,0,0,2,0,0,0,0,0,21.42,1.6,0,0,0,0.22,23.7,2,0,10,1.6,0,0,0.23,21.6,485.36,0,0,0,0,0,0,0,0,0,53.93,0,18.2,-0.63,0.28,0,29.84,0,0,2,0,0,0,-0.012,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:26:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.42,1.6,0,0,0,0.22,23.7,2,0,10,1.6,0,0,0.23,27.95,485.21,0,0,0,0,0,0,0,0,0,53.87,0,18.2,-0.79,0.23,0,29.84,0,0,2,0,0,0,-0.012,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:27:00.000+02:00,0,0,0,0,2,0,0,0,0,0,25.64,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.24,27.95,485.3,0,0,0,0,0,0,0,0,0,53.93,0,18.3,-0.7,0.28,0,29.93,1863.282,0,2,0,0,0,-0.011,0,1.03,23.95,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:27:10.000+02:00,0,0,0,0,2,0,0,0,0,0,24.32,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.22,26.56,485.37,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.63,0.28,0,27.09,2017.362,0,2,0,0,0,-0.011,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:27:20.000+02:00,0,0,0,0,2,0,0,0,0,0,24.76,1.6,0,0.028985,0,0.22,23.8,2,0,9.9,1.6,0,0,0.23,25.56,485.22,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.78,0.27,0,19.99,1099.68,0,2,0,0,0,-0.012,0,1.03,24.34,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:27:30.000+02:00,0,0,0,0,2,0,0,0,0,0,25.1,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.23,25.17,485.19,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.81,0.23,0,12.51,530.167,0,2,0,0,0,-0.012,0,1.03,24.74,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:27:40.000+02:00,0,0,0,0,2,0,0,0,0,0,25.43,1.6,0,0.028985,0,0.22,23.8,2,0,9.9,1.6,0,0,0.23,26.52,485.24,0,0,0,0,0,0,0,0,0,53.84,0,18.3,-0.76,0.28,0,7.24,529.914,0,2,0,0,0,-0.011,0,1.03,25.13,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:27:50.000+02:00,0,0,0,0,2,0,0,0,0,0,25.97,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.23,26.56,485.08,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.91,0.28,0,3.43,529.309,0,1,0,0,0,-0.011,0,1.03,25.53,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:28:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.94,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.24,26.36,485.38,0,0,0,0,0,0,0,0,0,53.84,0,18.3,-0.61,0.28,0,3.12,530.519,0,2,0,0,0,-0.01,0,1.03,22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:28:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.4,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.23,23.82,485.52,0,0,0,0,0,0,0,0,0,53.84,0,18.3,-0.47,0.28,0,4.2,1040.406,0,2,0,0,0,-0.011,0,1.03,20.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:28:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.38,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.22,23.19,485.49,0,0,0,0,0,0,0,0,0,53.88,0,18.3,-0.5,0.22,0,4.53,3544.896,0,2,0,0,0,-0.012,0,1.03,21.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:28:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.4,1.6,0,0.028985,0,0.22,23.8,2,0,9.9,1.6,0,0,0.23,23.95,485.05,0,0,0,0,0,0,0,0,0,53.98,0,18.3,-0.95,0.28,0,6.14,4289.106,0,2,0,0,0,-0.011,0,1.03,22.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:28:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.45,1.6,0,0.028985,0,0.22,23.8,2,0,9.9,1.6,0,0,0.24,23.95,484.96,0,0,0,0,0,0,0,0,0,53.97,0,18.3,-1.04,0.28,0,12.5,4434.69,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:28:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.12,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.23,23.38,484.96,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-1.03,0.23,0,20.27,4457.376,0,2,0,0,0,-0.011,0,1.03,22.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:29:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.78,1.6,0,0.028985,0,0.22,23.8,2,0,9.9,1.6,0,0,0.23,23.19,485.02,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.97,0.23,0,26.65,4438.974,0,2,0,0,0,-0.011,0,1.03,22.56,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:29:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.04,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.24,22.99,485.15,0,0,0,0,0,0,0,0,0,53.94,0,18.3,-0.84,0.28,0,30.4,4317.96,0,2,0,0,0,-0.011,0,1.03,19.62,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:29:20.000+02:00,0,0,0,0,2,0,0,0,0,0,21.6,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.24,22.16,484.9,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-1.09,0.28,0,30.04,3464.37,0,2,0,0,0,-0.012,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:29:30.000+02:00,0,0,0,0,2,0,0,0,0,0,21.41,1.6,0,0.028985,0,0.22,23.7,2,0,9.9,1.6,0,0,0.23,21.6,485.21,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.78,0.28,0,30.06,3348.954,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:29:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.71,1.6,0,0.048461,0,0.22,23.7,2,0,9.83,1.6,0,0,0.23,29.14,484.9,0,0,0,0,0,0,0,0,0,53.75,0,18.3,-1.09,0.28,0,30.13,2957.478,0,2,0,0,0,-0.011,0,1.03,20.81,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:29:50.000+02:00,0,0,0,0,2,0,0,0,0,0,25.11,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.23,27.51,484.92,0,0,0,0,0,0,0,0,0,53.8,0,18.3,-1.08,0.28,0,26.83,3225.318,0,2,0,0,0,-0.011,0,1.03,23.98,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:30:00.000+02:00,0,0,0,0,2,0,0,0,0,0,25.28,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.23,25.73,485.12,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.88,0.23,0,19.1,4108.962,0,2,0,0,0,-0.011,0,1.03,24.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:30:10.000+02:00,0,0,0,0,2,0,0,0,0,0,25.61,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.23,25.92,485.07,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.93,0.28,0,11.95,4358.1,0,2,0,0,0,-0.011,0,1.03,25.13,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:30:20.000+02:00,0,0,0,0,2,0,0,0,0,0,26.16,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.24,26.76,484.97,0,0,0,0,0,0,0,0,0,53.91,0,18.3,-1.02,0.28,0,4.93,3641.754,0,2,0,0,0,-0.012,0,1.03,25.73,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:30:30.000+02:00,0,0,0,0,2,0,0,0,0,0,25.26,1.6,0,0.064372,0,0.22,23.8,2,0,9.77,1.6,0,0,0.23,27.31,485,0,0,0,0,0,0,0,0,0,53.79,0,18.3,-1,0.28,0,3.17,3052.422,0,2,0,0,0,-0.011,0,1.03,22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:30:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.23,22.6,485.2,0,0,0,0,0,0,0,0,0,53.88,0,18.3,-0.8,0.23,0,3.04,3257.586,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:30:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.48,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.24,24.22,485.14,0,0,0,0,0,0,0,0,0,53.8,0,18.3,-0.86,0.28,0,3.02,4167,0,2,0,0,0,-0.01,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:31:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.19,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.24,24.22,485.44,0,0,0,0,0,0,0,0,0,53.82,0,18.3,-0.56,0.28,0,3.97,4377.084,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:31:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.29,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.23,25.56,485.31,0,0,0,0,0,0,0,0,0,53.67,0,18.3,-0.69,0.28,0,7.96,4405.5,0,2,0,0,0,-0.011,0,1.03,20.97,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:31:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.38,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.23,23.58,485.4,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.6,0.23,0,15.41,4432.398,0,2,0,0,0,-0.011,0,1.03,23.15,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:31:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.09,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.23,23.38,485.42,0,0,0,0,0,0,0,0,0,53.94,0,18.3,-0.58,0.27,0,22.73,4456.824,0,2,0,0,0,-0.01,0,1.03,22.76,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:31:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.37,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.6,0,0,0.24,22.99,485.33,0,0,0,0,0,0,0,0,0,53.78,0,18.3,-0.67,0.28,0,30.17,4341.66,0,2,0,0,0,-0.011,0,1.03,19.62,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:31:50.000+02:00,0,0,0,0,2,0,0,0,0,0,21.81,1.6,0,0.064372,0,0.22,23.7,2,0,9.77,1.7,0,0,0.23,22.6,485.37,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.63,0.28,0,29.93,4132.914,0,2,0,0,0,-0.011,0,1.03,21.37,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:32:00.000+02:00,0,0,0,0,2,0,0,0,0,0,21.33,1.7,0,0.064372,0,0.22,23.7,2,0,9.77,1.7,0,0,0.23,21.6,485.38,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.62,0.28,0,29.93,4104.624,0,2,0,0,0,-0.012,0,1.03,21.2,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:32:10.000+02:00,0,0,0,0,2,0,0,0,0,0,21.48,1.7,0,0.064372,0,0.22,23.8,2,0,9.77,1.7,0,0,0.23,21.6,485.15,0,0,0,0,0,0,0,0,0,53.88,0,18.3,-0.85,0.27,0,29.94,3718.242,0,2,0,0,0,-0.011,0,1.03,21.37,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:32:20.000+02:00,0,0,0,0,2,0,0,0,0,0,21.44,1.7,0,0.064372,0,0.22,23.7,2,0,9.77,1.7,0,0,0.23,21.6,485.08,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-0.91,0.28,0,29.95,2970.132,0,2,0,0,0,-0.011,0,1.03,21,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:32:30.000+02:00,0,0,0,0,2,0,0,0,0,0,26.11,1.7,0,0.090097,0,0.22,23.8,2,0,9.86,1.7,0,0,0.22,27.75,485.12,0,0,0,0,0,0,0,0,0,53.9,0,18.3,-0.88,0.22,0,29.95,3369.576,0,2,0,0,0,-0.011,0,1.03,21.41,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:32:40.000+02:00,0,0,0,0,2,0,0,0,0,0,26.31,1.7,0,0.184697,0,0.22,23.7,2,0,10.24,1.7,0,0,0.24,27.15,485.19,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.8,0.28,0,29.15,4220.292,0,2,0,0,0,-0.011,0,1.03,25.37,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:32:50.000+02:00,0,0,0,0,2,0,0,0,0,0,26.12,1.7,0,0.184697,0,0.22,23.7,2,0,10.24,1.7,0,0,0.23,26.56,485.22,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.78,0.23,0,27.2,4163.472,0,2,0,0,0,-0.012,0,1.03,25.76,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:33:00.000+02:00,0,0,0,0,2,0,0,0,0,0,26.17,1.7,0,0.184697,0,0.22,23.7,2,0,10.24,1.7,0,0,0.24,26.36,485.05,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.95,0.28,0,20.78,4229.622,0,2,0,0,0,-0.013,0,1.03,25.92,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:33:10.000+02:00,0,0,0,0,2,0,0,0,0,0,26.24,1.7,0,0.184697,0,0.22,23.7,2,0,10.24,1.7,0,0,0.24,26.94,486.52,0,0,0,0,0,0,0,0,0,53.83,0,18.3,0.53,0.28,0,14.14,4223.574,0,2,0,0,0,-0.012,0,1.03,25.73,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:33:20.000+02:00,0,0,0,0,2,0,0,0,0,0,26.58,1.7,0,0.184697,0,0.22,23.7,2,0,10.24,1.7,0,0,0.24,27.55,485.16,0,0,0,0,0,0,0,0,0,53.88,0,18.3,-0.84,0.28,0,6.61,2988.036,0,2,0,0,0,-0.011,0,1.03,26.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:33:30.000+02:00,0,0,0,0,2,0,0,0,0,0,27.17,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,27.95,485.06,0,0,0,0,0,0,0,0,0,53.84,0,18.3,-0.93,0.28,0,3.2,2383.356,0,2,0,0,0,-0.011,0,1.03,26.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:33:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.63,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,26.36,485.17,0,0,0,0,0,0,0,0,0,53.93,0,18.3,-0.82,0.28,0,3.13,2093.85,0,2,0,0,0,-0.01,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:33:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.23,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,24.18,485.22,0,0,0,0,0,0,0,0,0,53.88,0,18.3,-0.78,0.22,0,4.3,1711.698,0,2,0,0,0,-0.011,0,1.03,18.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:34:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.55,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,24.18,485.08,0,0,0,0,0,0,0,0,0,53.82,0,18.3,-0.91,0.27,0,10.39,2170.692,0,2,0,0,0,-0.012,0,1.03,23.38,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:34:10.000+02:00,0,0,0,0,2,0,0,0,0,0,23.26,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,23.58,485.11,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.89,0.28,0,16.31,3805.89,0,2,0,0,0,-0.011,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:34:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.95,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,23.19,485.13,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-0.87,0.23,0,22.22,4453.866,0,2,0,0,0,-0.011,0,1.03,22.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:34:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.17,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,22.8,485.17,0,0,0,0,0,0,0,0,0,53.81,0,18.2,-0.82,0.23,0,30.54,2014.134,0,2,0,0,0,-0.011,0,1.03,20.81,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:34:40.000+02:00,0,0,0,0,2,0,0,0,0,0,21.7,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,22.39,485.33,0,0,0,0,0,0,0,0,0,53.9,0,18.2,-0.67,0.28,0,30.11,909.036,0,2,0,0,0,-0.011,0,1.03,21.2,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:34:50.000+02:00,0,0,0,0,2,0,0,0,0,0,21.39,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,21.6,485.31,0,0,0,0,0,0,0,0,0,53.91,0,18.3,-0.69,0.23,0,30.12,35.082,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:35:00.000+02:00,0,0,0,0,2,0,0,0,0,0,21.45,1.7,0,0.28764,0,0.22,23.7,2,0,10.62,1.7,0,0,0.23,21.6,485.14,0,0,0,0,0,0,0,0,0,53.93,0,18.3,-0.86,0.28,0,30.13,0,0,2,0,0,0,-0.011,0,1.03,20.81,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:35:10.000+02:00,0,0,0,0,2,0,0,0,0,0,26.21,1.7,0,0.501294,0,0.22,23.7,2,0,11.44,1.7,0,0,0.23,28.14,484.93,0,0,0,0,0,0,0,0,0,53.93,0,18.3,-1.07,0.23,0,29.28,0,0,2,0,0,0,-0.011,0,1.03,20.81,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:35:20.000+02:00,0,0,0,0,2,0,0,0,0,0,26.46,1.7,0,0.501294,0,0.22,23.7,2,0,11.44,1.7,0,0,0.23,26.56,485.05,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.95,0.23,0,22.08,0,0,2,0,0,0,-0.012,0,1.03,26.12,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:35:30.000+02:00,0,0,0,0,2,0,0,0,0,0,26.76,1.7,0,0.501294,0,0.22,23.7,2,0,11.44,1.7,0,0,0.24,27.36,485.32,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.68,0.28,0,14.67,0,0,2,0,0,0,-0.011,0,1.03,26.32,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:35:40.000+02:00,0,0,0,0,2,0,0,0,0,0,27.15,1.7,0,1.68154,0,0.22,23.7,2,0,15.86,1.7,0,0,0.24,27.36,485.32,0,0,0,0,0,0,0,0,0,53.95,0,18.3,-0.67,0.28,0,7.37,263.495,0,2,0,0,0,-0.011,0,1.03,26.95,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:35:50.000+02:00,0,0,0,0,2,0,0,0,0,0,28.14,1.7,0,2.81039,0,0.22,23.7,2,0,20.01,1.7,0,0,0.25,28.74,485.27,0,0,0,0,0,0,0,0,0,53.82,0,18.3,-0.73,0.28,0,3.22,720.156,0,2,0,0,0,-0.011,0,1.03,27.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:36:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23,1.7,0,2.82552,0,0.22,23.7,2,0,20.08,1.7,0,0,0.23,27.95,485.37,0,0,0,0,0,0,0,0,0,53.91,0,18.3,-0.63,0.23,0,3.06,970.452,0,2,0,0,0,-0.011,0,1.03,20.61,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:36:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,1.7,0,2.82552,0,0.22,23.7,2,0,20.08,1.7,0,0,0.23,23.58,485.36,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.63,0.28,0,4.63,1754.964,0,2,0,0,0,-0.011,0,1.03,20.61,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:36:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.53,1.7,0,2.82552,0,0.22,23.7,2,0,20.08,1.7,0,0,0.23,23.98,485.32,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.68,0.28,0,10.34,4231.338,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:36:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.27,1.7,0,2.82552,0,0.22,23.8,2,0,20.08,1.7,0,0,0.23,23.58,485.64,0,0,0,0,0,0,0,0,0,53.93,0,18.3,-0.36,0.23,0,17.76,4253.976,0,2,0,0,0,-0.011,0,1.03,22.99,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:36:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.93,1.7,0,2.82552,0,0.22,23.7,2,0,20.08,1.7,0,0,0.22,23.19,485.81,0,0,0,0,0,0,0,0,0,53.8,0,18.3,-0.18,0.22,0,25.14,3318.348,0,2,0,0,0,-0.012,0,1.03,22.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:36:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.27,1.7,0,2.82552,0,0.22,23.7,2,0,20.08,1.7,0,0,0.23,23.35,485.63,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.36,0.23,0,30.36,3108.036,0,2,0,0,0,-0.011,0,1.03,19.22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:37:00.000+02:00,0,0,0,0,2,0,0,0,0,0,21.87,1.7,0,2.82552,0,0.22,23.7,2,0,20.08,1.7,0,0,0.23,22.8,485.43,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-0.57,0.28,0,30.06,3642.294,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:37:10.000+02:00,0,0,0,0,2,0,0,0,0,0,21.54,1.7,0,2.82552,0,0.22,23.7,2,0,20.08,1.7,0,0,0.23,21.6,485.44,0,0,0,0,0,0,0,0,0,53.93,0,18.3,-0.56,0.23,0,30.08,3118.77,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:37:20.000+02:00,0,0,0,0,2,0,0,0,0,0,21.56,1.7,0,2.82552,0,0.22,23.7,2,0,20.08,1.7,0,0,0.24,21.8,485.47,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.53,0.28,0,30.09,3154.908,0,2,0,0,0,-0.012,0,1.03,21.2,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:37:30.000+02:00,0,0,0,0,2,0,0,0,0,0,24.3,1.7,0,2.86083,0,0.22,23.7,2,0,19.95,1.7,0,0,0.23,28.57,485.39,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.6,0.28,0,30.2,3613.986,0,2,0,0,0,-0.011,0,1.03,21.2,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:37:40.000+02:00,0,0,0,0,2,0,0,0,0,0,27.24,1.7,0,4.02817,0,0.22,23.7,2,0,24.34,1.7,0,0,0.23,29.53,485.46,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.54,0.23,0,25.81,4066.962,0,2,0,0,0,-0.011,0,1.03,24.14,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:37:50.000+02:00,0,0,0,0,2,0,0,0,0,0,27.19,1.7,0,5.63573,0,0.22,23.7,2,0,30.37,1.8,0,0,0.23,27.55,485.43,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.56,0.28,0,18.26,4172.598,0,2,0,0,0,-0.012,0,1.03,26.95,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:38:00.000+02:00,0,0,0,0,2,0,0,0,0,0,27.61,1.7,0,7.47999,0,0.22,23.7,2,0,37.18,1.8,0,0,0.24,27.95,485.26,0,0,0,0,0,0,0,0,0,53.91,0,18.3,-0.74,0.28,0,11.44,3033.864,0,2,0,0,0,-0.011,0,1.03,27.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:38:10.000+02:00,0,0,0,0,2,0,0,0,0,0,27.93,1.7,0,9.29205,0,0.22,23.7,2,0,43.82,1.8,0,0,0.23,29.14,485.37,0,0,0,0,0,0,0,0,0,53.84,0,18.3,-0.63,0.28,0,4.8,2539.14,0,2,0,0,0,-0.011,0,1.03,27.55,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:38:20.000+02:00,0,0,0,0,2,0,0,0,0,0,27.24,1.7,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.24,29.53,485.5,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.49,0.28,0,3.31,2484.774,0,2,0,0,0,-0.011,0,1.03,22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:38:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.77,1.7,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,23.79,485.47,0,0,0,0,0,0,0,0,0,53.81,0,18.3,-0.53,0.23,0,3.4,2486.082,0,2,0,0,0,-0.011,0,1.03,21.57,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:38:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,1.7,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,23.62,485.37,0,0,0,0,0,0,0,0,0,53.81,0,18.3,-0.63,0.28,0,4.11,2288.832,0,2,0,0,0,-0.011,0,1.03,21.57,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:38:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,1.7,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,22.6,485.24,0,0,0,0,0,0,0,0,0,53.93,0,18.3,-0.75,0.28,0,4.11,3198.846,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:39:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.41,1.7,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,22.56,485.16,0,0,0,0,0,0,0,0,0,53.88,0,18.3,-0.83,0.28,0,4.11,3432.702,0,2,0,0,0,-0.012,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:39:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.48,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,22.6,485.23,0,0,0,0,0,0,0,0,0,53.76,0,18.3,-0.76,0.23,0,4.11,3472.59,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:39:20.000+02:00,0,0,0,0,2,0,0,0,0,0,23.48,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,24.77,485.2,0,0,0,0,0,0,0,0,0,53.89,0,18.2,-0.8,0.28,0,6.51,3587.652,0,2,0,0,0,-0.011,0,1.03,21.6,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:39:30.000+02:00,0,0,0,0,2,0,0,0,0,0,23.41,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,23.79,485.32,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-0.67,0.28,0,14,4155.102,0,2,0,0,0,-0.011,0,1.03,22.8,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:39:40.000+02:00,0,0,0,0,2,0,0,0,0,0,23.18,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.24,23.79,485.13,0,0,0,0,0,0,0,0,0,53.81,0,18.3,-0.86,0.28,0,15.76,3909.546,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:39:50.000+02:00,0,0,0,0,2,0,0,0,0,0,23.08,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,23.38,485.27,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.73,0.28,0,21.89,3192.948,0,2,0,0,0,-0.011,0,1.03,22.76,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:40:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.61,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,22.99,485.4,0,0,0,0,0,0,0,0,0,53.84,0,18.2,-0.59,0.27,0,27.28,2919.78,0,2,0,0,0,-0.012,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:40:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,24.77,485.41,0,0,0,0,0,0,0,0,0,53.84,0,18.2,-0.58,0.28,0,30.3,1962.042,0,2,0,0,0,-0.011,0,1.03,17.84,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:40:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.18,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,22.96,485.41,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-0.59,0.23,0,30.43,1574.58,0,2,0,0,0,-0.01,0,1.03,21,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:40:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.01,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.24,22.96,485.29,0,0,0,0,0,0,0,0,0,53.9,0,18.3,-0.7,0.28,0,30.29,889.728,0,2,0,0,0,-0.011,0,1.03,20.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:40:40.000+02:00,0,0,0,0,2,0,0,0,0,0,21.34,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.24,21.6,484.99,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-1.01,0.28,0,30.14,3135.972,0,2,0,0,0,-0.011,0,1.03,20.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:40:50.000+02:00,0,0,0,0,2,0,0,0,0,0,21.47,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.24,21.6,485.3,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.7,0.28,0,30.16,3482.91,0,2,0,0,0,-0.011,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:41:00.000+02:00,0,0,0,0,2,0,0,0,0,0,21.35,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.24,21.6,485.46,0,0,0,0,0,0,0,0,0,53.79,0,18.3,-0.54,0.28,0,30.16,2522.388,0,2,0,0,0,-0.012,0,1.03,21.17,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:41:10.000+02:00,0,0,0,0,2,0,0,0,0,0,21.54,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.24,21.8,485.53,0,0,0,0,0,0,0,0,0,53.91,0,18.3,-0.46,0.28,0,30.15,2369.394,0,2,0,0,0,-0.011,0,1.03,21.2,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:41:20.000+02:00,0,0,0,0,2,0,0,0,0,0,21.5,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,21.6,485.45,0,0,0,0,0,0,0,0,0,53.8,0,18.3,-0.54,0.28,0,30.16,2223.486,0,1,0,0,0,-0.011,0,1.03,21.37,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:41:30.000+02:00,0,0,0,0,2,0,0,0,0,0,21.35,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.22,21.6,485.23,0,0,0,0,0,0,0,0,0,53.98,0,18.3,-0.76,0.22,0,30.16,192.94,0,2,0,0,0,-0.011,0,1.03,21,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:41:40.000+02:00,0,0,0,0,2,0,0,0,0,0,21.52,1.8,0,9.71272,0,0.22,23.7,2,0,45.31,1.8,0,0,0.23,21.77,485.09,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.9,0.23,0,30.17,0,0,2,0,0,0,-0.011,0,1.03,21.37,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:41:50.000+02:00,0,0,0,0,2,0,0,0,0,0,27.81,1.8,0,9.76415,0,0.22,23.7,2,0,45.39,1.8,0,0,0.23,28.94,485.27,0,0,0,0,0,0,0,0,0,53.82,0,18.3,-0.73,0.28,0,30.12,0,0,2,0,0,0,-0.011,0,1.03,21.57,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:42:00.000+02:00,0,0,0,0,2,0,0,0,0,0,28.16,1.8,0,11.1153,0,0.22,23.7,2,0,50.3,1.8,0,0,0.23,29.1,485.22,0,0,0,0,0,0,0,0,0,53.81,0,18.3,-0.78,0.28,0,25.21,0,0,2,0,0,0,-0.012,0,1.03,27.51,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:42:10.000+02:00,0,0,0,0,2,0,0,0,0,0,28.08,1.8,0,12.4855,0,0.22,23.7,2,0,55.28,1.8,0,0,0.23,28.14,485.22,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.78,0.23,0,20.23,0,0,2,0,0,0,-0.011,0,1.03,27.91,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:42:20.000+02:00,0,0,0,0,2,0,0,0,0,0,28.29,1.8,0,13.8468,0,0.22,23.7,2,0,60.2,1.8,0,0,0.23,28.55,485.17,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.83,0.23,0,15.31,0,0,2,0,0,0,-0.011,0,1.03,28.1,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:42:30.000+02:00,0,0,0,0,2,0,0,0,0,0,28.87,1.8,0,15.033,0,0.22,23.7,2,0,64.41,1.8,0,0,0.23,31.52,485.43,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.57,0.27,0,11.1,0,0,2,0,0,0,-0.011,0,1.03,25.92,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:42:40.000+02:00,0,0,0,0,2,0,0,0,0,0,29.84,1.8,0,16.0205,0,0.22,23.7,2,0,61.03,1.8,0,0,0.23,31.91,485.26,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.73,0.23,0,14.48,0,0,2,0,0,0,-0.011,0,1.03,25.92,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:42:50.000+02:00,0,0,0,0,2,0,0,0,0,0,29.31,1.8,0,16.6431,0,0.22,23.7,2,0,58.83,1.8,0,0,0.22,31.12,485.21,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.78,0.22,0,16.68,0,0,2,0,0,0,-0.012,0,1.03,28.1,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:43:00.000+02:00,0,0,0,0,2,0,0,0,0,0,23.43,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.8,0,0,0.23,29.53,485.5,0,0,0,0,0,0,0,0,0,53.92,0,18.3,-0.5,0.23,0,16.62,625.398,0,2,0,0,0,-0.012,0,1.03,22.16,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:43:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.15,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.8,0,0,0.24,22.39,485.68,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.31,0.28,0,16.59,4245.558,0,2,0,0,0,-0.011,0,1.03,22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:43:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.1,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.8,0,0,0.23,22.19,485.84,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.16,0.23,0,16.59,4380.684,0,1,0,0,0,-0.012,0,1.03,21.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:43:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.1,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.8,0,0,0.24,22.19,485.85,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.15,0.28,0,16.6,4122.63,0,2,0,0,0,-0.011,0,1.03,21.96,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:43:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.25,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.8,0,0,0.23,22.76,485.71,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.29,0.23,0,16.57,3303.144,0,2,0,0,0,-0.012,0,1.03,20.57,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:43:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.33,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,23.58,485.51,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.48,0.23,0,16.42,2809.236,0,2,0,0,0,-0.011,0,1.03,20.22,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:44:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.7,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.24,23.98,485.36,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.64,0.28,0,10.19,2770.698,0,2,0,0,0,-0.011,0,1.03,21.77,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:44:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.53,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.24,23.55,485.31,0,0,0,0,0,0,0,0,0,53.77,0,18.2,-0.69,0.28,0,4.75,1731.468,0,2,0,0,0,-0.01,0,1.03,21.13,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:44:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.56,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.25,22.6,485.29,0,0,0,0,0,0,0,0,0,53.9,0,18.3,-0.71,0.28,0,4.77,0,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:44:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.61,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.25,22.8,485.24,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.76,0.28,0,4.76,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:44:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.54,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.24,22.8,485.23,0,0,0,0,0,0,0,0,0,53.81,0,18.3,-0.76,0.28,0,4.77,0,0,2,0,0,0,-0.013,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:44:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.24,22.6,485.27,0,0,0,0,0,0,0,0,0,53.92,0,18.3,-0.73,0.28,0,4.77,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:45:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.5,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.22,22.6,485.27,0,0,0,0,0,0,0,0,0,53.93,0,18.3,-0.72,0.23,0,4.77,0,0,2,0,0,0,-0.01,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:45:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.54,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.22,22.8,485.26,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.73,0.23,0,4.79,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:45:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.48,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.8,485.26,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.73,0.27,0,4.79,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:45:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.47,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.8,485.13,0,0,0,0,0,0,0,0,0,53.94,0,18.3,-0.86,0.28,0,4.77,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:45:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.24,22.6,485.04,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.95,0.28,0,4.77,0,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:45:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.55,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.8,485.08,0,0,0,0,0,0,0,0,0,53.86,0,18.3,-0.91,0.28,0,4.79,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:46:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.53,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.8,485.14,0,0,0,0,0,0,0,0,0,53.81,0,18.3,-0.86,0.27,0,4.78,0,0,2,0,0,0,-0.012,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:46:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,1.8,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.24,22.6,485.31,0,0,0,0,0,0,0,0,0,53.8,0,18.2,-0.69,0.28,0,4.77,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:46:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.49,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.8,485.41,0,0,0,0,0,0,0,0,0,53.83,0,18.2,-0.59,0.23,0,4.77,0,0,2,0,0,0,-0.01,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:46:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.47,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.6,485.38,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.61,0.28,0,4.78,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:46:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.52,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.24,22.8,485.32,0,0,0,0,0,0,0,0,0,53.87,0,18.3,-0.68,0.28,0,4.78,0,0,2,0,0,0,-0.012,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:46:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.42,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.6,485.52,0,0,0,0,0,0,0,0,0,53.82,0,18.3,-0.48,0.28,0,4.77,0,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:47:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.6,485.56,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.44,0.28,0,4.77,0,0,2,0,0,0,-0.011,0,1.03,22.39,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:47:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.32,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.8,485.59,0,0,0,0,0,0,0,0,0,53.92,0,18.3,-0.4,0.23,0,4.77,0,0,2,0,0,0,-0.011,0,1.03,21.2,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:47:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.99,485.31,0,0,0,0,0,0,0,0,0,53.85,0,18.3,-0.69,0.23,0,4.11,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:47:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.6,484.98,0,0,0,0,0,0,0,0,0,53.79,0,18.3,-1.02,0.27,0,4.12,0,0,2,0,0,0,-0.011,0,1.03,22.19,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:47:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.45,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.6,484.86,0,0,0,0,0,0,0,0,0,53.8,0,18.2,-1.14,0.28,0,4.1,0,0,2,0,0,0,-0.012,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:47:50.000+02:00,0,0,0,0,2,0,0,0,0,0,22.5,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.24,22.6,485.04,0,0,0,0,0,0,0,0,0,53.93,0,18.2,-0.96,0.28,0,4.11,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:48:00.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.6,485.42,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-0.58,0.28,0,4.11,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:48:10.000+02:00,0,0,0,0,2,0,0,0,0,0,22.53,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.22,22.8,485.2,0,0,0,0,0,0,0,0,0,53.89,0,18.3,-0.8,0.22,0,4.11,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:48:20.000+02:00,0,0,0,0,2,0,0,0,0,0,22.44,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.8,484.87,0,0,0,0,0,0,0,0,0,53.83,0,18.3,-1.13,0.23,0,4.11,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:48:30.000+02:00,0,0,0,0,2,0,0,0,0,0,22.49,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.8,486.28,0,0,0,0,0,0,0,0,0,53.93,0,18.2,0.29,0.27,0,4.11,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+<data>2006-08-03T00:48:40.000+02:00,0,0,0,0,2,0,0,0,0,0,22.46,1.9,0,16.6496,0,0.22,23.7,2,0,58.83,1.9,0,0,0.23,22.6,485.62,0,0,0,0,0,0,0,0,0,53.91,0,18.3,-0.38,0.27,0,4.12,0,0,2,0,0,0,-0.011,0,1.03,22.36,1.35,0,1.35,0,0,0,0,0,0</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:12:03.9760000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T10:47:06.7340000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T10:47:06.7660000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

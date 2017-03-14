@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="6KFSJ18" uidLog="49KKJH14" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameLog>Lagmud</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>7</runNumber>
+      <indexType>Depth</indexType>
+      <startIndex>2232</startIndex>
+      <endIndex>2290</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <mnemAlias>mdHole</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>Hole Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S2_MAX</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>H2S Sensor 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S4_AVG</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>H2S Sensor 4</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUT</mnemonic>
+        <unit>L/min</unit>
+        <mnemAlias>flowOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>4</columnIndex>
+        <curveDescription>Mud Flow Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGMWT</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>5</columnIndex>
+        <curveDescription>Lagged Mud Weight</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUTPC</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>flowOutPc</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>6</columnIndex>
+        <curveDescription>Mud Flow Out Percent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWOUT</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>wtMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>7</columnIndex>
+        <curveDescription>Mud Weight Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S4_MAX</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>8</columnIndex>
+        <curveDescription>H2S Sensor 4</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S1_AVG</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>9</columnIndex>
+        <curveDescription>H2S Sensor 1</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGGAS</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>10</columnIndex>
+        <curveDescription>Total Gas - Lagged</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S1_MAX</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>11</columnIndex>
+        <curveDescription>H2S Sensor 1</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MROUT</mnemonic>
+        <unit>ohm.m</unit>
+        <mnemAlias>condMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>12</columnIndex>
+        <curveDescription>Mud Resistivity Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_AVG</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>13</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S3_AVG</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>14</columnIndex>
+        <curveDescription>H2S Sensor 3</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS2_AVG</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>15</columnIndex>
+        <curveDescription>Total Gas 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_MIN</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>16</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS2_MIN</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>17</columnIndex>
+        <curveDescription>Total Gas 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_MAX</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>18</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGMRES</mnemonic>
+        <unit>ohm.m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>19</columnIndex>
+        <curveDescription>Lagged Mud Resistivity</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S3_MAX</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>20</columnIndex>
+        <curveDescription>H2S Sensor 3</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS2_MAX</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>21</columnIndex>
+        <curveDescription>Total Gas 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MTOUT</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>tempMudOAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>22</columnIndex>
+        <curveDescription>Mud Temperature Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGMTDIFF</mnemonic>
+        <unit>degC</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>23</columnIndex>
+        <curveDescription>Lagged Mud Temperature Difference</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CO2</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>co2</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>24</columnIndex>
+        <curveDescription>Carbon Dioxide</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S2_AVG</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>25</columnIndex>
+        <curveDescription>H2S Sensor 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGMTEMP</mnemonic>
+        <unit>degC</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>26</columnIndex>
+        <curveDescription>Lagged Mud Temperature</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>2232,-3,-3,3363.138,1.25,47,1.25,0,-3,0,0,10.286,0.1208,0,0,0.0208,0,0.0208,0,0,0,18.9,-268.5,0,-3,14.3</data>
+<data>2233,0,-2,2578.932,1.25,47.53,1.25,0,-2,0,0,10.286,0.0207,0,0,0.0196,0,0.0218,0,0,0,18.9,-267.6,0,-3,13.4</data>
+<data>2234,-1,-1,1970.304,1.25,48.25,1.25,0,-1,0,0,10.286,0.1186,0,0,0.0092,0,0.024,0,0,0,18.9,-267.2,0,-2,13</data>
+<data>2235,-1,0,924.918,1.25,47.53,1.25,0,0,0,0,10.286,0.0363,0,0,0.0233,0,0.0441,0,0,0,18.8,-267.8,0,-2,13.5</data>
+<data>2236,-1,0,1378.956,1.25,47.97,1.25,0,0,0,0,10.286,0.0387,0,0,0.0316,0,0.043,0,0,0,18.8,-268,0,-3,13.7</data>
+<data>2237,-1,-2,1294.074,1.25,47.65,1.25,0,-2,0,0,10.286,0.1261,0,0,0.0246,0,0.0316,0,0,0,18.8,-268,0,-3,13.7</data>
+<data>2238,-3,-3,809.31,1.25,46.42,1.25,0,-2,0,0,10.286,0.0225,0,0,0.0103,0,0.0297,0,0,0,18.8,-268.2,0,-3,13.8</data>
+<data>2239,-1,-1,1041.63,1.25,47.82,1.25,0,-1,0,0,10.286,0.032,0,0,0.0292,0,0.0341,0,0,0,18.8,-268.3,0,-2,13.9</data>
+<data>2240,-1,-2,3006.096,1.25,48.64,1.25,0,-2,0,0,10.286,0.0371,0,0,0.0213,0,0.0395,0,0,0,18.7,-268.8,0,-1,14.4</data>
+<data>2241,-1,-3,2246.748,1.25,48.75,1.25,0,-2,0,0,10.287,0.0392,0,0,0.0356,0,0.0434,0,0,0,18.6,-269.3,0,-1,14.8</data>
+<data>2242,-1,-1,1778.622,1.25,48.33,1.25,0,-1,0,0,10.287,0.043,0,0,0.0356,0,0.0485,0,0,0,18.6,-269.2,0,-1,14.6</data>
+<data>2243,-1,-2,3337.344,1.25,48.53,1.25,0,-2,0,0,10.287,0.0447,0,0,0.0404,0,0.0483,0,0,0,18.6,-269,0,-1,14.4</data>
+<data>2244,-1,-2,3390,1.25,48.96,1.25,0,-2,0,0,10.287,0.0401,0,0,0.0392,0,0.0418,0,0,0,18.7,-268.9,0,-1,14.4</data>
+<data>2245,-1,0,3677.04,1.25,48.76,1.25,0,0,0,0,10.287,0.0379,0,0,0.0354,0,0.04,0,0,0,18.8,-269,0,-1,14.6</data>
+<data>2246,-1,-1,3608.802,1.25,48.82,1.25,0,-1,0,0,10.287,0.0397,0,0,0.0392,0,0.041,0,0,0,18.8,-269,0,-1,14.6</data>
+<data>2247,-1,-1,2191.122,1.25,48.97,1.25,0,-1,0,0,10.287,0.0416,0,0,0.0404,0,0.043,0,0,0,18.8,-268.9,0,-1,14.6</data>
+<data>2248,-1,-1,3162.45,1.25,49.12,1.25,0,-1,0,0,10.287,0.0452,0,0,0.0429,0,0.0483,0,0,0,18.9,-269,0,-1,14.7</data>
+<data>2249,-1,-1,2133.672,1.25,51.16,1.25,0,-1,0,0,10.287,0.0347,0,0,0.0137,0,0.0502,0,0,0,18.9,-269,0,-1,14.8</data>
+<data>2250,-1,-2,1313.994,1.25,51.62,1.25,0,-2,0,0,10.287,0.0537,0,0,0.0403,0,0.0621,0,0,0,18.9,-269,0,-1,14.8</data>
+<data>2251,-1,-3,2443.734,1.25,51.79,1.25,0,-2,0,0,10.287,0.0553,0,0,0.0265,0,0.0677,0,0,0,18.9,-269.1,0,-1,14.9</data>
+<data>2252,-1,0,1413.84,1.25,51.58,1.25,0,0,0,0,10.287,0.0618,0,0,0.0264,0,0.1422,0,0,0,18.9,-269.1,0,-1,14.8</data>
+<data>2253,-1,0,2240.25,1.25,51.74,1.25,0,0,0,0,10.287,0.2458,0,0,0.1422,0,0.3518,0,0,0,18.9,-268.9,0,-1,14.7</data>
+<data>2254,-1,-1,2766.414,1.25,51.77,1.25,0,-1,0,0,10.287,0.4158,0,0,0.3518,0,0.5052,0,0,0,18.9,-268.9,0,-1,14.7</data>
+<data>2255,-1,-2,3578.832,1.25,50.69,1.25,0,-2,0,0,10.287,0.5623,0,0,0.5052,0,0.5833,0,0,0,18.9,-269,0,-1,14.7</data>
+<data>2256,-1,-1,2145.648,1.25,51.66,1.25,0,-1,0,0,10.287,0.6016,0,0,0.5833,0,0.6215,0,0,0,18.9,-269,0,-1,14.8</data>
+<data>2257,-1,-3,2088.456,1.25,50.9,1.25,0,-3,0,0,10.287,0.6279,0,0,0.6221,0,0.6313,0,0,0,18.9,-269,0,-1,14.8</data>
+<data>2258,-1,-1,3228.3,1.25,51.71,1.25,0,-1,0,0,10.287,0.5597,0,0,0.4558,0,0.63,0,0,0,18.8,-269.2,0,-1,14.8</data>
+<data>2259,-1,-2,2557.272,1.25,51.39,1.25,0,-1,0,0,10.287,0.322,0,0,0.2264,0,0.4558,0,0,0,18.9,-269.2,0,-1,14.9</data>
+<data>2260,-1,-2,638.004,1.25,50.53,1.25,0,-2,0,0,10.287,0.2955,0,0,0.2388,0,0.3714,0,0,0,19.1,-268.8,0,-1,14.8</data>
+<data>2261,-1,-2,999.588,1.25,46.57,1.25,0,-2,0,0,10.287,0.4154,0,0,0.2928,0,0.4932,0,0,0,19.1,-268.8,0,-1,14.7</data>
+<data>2262,-1,0,1672.152,1.25,44.16,1.25,0,0,0,0,10.287,0.1255,0,0,0,0,0.445,0,0,0,19.1,-268.6,0,-1,14.6</data>
+<data>2263,-1,-1,2929.578,1.25,50.94,1.25,0,-1,0,0,10.287,0.3737,0,0,0.1421,0,0.4612,0,0,0,19.1,-268.6,0,-1,14.5</data>
+<data>2264,-1,-1,1700.118,1.25,50.41,1.25,0,-1,0,0,10.287,0.4403,0,0,0.4244,0,0.468,0,0,0,19.1,-268.5,0,-1,14.4</data>
+<data>2265,-1,-2,2017.326,1.25,51.39,1.25,0,-2,0,0,10.287,0.4984,0,0,0.468,0,0.5188,0,0,0,19.3,-268.4,0,-1,14.5</data>
+<data>2266,-1,-2,2674.188,1.25,51.13,1.25,0,-2,0,0,10.287,0.4381,0,0,0.3417,0,0.5161,0,0,0,19.5,-267.9,0,-1,14.2</data>
+<data>2267,-1,-2,2912.298,1.25,51.67,1.25,0,-2,0,0,10.288,0.441,0,0,0.4093,0,0.4956,0,0,0,19.6,-267.7,0,-1,14.1</data>
+<data>2268,-1,0,1504.29,1.25,51.38,1.25,0,0,0,0,10.287,0.4681,0,0,0.4612,0,0.4836,0,0,0,19.6,-267.5,0,-1,14</data>
+<data>2269,-1,0,2070.318,1.25,50.88,1.25,0,0,0,0,10.288,0.4818,0,0,0.4772,0,0.4877,0,0,0,19.7,-267.6,0,-1,14.1</data>
+<data>2270,-1,0,2014.338,1.25,49.95,1.25,0,0,0,0,10.288,0.481,0,0,0.4758,0,0.4869,0,0,0,19.7,-267.7,0,-1,14.3</data>
+<data>2271,-1,-3,1119.276,1.25,49.98,1.25,0,-2,0,0,10.287,0.4695,0,0,0.453,0,0.4835,0,0,0,19.8,-267.7,0,-1,14.4</data>
+<data>2272,-1,-3,541.024,1.25,50.56,1.25,0,-2,0,0,10.288,0.4641,0,0,0.448,0,0.484,0,0,0,19.8,-267.8,0,-1,14.5</data>
+<data>2273,-1,-3,887.94,1.25,50.18,1.25,0,-2,0,0,10.288,0.4941,0,0,0.484,0,0.4988,0,0,0,19.9,-267.8,0,-1,14.6</data>
+<data>2274,-1,0,252.079,1.25,49.85,1.25,0,0,0,0,10.288,0.4777,0,0,0.4648,0,0.4934,0,0,0,19.9,-267.9,0,-1,14.6</data>
+<data>2275,-1,0,1629.936,1.25,49.6,1.25,0,0,0,0,10.287,0.481,0,0,0.4647,0,0.5006,0,0,0,20,-267.6,0,-1,14.5</data>
+<data>2276,-1,0,512.802,1.25,50.48,1.25,0,0,0,0,10.287,0.5105,0,0,0.5006,0,0.5165,0,0,0,20.3,-267.4,0,-1,14.5</data>
+<data>2277,-1,-2,3025.512,1.25,50.25,1.25,0,-2,0,0,10.287,0.5258,0,0,0.5148,0,0.5394,0,0,0,20.2,-267.5,0,-1,14.5</data>
+<data>2278,-1,-3,1379.358,1.25,50.2,1.25,0,-2,0,0,10.287,0.4924,0,0,0.4453,0,0.5323,0,0,0,20.1,-267.6,0,-1,14.6</data>
+<data>2279,-1,0,125.15,1.25,50.38,1.25,0,0,0,0,10.287,0.4147,0,0,0.3974,0,0.4456,0,0,0,20.2,-267.5,0,-1,14.5</data>
+<data>2280,-1,-3,406.031,1.25,50.29,1.25,0,-2,0,0,10.287,0.4299,0,0,0.4064,0,0.4441,0,0,0,20.3,-267.4,0,-1,14.6</data>
+<data>2281,-1,-1,1100.064,1.25,50.3,1.25,0,-1,0,0,10.286,0.391,0,0,0.2585,0,0.4618,0,0,0,20.6,-267,0,-1,14.5</data>
+<data>2282,-1,-3,811.038,1.25,50.6,1.25,0,-2,0,0,10.286,0.4274,0,0,0.3522,0,0.5631,0,0,0,20.9,-266.9,0,-1,14.6</data>
+<data>2283,-1,-2,713.094,1.25,50.7,1.25,0,-2,0,0,10.286,0.7999,0,0,0.5631,0,1.0763,0,0,0,20.9,-266.8,0,-1,14.6</data>
+<data>2284,-1,0,475.814,1.25,49.38,1.25,0,0,0,0,10.286,1.249,0,0,1.0763,0,1.3516,0,0,0,20.9,-266.9,0,-1,14.6</data>
+<data>2285,-1,0,703.878,1.25,49.32,1.25,0,0,0,0,10.287,1.358,0,0,1.3465,0,1.3728,0,0,0,20.8,-267.1,0,-1,14.7</data>
+<data>2286,-1,0,1161.756,1.25,50.06,1.25,0,0,0,0,10.287,1.2944,0,0,1.1702,0,1.3481,0,0,0,20.8,-267.1,0,-1,14.8</data>
+<data>2287,-1,-2,1581.936,1.25,50.64,1.25,0,-2,0,0,10.286,0.8413,0,0,0.7223,0,1.1702,0,0,0,20.9,-267,0,-1,14.7</data>
+<data>2288,-1,-3,424.56,1.25,50.93,1.25,0,-2,0,0,10.286,0.764,0,0,0.7115,0,0.8743,0,0,0,20.9,-267.1,0,-1,14.8</data>
+<data>2289,-1,0,942.084,1.25,50.03,1.25,0,0,0,0,10.287,0.9287,0,0,0.8743,0,0.9522,0,0,0,20.9,-267.1,0,-1,14.9</data>
+<data>2290,-1,-2,289.702,1.25,49.06,1.25,0,-2,0,0,10.286,0.7184,0,0,0.4831,0,0.89,0,0,0,21,-267.1,0,-1,15</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:41:45.6480000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T12:11:45.8430000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T12:11:45.8590000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

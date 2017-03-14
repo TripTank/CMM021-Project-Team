@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="6KFSJ18" uidLog="5342KFSJ18" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameLog>DrillDepth</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>3</runNumber>
+      <creationDate>2007-01-28T07:29:21.0000000+01:00</creationDate>
+      <indexType>Depth</indexType>
+      <startIndex>2231.1</startIndex>
+      <endIndex>2232</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_DIST</mnemonic>
+        <unit>m</unit>
+        <mnemAlias>distBit</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Bit Distance Drilled</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_RPM_AVG</mnemonic>
+        <unit>c/min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Bit RPM - Total RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_RPM_MAX</mnemonic>
+        <unit>c/min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>4</columnIndex>
+        <curveDescription>Bit RPM - Total RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BIT_RPM_MIN</mnemonic>
+        <unit>c/min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>5</columnIndex>
+        <curveDescription>Bit RPM - Total RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CUTRETDEPTH</mnemonic>
+        <unit>m</unit>
+        <mnemAlias>mdReturn</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>6</columnIndex>
+        <curveDescription>Lagged Cuttings Returns Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DX</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>7</columnIndex>
+        <curveDescription>Drilling Exponent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DXC</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>8</columnIndex>
+        <curveDescription>Corrected Drilling Exponent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DXMW</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>9</columnIndex>
+        <curveDescription>EQMD from Corrected Drilling Exponent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DXN</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>10</columnIndex>
+        <curveDescription>Normal Trendline Corrected Drilling Exponent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ECDBIT</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>ecdBit</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>11</columnIndex>
+        <curveDescription>ECD at Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ECDCS</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>ecdCsg</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>12</columnIndex>
+        <curveDescription>ECD at Casing Shoe</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ECDTD</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>ecdTd</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>13</columnIndex>
+        <curveDescription>ECD at Total Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ECDWKDEP</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>14</columnIndex>
+        <curveDescription>ECD at Weakest Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWIN</mnemonic>
+        <unit>L/min</unit>
+        <mnemAlias>flowInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>15</columnIndex>
+        <curveDescription>Mud Flow In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUT</mnemonic>
+        <unit>L/min</unit>
+        <mnemAlias>flowOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>16</columnIndex>
+        <curveDescription>Mud Flow Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUTPC</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>flowOutPc</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>17</columnIndex>
+        <curveDescription>Mud Flow Out Percent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FRAC_EQMD</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>mffp</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>18</columnIndex>
+        <curveDescription>Estimated Fracture Pressure EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_AVG</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>19</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_MAX</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>20</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_MIN</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>21</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>INST_COST</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>costPerDist</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>22</columnIndex>
+        <curveDescription>Instantaneous Cost/Dist for Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>KICKTOL1</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>23</columnIndex>
+        <curveDescription>Kick Tolerance for Influx Volume 1</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>KICKTOL2</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>24</columnIndex>
+        <curveDescription>Kick Tolerance for Influx Volume 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>KICKTOL3</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>25</columnIndex>
+        <curveDescription>Kick Tolerance for Influx Volume 3</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MIN_2M</mnemonic>
+        <unit>min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>26</columnIndex>
+        <curveDescription>Minutes/last 2 m</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MIN_5FT</mnemonic>
+        <unit>min</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>27</columnIndex>
+        <curveDescription>Minutes/last 5 feet</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MOTOR_RPM</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>mmrpm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>28</columnIndex>
+        <curveDescription>Motor RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MRIN</mnemonic>
+        <unit>ohm.m</unit>
+        <mnemAlias>condMudInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>29</columnIndex>
+        <curveDescription>Mud Resistivity In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MROUT</mnemonic>
+        <unit>ohm.m</unit>
+        <mnemAlias>condMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>30</columnIndex>
+        <curveDescription>Mud Resistivity Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MTIN</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>tempMudInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>31</columnIndex>
+        <curveDescription>Mud Temperature In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MTOUT</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>tempMudOAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>32</columnIndex>
+        <curveDescription>Mud Temperature Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MUDRETDEPTH</mnemonic>
+        <unit>m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>33</columnIndex>
+        <curveDescription>Lagged Mud Returns Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWIN</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>wtMudInAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>34</columnIndex>
+        <curveDescription>Mud Weight In</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWINANN</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>35</columnIndex>
+        <curveDescription>Mud Weight in Annulus</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWOUT</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>wtMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>36</columnIndex>
+        <curveDescription>Mud Weight Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ONBOTTOM_TIME</mnemonic>
+        <unit>h</unit>
+        <mnemAlias>cTimBit</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>37</columnIndex>
+        <curveDescription>Cumulative On-Bottom Time</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PIT_DRILL</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>38</columnIndex>
+        <curveDescription>Drill Pit Group Cumulative Volume</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PIT_EQMD</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>39</columnIndex>
+        <curveDescription>Pressure Integrity Test EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>POR_EQMD</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>mfpp</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>40</columnIndex>
+        <curveDescription>Estimated Pore Pressure EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PUMP_AVG</mnemonic>
+        <unit>bar</unit>
+        <mnemAlias>presPumpAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>41</columnIndex>
+        <curveDescription>Pump Pressure - Stand Pipe</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PUMP_MAX</mnemonic>
+        <unit>bar</unit>
+        <mnemAlias>presPumpAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>42</columnIndex>
+        <curveDescription>Pump Pressure - Stand Pipe</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PUMP_MIN</mnemonic>
+        <unit>bar</unit>
+        <mnemAlias>presPumpAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>43</columnIndex>
+        <curveDescription>Pump Pressure - Stand Pipe</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ROP_AVG</mnemonic>
+        <unit>m/h</unit>
+        <mnemAlias>ropAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>44</columnIndex>
+        <curveDescription>Depth Averaged ROP</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ROP_BIT</mnemonic>
+        <unit>m/h</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>45</columnIndex>
+        <curveDescription>ROP for the Bit - Distance Over Time (On Bottom)</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>ROT_TIME</mnemonic>
+        <unit>h</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>46</columnIndex>
+        <curveDescription>Cumulative Rotating Time</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SIGMA_CORR</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>47</columnIndex>
+        <curveDescription>Corrected Sigma</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SIGMA_RAW</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>48</columnIndex>
+        <curveDescription>Raw Sigma</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SIGMA_ZERO</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>49</columnIndex>
+        <curveDescription>Zero Sigma</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STRATESUM</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>spmTot</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>50</columnIndex>
+        <curveDescription>Pump Total Stroke Rate</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SURF_RPM</mnemonic>
+        <unit>c/min</unit>
+        <mnemAlias>rpmAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>51</columnIndex>
+        <curveDescription>Surface RPM</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TBR</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>bitRevCm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>52</columnIndex>
+        <curveDescription>Total Bit Revolutions</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TIME_DIST</mnemonic>
+        <unit>min/m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>53</columnIndex>
+        <curveDescription>Time/Distance ROP  - Instantaneous</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TORQUE_AVG</mnemonic>
+        <unit>kN.m</unit>
+        <mnemAlias>tqAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>54</columnIndex>
+        <curveDescription>Surface Torque Average</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TORQUE_MAX</mnemonic>
+        <unit>kN.m</unit>
+        <mnemAlias>tqAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>55</columnIndex>
+        <curveDescription>Surface Torque Average</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TORQUE_MIN</mnemonic>
+        <unit>kN.m</unit>
+        <mnemAlias>tqAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>56</columnIndex>
+        <curveDescription>Surface Torque Average</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_AVG</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>57</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_MAX</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>58</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS2_AVG</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>59</columnIndex>
+        <curveDescription>Total Gas 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS2_MAX</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>60</columnIndex>
+        <curveDescription>Total Gas 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>WOB_AVG</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>wobAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>61</columnIndex>
+        <curveDescription>Weight On Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>WOB_MAX</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>wobAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>62</columnIndex>
+        <curveDescription>Weight On Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>WOB_MIN</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>wobAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2231.1</startIndex>
+        <endIndex>2232</endIndex>
+        <columnIndex>63</columnIndex>
+        <curveDescription>Weight On Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>2231.1,50.09,87,90,85,2227.25,1.375,1.013,1.02,1.005,1.4,1.4,1.4,1.35,3556.602,651.288,47.85,0,59.22,62.39,57.2,723.02,1.35,1.35,1.35,32.9,20.9,0,0,10.286,11.9,22.4,2227.29,1.35,1.35,1.35,0.1,82.01,0,1.03,126,127,125,4.72,9.29,0.1,0.573,0.42,0.452,190,87,199,8.6,24.43,27.81,22.12,0.0607,0.0656,0,0,6.6,9.07,3.88</data>
+<data>2231.4,50.37,88,90,86,2227.5,1.392,1.026,1.01,1.005,1.4,1.4,1.4,1.35,3556.908,855.084,46.67,0,58.18,62.2,56.65,903.24,1.35,1.35,1.35,33.6,24,0,0,10.285,11.9,22.4,2227.52,1.35,1.35,1.35,0.2,82.05,0,1.03,126,127,124,3.81,9.14,0.2,0.565,0.413,0.445,190,88,856,36.1,24,26.19,21.71,0.0638,0.069,0,0,7.32,9.62,4.07</data>
+<data>2231.7,50.67,88,90,84,2228.53,1.483,1.093,0.95,1.005,1.4,1.4,1.4,1.35,3556.686,3201.882,47.77,0,58.61,62.2,56.4,932.05,1.35,1.35,1.35,33.6,31.2,0,0,10.288,12,22.4,2228.6,1.35,1.35,1.35,0.3,82.5,0,1.03,126,127,124,3.68,9.04,0.3,0.643,0.491,0.522,190,88,1487,22.9,24.07,27.13,20.83,0.053,0.0558,0,0,7.59,9.87,4.07</data>
+<data>2232,50.99,88,92,82,2229.18,1.465,1.079,0.96,1.005,1.4,1.4,1.4,1.35,3556.74,1381.77,47.39,0,58.87,63.58,56.05,1027.45,1.35,1.35,1.35,36.8,28.6,0,0,10.287,12,22.4,2229.2,1.35,1.35,1.35,0.4,80.62,0,1.03,126,127,124,3.26,8.91,0.4,0.631,0.478,0.51,190,88,1952,43.2,24.38,29.23,18.78,0.0595,0.0635,0,0,7.43,10.21,2.69</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:43:54.3660000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T11:47:02.7650000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T11:47:02.7660000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

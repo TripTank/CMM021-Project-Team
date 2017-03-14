@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<wells xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/terms/" xmlns:gml="http://www.opengis.net/gml/3.2" version="1.3.1.1" xmlns="http://www.witsml.org/schemas/131">
+  <well uid="RGU01-RGUWell01">
+    <name>RGUWell01</name>
+    <nameLegal>UKW-33-45</nameLegal>
+    <numLicense>UKWL-324673</numLicense>
+    <numGovt>999324673</numGovt>
+    <dTimLicense>2007-04-24T00:00:00</dTimLicense>
+    <field>Dunstan</field>
+    <country>UK</country>
+    <state>Scotland</state>
+    <county>Offshore</county>
+    <region>Europe</region>
+    <district>North Sea</district>
+    <block>P1412</block>
+    <timeZone>GMT +00:00</timeZone>
+    <operator>BP</operator>
+    <operatorDiv>BP-UK</operatorDiv>
+    <pcInterest uom="%">51</pcInterest>
+    <numAPI>API-324673</numAPI>
+    <statusWell>active</statusWell>
+    <purposeWell>exploration</purposeWell>
+    <fluidWell>oil-gas</fluidWell>
+    <directionWell>huff-n-puff</directionWell>
+    <dTimSpud>2015-01-02T19:44:12</dTimSpud>
+    <wellheadElevation uom="ft">-75</wellheadElevation>
+    <groundElevation uom="ft">0</groundElevation>
+    <waterDepth uom="ft">80</waterDepth>
+    <wellLocation>
+      <latitude uom="dega">58.6</latitude>
+      <longitude uom="dega">-0.52</longitude>
+      <description>North-Sea: 100 km E 50km N of Aberdeen</description>
+    </wellLocation>
+    <referencePoint>
+      <name>Seabed</name>
+      <elevation uom="ft">-80</elevation>
+      <description>Seabed depth</description>
+    </referencePoint>
+    <referencePoint>
+      <name>Rig</name>
+      <elevation uom="ft">0</elevation>
+      <description>Rig Location</description>
+    </referencePoint>
+    <commonData>
+      <sourceName>DPL</sourceName>
+      <dTimCreation>2015-07-22T12:30:00</dTimCreation>
+      <comments>All data relating to this well is unrealistic and for test purposes only</comments>
+    </commonData>
+  </well>
+  <well uid="RGU02-RGUWell02">
+    <name>RGUWell02</name>
+    <nameLegal>UKW-22-41</nameLegal>
+    <numLicense>UKWL-677733</numLicense>
+    <numGovt>999763921</numGovt>
+    <dTimLicense>2010-03-30T00:00:00</dTimLicense>
+    <field>Lonie</field>
+    <country>UK</country>
+    <state>Scotland</state>
+    <county>Offshore</county>
+    <region>Europe</region>
+    <district>North Sea</district>
+    <block>P2241</block>
+    <timeZone>GMT +00:00</timeZone>
+    <operator>Nexen</operator>
+    <operatorDiv>Nexen-UK</operatorDiv>
+    <pcInterest uom="%">51</pcInterest>
+    <numAPI>API-437825</numAPI>
+    <statusWell>active</statusWell>
+    <purposeWell>exploration</purposeWell>
+    <fluidWell>gas</fluidWell>
+    <directionWell>uncertain</directionWell>
+    <dTimSpud>2015-01-02T19:44:12</dTimSpud>
+    <wellheadElevation uom="ft">-180</wellheadElevation>
+    <groundElevation uom="ft">0</groundElevation>
+    <waterDepth uom="ft">200</waterDepth>
+    <wellLocation>
+      <latitude uom="dega">57.11</latitude>
+      <longitude uom="dega">-2.23</longitude>
+      <description>North-Sea: 100 km E 50km N of Aberdeen</description>
+    </wellLocation>
+    <referencePoint>
+      <name>Seabed</name>
+      <elevation uom="ft">-200</elevation>
+      <description>Seabed depth</description>
+    </referencePoint>
+    <referencePoint>
+      <name>Rig</name>
+      <elevation uom="ft">24</elevation>
+      <description>Rig Location</description>
+    </referencePoint>
+    <commonData>
+      <sourceName>DPL</sourceName>
+      <dTimCreation>2015-07-21T12:45:00</dTimCreation>
+      <comments>All data relating to this well is unrealistic and for test purposes only</comments>
+    </commonData>
+  </well>
+  <well uid="RGU03-RGUWell03">
+    <name>RGUWell03</name>
+    <nameLegal>NW-34-11</nameLegal>
+    <numLicense>N-123456</numLicense>
+    <numGovt>23400101</numGovt>
+    <dTimLicense>2006-02-23T00:00:00</dTimLicense>
+    <field>Troll</field>
+    <country>Norway</country>
+    <state>Norway</state>
+    <county>Offshore</county>
+    <region>Europe</region>
+    <district>North Sea</district>
+    <block>34/11</block>
+    <timeZone>GMT -01:00</timeZone>
+    <operator>Kongsberg</operator>
+    <operatorDiv>Kongsberg Offshore</operatorDiv>
+    <pcInterest uom="%">60</pcInterest>
+    <numAPI>API-324673</numAPI>
+    <statusWell>active</statusWell>
+    <purposeWell>development</purposeWell>
+    <fluidWell>oil</fluidWell>
+    <directionWell>producer</directionWell>
+    <dTimSpud>2011-06-15T12:04:05</dTimSpud>
+    <wellheadElevation uom="ft">-135</wellheadElevation>
+    <groundElevation uom="ft">0</groundElevation>
+    <waterDepth uom="ft">142</waterDepth>
+    <wellLocation>
+      <latitude uom="dega">60.8</latitude>
+      <longitude uom="dega">-2.58</longitude>
+      <description>North-Sea: 60 miles off Norway coast</description>
+    </wellLocation>
+    <referencePoint>
+      <name>Seabed</name>
+      <elevation uom="ft">-135</elevation>
+      <description>Seabed depth</description>
+    </referencePoint>
+    <referencePoint>
+      <name>Rig</name>
+      <elevation uom="ft">23</elevation>
+      <description>Rig Location</description>
+    </referencePoint>
+    <commonData>
+      <sourceName>DPL</sourceName>
+      <dTimCreation>2015-07-23T14:25:00</dTimCreation>
+      <comments>All data relating to this well is unrealistic and for test purposes only</comments>
+    </commonData>
+  </well>
+  <well uid="Well123">
+    <name>Well123</name>
+    <nameLegal>Energistics sample well</nameLegal>
+    <numLicense>N-007</numLicense>
+    <numGovt>2200</numGovt>
+    <dTimLicense>2006-02-23T00:00:00</dTimLicense>
+    <field>Sample</field>
+    <country>USA</country>
+    <state>Texas</state>
+    <county>Offshore</county>
+    <region>USA</region>
+    <district>Gulf of Mexico</district>
+    <block>123</block>
+    <timeZone>GMT +05:00</timeZone>
+    <operator>Energistics</operator>
+    <operatorDiv>WITSML</operatorDiv>
+    <pcInterest uom="%">100</pcInterest>
+    <numAPI>API-007</numAPI>
+    <statusWell>active</statusWell>
+    <purposeWell>development</purposeWell>
+    <fluidWell>oil</fluidWell>
+    <directionWell>producer</directionWell>
+    <dTimSpud>2011-06-15T12:04:05</dTimSpud>
+    <wellheadElevation uom="ft">-120</wellheadElevation>
+    <groundElevation uom="ft">0</groundElevation>
+    <waterDepth uom="ft">120</waterDepth>
+    <wellLocation>
+      <latitude uom="dega">32.0</latitude>
+      <longitude uom="dega">43.6</longitude>
+      <description>Gulf of Mexico</description>
+    </wellLocation>
+    <referencePoint>
+      <name>Seabed</name>
+      <elevation uom="ft">-135</elevation>
+      <description>Seabed depth</description>
+    </referencePoint>
+    <referencePoint>
+      <name>Rig</name>
+      <elevation uom="ft">23</elevation>
+      <description>Rig Location</description>
+    </referencePoint>
+    <commonData>
+      <sourceName>Energistics</sourceName>
+      <dTimCreation>2015-07-23T14:25:00</dTimCreation>
+      <comments>test data from Energistics with small numbet of log column number errors corrected</comments>
+    </commonData>
+  </well>  
+</wells>

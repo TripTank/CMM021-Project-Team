@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="2KKJH14" uidLog="536KKJH14" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore4</nameWellbore>
+    <nameLog>ChromDepth</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>14</runNumber>
+      <creationDate>2007-03-11T18:22:54.0000000+01:00</creationDate>
+      <indexType>Depth</indexType>
+      <startIndex>2530</startIndex>
+      <endIndex>2615</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1_EVALUATION</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Chrom 1 Gas Evaluation</curveDescription>
+        <typeLogData>String</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1ANAL</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Chrom 1 Gas Ratio Analysis</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>methane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>4</columnIndex>
+        <curveDescription>Chrom 1 Methane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>methane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>5</columnIndex>
+        <curveDescription>Chrom 1 Methane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>methane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>6</columnIndex>
+        <curveDescription>Chrom 1 Methane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1C2</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>7</columnIndex>
+        <curveDescription>Chrom 1 C1/C2 Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1C3</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>8</columnIndex>
+        <curveDescription>Chrom 1 C1/C3 Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1C4</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>9</columnIndex>
+        <curveDescription>Chrom 1 C1/C4 Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1C5</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>10</columnIndex>
+        <curveDescription>Chrom 1 C1/C5 Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C2_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ethane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>11</columnIndex>
+        <curveDescription>Chrom 1 Ethane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C2_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ethane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>12</columnIndex>
+        <curveDescription>Chrom 1 Ethane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C2_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ethane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>13</columnIndex>
+        <curveDescription>Chrom 1 Ethane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C3_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>propane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>14</columnIndex>
+        <curveDescription>Chrom 1 Propane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C3_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>propane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>15</columnIndex>
+        <curveDescription>Chrom 1 Propane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C3_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>propane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>16</columnIndex>
+        <curveDescription>Chrom 1 Propane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1GWR</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>17</columnIndex>
+        <curveDescription>Chrom 1 Gas Wetness Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC4_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ibutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>18</columnIndex>
+        <curveDescription>Chrom 1 Iso Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC4_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ibutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>19</columnIndex>
+        <curveDescription>Chrom 1 Iso Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC4_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ibutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>20</columnIndex>
+        <curveDescription>Chrom 1 Iso Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC5_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ipentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>21</columnIndex>
+        <curveDescription>Chrom 1 Iso Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC5_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ipentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>22</columnIndex>
+        <curveDescription>Chrom 1 Iso Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC5_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ipentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>23</columnIndex>
+        <curveDescription>Chrom 1 Iso Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1LHR</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>24</columnIndex>
+        <curveDescription>Chrom 1 Light-Heavy Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC4_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>nbutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>25</columnIndex>
+        <curveDescription>Chrom 1 Normal Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC4_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>nbutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>26</columnIndex>
+        <curveDescription>Chrom 1 Normal Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC4_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>nbutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>27</columnIndex>
+        <curveDescription>Chrom 1 Normal Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC5_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>npentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>28</columnIndex>
+        <curveDescription>Chrom 1 Normal Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC5_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>npentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>29</columnIndex>
+        <curveDescription>Chrom 1 Normal Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC5_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>npentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>30</columnIndex>
+        <curveDescription>Chrom 1 Normal Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1OCQ</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>31</columnIndex>
+        <curveDescription>Chrom 1 Oil Character Qualifier</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1TGAS</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2530</startIndex>
+        <endIndex>2615</endIndex>
+        <columnIndex>32</columnIndex>
+        <curveDescription>Chrom 1 Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>2530,1900-01-01T00:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+<data>2531,1900-01-01T00:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+<data>2532,1900-01-01T00:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+<data>2533,1900-01-01T00:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+<data>2534,1900-01-01T00:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+<data>2535,1900-01-01T00:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</data>
+<data>2536,1900-01-01T00:0,0,14,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.0014</data>
+<data>2537,1900-01-01T00:0,0,27,28,26,0,14.95,3.729,0,0,0,0,0,1,0,1.288,0,1,0,0,0,0,13.699,0,0,0,0,0,0,0.072,0.0028</data>
+<data>2538,1900-01-01T00:0,0,39,46,25,0,13.087,3.265,0,0,0,0,0,1,0,-0.052,0,1,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0039</data>
+<data>2539,1900-01-01T00:0,0,40,40,40,0,13.087,3.265,0,0,0,0,0,0,0,0.003,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.004</data>
+<data>2540,1900-01-01T00:0,0,40,40,40,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.004</data>
+<data>2541,1900-01-01T00:0,0,40,40,40,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.004</data>
+<data>2542,1900-01-01T00:0,0,40,40,40,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.004</data>
+<data>2543,1900-01-01T00:0,0,38,40,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2544,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2545,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2546,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2547,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2548,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2549,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2550,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2551,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2552,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2553,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2554,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2555,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2556,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2557,1900-01-01T00:0,0,38,38,38,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2558,1900-01-01T00:0,0,38,38,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0038</data>
+<data>2559,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2560,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2561,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2562,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2563,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2564,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2565,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2566,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2567,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2568,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2569,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2570,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2571,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2572,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2573,1900-01-01T00:0,0,36,36,36,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0036</data>
+<data>2574,1900-01-01T00:0,0,34,36,34,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0034</data>
+<data>2575,1900-01-01T00:0,0,34,34,34,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0034</data>
+<data>2576,1900-01-01T00:0,0,34,34,34,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0034</data>
+<data>2577,1900-01-01T00:0,0,34,34,34,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0034</data>
+<data>2578,1900-01-01T00:0,0,34,34,34,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0034</data>
+<data>2579,1900-01-01T00:0,0,34,34,34,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0034</data>
+<data>2580,1900-01-01T00:0,0,34,34,34,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0034</data>
+<data>2581,1900-01-01T00:0,0,34,34,34,0,13.087,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0034</data>
+<data>2582,1900-01-01T00:0,0,32,34,30,0,13.087,3.265,0,0,0,0,0,0,0,,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0032</data>
+<data>2583,1900-01-01T00:0,0,29,30,27,0,13.087,3.265,0,0,0,0,0,0,0,,0,0,0,0,0,0,11.992,0,0,0,0,0,0,0.063,0.0029</data>
+<data>2584,1900-01-01T00:0,0,4,27,2,0,7.777,3.265,0,0,2,0,0,1,0,,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0004</data>
+<data>2585,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2586,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2587,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2589,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2590,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2591,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2592,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2593,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2594,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2595,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2597,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2598,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2599,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2600,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2601,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2602,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2603,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2604,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2605,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2606,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2607,1900-01-01T00:0,0,3,3,3,0,7.777,3.265,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.127,0,0,0,0,0,0,0.038,0.0003</data>
+<data>2607,1900-01-01T00:0,4,44,44,44,8.025,13.826,11.638,7.966,5,5,5,3,3,3,28.999,2,2,2,5,5,5,3.963,1,1,1,1,1,1,2.924,0.0107</data>
+<data>2608,1900-01-01T00:0,4,44,44,44,8.025,13.841,11.668,7.986,5,5,5,3,3,3,28.966,2,2,2,5,5,5,3.971,1,1,1,1,1,1,2.919,0.0107</data>
+<data>2609,1900-01-01T00:0,4,46,48,44,7.896,14.092,12.102,8.492,6,6,5,3,3,3,28.483,3,3,2,4,5,4,4.152,1,1,1,1,1,1,2.827,0.0111</data>
+<data>2610,1900-01-01T00:0,4,48,48,48,7.828,14.225,12.333,8.76,6,6,6,3,3,3,28.227,3,3,3,4,4,4,4.247,1,1,1,1,1,1,2.777,0.0112</data>
+<data>2611,1900-01-01T00:0,4,53,69,48,7.374,14.557,12.812,10.037,7,11,6,4,4,3,27.806,3,3,3,5,5,4,4.599,1,2,1,1,1,0,2.615,0.0123</data>
+<data>2612,1900-01-01T00:0,4,89,119,68,6.364,18.423,18.186,15.84,14,19,11,5,6,4,24.877,3,3,2,5,5,4,6.708,2,3,1,1,1,0,2.183,0.0179</data>
+<data>2613,1900-01-01T00:0,3,127,256,4,7.617,20.676,27.256,24.551,13,26,0,5,9,0,14.18,2,3,0,3,5,0,8.719,1,2,0,1,1,0,1.338,0.0201</data>
+<data>2614,1900-01-01T00:0,3,305,346,256,9.365,29.096,45.216,49.906,33,39,26,10,12,9,15.517,4,4,3,5,5,5,14.45,3,3,2,1,1,1,1.23,0.0459</data>
+<data>2615,1900-01-01T00:0,4,361,370,346,8.086,26.056,42.7,58.22,45,48,39,14,15,12,16.886,5,5,4,5,6,5,14.206,4,4,3,1,1,1,1.061,0.0557</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:50:16.8350000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T12:34:50.2180000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T12:34:50.2190000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

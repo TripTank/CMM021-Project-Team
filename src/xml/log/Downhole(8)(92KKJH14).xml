@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="6KFSJ18" uidLog="92KKJH14" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameLog>Downhole</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>8</runNumber>
+      <creationDate>2007-01-28T05:05:17.0000000+01:00</creationDate>
+      <indexType>Depth</indexType>
+      <startIndex>2288.06</startIndex>
+      <endIndex>2685.248</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>2288.06</startIndex>
+        <endIndex>2685.248</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TCDX</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>mftAnn</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2288.06</startIndex>
+        <endIndex>2685.248</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Downhole Temperature</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>2288.06,40</data>
+<data>2290.187,35.5</data>
+<data>2293.329,35.5</data>
+<data>2296.403,35.5</data>
+<data>2301.844,37</data>
+<data>2304.766,38.5</data>
+<data>2304.929,40</data>
+<data>2306.536,41.5</data>
+<data>2306.548,40</data>
+<data>2306.958,40</data>
+<data>2307.751,40</data>
+<data>2310.971,40</data>
+<data>2312.411,41.5</data>
+<data>2312.411,41.5</data>
+<data>2314.147,41.5</data>
+<data>2317.251,40</data>
+<data>2320.034,41.5</data>
+<data>2322.671,41.5</data>
+<data>2324.007,43</data>
+<data>2324.226,43</data>
+<data>2324.516,43</data>
+<data>2324.763,43</data>
+<data>2325.612,43</data>
+<data>2328.803,43</data>
+<data>2334.966,44.5</data>
+<data>2339.226,44.5</data>
+<data>2339.226,43</data>
+<data>2339.376,44.5</data>
+<data>2341.493,44.5</data>
+<data>2344.582,41.5</data>
+<data>2348.171,43</data>
+<data>2354.933,44.5</data>
+<data>2360.365,44.5</data>
+<data>2364.33,44.5</data>
+<data>2366.649,43</data>
+<data>2368.2,44.5</data>
+<data>2373.686,43</data>
+<data>2379.471,43</data>
+<data>2386.26,44.5</data>
+<data>2390.502,44.5</data>
+<data>2393.555,46</data>
+<data>2394.086,44.5</data>
+<data>2394.377,44.5</data>
+<data>2397.374,43</data>
+<data>2402.504,44.5</data>
+<data>2408.28,44.5</data>
+<data>2417.033,46</data>
+<data>2420.812,41.5</data>
+<data>2420.812,41.5</data>
+<data>2420.812,41.5</data>
+<data>2420.812,41.5</data>
+<data>2420.812,41.5</data>
+<data>2420.812,41.5</data>
+<data>2420.873,41.5</data>
+<data>2420.918,46</data>
+<data>2421.351,41.5</data>
+<data>2421.496,41.5</data>
+<data>2421.496,41.5</data>
+<data>2421.675,41.5</data>
+<data>2421.675,41.5</data>
+<data>2422.942,41.5</data>
+<data>2423.549,46</data>
+<data>2427.346,43</data>
+<data>2432.242,44.5</data>
+<data>2436.717,44.5</data>
+<data>2443.652,44.5</data>
+<data>2447.994,46</data>
+<data>2448.151,44.5</data>
+<data>2448.151,44.5</data>
+<data>2448.438,43</data>
+<data>2450.46,46</data>
+<data>2453.916,44.5</data>
+<data>2456.724,44.5</data>
+<data>2459.07,44.5</data>
+<data>2462.101,46</data>
+<data>2465.926,46</data>
+<data>2468.603,46</data>
+<data>2471.65,46</data>
+<data>2472.785,46</data>
+<data>2474.175,46</data>
+<data>2474.685,47.5</data>
+<data>2475.189,46</data>
+<data>2475.43,46</data>
+<data>2475.43,46</data>
+<data>2475.439,46</data>
+<data>2475.44,46</data>
+<data>2476.34,46</data>
+<data>2477.253,44.5</data>
+<data>2478.895,46</data>
+<data>2479.877,46</data>
+<data>2479.932,44.5</data>
+<data>2480.437,46</data>
+<data>2480.636,44.5</data>
+<data>2480.636,44.5</data>
+<data>2480.688,44.5</data>
+<data>2481.574,44.5</data>
+<data>2482.615,44.5</data>
+<data>2483.743,44.5</data>
+<data>2486.501,44.5</data>
+<data>2488.047,46</data>
+<data>2488.84,46</data>
+<data>2488.894,46</data>
+<data>2488.922,46</data>
+<data>2489.857,47.5</data>
+<data>2490.155,47.5</data>
+<data>2490.971,47.5</data>
+<data>2492.079,47.5</data>
+<data>2492.884,47.5</data>
+<data>2495.09,47.5</data>
+<data>2496.171,47.5</data>
+<data>2496.871,47.5</data>
+<data>2497.841,47.5</data>
+<data>2498.669,47.5</data>
+<data>2498.913,47.5</data>
+<data>2499.524,47.5</data>
+<data>2500.811,47.5</data>
+<data>2501.798,47.5</data>
+<data>2502.87,47.5</data>
+<data>2503.823,47.5</data>
+<data>2504.37,44.5</data>
+<data>2508.115,46</data>
+<data>2510.226,46</data>
+<data>2512.685,46</data>
+<data>2516.016,46</data>
+<data>2519.464,47.5</data>
+<data>2522.674,47.5</data>
+<data>2524.456,47.5</data>
+<data>2524.888,47.5</data>
+<data>2525.817,47.5</data>
+<data>2526.427,47.5</data>
+<data>2526.463,47.5</data>
+<data>2526.706,47.5</data>
+<data>2526.781,47.5</data>
+<data>2527,47.5</data>
+<data>2527.396,47.5</data>
+<data>2527.492,47.5</data>
+<data>2527.907,47.5</data>
+<data>2528.045,47.5</data>
+<data>2529.586,47.5</data>
+<data>2529.586,47.5</data>
+<data>2529.801,47.5</data>
+<data>2530.002,47.5</data>
+<data>2530.379,47.5</data>
+<data>2530.809,46</data>
+<data>2533.534,46</data>
+<data>2535.211,47.5</data>
+<data>2536.118,47.5</data>
+<data>2537.334,47.5</data>
+<data>2538.663,47.5</data>
+<data>2539.967,47.5</data>
+<data>2542.005,47.5</data>
+<data>2544.852,47.5</data>
+<data>2546.295,47.5</data>
+<data>2547.22,47.5</data>
+<data>2547.39,47.5</data>
+<data>2548.035,47.5</data>
+<data>2549.734,47.5</data>
+<data>2550.818,47.5</data>
+<data>2551.336,47.5</data>
+<data>2552.492,47.5</data>
+<data>2555.35,47.5</data>
+<data>2555.594,47.5</data>
+<data>2555.661,47.5</data>
+<data>2555.895,47.5</data>
+<data>2556.753,49</data>
+<data>2556.977,47.5</data>
+<data>2556.977,47.5</data>
+<data>2557.593,49</data>
+<data>2558.183,46</data>
+<data>2559.112,47.5</data>
+<data>2559.337,47.5</data>
+<data>2560.37,47.5</data>
+<data>2562.161,47.5</data>
+<data>2565.599,47.5</data>
+<data>2568.749,47.5</data>
+<data>2571.676,47.5</data>
+<data>2571.676,47.5</data>
+<data>2572.056,49</data>
+<data>2575.134,49</data>
+<data>2576.827,49</data>
+<data>2577.94,47.5</data>
+<data>2579.637,47.5</data>
+<data>2579.882,47.5</data>
+<data>2583.054,46</data>
+<data>2584.781,46</data>
+<data>2584.781,46</data>
+<data>2585.268,46</data>
+<data>2585.875,46</data>
+<data>2587.644,44.5</data>
+<data>2588.656,44.5</data>
+<data>2588.656,44.5</data>
+<data>2590.022,44.5</data>
+<data>2592.299,44.5</data>
+<data>2593.611,44.5</data>
+<data>2593.931,46</data>
+<data>2594.219,46</data>
+<data>2594.799,46</data>
+<data>2595.317,46</data>
+<data>2595.707,46</data>
+<data>2596.731,46</data>
+<data>2597.556,46</data>
+<data>2598.274,46</data>
+<data>2598.652,46</data>
+<data>2598.67,46</data>
+<data>2598.67,44.5</data>
+<data>2600.304,46</data>
+<data>2601.22,44.5</data>
+<data>2601.486,44.5</data>
+<data>2602.602,44.5</data>
+<data>2603.672,44.5</data>
+<data>2605.001,46</data>
+<data>2605.443,46</data>
+<data>2606.563,46</data>
+<data>2607.312,46</data>
+<data>2607.535,46</data>
+<data>2608.167,46</data>
+<data>2608.826,46</data>
+<data>2608.879,44.5</data>
+<data>2609.38,44.5</data>
+<data>2609.631,44.5</data>
+<data>2610.097,44.5</data>
+<data>2610.435,44.5</data>
+<data>2610.656,44.5</data>
+<data>2610.821,44.5</data>
+<data>2612.381,44.5</data>
+<data>2613.129,44.5</data>
+<data>2613.649,44.5</data>
+<data>2614.047,44.5</data>
+<data>2617.282,44.5</data>
+<data>2619.196,44.5</data>
+<data>2621.334,44.5</data>
+<data>2621.996,46</data>
+<data>2624.215,46</data>
+<data>2626.112,46</data>
+<data>2626.809,46</data>
+<data>2627.763,46</data>
+<data>2629.291,46</data>
+<data>2632.273,46</data>
+<data>2634.472,47.5</data>
+<data>2636.677,47.5</data>
+<data>2637.531,47.5</data>
+<data>2639.644,47.5</data>
+<data>2639.719,44.5</data>
+<data>2640.675,46</data>
+<data>2641.461,46</data>
+<data>2642.524,46</data>
+<data>2643.878,47.5</data>
+<data>2644.145,47.5</data>
+<data>2645.944,47.5</data>
+<data>2646.675,47.5</data>
+<data>2647.727,47.5</data>
+<data>2649.216,47.5</data>
+<data>2650.237,47.5</data>
+<data>2651.587,49</data>
+<data>2652.627,49</data>
+<data>2653.507,49</data>
+<data>2654.989,49</data>
+<data>2656.812,49</data>
+<data>2658.394,49</data>
+<data>2659.549,49</data>
+<data>2660.788,49</data>
+<data>2660.962,49</data>
+<data>2663.624,49</data>
+<data>2664.271,49</data>
+<data>2664.881,49</data>
+<data>2665.514,49</data>
+<data>2666.021,49</data>
+<data>2666.637,49</data>
+<data>2667.036,49</data>
+<data>2667.197,49</data>
+<data>2668.66,46</data>
+<data>2669.984,47.5</data>
+<data>2671.117,47.5</data>
+<data>2671.318,47.5</data>
+<data>2672.671,49</data>
+<data>2673.377,49</data>
+<data>2675.429,49</data>
+<data>2676.593,49</data>
+<data>2678.288,49</data>
+<data>2679.535,49</data>
+<data>2680.385,49</data>
+<data>2681.353,50.5</data>
+<data>2681.608,50.5</data>
+<data>2682.165,50.5</data>
+<data>2683.168,50.5</data>
+<data>2684.285,50.5</data>
+<data>2685.248,50.5</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:47:44.9600000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T11:46:18.9680000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T11:46:18.9840000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

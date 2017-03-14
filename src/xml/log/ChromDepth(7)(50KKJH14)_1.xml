@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="6KFSJ18" uidLog="50KKJH14" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameLog>ChromDepth</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>7</runNumber>
+      <indexType>Depth</indexType>
+      <startIndex>2232</startIndex>
+      <endIndex>2290</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <mnemAlias>mdHole</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>Hole Depth</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C2_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ethane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Chrom 1 Ethane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC5_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>npentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Chrom 1 Normal Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C2_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ethane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>4</columnIndex>
+        <curveDescription>Chrom 1 Ethane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1C5</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>5</columnIndex>
+        <curveDescription>Chrom 1 C1/C5 Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC5_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>npentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>6</columnIndex>
+        <curveDescription>Chrom 1 Normal Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C2_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ethane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>7</columnIndex>
+        <curveDescription>Chrom 1 Ethane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1C4</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>8</columnIndex>
+        <curveDescription>Chrom 1 C1/C4 Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1C3</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>9</columnIndex>
+        <curveDescription>Chrom 1 C1/C3 Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1C2</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>10</columnIndex>
+        <curveDescription>Chrom 1 C1/C2 Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC5_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>npentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>11</columnIndex>
+        <curveDescription>Chrom 1 Normal Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>methane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>12</columnIndex>
+        <curveDescription>Chrom 1 Methane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC5_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ipentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>13</columnIndex>
+        <curveDescription>Chrom 1 Iso Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1OCQ</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>14</columnIndex>
+        <curveDescription>Chrom 1 Oil Character Qualifier</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1LHR</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>15</columnIndex>
+        <curveDescription>Chrom 1 Light-Heavy Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC5_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ipentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>16</columnIndex>
+        <curveDescription>Chrom 1 Iso Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>methane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>17</columnIndex>
+        <curveDescription>Chrom 1 Methane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC4_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>nbutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>18</columnIndex>
+        <curveDescription>Chrom 1 Normal Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1TGAS</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>19</columnIndex>
+        <curveDescription>Chrom 1 Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC5_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ipentane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>20</columnIndex>
+        <curveDescription>Chrom 1 Iso Pentane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC4_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>nbutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>21</columnIndex>
+        <curveDescription>Chrom 1 Normal Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C1_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>methane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>22</columnIndex>
+        <curveDescription>Chrom 1 Methane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1NC4_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>nbutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>23</columnIndex>
+        <curveDescription>Chrom 1 Normal Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C3_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>propane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>24</columnIndex>
+        <curveDescription>Chrom 1 Propane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C3_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>propane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>25</columnIndex>
+        <curveDescription>Chrom 1 Propane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1ANAL</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>26</columnIndex>
+        <curveDescription>Chrom 1 Gas Ratio Analysis</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1C3_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>propane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>27</columnIndex>
+        <curveDescription>Chrom 1 Propane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1_EVALUATION</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>28</columnIndex>
+        <curveDescription>Chrom 1 Gas Evaluation</curveDescription>
+        <typeLogData>String</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC4_AVG</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ibutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>29</columnIndex>
+        <curveDescription>Chrom 1 Iso Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1GWR</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>30</columnIndex>
+        <curveDescription>Chrom 1 Gas Wetness Ratio</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC4_MIN</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ibutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>31</columnIndex>
+        <curveDescription>Chrom 1 Iso Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CHR1IC4_MAX</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>ibutane</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>2232</startIndex>
+        <endIndex>2290</endIndex>
+        <columnIndex>32</columnIndex>
+        <curveDescription>Chrom 1 Iso Butane</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>2232,3,0,3,206.961,0,3,2488.376,96.273,38.699,1,104,0,0.504,65.671,0,103,0,0.0115,0,0,104,0,1,1,3,1,GAS/LIGHT OI,0,3.981,0,0</data>
+<data>2233,2,0,2,490.926,0,3,0,86.175,39.73,1,99,0,0.176,75.152,0,94,0,0.0109,0,0,104,0,1,1,2,1,GAS,0,3.736,0,0</data>
+<data>2234,2,0,0,686.976,0,3,0,0,43.449,0,83,0,0,702.787,0,12,0,0.0088,0,0,123,0,0,0,1,1,UNPRODUCTIVE,0,2.389,0,0</data>
+<data>2235,5,0,2,1233.582,0,7,0,0,46.186,1,225,0,0,1260.291,0,82,0,0.0236,0,0,312,0,0,1,1,2,UNPRODUCTIVE,0,2.197,0,0</data>
+<data>2236,6,1,5,474.781,0,6,0,0,46.8,1,263,0,0,484.926,0,201,0,0.0277,0,0,295,0,0,1,1,2,UNPRODUCTIVE,0,2.294,0,0</data>
+<data>2237,4,0,3,757.93,0,5,0,0,38.765,1,145,0,0,777.482,0,128,0,0.0153,0,0,201,0,0,1,1,2,UNPRODUCTIVE,0,2.64,0,0</data>
+<data>2238,2,0,0,36314.985,0,4,0,85.514,37.224,0,86,0,0.002,87.605,0,10,0,0.0094,0,0,140,0,1,0,2,2,GAS,0,3.715,0,0</data>
+<data>2239,5,0,4,56035.958,0,5,0,101.961,39.272,1,181,0,0.002,104.368,0,132,0,0.0196,0,0,197,0,2,2,1,2,UNPRODUCTIVE,0,3.409,0,0</data>
+<data>2240,5,0,3,0,,5,2699.488,113.876,41.386,0,208,0,0.042,111.906,0,78,0,0.0224,0,0,232,0,2,1,1,2,UNPRODUCTIVE,0,3.224,0,0</data>
+<data>2241,5,0,5,0,0,6,3615.92,118.723,42.793,0,226,0,0.033,117.635,0,196,0,0.0242,0,0,259,0,2,2,1,2,UNPRODUCTIVE,0,3.107,0,0</data>
+<data>2242,6,0,5,0,0,6,3697.673,125.434,43.721,0,246,0,0.034,124.094,0,195,0,0.0264,0,0,296,0,2,1,1,2,UNPRODUCTIVE,0,3.018,0,0</data>
+<data>2243,0,0,6,0,0,7,2927.46,0,0,0,250,0,0,2927.46,0,11,0,0.025,0,0,294,0,0,2,1,2,UNPRODUCTIVE,0,0.034,0,0</data>
+<data>2244,0,0,6,0,0,6,0,0,0,0,227,0,0,0,0,220,0,0.0227,0,0,240,0,0,2,1,2,UNPRODUCTIVE,0,0,0,0</data>
+<data>2245,0,0,5,0,0,6,987.579,0,0,0,204,0,0,987.579,0,184,0,0.0205,0,0,226,0,0,2,1,2,UNPRODUCTIVE,0,0.101,0,0</data>
+<data>2246,2,0,5,0,0,6,1309.206,0,103.147,0,223,0,0,1321.899,0,218,0,0.0228,0,0,231,0,0,2,1,2,UNPRODUCTIVE,0,1.035,0,0</data>
+<data>2247,6,0,5,30096.048,0,6,1220.683,118.602,41.778,0,235,0,0.101,110.29,0,230,0,0.0253,0,0,247,0,2,2,1,2,UNPRODUCTIVE,0,3.215,0,0</data>
+<data>2248,6,0,6,26341.219,0,7,830.327,128.035,41.843,0,262,0,0.159,113.104,0,247,0,0.0282,0,0,290,0,2,2,1,2,UNPRODUCTIVE,0,3.19,0,0</data>
+<data>2249,5,0,1,4870.144,0,7,1297.688,155.712,41.644,0,205,0,0.152,138.417,0,27,0,0.022,0,0,307,0,1,0,1,2,UNPRODUCTIVE,0,3.045,0,0</data>
+<data>2250,7,0,3,2546.106,0,8,1012.075,141.999,44.596,0,294,0,0.196,121.383,0,153,0,0.0315,0,0,395,0,2,2,1,2,UNPRODUCTIVE,0,2.992,0,0</data>
+<data>2251,9,0,8,13836.766,0,9,1223.162,188.375,47.226,0,416,0,0.168,164.748,0,395,0,0.0442,0,0,467,0,2,2,1,2,UNPRODUCTIVE,0,2.664,0,0</data>
+<data>2252,7,0,3,4615.606,0,19,701.658,124.404,35.132,0,261,0,0.204,106.245,0,133,0,0.0284,0,0,435,1,2,1,1,4,UNPRODUCTIVE,0,3.674,0,1</data>
+<data>2253,45,1,19,605.7,0,134,227.085,95.993,20.032,2,905,1,0.581,63.74,0,435,2,0.1047,2,1,2126,5,9,4,3,23,GAS/LIGHT OI,2,6.226,1,6</data>
+<data>2254,150,2,134,516.145,2,191,199.878,92.719,15.689,3,2360,2,0.644,60.011,2,2126,5,0.2807,3,5,2937,7,25,23,3,32,GAS/LIGHT OI,6,7.533,6,8</data>
+<data>2255,246,4,191,455.876,3,268,189.047,90.953,15.122,4,3725,4,0.681,57.697,3,2937,9,0.446,5,7,4034,10,41,32,3,44,GAS/LIGHT OI,11,7.801,8,12</data>
+<data>2256,283,4,268,460.142,4,296,188.302,91.397,15.088,5,4276,5,0.684,57.871,5,4034,10,0.5121,5,10,4454,11,47,44,3,49,GAS/LIGHT OI,12,7.809,12,13</data>
+<data>2257,300,5,296,453.711,5,304,186.585,91.282,15.009,5,4508,5,0.69,57.598,5,4454,11,0.5403,5,11,4564,11,49,49,3,50,GAS/LIGHT OI,13,7.846,13,13</data>
+<data>2258,289,5,249,442.722,4,306,186.213,90.676,14.992,5,4336,5,0.692,57.174,4,3716,10,0.52,5,9,4604,11,48,42,3,50,GAS/LIGHT OI,13,7.865,11,14</data>
+<data>2259,171,0,107,830.441,2,249,328.355,86.828,14.945,4,2561,3,0.369,67.668,2,1592,0,0.3038,4,4,3716,9,29,19,2,42,GAS,8,7.636,5,11</data>
+<data>2260,124,0,107,823.049,2,146,319.915,83.637,14.75,2,1835,2,0.363,65.52,2,1592,0,0.2184,3,4,2128,5,22,19,2,25,GAS,6,7.757,5,7</data>
+<data>2261,209,0,146,796.298,2,245,311.157,86.751,14.566,4,3051,4,0.388,66.804,3,2128,0,0.3634,4,5,3555,8,35,25,2,41,GAS,10,7.804,7,11</data>
+<data>2262,43,1,0,292.573,0,216,54.109,80.147,14.695,3,626,1,1.755,31.07,0,9,10,0.0791,4,0,3067,7,8,0,3,37,GAS/LIGHT OI,2,9.291,0,11</data>
+<data>2263,154,2,5,397.013,0,235,166.561,79.255,13.979,4,2159,3,0.675,50.687,0,74,5,0.2629,4,0,3340,8,27,2,3,40,GAS/LIGHT OI,8,8.482,0,11</data>
+<data>2264,227,4,222,388.687,3,241,160.483,78.317,13.792,4,3132,4,0.689,49.716,4,3052,8,0.3825,5,8,3340,9,40,39,3,43,GAS/LIGHT OI,11,8.599,11,12</data>
+<data>2265,258,4,241,355.033,4,275,148.218,74.194,13.33,5,3439,5,0.71,46.656,5,3245,10,0.4236,6,9,3611,11,46,43,3,50,GAS/LIGHT OI,13,8.93,12,15</data>
+<data>2266,246,5,190,296.438,4,280,124.819,63.878,12.239,5,3010,6,0.727,40.004,5,2329,10,0.379,6,8,3640,11,47,37,3,52,GAS/LIGHT OI,14,9.808,11,15</data>
+<data>2267,247,4,234,292.072,4,278,119.145,60.91,11.81,5,2917,6,0.72,38.416,5,2689,10,0.3702,6,10,3394,11,48,46,3,52,GAS/LIGHT OI,14,10.145,14,16</data>
+<data>2268,271,5,263,303.485,5,278,125.38,64.458,12.203,5,3307,6,0.726,40.394,6,3187,11,0.4163,6,11,3400,11,51,50,3,52,GAS/LIGHT OI,16,9.807,15,16</data>
+<data>2269,274,5,267,301.366,5,277,122.984,63.26,12.077,5,3312,6,0.724,39.725,6,3245,11,0.418,6,11,3333,11,52,51,3,54,GAS/LIGHT OI,16,9.914,16,17</data>
+<data>2270,278,0,276,0,5,285,0,62.617,11.786,5,3281,0,0,67.93,7,3258,0,0.3994,7,11,3314,12,52,49,2,57,GAS,0,9.158,17,18</data>
+<data>2271,279,0,273,0,5,285,0,57.081,11.571,5,3231,0,0,62.014,6,3123,0,0.3959,7,12,3314,12,57,56,2,57,GAS,0,9.416,18,18</data>
+<data>2272,272,0,269,0,5,278,0,54.165,11.295,5,3075,0,0,58.961,7,3035,0,0.3789,8,12,3134,13,57,56,2,58,GAS,0,9.666,18,19</data>
+<data>2273,290,0,278,4.178,5,294,136.76,54.388,11.315,6,3278,4,13.414,4.107,8,3134,9,0.8056,8,13,3334,13,60,58,4,61,MEDIUM OIL,15,26.112,19,20</data>
+<data>2274,288,3,279,308.811,5,294,100.192,54.247,11.344,6,3269,8,0.717,34.377,8,3165,13,0.421,8,13,3334,13,60,59,3,61,GAS/LIGHT OI,20,10.698,19,20</data>
+<data>2275,278,5,274,238.972,5,281,97.944,53.356,11.345,5,3151,8,0.768,32.838,8,3108,13,0.4079,8,13,3192,13,59,59,3,60,GAS/LIGHT OI,19,10.816,19,20</data>
+<data>2276,293,6,281,244.184,5,301,100.861,54.99,11.509,6,3378,8,0.77,33.759,8,3192,13,0.4352,8,13,3493,13,61,60,3,63,GAS/LIGHT OI,20,10.641,20,21</data>
+<data>2277,304,6,301,250.372,6,311,103.354,56.221,11.643,6,3537,8,0.769,34.52,8,3493,13,0.454,9,13,3640,13,63,63,3,64,GAS/LIGHT OI,21,10.502,21,21</data>
+<data>2278,293,5,270,245.445,5,311,101.628,55.474,11.557,6,3387,8,0.772,34.017,8,3057,13,0.4358,9,12,3640,13,61,58,3,64,GAS/LIGHT OI,20,10.592,20,21</data>
+<data>2279,293,5,238,260.538,5,270,102.636,55.525,11.56,6,3387,8,0.754,34.393,8,2613,13,0.4353,8,11,3057,12,61,53,3,58,GAS/LIGHT OI,20,10.562,18,20</data>
+<data>2280,293,5,238,260.538,5,262,102.636,55.525,11.56,5,3387,8,0.754,34.393,8,2613,13,0.4353,8,11,2914,12,61,53,3,58,GAS/LIGHT OI,20,10.562,18,20</data>
+<data>2281,908,4,161,571.727,5,262,524.083,149.738,6.926,5,6289,7,0.548,110.723,8,1490,2,0.8334,8,11,3064,12,42,45,1,58,UNPRODUCTIVE,10,13.399,17,20</data>
+<data>2282,117,2,187,31.644,5,203,17.769,74.516,19.696,5,2310,71,6.548,10.373,8,2104,69,0.3523,8,11,2613,11,31,48,3,50,GAS/LIGHT OI,61,13.2,18,19</data>
+<data>2283,251,3,203,338.939,5,276,122.574,70.134,16.028,5,4015,9,0.779,41.881,8,2613,11,0.4878,10,11,5154,12,57,50,3,64,GAS/LIGHT OI,22,8.068,19,25</data>
+<data>2284,373,32,276,175.594,5,443,179.623,95.489,20.361,5,7594,11,1.075,48.269,10,5154,12,0.8964,13,11,9325,13,80,64,3,91,GAS/LIGHT OI,30,6.616,25,34</data>
+<data>2285,459,5,443,528.473,5,478,199.755,103.125,21.042,5,9664,13,0.711,63.121,13,9325,13,1.1148,13,13,10050,14,94,91,3,97,GAS/LIGHT OI,35,6.026,34,36</data>
+<data>2286,478,6,462,515.428,5,485,196.417,101.702,20.779,6,9931,14,0.715,62.152,13,9486,14,1.1478,14,14,10050,14,98,96,3,99,GAS/LIGHT OI,37,6.102,36,37</data>
+<data>2287,359,5,321,407.181,5,462,164.085,89.444,19.606,6,7037,12,0.765,53.268,11,6146,12,0.8249,14,12,9486,14,79,72,3,96,GAS/LIGHT OI,30,6.606,28,36</data>
+<data>2288,305,5,282,338.445,5,321,141.221,80.003,17.534,5,5341,11,0.803,46.905,10,5042,12,0.638,11,11,6146,12,67,65,3,72,GAS/LIGHT OI,26,7.37,25,28</data>
+<data>2289,320,5,299,393.624,5,335,159.688,89.423,19.862,5,6360,11,0.787,52.555,11,5751,12,0.7454,11,12,6849,13,71,68,3,73,GAS/LIGHT OI,27,6.571,27,28</data>
+<data>2290,298,5,260,356.433,5,335,149.296,85.263,18.547,5,5522,10,0.81,49.638,9,3974,12,0.6537,11,11,6849,12,65,56,3,73,GAS/LIGHT OIL,25,6.99,22,28</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:42:24.6790000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T11:36:07.5310000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T11:36:07.5310000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

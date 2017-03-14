@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="6KFSJ18" uidLog="251KKJH14" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameLog>TripConn</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>11</runNumber>
+      <creationDate>2007-02-22T04:04:41.0000000+01:00</creationDate>
+      <indexType>Depth</indexType>
+      <startIndex>-0.185</startIndex>
+      <endIndex>3910.566</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>BLOCKCOMP</mnemonic>
+        <unit>m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Block/Topdrive Position Compensated</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DIAMATBIT</mnemonic>
+        <unit>in</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Hole Diameter at Bit</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUT</mnemonic>
+        <unit>L/min</unit>
+        <mnemAlias>flowOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>4</columnIndex>
+        <curveDescription>Mud Flow Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUTPC</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>flowOutPc</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>5</columnIndex>
+        <curveDescription>Mud Flow Out Percent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_AVG</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>6</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_MAX</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>7</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>HKLD_MIN</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>8</columnIndex>
+        <curveDescription>Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>INSLIPS_STATUS</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>statSlip</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>9</columnIndex>
+        <curveDescription>In Slips Status</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>JOINTSDONE</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>connDone</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>10</columnIndex>
+        <curveDescription>Joints Done</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>JOINTSTOGO</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>connRem</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>11</columnIndex>
+        <curveDescription>Joints To Go</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>NUMTRPCXNS</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>12</columnIndex>
+        <curveDescription>Number Trip Connections</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PIT_TRIPIN</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>13</columnIndex>
+        <curveDescription>Pit Volume - Trip In Group</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>PIT_TRIPOUT</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>14</columnIndex>
+        <curveDescription>Pit Volume - Trip Out Group</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STANDSDONE</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>15</columnIndex>
+        <curveDescription>Stands Done</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>STANDSTOGO</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>16</columnIndex>
+        <curveDescription>Stands To Go</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SURGE</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>17</columnIndex>
+        <curveDescription>Surge Pressure - EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SWAB</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>18</columnIndex>
+        <curveDescription>Swab Pressure - EQMD</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPCEXPFILL</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>19</columnIndex>
+        <curveDescription>Cumulative Trip Expected Fill</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPCFILL</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>20</columnIndex>
+        <curveDescription>Cumulative Actual Trip Fill</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPEXPFILL</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>21</columnIndex>
+        <curveDescription>Trip Expected Fill</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPEXPHKLD</mnemonic>
+        <unit>t</unit>
+        <mnemAlias>hkldAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>22</columnIndex>
+        <curveDescription>Trip Expected Hookload</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPEXPPVT</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>23</columnIndex>
+        <curveDescription>Trip Expected Pit Volume</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPFILL</mnemonic>
+        <unit>m3</unit>
+        <mnemAlias>volfoCm</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>24</columnIndex>
+        <curveDescription>Actual Trip Fill Volume</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPINSLIPS</mnemonic>
+        <unit>s</unit>
+        <mnemAlias>timIS</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>25</columnIndex>
+        <curveDescription>Trip Time In Slips</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPNUM</mnemonic>
+        <unit>unitless</unit>
+        <mnemAlias>numTrip</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>26</columnIndex>
+        <curveDescription>Trip Number</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPOUTSLIPS</mnemonic>
+        <unit>s</unit>
+        <mnemAlias>timOS</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>27</columnIndex>
+        <curveDescription>Trip Time Out of Slips</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPOVERPULL</mnemonic>
+        <unit>t</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>28</columnIndex>
+        <curveDescription>Trip Overpull</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPPULL_AVG</mnemonic>
+        <unit>m/min</unit>
+        <mnemAlias>rsuMx</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>29</columnIndex>
+        <curveDescription>Trip Pulling Speed per Stand</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPPULL_MAX</mnemonic>
+        <unit>m/min</unit>
+        <mnemAlias>rsuMx</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>30</columnIndex>
+        <curveDescription>Trip Pulling Speed per Stand</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPPVT</mnemonic>
+        <unit>m3</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>31</columnIndex>
+        <curveDescription>Trip Volume - PVT Group</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPREAMFLAG</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>32</columnIndex>
+        <curveDescription>Trip Ream Flag (1=Reaming)</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPRUN_AVG</mnemonic>
+        <unit>m/min</unit>
+        <mnemAlias>rsdMx</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>33</columnIndex>
+        <curveDescription>Trip Running Speed per Stand</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TRIPRUN_MAX</mnemonic>
+        <unit>m/min</unit>
+        <mnemAlias>rsdMx</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>-0.185</startIndex>
+        <endIndex>3910.566</endIndex>
+        <columnIndex>34</columnIndex>
+        <curveDescription>Trip Running Speed per Stand</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>-0.185,13.06,0,2611.734,45.11,21.96,27.51,20.38,0,0,345,0,7.56,7.56,0,115,1.12,1.12,0,0,0,21.66,8.23,-4.16,704,6,100,6.03,10.3,10.3,7.88,0,0,0</data>
+<data>0.418,8.62,0,3458.82,46.67,25.92,27.91,17.2,0,0,345,1,8.03,8.03,0,115,1.12,1.12,0,0,0,22.78,8.23,-0.08,358,9,57,0,0,0,7.69,0,0,1.11</data>
+<data>0.868,6.55,0,3577.314,46.86,24.57,28.08,21.37,0,0,345,3,8.07,8.07,0,115,1.12,1.12,0,0,0.02,25.92,8.25,0.29,2,9,1727,0,0,0,8.07,0,1.77,33.17</data>
+<data>5.021,2.41,0,2948.55,47.77,25.92,28.74,19.99,0,0,345,2,8.39,8.39,0,115,1.12,1.12,0,0,0.12,23.85,8.35,0.62,2,9,926,0,0,0,8.39,0,33.17,33.17</data>
+<data>19.683,4.81,0,3197.136,46.86,22.36,28.74,18.6,0,0,345,4,8.27,8.27,0,115,1.12,1.12,0,0,0.46,28.51,8.69,0.5,2,9,1685,0,0,0,8.27,0,1.05,1.77</data>
+<data>49.369,3.41,0,2974.77,46.93,23.35,30.08,20.18,0,3,342,5,8.85,8.85,1,114,1.12,1.12,0,0,0.92,27.77,9.14,0.93,4,9,170,0,0,0,8.7,0,1.07,1.07</data>
+<data>77.737,3.05,0,973.524,52.52,23.75,31.32,20,0,6,339,6,8.97,8.97,2,113,1.12,0,0,0,1.28,28.58,9.5,1.2,2,9,62,0,0,0,8.97,0,1.4,1.4</data>
+<data>105.541,5.72,0,0,55.7,22.8,35.05,20.18,0,9,336,7,9.45,9.45,3,112,1.12,0,0,0,1.63,29.11,9.86,1.67,2,9,60,0,0,0,9.45,0,2.2,2.2</data>
+<data>165.385,4.22,0,2897.124,52.26,22.19,32.71,20.54,0,9,336,8,9.83,9.83,3,112,1.12,0,0,0,2.39,30.49,10.61,2.05,2,9,67,0,0,0,9.83,0,63.81,63.81</data>
+<data>192.012,2.64,0,3164.862,50.37,22.96,29.3,20.57,0,12,333,9,9.93,9.93,4,111,1.12,1.12,0,0,2.72,32.12,9.93,2.15,2,9,31,0,0,0,9.93,0,48.49,63.81</data>
+<data>220.977,3.12,0,171.818,55.11,23.15,33.3,20.57,0,15,330,10,10.15,10.15,5,110,1.13,0,0,0,3.09,32.02,10.3,2.37,2,9,58,0,0,0,10.15,0,19.63,48.49</data>
+<data>250.034,3.06,0,3190.578,54.72,22.68,35.64,20.38,0,18,327,11,10.51,10.51,6,109,1.13,0,0,0,3.46,32.63,10.67,2.73,2,9,41,0,0,0,10.51,0,31.26,31.26</data>
+<data>276.891,3.92,0,2983.848,57.84,21.17,35.05,19.38,0,18,327,13,11.21,11.21,6,109,1.13,1.12,0,0,3.8,33.11,11.01,3.43,2,9,43,0,0,0,11.21,0,54.04,54.04</data>
+<data>278.989,3.13,0,3012.588,51.54,23.35,35.49,20.54,0,21,324,12,11,11,7,108,1.13,0,0,0,3.83,33.16,11.03,3.22,2,9,62,0,0,0,11,0,45.84,45.84</data>
+<data>305.905,3.19,0,1492.872,55.83,22.76,35.24,20.18,0,21,324,14,11.69,11.69,7,108,1.13,0,0,0,4.17,33.71,11.37,3.91,2,9,44,0,0,0,11.69,0,65.89,65.89</data>
+<data>334.832,32.07,0,0,55.96,22.76,36.24,19.99,0,24,321,15,12.14,12.14,8,107,1.13,1.12,0,0,4.53,34.45,11.74,4.24,191,9,78,0,0,0,12.02,0,78.55,78.55</data>
+<data>363.734,32.17,0,3868.248,53.42,22.96,42.38,20.57,0,27,318,16,12.5,12.5,9,106,1.12,1.12,0,0,4.9,35.28,12.1,4.62,133,9,342,0,0,0,12.4,0,49.9,77.69</data>
+<data>392.748,32.26,0,2247.69,53.1,22.56,38.41,20.14,0,30,315,17,12.78,12.78,10,105,1.13,0,0,0,5.27,35.94,12.47,5.01,205,9,66,0,0,0,12.78,0,44.52,49.71</data>
+<data>421.768,32.2,0,655.866,61.42,23.38,38.05,20.38,0,33,312,18,7.15,7.15,11,104,1.13,0,0,0,5.63,36.24,12.84,0.54,137,9,76,0,0,0,8.32,0,45.64,45.64</data>
+<data>450.832,32.04,0,3727.068,51.41,23.82,38.57,19.99,0,36,309,19,1.34,1.34,12,103,1.13,0,0,0,6,36.62,7.52,-1.72,149,9,59,0,0,0,6.06,0,45.54,55.79</data>
+<data>479.838,32.12,0,2011.716,21.98,22.16,39.01,20.57,0,39,306,20,1.45,1.45,13,102,1.13,0,0,0,6.37,36.56,1.71,-6.31,145,9,54,0,0,0,1.47,0,55.79,56.1</data>
+<data>508.85,32.22,0,1337.07,39.06,22.76,43.01,20.41,0,42,303,21,1.66,1.66,14,101,1.13,0,0,0,6.74,37.16,2.07,-6.33,135,9,41,0,0,0,1.45,0,59.6,60</data>
+<data>537.893,32.14,0,2228.526,31.4,22.76,40.98,20.38,0,45,300,22,2.03,2.03,15,100,1.14,0,0,0,7.1,37.96,2.44,-5.87,219,9,49,0,0,0,1.91,0,66.44,66.44</data>
+<data>566.993,32,0,2247.69,28.47,22.56,41.43,20.01,0,48,297,23,2.45,2.45,16,99,1.13,0,0,0,7.47,38.61,2.81,-5.43,182,9,58,0,0,0,2.35,0,66.57,66.57</data>
+<data>596.014,32.08,0,3357.978,38.8,23.15,46.78,19.62,0,51,294,24,2.54,2.54,17,98,1.14,0,0,0,7.84,39.41,3.18,-5.17,176,9,45,0,0,0,2.6,0,65.75,66.52</data>
+<data>625.097,32.24,0,3363.528,40.82,22.8,45.78,19.99,0,54,291,25,3.08,3.08,18,97,1.14,0,0,0,8.21,39.79,3.55,-4.81,141,9,41,0,0,0,2.97,0,67.66,67.73</data>
+<data>652.939,33.51,0,3093.264,37.44,21.17,48.32,20.38,0,57,288,26,3.55,3.55,19,96,1.14,0,0,0,8.58,40.61,3.92,-4.49,193,9,36,0,0,0,3.29,0,68.87,69.04</data>
+<data>683.454,32.02,0,2501.814,41.27,22.6,43.76,20.57,0,60,285,27,3.84,3.84,20,95,1.14,0,0,0,8.95,41.58,4.29,-3.93,225,9,48,0,0,0,3.84,0,72.39,72.39</data>
+<data>712.442,32.18,0,0,40.75,20.38,47.93,20.38,0,63,282,28,4.23,4.23,21,94,1.14,0,0,0,9.31,42.02,4.65,-3.71,135,9,41,0,0,0,4.06,0,72.42,72.47</data>
+<data>741.567,32.19,0,0,40.23,22.16,48.36,20.57,0,66,279,29,4.72,4.72,22,93,1.14,0,0,0,9.69,42.59,5.02,-3.16,131,9,44,0,0,0,4.62,0,73.25,73.27</data>
+<data>770.66,32.08,0,3190.578,42.7,22.76,47.73,19.79,0,69,276,30,5.1,5.1,23,92,1.14,0,0,0,10.05,43.32,5.39,-2.95,141,9,33,0,0,0,4.82,0,73.58,73.69</data>
+<data>799.48,32.35,0,2406.516,44.33,22.16,45.98,20.38,0,72,273,31,5.47,5.47,24,91,1.14,0,0,0,10.42,43.99,5.76,-2.55,179,9,34,0,0,0,5.22,0,75.43,75.49</data>
+<data>828.884,32.01,0,246.946,44,24.05,46.74,20.18,0,75,270,32,5.95,5.95,25,90,1.14,0,0,0,10.79,44.43,6.13,-2.04,300,9,43,0,0,0,5.74,0,76.78,76.79</data>
+<data>857.722,32.15,0,0,46.8,22.76,47.73,20.57,0,78,267,33,6.31,6.31,26,89,1.15,0,0,0,11.16,45.22,6.49,-1.71,141,9,33,0,0,0,6.07,0,76.91,76.96</data>
+<data>886.805,32.04,0,0,48.23,22.99,49.31,20.18,0,81,264,34,6.67,6.67,27,88,1.15,0,0,0,11.52,45.99,6.86,-1.35,145,9,38,0,0,0,6.43,0,77.89,77.92</data>
+<data>915.698,32.01,0,0,46.93,22.56,51.29,20.57,0,84,261,35,7.13,7.13,28,87,1.15,0,0,0,11.89,46.73,7.23,-0.87,147,9,39,0,0,0,6.9,0,78.36,78.38</data>
+<data>944.694,32.1,0,0,47.58,22.36,47.33,20.38,0,87,258,36,7.5,7.5,29,86,1.14,0,0,0,12.26,47.45,7.6,-0.39,145,9,52,0,0,0,7.39,0,78.86,78.86</data>
+<data>973.289,32.58,0,0,48.81,22.39,48.92,20.57,0,90,255,37,7.9,7.9,30,85,1.15,0,0,0,12.62,48.03,7.96,-0.11,167,9,35,0,0,0,7.67,0,78.12,78.82</data>
+<data>1002.695,32.3,0,0,48.55,22.96,50.7,20.38,0,93,252,38,8.33,8.33,31,84,1.15,0,0,0,12.99,48.88,8.33,0.25,201,9,38,0,0,0,8.03,0,78.65,78.68</data>
+<data>1031.936,32.21,0,0,48.81,22.16,49.31,20.01,0,96,249,39,8.69,8.69,32,83,1.15,0,0,0,13.36,49.3,8.7,0.66,168,9,35,0,0,0,8.43,0,79.11,79.16</data>
+<data>1061.01,32.31,0,0,49.66,21.57,52.08,20.57,0,99,246,40,9.09,9.09,33,82,1.15,0,0,0,13.73,50.21,9.07,1.05,141,9,43,0,0,0,8.83,0,80.17,80.17</data>
+<data>1090.234,32.27,0,0,51.8,21.92,49.95,20.18,0,102,243,41,9.45,9.45,34,81,1.15,0,0,0,14.1,50.86,9.44,1.45,138,9,41,0,0,0,9.23,0,80.09,80.16</data>
+<data>1119.53,32.22,0,0,52.45,22.96,50.5,20.18,0,105,240,42,9.84,9.84,35,80,1.15,0,0,0,14.47,51.54,9.81,1.95,183,9,43,0,0,0,9.72,0,80.18,80.18</data>
+<data>1148.576,32.44,0,0,53.62,21.96,51.5,19.79,0,108,237,43,10.23,10.23,36,79,1.15,0,0,0,14.84,52.27,10.18,2.19,141,9,52,0,0,0,9.96,0,80.09,80.18</data>
+<data>1178.066,32.17,0,1059.75,49.66,21.77,52.73,19.58,0,111,234,44,10.68,10.68,37,78,1.15,0,0,0,15.21,52.94,10.55,2.7,183,9,49,0,0,0,10.47,0,79.34,80.06</data>
+<data>1206.995,32.3,0,0,48.1,22,54.66,20.38,0,114,231,45,11.04,11.04,38,77,1.15,0,0,0,15.58,53.26,10.92,2.9,139,9,32,0,0,0,10.68,0,79.05,79.33</data>
+<data>1236.139,32.23,0,0,49.01,21.6,54.86,19.36,0,117,228,46,11.34,11.34,39,76,1.15,1.12,0,0,15.95,54.29,11.29,3.43,140,9,43,0,0,0,11.2,0,79.85,79.85</data>
+<data>1265.346,32.2,0,0,51.48,21.2,52.88,20.38,0,120,225,47,11.78,11.78,40,75,1.15,0,0,0,16.32,54.91,11.66,3.78,201,9,39,0,0,0,11.56,0,79.78,79.85</data>
+<data>1293.299,3.72,0,2470.554,52.65,21.8,53.47,18.99,0,123,222,48,1.16,1.16,41,74,1.15,0,0,0,16.67,55.52,12.01,4.13,514,9,42,0,0,0,11.9,0,79.99,79.99</data>
+<data>1294.206,32.15,0,754.188,0.99,24.54,62.39,18.75,0,129,216,50,1.24,1.24,43,72,1.14,1.12,0,0,16.68,56.02,1.17,-6.72,159,9,38,0,0,0,1.06,0,23.36,70.03</data>
+<data>1294.769,2.56,0,1827.672,27.63,25.71,57.84,19.54,0,126,219,49,1.3,1.3,42,73,1.14,1.12,0,0,16.67,56.52,1.16,-6.6,55,9,13,0,0,0,1.17,0,78.78,79.99</data>
+<data>1323.302,32.3,0,1319.418,31.07,22.16,62.39,20.57,0,132,213,51,1.23,1.23,44,71,1.15,0,0,0,17.05,55.07,1.54,-6.54,138,9,39,0,0,0,1.24,0,14.05,22.58</data>
+<data>1352.606,32.24,0,1544.304,22.63,22.8,60.22,20.18,0,135,210,52,1.19,1.19,45,70,1.15,0,0,0,17.42,55.68,1.91,-6.44,139,9,43,0,0,0,1.33,0,37.05,37.63</data>
+<data>1385.9,-1.14,0,1374.882,23.73,26.32,62.2,21.77,0,138,207,53,1.19,1.19,46,69,1.16,0,0,0,17.79,56.28,2.28,-6.58,2,9,36,0,0,0,1.19,0,45.56,46.13</data>
+<data>1409.502,32.11,0,1959.78,27.24,22.96,61.2,19.79,0,141,204,54,1.26,1.26,47,68,1.15,0,0,0,18.14,56.88,2.63,-6.63,292,9,43,0,0,0,1.14,0,55.98,56.18</data>
+<data>1438.38,32.18,0,2758.968,28.86,22.56,64.17,20.57,0,144,201,55,1.6,1.6,48,67,1.16,0,0,0,18.51,57.82,3,-6.51,159,9,37,0,0,0,1.26,0,59.13,59.37</data>
+<data>1467.191,32.26,0,2080.794,29.38,22.56,61.2,20.18,0,147,198,56,1.96,1.96,49,66,1.16,0,0,0,18.88,58.32,3.36,-6.07,141,9,41,0,0,0,1.71,0,63.59,63.68</data>
+<data>1496.353,32.23,0,1665.318,23.99,23.15,61.8,20.77,0,150,195,57,2.41,2.41,50,65,1.16,0,0,0,19.24,59.07,3.73,-5.69,140,9,42,0,0,0,2.08,0,65.41,65.48</data>
+<data>1525.425,32.12,0,1599.768,24.9,22.96,62.6,19.79,0,153,192,58,2.74,2.74,51,64,1.15,0,0,0,19.61,59.58,4.1,-5.36,147,9,65,0,0,0,2.41,0,67.51,67.51</data>
+<data>1554.384,32.25,0,1348.668,38.09,23.03,64.53,20.57,0,156,189,59,3.24,3.24,52,63,1.16,0,0,0,19.98,60.46,4.47,-4.92,185,9,43,0,0,0,2.86,0,65.92,67.43</data>
+<data>1590.749,-2.26,0,2360.634,33.48,22.76,63.58,21.37,0,159,186,60,3.35,3.35,53,62,1.16,0,0,0,20.33,61.07,4.82,-4.43,6,9,44,0,0,0,3.35,0,66.86,66.93</data>
+<data>1608.18,32.31,0,1761.114,29.32,23.15,59.22,19.99,0,162,183,61,4.02,4.02,54,61,1.16,0,0,0,20.66,61.57,5.15,-4.1,159,9,49,0,0,0,3.67,0,68.51,68.51</data>
+<data>1637.417,31.93,0,1579.092,28.21,23.35,63.84,20.57,0,165,180,62,4.4,4.4,55,60,1.16,0,0,0,21.03,62.15,5.52,-3.76,143,9,46,0,0,0,4.02,0,68.44,68.51</data>
+<data>1666.117,32.08,0,1227.654,33.35,22.56,58.87,20,0,168,177,63,4.76,4.76,56,59,1.16,0,0,0,21.4,62.76,5.88,-3.38,136,9,36,0,0,0,4.4,0,68.81,68.89</data>
+<data>1694.982,32.21,0,1521.108,31.59,22.56,62.6,19.38,0,171,174,64,5.15,5.15,57,58,1.16,0,0,0,21.76,63.69,6.25,-3.02,181,9,44,0,0,0,4.76,0,70.4,70.42</data>
+<data>1723.966,32.38,0,1487.328,24.96,24.18,63.39,20.57,0,174,171,65,5.6,5.6,58,57,1.16,0,0,0,22.13,64.34,6.61,-2.51,199,9,46,0,0,0,5.27,0,70.88,70.89</data>
+<data>1753.185,32.34,0,1850.364,35.82,21.37,63.39,20.57,0,177,168,66,5.99,5.99,59,56,1.16,0,0,0,22.5,64.68,6.99,-2.18,139,9,43,0,0,0,5.6,0,71.07,71.08</data>
+<data>1782.332,32.2,0,1780.782,25.68,22.36,65.57,20.38,0,180,165,67,6.34,6.34,60,55,1.16,0,0,0,22.87,65.81,7.35,-1.68,145,9,40,0,0,0,6.1,0,71.3,71.33</data>
+<data>1811.354,32.22,0,1604.808,27.76,23.19,58.22,20.57,0,183,162,68,6.75,6.75,61,54,1.16,0,0,0,23.24,66.52,7.72,-1.29,156,9,42,0,0,0,6.49,0,72,72.01</data>
+<data>1840.297,32.4,0,1786.326,27.5,23.98,65.62,20.18,0,186,159,69,7.19,7.19,62,53,1.16,0,0,0,23.6,67,8.09,-0.93,205,9,50,0,0,0,6.85,0,72.33,72.33</data>
+<data>1870.388,5.99,0,1677.414,31.59,22.96,65.17,21.96,0,189,156,70,7.49,7.49,63,52,1.16,1.12,0,0,23.97,67.77,8.46,-0.59,50,9,66,0,0,0,7.19,0,72.08,72.32</data>
+<data>1897.463,32.31,0,1475.73,32.63,22.56,63.98,20.57,0,192,153,71,7.93,7.93,64,51,1.16,0,0,0,24.33,68.21,8.81,-0.18,153,9,47,0,0,0,7.6,0,71.16,72.04</data>
+<data>1926.569,32.28,0,2322.816,31.66,20.81,70.12,20.57,0,195,150,72,8.4,8.4,65,50,1.16,0,0,0,24.7,68.94,9.18,0.3,195,9,40,0,0,0,8.08,0,71,71.15</data>
+<data>1955.695,32.22,0,1786.326,34.52,21.96,64.58,20.57,0,198,147,73,8.74,8.74,66,49,1.17,0,0,0,25.06,69.42,9.55,0.73,296,9,39,0,0,0,8.51,0,71.43,71.45</data>
+<data>1984.922,32.17,0,1726.83,22.3,23.15,68.15,20.38,0,201,144,74,9.13,9.13,67,48,1.16,0,0,0,25.43,70.02,9.92,1.14,233,9,61,0,0,0,8.92,0,72,72</data>
+<data>2019.187,1.32,0,1648.674,23.28,22.56,71.36,21.17,0,204,141,75,9.4,9.4,68,47,1.16,0,0,0,25.8,71,10.29,1.49,20,9,58,0,0,0,9.27,0,71.22,71.97</data>
+<data>2041.281,32.14,0,1590.69,14.7,23.58,70.12,19.38,0,207,138,76,9.97,9.97,69,46,1.15,1.12,0,0,26.15,71.63,10.63,2.09,147,9,137,0,0,0,9.87,0,69.85,71.2</data>
+<data>2070.163,32.26,0,1004.79,26,22.56,72.7,20.61,0,210,135,77,10.28,10.28,70,45,1.16,0,0,0,26.52,72.26,11,2.38,127,9,68,0,0,0,10.16,0,67.69,69.78</data>
+<data>2099.209,32.16,0,1567.998,28.54,22.36,67.74,20.57,0,213,132,78,10.7,10.7,71,44,1.16,0,0,0,26.88,73.26,11.37,2.69,124,9,60,0,0,0,10.47,0,66.96,67.66</data>
+<data>2128.38,32.05,0,1807.506,23.86,23.19,68.34,20.77,0,216,129,79,11.1,11.1,72,43,1.16,0,0,0,27.25,73.88,11.74,3.09,181,9,62,0,0,0,10.87,0,66.61,66.95</data>
+<data>2157.208,32.33,0,1907.34,31.14,22.56,58.87,20.57,0,219,126,80,11.59,11.59,73,42,1.17,0,0,0,27.62,74.63,12.1,3.32,139,9,38,0,0,0,11.1,0,66.34,66.59</data>
+<data>2186.253,32.31,0,1947.678,31.79,22.76,66.55,19.99,0,222,123,81,11.95,11.95,74,41,1.17,0,0,0,27.99,75.26,12.47,3.94,205,9,43,0,0,0,11.72,0,66.84,66.85</data>
+<data>2215.375,32.11,0,1215.552,26.52,23.19,71.72,17.44,0,225,120,82,12.31,12.31,75,40,1.16,0,0,0,28.35,75.74,12.84,4.17,211,9,46,0,0,0,11.95,0,67.06,67.07</data>
+<data>2244.585,32.17,0,938.736,53.68,21.17,67.55,19.99,0,228,117,83,3.2,3.2,76,39,1.16,0,0,0,28.72,76.25,13.21,3.43,164,9,52,0,0,0,11.21,0,67.2,67.2</data>
+<data>2273.676,32.26,0,887.304,47.97,23.75,63.39,20,0,168,177,84,1.26,1.26,56,59,1.16,0,0,0,29.09,75.75,13.58,-6.74,341,9,60,0,0,0,1.04,0,66.28,67.2</data>
+<data>2302.778,32.13,0,2484.168,28.8,22.76,58.48,19.99,0,171,174,85,1.27,1.27,57,58,1.17,0,0,0,29.46,76.75,1.41,-6.62,219,9,42,0,0,0,1.15,0,59.43,60.25</data>
+<data>2331.877,31.98,0,1596.24,24.25,22.76,63.58,20.38,0,174,171,86,1.62,1.62,58,57,1.17,0,0,0,29.83,77.14,1.78,-6.5,161,9,45,0,0,0,1.27,0,69.1,69.23</data>
+<data>2360.662,32.16,0,1677.414,25.48,22.76,63.58,20.57,0,177,168,87,2,2,59,56,1.17,0,0,0,30.19,77.83,2.14,-6.16,153,9,42,0,0,0,1.62,0,70.94,71.03</data>
+<data>2389.627,32.03,0,2080.794,29.51,23.35,57.84,20.57,0,180,165,88,2.37,2.37,60,55,1.17,0,0,0,30.56,78.46,2.51,-5.64,169,9,41,0,0,0,2.13,0,72.39,72.44</data>
+<data>2418.702,32.25,0,875.706,29.58,19.38,68.93,19.38,0,183,162,89,2.83,2.83,61,54,1.17,0,0,0,30.93,79.16,2.88,-5.06,233,9,66,0,0,0,2.71,0,73.67,73.67</data>
+<data>2447.983,32.14,0,1342.614,27.82,22.16,64.22,20.57,0,186,159,90,3.21,3.21,62,53,1.17,0,0,0,31.3,79.92,3.25,-4.95,158,9,50,0,0,0,2.83,0,70.11,73.5</data>
+<data>2477.123,32.18,0,1752.546,29.51,22.36,66.55,20.57,0,189,156,91,3.6,3.6,63,52,1.17,0,0,0,31.67,80.49,3.62,-4.56,163,9,44,0,0,0,3.21,0,70.4,70.42</data>
+<data>2508.567,4.47,0,1180.758,25.94,20.77,63.58,20.77,0,192,153,92,3.83,3.83,64,51,1.17,0,0,0,32.04,81.32,3.99,-4.18,34,9,44,0,0,0,3.6,0,70.94,70.96</data>
+<data>2533.715,32.42,0,1824.144,25.87,21.57,67,20.57,0,195,150,93,4.39,4.39,65,50,1.17,0,0,0,32.39,81.74,4.33,-3.83,245,9,59,0,0,0,3.95,0,71.46,71.46</data>
+<data>2562.98,31.85,0,1429.338,22.89,22.96,56.4,18.39,0,198,147,94,4.75,4.75,66,49,1.17,0,0,0,32.76,82.84,4.7,-3.26,361,9,66,0,0,0,4.52,0,69.25,71.39</data>
+<data>2592.613,2.19,0,1841.286,25.09,21.17,65.77,19.38,0,201,144,95,4.75,4.75,67,48,1.15,1.12,0,0,33.13,83.23,5.08,-3.02,23,9,775,0,0,0,4.75,0,58.3,69.18</data>
+<data>2620.808,32.33,0,1082.94,20.29,23.15,72.3,20,0,204,141,96,5.32,5.32,68,47,1.16,1.12,0,0,33.49,84.46,5.44,-2.56,165,9,124,0,0,0,5.22,0,53.3,58.22</data>
+<data>2650.134,32.21,0,1717.752,15.8,22.96,69.72,20.41,0,207,138,97,5.8,5.8,69,46,1.16,0,0,0,33.86,84.65,5.81,-2.21,179,9,82,0,0,0,5.56,0,51.81,53.26</data>
+<data>2679.402,32.12,0,1255.89,0.86,23.95,67.55,20.77,0,210,135,98,6.13,6.13,70,45,1.16,0,0,0,34.23,85.21,6.18,-1.75,181,9,148,0,0,0,6.03,0,50.86,51.79</data>
+<data>2708.474,6.58,0,1180.758,5.15,22.32,70.32,21.37,0,213,132,99,6.48,6.48,71,44,1.16,1.12,0,0,34.6,86.01,6.55,-1.41,157,9,206,0,0,0,6.37,0,47.85,50.83</data>
+<data>2735.424,32.34,0,1480.77,16.84,22.56,64.77,20.57,0,216,129,100,6.94,6.94,72,43,1.17,0,0,0,34.94,86.78,6.89,-1.07,218,9,74,0,0,0,6.71,0,46.63,47.82</data>
+<data>2764.757,32.22,0,1639.602,23.8,22.56,63.79,20.54,0,219,126,101,7.39,7.39,73,42,1.17,0,0,0,35.31,87.39,7.26,-0.73,259,9,66,0,0,0,7.04,0,46.59,46.63</data>
+<data>2793.947,32.14,0,1296.228,21.46,22.96,69.88,20.57,0,222,123,102,7.74,7.74,74,41,1.17,0,0,0,35.68,87.97,7.63,-0.27,251,9,72,0,0,0,7.51,0,46.74,46.74</data>
+<data>2823.094,32.16,0,1544.304,23.67,23.35,70.77,19.99,0,225,120,103,8.08,8.08,75,40,1.17,0,0,0,36.05,88.61,8,0.08,155,9,68,0,0,0,7.86,0,46.78,46.78</data>
+<data>2864.248,32.17,0,1143.45,17.49,21.96,75.87,20.38,0,228,117,104,8.47,8.47,76,39,1.17,0,0,0,36.42,89.44,8.37,0.58,217,9,74,0,0,0,8.36,0,46.91,46.91</data>
+<data>2893.424,32.17,0,1082.94,20.29,22.51,73.29,18.99,0,231,114,105,8.92,8.92,77,38,1.17,0,0,0,36.94,90.36,8.89,0.92,869,9,92,0,0,0,8.69,0,45.4,45.4</data>
+<data>2922.515,32.09,0,1305.804,12.23,23.95,61.6,20.57,0,234,111,106,9.27,9.27,78,37,1.17,0,0,0,37.31,91.09,9.26,1.27,257,9,92,0,0,0,9.04,0,41.09,45.22</data>
+<data>2951.444,6.4,0,1302.276,15.35,22.6,62.79,21.37,0,237,108,107,9.62,9.62,79,36,1.17,0,0,0,37.68,91.66,9.63,1.61,173,9,88,0,0,0,9.38,0,39.64,41.04</data>
+<data>2979.434,32.19,0,1432.368,5.47,23.55,62.24,20.57,0,240,105,108,9.97,9.97,80,35,1.17,0,0,0,38.03,92.52,9.98,2.07,243,9,84,0,0,0,9.85,0,39.28,39.63</data>
+<data>3008.627,32.16,0,1394.55,19.05,22.36,67.95,19.99,0,243,102,109,10.42,10.42,81,34,1.17,0,0,0,38.4,93.09,10.35,2.39,198,9,82,0,0,0,10.16,0,39.35,39.36</data>
+<data>3037.834,32.24,0,1584.642,13.66,22.76,60.37,20.01,0,246,99,110,10.78,10.78,82,33,1.17,0,0,0,38.77,93.95,10.72,2.76,198,9,80,0,0,0,10.54,0,39.65,39.66</data>
+<data>3067.134,32.15,0,1513.038,22.04,22.16,59.82,20.61,0,249,96,111,11.11,11.11,83,32,1.17,0,0,0,39.14,94.6,11.09,3.11,182,9,78,0,0,0,10.89,0,40.01,40.02</data>
+<data>3096.24,32.2,0,1463.628,21.59,23.15,66.36,20.18,0,252,93,112,11.59,11.59,84,31,1.17,0,0,0,39.51,95.22,11.46,3.6,253,9,82,0,0,0,11.38,0,40.41,40.42</data>
+<data>3125.495,32.19,0,1484.802,18.86,22.36,65.77,20.77,0,255,90,113,11.92,11.92,85,30,1.17,0,0,0,39.88,95.92,11.83,3.91,209,9,82,0,0,0,11.69,0,40.51,40.51</data>
+<data>3157.707,-0.04,0,1532.706,14.5,24.34,61.41,21.57,0,258,87,114,12.17,12.17,86,29,1.17,0,0,0,40.25,96.48,12.2,4.39,2,9,93,0,0,0,12.17,0,40.61,40.61</data>
+<data>3183.486,32.21,0,1241.772,8.98,21.64,68.53,20.18,0,261,84,115,12.63,12.63,87,28,1.17,0,0,0,40.62,97.27,12.56,4.73,199,9,92,0,0,0,12.5,0,40.25,40.6</data>
+<data>3212.611,32.28,0,1405.644,8.2,21.96,61.01,19.79,0,264,81,116,13.04,13.04,88,27,1.18,0,0,0,40.99,97.89,12.93,4.98,161,9,82,0,0,0,12.75,0,39.99,40.25</data>
+<data>3241.885,32.16,0,1412.196,14.18,22.16,57.89,20.73,0,267,78,117,13.4,13.4,89,26,1.18,0,0,0,41.36,98.38,13.3,5.49,148,9,80,0,0,0,13.27,0,40.08,40.09</data>
+<data>3270.98,32.23,0,1490.352,27.63,23.55,59.22,20.73,0,270,75,118,13.8,13.8,90,25,1.18,0,0,0,41.72,99.37,13.67,5.91,149,9,82,0,0,0,13.68,0,40.24,40.25</data>
+<data>3300.522,35.72,0,433.508,0.99,20.57,50.54,19.19,0,276,69,120,14.23,14.23,92,23,1.15,1.12,0,0,42.1,99.97,14.04,6.45,1654,9,29,0,0,0,14.23,0,40.23,40.38</data>
+<data>3300.786,2.01,0,1187.316,10.28,23.95,67.95,20.53,0,273,72,119,14.23,14.23,91,24,1.17,0,0,0,42.1,99.93,14.04,6.24,151,9,104,0,0,0,14.01,0,40.4,40.4</data>
+<data>3335.054,30.62,0,3785.052,49.01,20.57,85.18,17.61,0,345,0,0,11.5,11.5,115,0,1.16,1.12,0,0,42.1,99.97,14.04,6.45,1658,10,0,0,0,0,14.23,0,40.23,0.07</data>
+<data>3910.48,2.57,0,4888.788,58.95,22.56,93.75,15.03,0,3,402,1,8.74,8.74,1,134,1.16,1.12,0,0,44.5,112.35,1.95,-2.25,854,11,276991,0,0,0.05,9.25,0,0,0</data>
+<data>3910.566,3.02,0,2902.668,49.27,22.96,87.96,19.58,0,6,399,2,9.05,9.05,2,133,0,1.12,0,0,44.5,112.3,1.96,-2.18,58,11,810,0,0.05,0.05,9.32,0,0,0</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:26:07.6480000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T12:31:23.4060000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T12:31:23.4220000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

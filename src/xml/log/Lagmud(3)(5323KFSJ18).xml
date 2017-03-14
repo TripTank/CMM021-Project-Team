@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="6KFSJ18" uidLog="5323KFSJ18" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameLog>Lagmud</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>3</runNumber>
+      <indexType>Depth</indexType>
+      <startIndex>1150</startIndex>
+      <endIndex>1170</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S2_MAX</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>H2S Sensor 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUT</mnemonic>
+        <unit>L/min</unit>
+        <mnemAlias>flowOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Mud Flow Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S4_AVG</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>4</columnIndex>
+        <curveDescription>H2S Sensor 4</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGMWT</mnemonic>
+        <unit>sg</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>5</columnIndex>
+        <curveDescription>Lagged Mud Weight</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>FLOWOUTPC</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>flowOutPc</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>6</columnIndex>
+        <curveDescription>Mud Flow Out Percent</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MWOUT</mnemonic>
+        <unit>sg</unit>
+        <mnemAlias>wtMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>7</columnIndex>
+        <curveDescription>Mud Weight Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S4_MAX</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>8</columnIndex>
+        <curveDescription>H2S Sensor 4</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S1_AVG</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>9</columnIndex>
+        <curveDescription>H2S Sensor 1</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGGAS</mnemonic>
+        <unit>%</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>10</columnIndex>
+        <curveDescription>Total Gas - Lagged</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S1_MAX</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>11</columnIndex>
+        <curveDescription>H2S Sensor 1</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_AVG</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>12</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MROUT</mnemonic>
+        <unit>ohm.m</unit>
+        <mnemAlias>condMudOutAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>13</columnIndex>
+        <curveDescription>Mud Resistivity Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S3_AVG</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>14</columnIndex>
+        <curveDescription>H2S Sensor 3</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_MIN</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>15</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TOTGAS_MAX</mnemonic>
+        <unit>%</unit>
+        <mnemAlias>gasAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>16</columnIndex>
+        <curveDescription>Total Gas</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGMRES</mnemonic>
+        <unit>ohm.m</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>17</columnIndex>
+        <curveDescription>Lagged Mud Resistivity</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S3_MAX</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>18</columnIndex>
+        <curveDescription>H2S Sensor 3</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>MTOUT</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>tempMudOAv</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>19</columnIndex>
+        <curveDescription>Mud Temperature Out</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>CO2</mnemonic>
+        <unit>ppm</unit>
+        <mnemAlias>co2</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>20</columnIndex>
+        <curveDescription>Carbon Dioxide</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGMTDIFF</mnemonic>
+        <unit>degC</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>21</columnIndex>
+        <curveDescription>Lagged Mud Temperature Difference</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>H2S2_AVG</mnemonic>
+        <unit>ppm</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>22</columnIndex>
+        <curveDescription>H2S Sensor 2</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>LAGMTEMP</mnemonic>
+        <unit>degC</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1150</startIndex>
+        <endIndex>1170</endIndex>
+        <columnIndex>23</columnIndex>
+        <curveDescription>Lagged Mud Temperature</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>1150,0,0,0,1.36,49.72,1.36,0,5,0,5,0,10.281,0,0,0,0,0,45.8,0,-249.6,0,22.4</data>
+<data>1170,0,4248.432,0,1.36,59.6,1.36,0,5,0,5,0,10.284,0,0,0,0,0,44.2,0,-251.4,0,22.5</data>
+<data>1170,0,4125.396,0,1.36,58.62,1.36,0,5,0,5,0.7794,10.278,-3,0.7794,0.8003,0,-3,42.9,0,-251.4,0,21.2</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:43:18.2100000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T12:11:32.9680000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T12:11:32.9690000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="6KFSJ18" uidLog="5410KFSJ18" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameLog>DHolePSW</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>5</runNumber>
+      <indexType>Depth</indexType>
+      <startIndex>1713</startIndex>
+      <endIndex>2200.202</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>1713</startIndex>
+        <endIndex>2200.202</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DAPMXX</mnemonic>
+        <unit>bar</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1713</startIndex>
+        <endIndex>2200.202</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Maximum Flow Off Annular Pressure</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>DAPMNX</mnemonic>
+        <unit>bar</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1713</startIndex>
+        <endIndex>2200.202</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Minimum Flow Off Annular Pressure</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>1713,185,175</data>
+<data>1713,185,175</data>
+<data>1739.29,184,182</data>
+<data>1739.29,184,182</data>
+<data>1739.29,184,184</data>
+<data>1739.29,184,184</data>
+<data>1739.29,184,183</data>
+<data>1739.29,184,183</data>
+<data>1765.736,185,183</data>
+<data>1765.736,185,183</data>
+<data>1793.541,186,184</data>
+<data>1793.541,186,184</data>
+<data>1820.066,188,187</data>
+<data>1820.066,188,187</data>
+<data>1847.889,0,0</data>
+<data>1847.889,0,0</data>
+<data>1875.254,191,190</data>
+<data>1875.254,191,190</data>
+<data>1901.524,194,192</data>
+<data>1901.524,194,192</data>
+<data>1928.944,195,193</data>
+<data>1928.944,195,</data>
+<data>1955.4,197,194</data>
+<data>1955.4,197,194</data>
+<data>1982.796,198,195</data>
+<data>1982.796,198,195</data>
+<data>1982.796,198,195</data>
+<data>1982.796,198,195</data>
+<data>1982.796,198,195</data>
+<data>1982.796,198,195</data>
+<data>1982.796,198,195</data>
+<data>2011.354,198,197</data>
+<data>2011.354,200,</data>
+<data>2011.354,200,</data>
+<data>2036.432,201,200</data>
+<data>2036.432,201,200</data>
+<data>2036.432,201,200</data>
+<data>2064.475,734,345</data>
+<data>2064.475,658,1799</data>
+<data>2064.475,203,203</data>
+<data>2091.606,205,203</data>
+<data>2091.606,205,201</data>
+<data>2118.904,207,205</data>
+<data>2118.904,207,205</data>
+<data>2145.925,1560,1560</data>
+<data>2145.925,1982,1560</data>
+<data>2145.925,1982,1560</data>
+<data>2145.925,1560,1560</data>
+<data>2145.925,1982,1743</data>
+<data>2145.925,1982,1560</data>
+<data>2145.925,1162,1560</data>
+<data>2145.925,208,1560</data>
+<data>2145.925,209,208</data>
+<data>2145.925,209,208</data>
+<data>2145.925,,208</data>
+<data>2173.797,210,207</data>
+<data>2173.797,210,207</data>
+<data>2200.202,211,208</data>
+<data>2200.202,211,208</data>
+<data>2200.202,0,0</data>
+<data>2200.202,0,0</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:45:24.6010000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T11:45:01.1870000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T11:45:01.2030000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

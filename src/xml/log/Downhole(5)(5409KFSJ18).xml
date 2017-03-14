@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="6KFSJ18" uidLog="5409KFSJ18" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameLog>Downhole</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>5</runNumber>
+      <indexType>Depth</indexType>
+      <startIndex>1713.297</startIndex>
+      <endIndex>2231.708</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>1713.297</startIndex>
+        <endIndex>2231.708</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>TCDX</mnemonic>
+        <unit>degC</unit>
+        <mnemAlias>mftAnn</mnemAlias>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1713.297</startIndex>
+        <endIndex>2231.708</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Downhole Temperature</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>1713.297,41.5</data>
+<data>1713.297,41.5</data>
+<data>1713.408,41.5</data>
+<data>1713.408,41.5</data>
+<data>1713.419,41.5</data>
+<data>1713.419,41.5</data>
+<data>1713.419,41.5</data>
+<data>1713.419,41.5</data>
+<data>1713.419,41.5</data>
+<data>1713.419,41.5</data>
+<data>1713.465,41.5</data>
+<data>1714.416,41.5</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.416,43</data>
+<data>1714.631,43</data>
+<data>1715.433,41.5</data>
+<data>1715.433,41.5</data>
+<data>1715.433,41.5</data>
+<data>1716.54,41.5</data>
+<data>1716.54,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.552,41.5</data>
+<data>1716.936,43</data>
+<data>1719.639,43</data>
+<data>1722.344,43</data>
+<data>1725.244,43</data>
+<data>1726.218,44.5</data>
+<data>1726.768,44.5</data>
+<data>1727.013,43</data>
+<data>1729.324,44.5</data>
+<data>1729.411,44.5</data>
+<data>1731.57,44.5</data>
+<data>1731.704,46</data>
+<data>1732.408,47.5</data>
+<data>1733.352,47.5</data>
+<data>1734.351,49</data>
+<data>1735.059,49</data>
+<data>1737.154,49</data>
+<data>1738.965,50.5</data>
+<data>1739.752,53.6</data>
+<data>1739.752,52</data>
+<data>1739.752,52</data>
+<data>1739.752,52</data>
+<data>1740.176,50.5</data>
+<data>1741.57,52</data>
+<data>1741.79,53.6</data>
+<data>1742.748,53.6</data>
+<data>1743.014,53.6</data>
+<data>1743.476,53.6</data>
+<data>1743.851,53.6</data>
+<data>1744.405,53.6</data>
+<data>1744.413,53.6</data>
+<data>1745.096,55.1</data>
+<data>1745.866,55.1</data>
+<data>1747.457,55.1</data>
+<data>1748.804,55.1</data>
+<data>1749.46,59.6</data>
+<data>1749.46,59.6</data>
+<data>1749.884,56.6</data>
+<data>1749.885,59.6</data>
+<data>1751.101,56.6</data>
+<data>1752.376,56.6</data>
+<data>1753.411,56.6</data>
+<data>1754.879,56.6</data>
+<data>1756.592,58.1</data>
+<data>1757.859,58.1</data>
+<data>1759.127,58.1</data>
+<data>1759.139,58.1</data>
+<data>1759.139,58.1</data>
+<data>1760.564,58.1</data>
+<data>1762.083,59.6</data>
+<data>1764.013,59.6</data>
+<data>1765.259,58.1</data>
+<data>1765.991,58.1</data>
+<data>1766.119,59.6</data>
+<data>1766.65,59.6</data>
+<data>1768.136,59.6</data>
+<data>1774.01,50.5</data>
+<data>1778.469,47.5</data>
+<data>1783.035,46</data>
+<data>1786.289,46</data>
+<data>1787.604,56.6</data>
+<data>1788.119,47.5</data>
+<data>1788.478,49</data>
+<data>1789.057,49</data>
+<data>1794.45,49</data>
+<data>1794.45,49</data>
+<data>1795.571,50.5</data>
+<data>1795.738,50.5</data>
+<data>1801.828,50.5</data>
+<data>1806.309,52</data>
+<data>1811.084,53.6</data>
+<data>1816.266,53.6</data>
+<data>1821.593,55.1</data>
+<data>1821.628,53.6</data>
+<data>1821.628,53.6</data>
+<data>1828.634,55.1</data>
+<data>1831.606,55.1</data>
+<data>1839.203,56.6</data>
+<data>1840.003,58.1</data>
+<data>1841.288,58.1</data>
+<data>1844.671,58.1</data>
+<data>1848.087,58.1</data>
+<data>1848.738,56.6</data>
+<data>1848.738,56.6</data>
+<data>1848.738,56.6</data>
+<data>1851.357,59.6</data>
+<data>1858.127,59.6</data>
+<data>1861.107,59.6</data>
+<data>1867.813,61.1</data>
+<data>1871.311,61.1</data>
+<data>1874.939,61.1</data>
+<data>1875.831,58.1</data>
+<data>1875.831,58.1</data>
+<data>1875.831,58.1</data>
+<data>1875.886,58.1</data>
+<data>1878.234,61.1</data>
+<data>1883.448,59.6</data>
+<data>1886.56,61.1</data>
+<data>1893.161,61.1</data>
+<data>1896.08,62.6</data>
+<data>1899.221,62.6</data>
+<data>1902.039,62.6</data>
+<data>1902.75,61.1</data>
+<data>1902.75,61.1</data>
+<data>1902.75,59.6</data>
+<data>1904.822,62.6</data>
+<data>1906.102,62.6</data>
+<data>1915.143,62.6</data>
+<data>1919.411,62.6</data>
+<data>1924.785,64.1</data>
+<data>1928.837,64.1</data>
+<data>1930.178,62.6</data>
+<data>1930.178,62.6</data>
+<data>1932.468,64.1</data>
+<data>1933.215,61.1</data>
+<data>1936.589,62.6</data>
+<data>1940.27,64.1</data>
+<data>1943.813,64.1</data>
+<data>1947.227,64.1</data>
+<data>1950.829,64.1</data>
+<data>1954.011,65.6</data>
+<data>1956.96,64.1</data>
+<data>1956.96,62.6</data>
+<data>1957.328,65.6</data>
+<data>1960.113,65.6</data>
+<data>1966.286,64.1</data>
+<data>1975.632,65.6</data>
+<data>1979.419,65.6</data>
+<data>1982.931,65.6</data>
+<data>1984.03,64.1</data>
+<data>1984.03,64.1</data>
+<data>1984.03,64.1</data>
+<data>1984.03,64.1</data>
+<data>1984.03,64.1</data>
+<data>1984.03,64.1</data>
+<data>1984.03,64.1</data>
+<data>1984.725,62.6</data>
+<data>1986.104,65.6</data>
+<data>1992.622,65.6</data>
+<data>1995.825,65.6</data>
+<data>2005.241,65.6</data>
+<data>2008.916,67.1</data>
+<data>2011.07,65.6</data>
+<data>2011.1,64.1</data>
+<data>2012.589,67.1</data>
+<data>2020.276,65.6</data>
+<data>2023.432,65.6</data>
+<data>2026.954,67.1</data>
+<data>2030.538,67.1</data>
+<data>2034.175,67.1</data>
+<data>2037.386,67.1</data>
+<data>2038.17,65.6</data>
+<data>2038.17,65.6</data>
+<data>2038.17,64.1</data>
+<data>2038.173,64.1</data>
+<data>2038.173,64.1</data>
+<data>2038.527,64.1</data>
+<data>2040.344,67.1</data>
+<data>2041.471,64.1</data>
+<data>2045.068,65.6</data>
+<data>2048.606,65.6</data>
+<data>2052.213,67.1</data>
+<data>2054.686,67.1</data>
+<data>2057.425,67.1</data>
+<data>2060.413,67.1</data>
+<data>2063.617,68.6</data>
+<data>2065.162,68.6</data>
+<data>2065.586,65.6</data>
+<data>2065.586,64.1</data>
+<data>2065.586,64.1</data>
+<data>2065.586,64.1</data>
+<data>2066.62,68.6</data>
+<data>2081.976,68.6</data>
+<data>2084.674,68.6</data>
+<data>2091.298,68.6</data>
+<data>2092.34,67.1</data>
+<data>2092.34,67.1</data>
+<data>2092.441,65.6</data>
+<data>2094.868,68.6</data>
+<data>2097.643,67.1</data>
+<data>2102.854,68.6</data>
+<data>2104.144,65.6</data>
+<data>2104.977,65.6</data>
+<data>2104.977,65.6</data>
+<data>2111.076,70.1</data>
+<data>2112.863,71.6</data>
+<data>2114.533,70.1</data>
+<data>2117.815,70.1</data>
+<data>2118.837,71.6</data>
+<data>2119.41,68.6</data>
+<data>2119.41,68.6</data>
+<data>2120.352,67.1</data>
+<data>2121.054,68.6</data>
+<data>2121.143,68.6</data>
+<data>2121.553,71.6</data>
+<data>2123.089,67.1</data>
+<data>2124.856,68.6</data>
+<data>2125.918,67.1</data>
+<data>2127.004,70.1</data>
+<data>2131.017,68.6</data>
+<data>2133.06,70.1</data>
+<data>2138.391,64.1</data>
+<data>2138.729,70.1</data>
+<data>2146.335,65.6</data>
+<data>2146.34,70.1</data>
+<data>2147.299,65.6</data>
+<data>2147.299,65.6</data>
+<data>2148.149,70.1</data>
+<data>2150.009,70.1</data>
+<data>2150.811,67.1</data>
+<data>2150.833,64.1</data>
+<data>2151.519,61.1</data>
+<data>2154.286,68.6</data>
+<data>2154.716,70.1</data>
+<data>2158.02,70.1</data>
+<data>2160.933,64.1</data>
+<data>2161.089,70.1</data>
+<data>2164.574,70.1</data>
+<data>2170.528,70.1</data>
+<data>2173.026,68.6</data>
+<data>2173.58,67.1</data>
+<data>2173.58,67.1</data>
+<data>2173.58,67.1</data>
+<data>2173.58,67.1</data>
+<data>2173.58,65.6</data>
+<data>2173.761,70.1</data>
+<data>2176.697,70.1</data>
+<data>2178.046,68.6</data>
+<data>2178.582,64.1</data>
+<data>2181.848,68.6</data>
+<data>2182.446,68.6</data>
+<data>2183.102,68.6</data>
+<data>2183.349,49</data>
+<data>2184.542,68.6</data>
+<data>2184.865,64.1</data>
+<data>2186.31,64.1</data>
+<data>2186.986,68.6</data>
+<data>2188.148,67.1</data>
+<data>2188.906,46</data>
+<data>2190.111,68.6</data>
+<data>2192.882,68.6</data>
+<data>2193.174,67.1</data>
+<data>2193.697,68.6</data>
+<data>2195.013,62.6</data>
+<data>2198.016,68.6</data>
+<data>2200.223,68.6</data>
+<data>2200.244,64.1</data>
+<data>2200.669,68.6</data>
+<data>2200.792,68.6</data>
+<data>2200.889,67.1</data>
+<data>2200.889,67.1</data>
+<data>2200.889,67.1</data>
+<data>2200.889,67.1</data>
+<data>2200.889,67.1</data>
+<data>2200.889,65.6</data>
+<data>2200.889,65.6</data>
+<data>2200.889,65.6</data>
+<data>2200.889,65.6</data>
+<data>2200.889,65.6</data>
+<data>2200.889,65.6</data>
+<data>2203.657,68.6</data>
+<data>2204.888,65.6</data>
+<data>2206.727,68.6</data>
+<data>2207.912,68.6</data>
+<data>2207.967,65.6</data>
+<data>2209.403,67.1</data>
+<data>2211.55,67.1</data>
+<data>2212.807,68.6</data>
+<data>2213.95,68.6</data>
+<data>2216.016,68.6</data>
+<data>2217.411,68.6</data>
+<data>2217.834,68.6</data>
+<data>2218.076,68.6</data>
+<data>2220.057,68.6</data>
+<data>2220.84,68.6</data>
+<data>2223.935,68.6</data>
+<data>2224.684,68.6</data>
+<data>2227.043,68.6</data>
+<data>2227.501,68.6</data>
+<data>2228.097,68.6</data>
+<data>2230.148,68.6</data>
+<data>2230.595,68.6</data>
+<data>2230.651,68.6</data>
+<data>2230.793,68.6</data>
+<data>2230.856,68.6</data>
+<data>2230.867,68.6</data>
+<data>2230.911,68.6</data>
+<data>2230.94,68.6</data>
+<data>2230.94,67.1</data>
+<data>2231.708,68.6</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:45:15.9130000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T11:46:15.0150000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T11:46:15.0310000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>

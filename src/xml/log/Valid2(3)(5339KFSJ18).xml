@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- POSC License Agreement
+	This file is distributed under the POSC License Agreement at
+	http://www.posc.org/about/license.shtml.
+	Use of this file constitutes agreement with the POSC License Agreement.
+	-->
+<logs 
+	xmlns="http://www.witsml.org/schemas/120" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.witsml.org/schemas/120 
+	http://www.witsml.org/schemas/120/obj_log.xsd" 
+	version="1.2.0">
+  <log uidWell="Well123" uidWellbore="6KFSJ18" uidLog="5339KFSJ18" uidSource="Server1">
+    <nameWell>DemoWell2</nameWell>
+    <nameWellbore>Wellbore3</nameWellbore>
+    <nameLog>Valid2</nameLog>
+    <logHeader>
+      <serviceCompany>ServiceCompany</serviceCompany>
+      <runNumber>3</runNumber>
+      <indexType>Depth</indexType>
+      <startIndex>1701.581</startIndex>
+      <endIndex>1733.375</endIndex>
+      <direction>Increasing</direction>
+      <indexCurve>Depth</indexCurve>
+      <stepIncrement>0</stepIncrement>
+      <indexUnits>m</indexUnits>
+      <nullValue>-999.25</nullValue>
+      <uomNamingSystem>RP66</uomNamingSystem>
+      <logCurveInfo>
+        <mnemonic>Depth</mnemonic>
+        <unit>m</unit>
+        <startIndex>1701.581</startIndex>
+        <endIndex>1733.375</endIndex>
+        <columnIndex>1</columnIndex>
+        <curveDescription>The mnemonic of the index curve</curveDescription>
+        <sensorOffset>0</sensorOffset>
+        <traceState>Raw</traceState>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SSLIPX</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1701.581</startIndex>
+        <endIndex>1733.375</endIndex>
+        <columnIndex>2</columnIndex>
+        <curveDescription>Valid 2 Stick Slip Severity Level</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SEVZX</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1701.581</startIndex>
+        <endIndex>1733.375</endIndex>
+        <columnIndex>3</columnIndex>
+        <curveDescription>Valid 2 Axial Vibration Severity Level</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+      <logCurveInfo>
+        <mnemonic>SEVXYX</mnemonic>
+        <unit>unitless</unit>
+        <nullValue>-999.25</nullValue>
+        <startIndex>1701.581</startIndex>
+        <endIndex>1733.375</endIndex>
+        <columnIndex>4</columnIndex>
+        <curveDescription>Valid 2 Lateral Vibration Severity Level</curveDescription>
+        <typeLogData>Double</typeLogData>
+      </logCurveInfo>
+    </logHeader>
+<logData>
+<data>1701.581,0,0,0</data>
+<data>1707.05,0,0,0</data>
+<data>1710.142,0,0,0</data>
+<data>1710.554,0,0,0</data>
+<data>1710.587,0,0,0</data>
+<data>1710.841,0,0,0</data>
+<data>1711.264,5,0,2</data>
+<data>1711.556,0,0,0</data>
+<data>1711.556,0,0,0</data>
+<data>1711.556,0,0,0</data>
+<data>1711.866,5,0,2</data>
+<data>1712.25,6,0,2</data>
+<data>1712.25,1,0,0</data>
+<data>1712.753,1,0,2</data>
+<data>1712.918,5,0,2</data>
+<data>1713.086,5,0,2</data>
+<data>1713.086,6,0,2</data>
+<data>1713.272,4,0,2</data>
+<data>1713.272,1,0,1</data>
+<data>1713.628,5,0,2</data>
+<data>1714.255,2,0,2</data>
+<data>1714.281,6,0,2</data>
+<data>1714.425,0,0,1</data>
+<data>1714.591,0,0,0</data>
+<data>1715.271,6,0,2</data>
+<data>1715.438,1,0,2</data>
+<data>1716.048,5,0,4</data>
+<data>1716.258,3,0,2</data>
+<data>1716.448,0,0,2</data>
+<data>1716.591,1,0,2</data>
+<data>1717.287,5,0,2</data>
+<data>1717.287,2,0,2</data>
+<data>1717.464,0,0,2</data>
+<data>1718.168,4,0,3</data>
+<data>1719.376,5,0,2</data>
+<data>1719.376,4,0,2</data>
+<data>1719.376,0,0,2</data>
+<data>1719.467,1,0,2</data>
+<data>1719.545,4,0,2</data>
+<data>1719.545,5,0,2</data>
+<data>1719.65,0,0,2</data>
+<data>1719.765,4,0,3</data>
+<data>1719.765,3,0,2</data>
+<data>1719.911,4,0,2</data>
+<data>1719.919,0,0,2</data>
+<data>1720.134,6,0,2</data>
+<data>1720.222,5,0,2</data>
+<data>1720.371,5,0,2</data>
+<data>1720.477,4,0,2</data>
+<data>1720.745,3,0,2</data>
+<data>1720.748,1,0,2</data>
+<data>1720.905,1,0,2</data>
+<data>1720.905,3,0,2</data>
+<data>1721.207,4,0,3</data>
+<data>1721.223,5,0,4</data>
+<data>1721.336,3,0,3</data>
+<data>1721.366,6,0,3</data>
+<data>1721.604,1,0,2</data>
+<data>1721.611,1,0,2</data>
+<data>1721.616,4,0,2</data>
+<data>1721.757,0,0,2</data>
+<data>1721.808,0,0,2</data>
+<data>1721.808,5,0,3</data>
+<data>1721.921,0,0,2</data>
+<data>1721.921,2,0,2</data>
+<data>1722.008,1,0,2</data>
+<data>1722.085,1,0,2</data>
+<data>1722.101,1,0,3</data>
+<data>1722.213,3,0,2</data>
+<data>1722.424,6,0,2</data>
+<data>1722.464,5,0,2</data>
+<data>1722.796,5,0,3</data>
+<data>1722.83,1,0,2</data>
+<data>1722.926,0,0,2</data>
+<data>1723.055,3,0,2</data>
+<data>1723.232,6,0,2</data>
+<data>1723.551,4,0,2</data>
+<data>1723.565,1,0,2</data>
+<data>1723.786,6,0,2</data>
+<data>1723.814,5,0,2</data>
+<data>1723.822,6,0,3</data>
+<data>1723.822,6,0,3</data>
+<data>1723.822,5,0,2</data>
+<data>1723.822,5,0,2</data>
+<data>1723.88,6,0,2</data>
+<data>1723.912,6,0,2</data>
+<data>1723.966,5,0,3</data>
+<data>1723.966,1,0,2</data>
+<data>1724.051,6,0,2</data>
+<data>1724.054,6,0,2</data>
+<data>1724.083,7,0,0</data>
+<data>1724.174,5,0,2</data>
+<data>1724.185,6,0,2</data>
+<data>1724.294,6,0,2</data>
+<data>1724.462,5,0,2</data>
+<data>1724.462,5,0,3</data>
+<data>1724.462,6,0,3</data>
+<data>1724.462,5,0,2</data>
+<data>1724.462,0,0,1</data>
+<data>1724.48,3,0,2</data>
+<data>1724.6,2,0,2</data>
+<data>1724.6,1,0,2</data>
+<data>1724.732,0,0,2</data>
+<data>1724.773,5,0,2</data>
+<data>1724.891,0,0,3</data>
+<data>1724.913,6,0,2</data>
+<data>1725.007,0,0,2</data>
+<data>1725.183,0,0,2</data>
+<data>1725.214,1,0,2</data>
+<data>1725.229,4,0,2</data>
+<data>1725.33,5,0,2</data>
+<data>1725.43,0,0,2</data>
+<data>1725.472,1,0,1</data>
+<data>1725.472,3,0,1</data>
+<data>1725.472,0,0,1</data>
+<data>1725.512,0,0,1</data>
+<data>1725.557,6,0,2</data>
+<data>1725.58,4,0,1</data>
+<data>1725.595,0,0,1</data>
+<data>1725.747,0,0,1</data>
+<data>1725.794,5,0,2</data>
+<data>1725.842,1,0,1</data>
+<data>1725.842,0,0,1</data>
+<data>1725.911,3,0,2</data>
+<data>1726.034,1,0,2</data>
+<data>1726.045,5,0,2</data>
+<data>1726.106,1,0,1</data>
+<data>1726.108,0,0,2</data>
+<data>1726.216,1,0,1</data>
+<data>1726.216,0,0,2</data>
+<data>1726.216,1,0,2</data>
+<data>1726.25,3,0,2</data>
+<data>1726.381,3,0,2</data>
+<data>1726.482,2,0,1</data>
+<data>1726.482,0,0,1</data>
+<data>1726.482,0,0,1</data>
+<data>1726.482,5,0,1</data>
+<data>1726.482,1,0,1</data>
+<data>1726.482,1,0,1</data>
+<data>1726.482,1,0,1</data>
+<data>1726.496,0,0,2</data>
+<data>1726.549,2,0,2</data>
+<data>1726.561,0,0,0</data>
+<data>1726.811,0,0,2</data>
+<data>1727.028,2,0,2</data>
+<data>1727.212,4,0,2</data>
+<data>1727.326,3,0,2</data>
+<data>1727.346,6,0,2</data>
+<data>1727.41,5,0,2</data>
+<data>1727.471,1,0,2</data>
+<data>1727.552,1,0,2</data>
+<data>1727.553,1,0,2</data>
+<data>1727.567,3,0,2</data>
+<data>1727.727,4,0,2</data>
+<data>1727.813,2,0,2</data>
+<data>1727.813,0,0,2</data>
+<data>1727.813,1,0,2</data>
+<data>1727.924,0,0,2</data>
+<data>1728.013,4,0,2</data>
+<data>1728.183,0,0,2</data>
+<data>1728.33,5,0,2</data>
+<data>1728.362,3,0,1</data>
+<data>1728.362,5,0,2</data>
+<data>1728.365,0,0,2</data>
+<data>1728.446,6,0,2</data>
+<data>1728.656,0,0,2</data>
+<data>1728.785,2,0,2</data>
+<data>1728.838,3,0,2</data>
+<data>1728.846,0,0,1</data>
+<data>1728.846,0,0,1</data>
+<data>1728.846,1,0,1</data>
+<data>1728.846,2,0,2</data>
+<data>1728.928,1,0,2</data>
+<data>1728.97,0,0,0</data>
+<data>1729.094,3,0,2</data>
+<data>1729.149,5,0,2</data>
+<data>1729.16,1,0,2</data>
+<data>1729.202,2,0,1</data>
+<data>1729.21,5,0,2</data>
+<data>1729.215,1,0,1</data>
+<data>1729.22,2,0,1</data>
+<data>1729.234,2,0,1</data>
+<data>1729.257,2,0,1</data>
+<data>1729.3,2,0,2</data>
+<data>1729.342,1,0,2</data>
+<data>1729.346,0,0,1</data>
+<data>1729.37,2,0,2</data>
+<data>1729.415,2,0,3</data>
+<data>1729.455,5,0,2</data>
+<data>1729.455,6,0,2</data>
+<data>1729.515,2,0,2</data>
+<data>1729.793,0,0,2</data>
+<data>1729.793,1,0,2</data>
+<data>1729.806,5,0,2</data>
+<data>1729.806,5,0,2</data>
+<data>1729.824,6,0,2</data>
+<data>1729.846,5,0,2</data>
+<data>1729.879,5,0,2</data>
+<data>1729.929,6,0,2</data>
+<data>1729.929,5,0,2</data>
+<data>1729.984,0,0,3</data>
+<data>1730.032,0,0,2</data>
+<data>1730.06,0,0,0</data>
+<data>1730.253,5,0,2</data>
+<data>1730.35,1,0,2</data>
+<data>1730.4,0,0,2</data>
+<data>1730.468,2,0,2</data>
+<data>1730.47,1,0,1</data>
+<data>1730.58,1,0,1</data>
+<data>1730.642,6,0,2</data>
+<data>1730.695,0,0,1</data>
+<data>1730.801,6,0,2</data>
+<data>1730.801,6,0,2</data>
+<data>1730.801,0,0,2</data>
+<data>1730.815,2,0,1</data>
+<data>1730.815,6,0,2</data>
+<data>1730.815,5,0,3</data>
+<data>1730.815,6,0,3</data>
+<data>1730.815,2,0,1</data>
+<data>1730.815,4,0,2</data>
+<data>1730.815,5,0,2</data>
+<data>1730.833,4,0,2</data>
+<data>1730.931,2,0,2</data>
+<data>1730.948,5,0,2</data>
+<data>1730.948,6,0,2</data>
+<data>1730.961,2,0,1</data>
+<data>1731.191,5,0,2</data>
+<data>1731.201,1,0,1</data>
+<data>1731.327,0,0,1</data>
+<data>1731.368,0,0,1</data>
+<data>1731.426,1,0,2</data>
+<data>1731.455,6,0,2</data>
+<data>1731.526,2,0,1</data>
+<data>1731.526,0,0,1</data>
+<data>1731.706,0,0,1</data>
+<data>1731.761,6,0,2</data>
+<data>1731.816,4,0,2</data>
+<data>1731.826,6,0,2</data>
+<data>1731.826,0,0,1</data>
+<data>1731.826,2,0,1</data>
+<data>1731.826,4,0,2</data>
+<data>1731.959,1,0,1</data>
+<data>1731.962,4,0,2</data>
+<data>1731.962,4,0,2</data>
+<data>1731.962,6,0,3</data>
+<data>1731.962,0,0,1</data>
+<data>1731.962,4,0,2</data>
+<data>1732.376,5,0,2</data>
+<data>1732.593,1,0,1</data>
+<data>1732.603,6,0,2</data>
+<data>1732.604,0,0,0</data>
+<data>1732.855,1,0,2</data>
+<data>1732.909,1,0,1</data>
+<data>1732.992,6,0,2</data>
+<data>1733.15,2,0,2</data>
+<data>1733.18,0,0,2</data>
+<data>1733.314,0,0,2</data>
+<data>1733.327,0,0,2</data>
+<data>1733.375,0,0,0</data>
+</logData>
+    <commonData>
+      <nameSource>SC001</nameSource>
+      <dTimStamp>2007-06-11T14:43:45.6480000+02:00</dTimStamp>
+      <dTimCreation>2007-06-07T12:32:28.8590000+02:00</dTimCreation>
+      <dTimLastChange>2007-06-07T12:32:28.8750000+02:00</dTimLastChange>
+      <itemState>Actual</itemState>
+    </commonData>
+  </log>
+</logs>
