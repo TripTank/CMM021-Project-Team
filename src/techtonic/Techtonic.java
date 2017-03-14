@@ -121,7 +121,7 @@ public class Techtonic extends javax.swing.JFrame {
 
         toolBarPanel.setPreferredSize(new java.awt.Dimension(100, 65));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/techtonic/images/max.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon("H:\\NetBeansProjects\\CMM021-Project-Team\\src\\techtonic\\images\\max.png")); // NOI18N
 
         javax.swing.GroupLayout toolBarPanelLayout = new javax.swing.GroupLayout(toolBarPanel);
         toolBarPanel.setLayout(toolBarPanelLayout);
@@ -134,7 +134,7 @@ public class Techtonic extends javax.swing.JFrame {
         );
         toolBarPanelLayout.setVerticalGroup(
             toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, Short.MAX_VALUE)
+            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         getContentPane().add(toolBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 111, 1110, -1));
@@ -178,7 +178,7 @@ public class Techtonic extends javax.swing.JFrame {
 
         jspWell.setPreferredSize(new java.awt.Dimension(1173, 2263));
 
-        btnWellPanel.setBorder(javax.swing.BorderFactory.createCompoundBorder(new javax.swing.border.SoftBevelBorder(0), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
+        btnWellPanel.setBorder(javax.swing.BorderFactory.createCompoundBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
         btnWellPanel.setPreferredSize(new java.awt.Dimension(100, 100));
 
         javax.swing.GroupLayout btnWellPanelLayout = new javax.swing.GroupLayout(btnWellPanel);
