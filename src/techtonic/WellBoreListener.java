@@ -6,6 +6,7 @@
 package techtonic;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
@@ -33,11 +34,18 @@ public class WellBoreListener implements ActionListener {
     private int id;
     private WitsmlWellbore wellbore;
     private JPanel chartPanel;
+    int talker = 0;
+    JFreeChart charts;
+    XYSeries seriesMagger;
 
     public WellBoreListener(int id, WitsmlWellbore wellbore, JPanel pan) {
         this.id = id;
         this.wellbore = wellbore;
+        this.seriesMagger = seriesMagger;
         chartPanel = pan;
+        talker++;
+        System.out.print("talker created   ==>>>  "+talker);
+   
     }
 
     public int getId() {
@@ -75,15 +83,15 @@ public class WellBoreListener implements ActionListener {
                 stationsAsList.set(s.getStationNo(), s);
             }
 
-//            for (WitsmlTrajectoryStation station : stationsAsList) {
-//                System.out.println(
-//                        "tvd: " + station.getTvd() + "  "
-//                        + "md:  " + station.getMd() + "  "
-//                        + "north:  " + station.getNorth() + "  "
-//                        + "east:  " + station.getEast() + "  "
-//                        + "gravity:  " + station.getInclination() + "  "
-//                );
-//            }
+            for (WitsmlTrajectoryStation station : stationsAsList) {
+                System.out.println(
+                        "tvd: " + station.getTvd() + "  "
+                        + "md:  " + station.getMd() + "  "
+                        + "north:  " + station.getNorth() + "  "
+                        + "east:  " + station.getEast() + "  "
+                        + "gravity:  " + station.getInclination() + "  "
+                );
+            }
             // create a DataSet object for storing xy data 
             XYSeries series = new XYSeries("series name");
 // add data to Dataset (here assume data is in ArrayLists x and y
@@ -98,25 +106,29 @@ public class WellBoreListener implements ActionListener {
                 if(md == null){
                     continue;
                 }
-                System.out.println(count + " : ===>> tvd : "+tvd.getValue()+ "; md "+md.getValue());
+           //     System.out.println(count + " : ===>> tvd : "+tvd.getValue()+ "; md "+md.getValue());
                 series.add(tvd.getValue(), md.getValue());
                 count++;
             }
+            
             XYSeriesCollection data = new XYSeriesCollection();
             data.addSeries(series);
+            
 // create a chart using the createYLineChart method...
             JFreeChart chart = ChartFactory.createXYLineChart(
                     "Line Chart", // chart title
                     "x", "y", // x and y axis labels
                     data); // data
+            chart.setBackgroundPaint(Color.BLACK);
 // display the chart on a ChartFrame...
 //            ChartFrame frame = new ChartFrame(
 //                    "XY graph using JFreeChart", chart);
 //            frame.pack();
 //            frame.setVisible(true);
-            
+            Techtonic.setChart(chart);
+          
             ChartPanel cp = new ChartPanel(chart);
-            cp.setMouseWheelEnabled(true);
+            cp.setMouseZoomable(true, true);
             chartPanel.setLayout(new java.awt.BorderLayout());
             chartPanel.add(cp,BorderLayout.CENTER);
             chartPanel.validate();        

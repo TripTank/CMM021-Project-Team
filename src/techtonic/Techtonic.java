@@ -6,10 +6,12 @@
 package techtonic;
 
 import java.awt.Color;
+import java.awt.Dialog;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -32,6 +34,13 @@ import org.jwitsml.WitsmlLogCurve;
 import org.jwitsml.WitsmlWell;
 import org.jwitsml.WitsmlWellbore;
 import java.net.MalformedURLException;
+import javax.swing.ButtonGroup;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import org.jfree.chart.ChartUtilities;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
@@ -40,6 +49,100 @@ import org.jfree.data.xy.XYSeriesCollection;
  * @author 1412625
  */
 public class Techtonic extends javax.swing.JFrame {
+
+    static private JFreeChart chart;
+    static private String Orientation;
+    static private String xLabel;
+    static private String yLabel;
+    static private Color bgColor;
+    static private String fileFormat = "jpg";
+    static private String defaultDirectory = "H:\\Desktop\\files";
+    static private String fileName = "Brude";
+    static private int eWidth = 800;
+    static private int eHeight = 600;
+
+    public static String getFileFormat() {
+        return fileFormat;
+    }
+
+    public static void setFileFormat(String fileFormat) {
+        Techtonic.fileFormat = fileFormat;
+    }
+
+    public static String getDefaultDirectory() {
+        return defaultDirectory;
+    }
+
+    public static void setDefaultDirectory(String defaultDirectory) {
+        Techtonic.defaultDirectory = defaultDirectory;
+    }
+
+    public static String getFileName() {
+        return fileName;
+    }
+
+    public static void setFileName(String fileName) {
+        Techtonic.fileName = fileName;
+    }
+
+    public static int geteWidth() {
+        return eWidth;
+    }
+
+    public static void seteWidth(int eWidth) {
+        Techtonic.eWidth = eWidth;
+    }
+
+    public static int geteHeight() {
+        return eHeight;
+    }
+
+    public static void seteHeight(int eHeight) {
+        Techtonic.eHeight = eHeight;
+    }
+
+    public static JFreeChart getChart() {
+        return chart;
+    }
+
+    public static String getOrientation() {
+        return Orientation;
+    }
+
+    public DefaultComboBoxModel<String> getaModel() {
+        return aModel;
+    }
+
+    public Vector<String> getArrName() {
+        return arrName;
+    }
+    
+    
+
+    public static void setChart(JFreeChart ch) {
+        Techtonic.chart = ch;
+    }
+
+    public static void setOrientation(String Orientation) {
+        Techtonic.Orientation = Orientation;
+    }
+
+    public static void setxLabel(String xLabel) {
+        Techtonic.xLabel = xLabel;
+    }
+
+    public static void setyLabel(String yLabel) {
+        Techtonic.yLabel = yLabel;
+    }
+
+    public static void setBgColor(Color bgColor) {
+        Techtonic.bgColor = bgColor;
+    }
+
+    public static void setForeColor(Color foreColor) {
+        Techtonic.foreColor = foreColor;
+    }
+    static private Color foreColor;
 
     /**
      * Creates new form Techtonic
@@ -60,9 +163,11 @@ public class Techtonic extends javax.swing.JFrame {
     private void initComponents() {
 
         titleBarPanel = new javax.swing.JPanel();
-        lblTitle = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         toolBarPanel = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        maxBtn = new javax.swing.JButton();
+        saveBtn = new javax.swing.JButton();
+        exportBtn = new javax.swing.JButton();
         operatorPanel = new javax.swing.JPanel();
         combOperator = new javax.swing.JComboBox<>();
         lblOperators = new javax.swing.JLabel();
@@ -74,6 +179,8 @@ public class Techtonic extends javax.swing.JFrame {
         jspProperty = new javax.swing.JScrollPane();
         tblProperty = new javax.swing.JTable();
         displayAreaPanel = new javax.swing.JPanel();
+        statusBar = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         menBarTectTonic = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jmiNew = new javax.swing.JMenuItem();
@@ -88,7 +195,7 @@ public class Techtonic extends javax.swing.JFrame {
         jMenu4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Techtonic");
+        setTitle("Well Data Processor -Techtonic-");
         setName("TechTonic"); // NOI18N
         setPreferredSize(new java.awt.Dimension(100, 200));
         setSize(new java.awt.Dimension(1000, 1500));
@@ -96,9 +203,8 @@ public class Techtonic extends javax.swing.JFrame {
 
         titleBarPanel.setBackground(new java.awt.Color(0, 0, 0));
 
-        lblTitle.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(0, 0, 255));
-        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/techtonic/images/rlogo1.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout titleBarPanelLayout = new javax.swing.GroupLayout(titleBarPanel);
         titleBarPanel.setLayout(titleBarPanelLayout);
@@ -106,38 +212,67 @@ public class Techtonic extends javax.swing.JFrame {
             titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(titleBarPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblTitle)
-                .addContainerGap(1142, Short.MAX_VALUE))
+                .addComponent(jLabel2)
+                .addContainerGap(1014, Short.MAX_VALUE))
         );
         titleBarPanelLayout.setVerticalGroup(
             titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, titleBarPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblTitle)
-                .addContainerGap())
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(20, 20, 20))
         );
 
-        getContentPane().add(titleBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 1280, -1));
+        getContentPane().add(titleBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 1270, 80));
 
         toolBarPanel.setPreferredSize(new java.awt.Dimension(100, 65));
 
-        jButton1.setIcon(new javax.swing.ImageIcon("H:\\NetBeansProjects\\CMM021-Project-Team\\src\\techtonic\\images\\max.png")); // NOI18N
+        maxBtn.setIcon(new javax.swing.ImageIcon("H:\\NetBeansProjects\\CMM021-Project-Team\\src\\techtonic\\images\\max.png")); // NOI18N
+        maxBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                maxBtnActionPerformed(evt);
+            }
+        });
+
+        saveBtn.setText("Save");
+        saveBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveBtnActionPerformed(evt);
+            }
+        });
+
+        exportBtn.setText("Export");
+        exportBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exportBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout toolBarPanelLayout = new javax.swing.GroupLayout(toolBarPanel);
         toolBarPanel.setLayout(toolBarPanelLayout);
         toolBarPanelLayout.setHorizontalGroup(
             toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, toolBarPanelLayout.createSequentialGroup()
-                .addContainerGap(494, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(513, 513, 513))
+                .addContainerGap(680, Short.MAX_VALUE)
+                .addComponent(maxBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(exportBtn)
+                .addGap(370, 370, 370))
         );
         toolBarPanelLayout.setVerticalGroup(
             toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+            .addGroup(toolBarPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(maxBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(saveBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(exportBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(toolBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 111, 1110, -1));
+        getContentPane().add(toolBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 101, 1270, 70));
 
         operatorPanel.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -161,7 +296,7 @@ public class Techtonic extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lblOperators)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(combOperator, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(combOperator, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         operatorPanelLayout.setVerticalGroup(
@@ -174,7 +309,7 @@ public class Techtonic extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        getContentPane().add(operatorPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 182, 390, -1));
+        getContentPane().add(operatorPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 182, 330, -1));
 
         jspWell.setPreferredSize(new java.awt.Dimension(1173, 2263));
 
@@ -189,12 +324,12 @@ public class Techtonic extends javax.swing.JFrame {
         );
         btnWellPanelLayout.setVerticalGroup(
             btnWellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 442, Short.MAX_VALUE)
+            .addGap(0, 480, Short.MAX_VALUE)
         );
 
         jspWell.setViewportView(btnWellPanel);
 
-        getContentPane().add(jspWell, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 321, 180, 450));
+        getContentPane().add(jspWell, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 281, 180, 490));
 
         lblOperatorName.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
         lblOperatorName.setPreferredSize(new java.awt.Dimension(176, 62));
@@ -209,16 +344,16 @@ public class Techtonic extends javax.swing.JFrame {
         wellBorePanel.setLayout(wellBorePanelLayout);
         wellBorePanelLayout.setHorizontalGroup(
             wellBorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 208, Short.MAX_VALUE)
+            .addGap(0, 146, Short.MAX_VALUE)
         );
         wellBorePanelLayout.setVerticalGroup(
             wellBorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 528, Short.MAX_VALUE)
+            .addGap(0, 526, Short.MAX_VALUE)
         );
 
         jspWellBore.setViewportView(wellBorePanel);
 
-        getContentPane().add(jspWellBore, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 245, 210, 530));
+        getContentPane().add(jspWellBore, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 245, 150, 530));
 
         jspProperty.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
         jspProperty.setPreferredSize(new java.awt.Dimension(1173, 2263));
@@ -239,7 +374,7 @@ public class Techtonic extends javax.swing.JFrame {
                 {null, null}
             },
             new String [] {
-                "Properties", ""
+                "Properties", "Values"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -251,8 +386,12 @@ public class Techtonic extends javax.swing.JFrame {
             }
         });
         jspProperty.setViewportView(tblProperty);
+        if (tblProperty.getColumnModel().getColumnCount() > 0) {
+            tblProperty.getColumnModel().getColumn(0).setResizable(false);
+            tblProperty.getColumnModel().getColumn(1).setResizable(false);
+        }
 
-        getContentPane().add(jspProperty, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 180, 145, 593));
+        getContentPane().add(jspProperty, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 183, 145, 250));
 
         displayAreaPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -260,14 +399,22 @@ public class Techtonic extends javax.swing.JFrame {
         displayAreaPanel.setLayout(displayAreaPanelLayout);
         displayAreaPanelLayout.setHorizontalGroup(
             displayAreaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 708, Short.MAX_VALUE)
+            .addGap(0, 768, Short.MAX_VALUE)
         );
         displayAreaPanelLayout.setVerticalGroup(
             displayAreaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 591, Short.MAX_VALUE)
         );
 
-        getContentPane().add(displayAreaPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 182, 710, 593));
+        getContentPane().add(displayAreaPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 182, 770, 593));
+
+        statusBar.setForeground(new java.awt.Color(0, 51, 204));
+        statusBar.setText(" ");
+        statusBar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(statusBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 790, 1260, -1));
+
+        jButton1.setText("Set Properties");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 450, 140, -1));
 
         jMenu1.setText("File");
 
@@ -333,7 +480,7 @@ public class Techtonic extends javax.swing.JFrame {
 
         setJMenuBar(menBarTectTonic);
 
-        setSize(new java.awt.Dimension(1305, 846));
+        setSize(new java.awt.Dimension(1305, 870));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -365,8 +512,41 @@ public class Techtonic extends javax.swing.JFrame {
 
     private void jmiExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jmiExitMouseClicked
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_jmiExitMouseClicked
+
+    private void maxBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maxBtnActionPerformed
+
+        ChartFrame frame = new ChartFrame(
+                "XY graph using JFreeChart", chart);
+        frame.pack();
+        frame.setVisible(true);
+
+    }//GEN-LAST:event_maxBtnActionPerformed
+
+    
+    public static JLabel getStatusBar(){
+        return statusBar;
+    }
+    private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
+        try {
+            ChartUtilities.saveChartAsJPEG(
+                    new File(defaultDirectory, fileName+"."+fileFormat), chart, 800, 600);
+            statusBar.setForeground(Color.blue);
+                    statusBar.setText("File Saved");
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Problem saving this file");
+            statusBar.setForeground(Color.red);
+            statusBar.setText("File not saved");
+        }
+
+    }//GEN-LAST:event_saveBtnActionPerformed
+
+    private void exportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportBtnActionPerformed
+
+            Exports ex = new Exports(this, true);
+            ex.setVisible(true);   
+    }//GEN-LAST:event_exportBtnActionPerformed
     private void loadwellBtnPanel(String op) {
         ArrayList<WitsmlWell> welllist = new ArrayList();
         for (int x = 0; x < wells.size(); x++) {
@@ -418,13 +598,12 @@ public class Techtonic extends javax.swing.JFrame {
                 wellBorePanel.add(btnWellbore);
 
                 btnWellbore.addActionListener(new WellBoreListener(i, wellbore, displayAreaPanel));
+
             }
             repaint();
             //WitsmlWellbore wellbore = wellbores.get(0);
         }
     }
-
-
 
     /**
      * @param args the command line arguments
@@ -495,7 +674,9 @@ public class Techtonic extends javax.swing.JFrame {
     private javax.swing.JPanel btnWellPanel;
     private javax.swing.JComboBox<String> combOperator;
     private javax.swing.JPanel displayAreaPanel;
+    private javax.swing.JButton exportBtn;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -512,9 +693,11 @@ public class Techtonic extends javax.swing.JFrame {
     private javax.swing.JScrollPane jspWellBore;
     private javax.swing.JLabel lblOperatorName;
     private javax.swing.JLabel lblOperators;
-    private javax.swing.JLabel lblTitle;
+    private javax.swing.JButton maxBtn;
     private javax.swing.JMenuBar menBarTectTonic;
     private javax.swing.JPanel operatorPanel;
+    private javax.swing.JButton saveBtn;
+    private static javax.swing.JLabel statusBar;
     private javax.swing.JTable tblProperty;
     private javax.swing.JPanel titleBarPanel;
     private javax.swing.JPanel toolBarPanel;
