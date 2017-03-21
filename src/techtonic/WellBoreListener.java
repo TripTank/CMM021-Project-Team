@@ -12,6 +12,7 @@ import java.awt.event.ActionListener;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
+import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
@@ -37,11 +38,17 @@ public class WellBoreListener implements ActionListener {
     int talker = 0;
     JFreeChart charts;
     XYSeries seriesMagger;
+    private final JComboBox xAxis;
+    private final JComboBox yAxis;
+    private final JPanel xyAxis;
 
-    public WellBoreListener(int id, WitsmlWellbore wellbore, JPanel pan) {
+    public WellBoreListener(int id, WitsmlWellbore wellbore, JPanel pan, JComboBox xAxis, JComboBox yAxis, JPanel xyAxis) {
         this.id = id;
         this.wellbore = wellbore;
         this.seriesMagger = seriesMagger;
+        this.xAxis = xAxis;
+        this.yAxis = yAxis;
+        this.xyAxis = xyAxis;
         chartPanel = pan;
         talker++;
         System.out.print("talker created   ==>>>  "+talker);
@@ -90,6 +97,9 @@ public class WellBoreListener implements ActionListener {
                         + "north:  " + station.getNorth() + "  "
                         + "east:  " + station.getEast() + "  "
                         + "gravity:  " + station.getInclination() + "  "
+                        + " Turn Rate :"+ station.getTurnRate() + " "
+                        + " "+ station.getVerticalSectionDistance() + " "
+                        + " "+ station.
                 );
             }
             // create a DataSet object for storing xy data 
@@ -99,16 +109,18 @@ public class WellBoreListener implements ActionListener {
             for (WitsmlTrajectoryStation station : stationsAsList) {
                 
                 Value tvd = station.getTvd();
+                
                 if(tvd == null){
                 continue;
                 }
-                Value md = station.getTvd();
+                Value md = station.getNorth();
                 if(md == null){
                     continue;
                 }
            //     System.out.println(count + " : ===>> tvd : "+tvd.getValue()+ "; md "+md.getValue());
-                series.add(tvd.getValue(), md.getValue());
+                series.add(md.getValue(), tvd.getValue());
                 count++;
+                xAxis.
             }
             
             XYSeriesCollection data = new XYSeriesCollection();

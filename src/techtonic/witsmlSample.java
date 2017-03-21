@@ -133,15 +133,20 @@ public class witsmlSample {
         /* the Curve at index 0 in that list will always be
          * depth for a depth-based log, or time for a time-based log */
         WitsmlLogCurve depth = curves.get(0);
+        System.out.print("Depth : " + depth.toString());
         /* the other Curves at the other indices are the measurements taken at that depth or time */
         WitsmlLogCurve measurement = curves.get(1);
+        System.out.print("\n Measurement : " + measurement.toString());
+        
+         WitsmlLogCurve pressure = curves.get(2);
+        System.out.print(" \nPressure : " + pressure.toString());
         
         System.out.println("\n\n****  Log Curves  ****");
         /* here we loop through the list of WitsmLogCurves's displaying a few of 
          * the attributes (there are may more e.g. see curve.toString() ) */
         for(WitsmlLogCurve c : curves){
             System.out.println(
-                "curveNo: " + c.getCurveNo() + "\n" +
+                "\ncurveNo: " + c.getCurveNo() + "\n" +
                 "name: " + c.getName() + "\n" +
                 "description:  " + c.getDescription() + "\n" +
                 "unit:  " + c.getUnit()+ "\n" +
