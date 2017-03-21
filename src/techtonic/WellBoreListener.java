@@ -99,7 +99,7 @@ public class WellBoreListener implements ActionListener {
                         + "gravity:  " + station.getInclination() + "  "
                         + " Turn Rate :"+ station.getTurnRate() + " "
                         + " "+ station.getVerticalSectionDistance() + " "
-                        + " "+ station.
+                        + " "+ station.getAzimuth()
                 );
             }
             // create a DataSet object for storing xy data 
@@ -120,7 +120,7 @@ public class WellBoreListener implements ActionListener {
            //     System.out.println(count + " : ===>> tvd : "+tvd.getValue()+ "; md "+md.getValue());
                 series.add(md.getValue(), tvd.getValue());
                 count++;
-                xAxis.
+                
             }
             
             XYSeriesCollection data = new XYSeriesCollection();
