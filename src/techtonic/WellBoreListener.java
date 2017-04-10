@@ -12,6 +12,7 @@ import java.awt.event.ActionListener;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import org.jfree.chart.ChartFactory;
@@ -40,18 +41,21 @@ public class WellBoreListener implements ActionListener {
     XYSeries seriesMagger;
     private final JComboBox xAxis;
     private final JComboBox yAxis;
-    private final JPanel xyAxis;
 
-    public WellBoreListener(int id, WitsmlWellbore wellbore, JPanel pan, JComboBox xAxis, JComboBox yAxis, JPanel xyAxis) {
+    String[] wellborePlot = {"Tvd","MD","North","Gravity","Turn Rate","Vertical section Distance","Azimuth","Build Rate","Dmd","Dtvd","Dip Angle Uncertainty","Dls","Gravitational Field Reference","Gravitational Uncertinty","Station No.","Time","Tool Face Gravitational angle","Tool Face Magnetic Angle"};
+
+    public WellBoreListener(int id, WitsmlWellbore wellbore, JPanel pan, JComboBox xAxis, JComboBox yAxis) {
         this.id = id;
         this.wellbore = wellbore;
         this.seriesMagger = seriesMagger;
         this.xAxis = xAxis;
         this.yAxis = yAxis;
-        this.xyAxis = xyAxis;
+        
         chartPanel = pan;
         talker++;
-        System.out.print("talker created   ==>>>  "+talker);
+        Arrays.sort(wellborePlot);
+        
+     //   System.out.print("talker created   ==>>>  "+talker);
    
     }
 
@@ -119,8 +123,7 @@ public class WellBoreListener implements ActionListener {
                 }
            //     System.out.println(count + " : ===>> tvd : "+tvd.getValue()+ "; md "+md.getValue());
                 series.add(md.getValue(), tvd.getValue());
-                count++;
-                
+                count++;               
             }
             
             XYSeriesCollection data = new XYSeriesCollection();
@@ -131,21 +134,22 @@ public class WellBoreListener implements ActionListener {
                     "Line Chart", // chart title
                     "x", "y", // x and y axis labels
                     data); // data
-            chart.setBackgroundPaint(Color.BLACK);
+            
 // display the chart on a ChartFrame...
 //            ChartFrame frame = new ChartFrame(
 //                    "XY graph using JFreeChart", chart);
 //            frame.pack();
 //            frame.setVisible(true);
             Techtonic.setChart(chart);
+        Techtonic.setcurrentWitsmlTrajectoryStation(stationsAsList);
           
             ChartPanel cp = new ChartPanel(chart);
             cp.setMouseZoomable(true, true);
             chartPanel.setLayout(new java.awt.BorderLayout());
             chartPanel.add(cp,BorderLayout.CENTER);
             chartPanel.validate();        
-            System.out.println("");
-            System.out.println("");
+          //  System.out.println("");
+          //  System.out.println("");
         }
     }
 

@@ -5,6 +5,7 @@
  */
 package techtonic;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -27,7 +28,13 @@ import org.jwitsml.WitsmlWell;
 import org.jwitsml.WitsmlWellbore;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
 import org.jfree.chart.ChartUtilities;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+import org.jwitsml.Value;
+import org.jwitsml.WitsmlTrajectoryStation;
 
 /**
  *
@@ -40,11 +47,16 @@ public class Techtonic extends javax.swing.JFrame {
     static private String xLabel;
     static private String yLabel;
     static private Color bgColor;
+    static private Color foreColor;
     static private String fileFormat = "jpg";
     static private String defaultDirectory = "H:\\Desktop\\files";
     static private String fileName = "Brude";
     static private int eWidth = 800;
     static private int eHeight = 600;
+    static private List<WitsmlTrajectoryStation> currentWitsmlTrajectoryStation;
+    
+    
+    
 
     public static String getFileFormat() {
         return fileFormat;
@@ -101,9 +113,6 @@ public class Techtonic extends javax.swing.JFrame {
     public Vector<String> getArrName() {
         return arrName;
     }
-    
-    
-
     public static void setChart(JFreeChart ch) {
         Techtonic.chart = ch;
     }
@@ -127,7 +136,11 @@ public class Techtonic extends javax.swing.JFrame {
     public static void setForeColor(Color foreColor) {
         Techtonic.foreColor = foreColor;
     }
-    static private Color foreColor;
+ 
+    public static void setcurrentWitsmlTrajectoryStation(List<WitsmlTrajectoryStation> stations){
+        currentWitsmlTrajectoryStation = stations;
+    }
+    
 
     /**
      * Creates new form Techtonic
@@ -187,7 +200,7 @@ public class Techtonic extends javax.swing.JFrame {
         jMenu4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Well Data Processor -Techtonic-");
+        setTitle("Well Data Processor -TechTonic");
         setName("TechTonic"); // NOI18N
         setPreferredSize(new java.awt.Dimension(100, 200));
         setSize(new java.awt.Dimension(1000, 1500));
@@ -251,7 +264,6 @@ public class Techtonic extends javax.swing.JFrame {
 
         btnRender.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnRender.setText("Render");
-        btnRender.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnRender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRenderActionPerformed(evt);
@@ -277,21 +289,17 @@ public class Techtonic extends javax.swing.JFrame {
         );
         axisPanelLayout.setVerticalGroup(
             axisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, axisPanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(axisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRender, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jcbY_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblYAxis)
-                    .addComponent(jcbX_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblXAxis))
-                .addGap(57, 57, 57))
+            .addGroup(axisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(btnRender, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jcbY_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblYAxis)
+                .addComponent(jcbX_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblXAxis))
         );
 
         utilityPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Uitility", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 12))); // NOI18N
 
         maxBtn.setIcon(new javax.swing.ImageIcon("H:\\NetBeansProjects\\CMM021-Project-Team\\src\\techtonic\\images\\max.png")); // NOI18N
-        maxBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         maxBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 maxBtnActionPerformed(evt);
@@ -300,7 +308,6 @@ public class Techtonic extends javax.swing.JFrame {
 
         saveBtn.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         saveBtn.setText("Save");
-        saveBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         saveBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saveBtnActionPerformed(evt);
@@ -309,7 +316,6 @@ public class Techtonic extends javax.swing.JFrame {
 
         exportBtn.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         exportBtn.setText("Export");
-        exportBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         exportBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exportBtnActionPerformed(evt);
@@ -321,29 +327,29 @@ public class Techtonic extends javax.swing.JFrame {
         utilityPanelLayout.setHorizontalGroup(
             utilityPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, utilityPanelLayout.createSequentialGroup()
-                .addContainerGap(24, Short.MAX_VALUE)
+                .addContainerGap()
                 .addComponent(maxBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(saveBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(exportBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+                .addComponent(exportBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
+                .addContainerGap())
         );
         utilityPanelLayout.setVerticalGroup(
             utilityPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(utilityPanelLayout.createSequentialGroup()
-                .addGroup(utilityPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(utilityPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(maxBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(saveBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(exportBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(saveBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(exportBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
 
         javax.swing.GroupLayout toolBarPanelLayout = new javax.swing.GroupLayout(toolBarPanel);
         toolBarPanel.setLayout(toolBarPanelLayout);
         toolBarPanelLayout.setHorizontalGroup(
             toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, toolBarPanelLayout.createSequentialGroup()
+            .addGroup(toolBarPanelLayout.createSequentialGroup()
                 .addContainerGap(222, Short.MAX_VALUE)
                 .addComponent(axisPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -351,10 +357,9 @@ public class Techtonic extends javax.swing.JFrame {
         );
         toolBarPanelLayout.setVerticalGroup(
             toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(axisPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(toolBarPanelLayout.createSequentialGroup()
-                .addGroup(toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(axisPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(utilityPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(utilityPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -395,7 +400,7 @@ public class Techtonic extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        getContentPane().add(operatorPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 182, 340, -1));
+        getContentPane().add(operatorPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 187, 340, 50));
 
         jspWell.setPreferredSize(new java.awt.Dimension(1173, 2263));
 
@@ -476,10 +481,10 @@ public class Techtonic extends javax.swing.JFrame {
         );
         displayAreaPanelLayout.setVerticalGroup(
             displayAreaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 589, Short.MAX_VALUE)
+            .addGap(0, 586, Short.MAX_VALUE)
         );
 
-        getContentPane().add(displayAreaPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 182, 770, 593));
+        getContentPane().add(displayAreaPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 185, 770, 590));
 
         statusBar.setForeground(new java.awt.Color(0, 51, 204));
         statusBar.setText(" ");
@@ -487,7 +492,6 @@ public class Techtonic extends javax.swing.JFrame {
         getContentPane().add(statusBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 790, 1260, -1));
 
         jButton1.setText("Set Properties");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 450, 140, -1));
 
         jspWellBore.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -643,7 +647,55 @@ public class Techtonic extends javax.swing.JFrame {
     }//GEN-LAST:event_exportBtnActionPerformed
 
     private void btnRenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRenderActionPerformed
-        // TODO add your handling code here:
+         // get the axis first
+        XYSeries series = new XYSeries("series name");
+        
+        
+        for (WitsmlTrajectoryStation station : currentWitsmlTrajectoryStation) {
+                
+                Value tvd = station.getTvd();
+                
+                if(tvd == null){
+                continue;
+                }
+                Value md = station.getNorth();
+                if(md == null){
+                    continue;
+                }
+                series.add(md.getValue(), tvd.getValue());                          
+            }
+            XYSeriesCollection data = new XYSeriesCollection();
+            data.addSeries(series);
+            
+            JFreeChart chart = ChartFactory.createXYLineChart(
+                    "Line Chart", // chart title
+                    "x", "y", // x and y axis labels
+                    data); // data
+            
+            ChartPanel cp = new ChartPanel(chart);
+            cp.setMouseZoomable(true, true);
+            displayAreaPanel.setLayout(new java.awt.BorderLayout());
+            displayAreaPanel.add(cp,BorderLayout.CENTER);
+            displayAreaPanel.validate();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }//GEN-LAST:event_btnRenderActionPerformed
 
     private void jcbX_AxisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbX_AxisActionPerformed
@@ -662,8 +714,7 @@ public class Techtonic extends javax.swing.JFrame {
         for (int x = 0; x < wells.size(); x++) {
             if (op.equals(wells.get(x).getOperator())) {
                 welllist.add(wells.get(x));
-
-            }
+             }
         }
         // load the well panel with well on a button
         int welllistsize = welllist.size();
@@ -708,7 +759,7 @@ public class Techtonic extends javax.swing.JFrame {
                 btnWellbore.setBounds(5, ((100 * i) + 5), wellBorePanel.getWidth() - 20, 100);
                 wellBorePanel.add(btnWellbore);
 
-                btnWellbore.addActionListener(new WellBoreListener(i, wellbore, displayAreaPanel, jcbX_Axis, jcbY_Axis, axisPanel));
+                btnWellbore.addActionListener(new WellBoreListener(i, wellbore, displayAreaPanel, jcbX_Axis, jcbY_Axis));
 
             }
             repaint();
