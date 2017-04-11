@@ -54,9 +54,6 @@ public class Techtonic extends javax.swing.JFrame {
     static private int eWidth = 800;
     static private int eHeight = 600;
     static private List<WitsmlTrajectoryStation> currentWitsmlTrajectoryStation;
-    
-    
-    
 
     public static String getFileFormat() {
         return fileFormat;
@@ -105,6 +102,7 @@ public class Techtonic extends javax.swing.JFrame {
     public static String getOrientation() {
         return Orientation;
     }
+    private WitsmlWell currentWell;
 
     public DefaultComboBoxModel<String> getaModel() {
         return aModel;
@@ -113,6 +111,7 @@ public class Techtonic extends javax.swing.JFrame {
     public Vector<String> getArrName() {
         return arrName;
     }
+
     public static void setChart(JFreeChart ch) {
         Techtonic.chart = ch;
     }
@@ -136,11 +135,10 @@ public class Techtonic extends javax.swing.JFrame {
     public static void setForeColor(Color foreColor) {
         Techtonic.foreColor = foreColor;
     }
- 
-    public static void setcurrentWitsmlTrajectoryStation(List<WitsmlTrajectoryStation> stations){
+
+    public static void setcurrentWitsmlTrajectoryStation(List<WitsmlTrajectoryStation> stations) {
         currentWitsmlTrajectoryStation = stations;
     }
-    
 
     /**
      * Creates new form Techtonic
@@ -173,19 +171,20 @@ public class Techtonic extends javax.swing.JFrame {
         maxBtn = new javax.swing.JButton();
         saveBtn = new javax.swing.JButton();
         exportBtn = new javax.swing.JButton();
-        operatorPanel = new javax.swing.JPanel();
-        combOperator = new javax.swing.JComboBox<>();
-        lblOperators = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        wellCombo = new javax.swing.JComboBox<>();
         jspWell = new javax.swing.JScrollPane();
         btnWellPanel = new javax.swing.JPanel();
-        lblOperatorName = new javax.swing.JLabel();
         jspProperty = new javax.swing.JScrollPane();
         tblProperty = new javax.swing.JTable();
         displayAreaPanel = new javax.swing.JPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        displayAreaPanel1 = new javax.swing.JPanel();
         statusBar = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jspWellBore = new javax.swing.JScrollPane();
-        wellBorePanel = new javax.swing.JPanel();
+        btnSetProperties = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        trajectoryPanel = new javax.swing.JPanel();
+        logsPanel = new javax.swing.JPanel();
         menBarTectTonic = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jmiNew = new javax.swing.JMenuItem();
@@ -218,7 +217,7 @@ public class Techtonic extends javax.swing.JFrame {
             .addGroup(titleBarPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2)
-                .addContainerGap(1014, Short.MAX_VALUE))
+                .addContainerGap(1321, Short.MAX_VALUE))
         );
         titleBarPanelLayout.setVerticalGroup(
             titleBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -228,15 +227,20 @@ public class Techtonic extends javax.swing.JFrame {
                 .addGap(20, 20, 20))
         );
 
-        getContentPane().add(titleBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 1270, 80));
+        getContentPane().add(titleBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 1620, 80));
 
+        toolBarPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         toolBarPanel.setPreferredSize(new java.awt.Dimension(100, 65));
 
-        axisPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Plot", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 12))); // NOI18N
-        axisPanel.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        axisPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Plot", 0, 0, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        axisPanel.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        axisPanel.setMinimumSize(new java.awt.Dimension(100, 100));
+        axisPanel.setPreferredSize(new java.awt.Dimension(699, 99));
 
         jcbX_Axis.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jcbX_Axis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jcbX_Axis.setBorder(null);
+        jcbX_Axis.setMinimumSize(new java.awt.Dimension(69, 20));
         jcbX_Axis.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 jcbX_AxisItemStateChanged(evt);
@@ -250,20 +254,23 @@ public class Techtonic extends javax.swing.JFrame {
 
         jcbY_Axis.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jcbY_Axis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jcbY_Axis.setBorder(null);
+        jcbY_Axis.setMinimumSize(new java.awt.Dimension(69, 20));
         jcbY_Axis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jcbY_AxisActionPerformed(evt);
             }
         });
 
-        lblXAxis.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        lblXAxis.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblXAxis.setText("X-Axis");
 
-        lblYAxis.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        lblYAxis.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblYAxis.setText("Y-Axis");
 
-        btnRender.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnRender.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnRender.setText("Render");
+        btnRender.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         btnRender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRenderActionPerformed(evt);
@@ -277,45 +284,51 @@ public class Techtonic extends javax.swing.JFrame {
             .addGroup(axisPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblXAxis)
-                .addGap(28, 28, 28)
-                .addComponent(jcbX_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addComponent(lblYAxis)
-                .addGap(55, 55, 55)
-                .addComponent(jcbY_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
-                .addComponent(btnRender, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+                .addGap(18, 18, 18)
+                .addComponent(jcbX_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblYAxis, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jcbY_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnRender, javax.swing.GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)
+                .addGap(12, 12, 12))
         );
         axisPanelLayout.setVerticalGroup(
             axisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(axisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(btnRender, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(jcbY_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(lblYAxis)
-                .addComponent(jcbX_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addComponent(lblXAxis))
+            .addGroup(axisPanelLayout.createSequentialGroup()
+                .addGap(9, 9, 9)
+                .addGroup(axisPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblXAxis, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jcbX_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblYAxis)
+                    .addComponent(jcbY_Axis, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRender, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        utilityPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Uitility", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 12))); // NOI18N
+        utilityPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Uitility", 0, 0, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
         maxBtn.setIcon(new javax.swing.ImageIcon("H:\\NetBeansProjects\\CMM021-Project-Team\\src\\techtonic\\images\\max.png")); // NOI18N
+        maxBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         maxBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 maxBtnActionPerformed(evt);
             }
         });
 
-        saveBtn.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        saveBtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         saveBtn.setText("Save");
+        saveBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         saveBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saveBtnActionPerformed(evt);
             }
         });
 
-        exportBtn.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        exportBtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         exportBtn.setText("Export");
+        exportBtn.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
         exportBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exportBtnActionPerformed(evt);
@@ -345,62 +358,62 @@ public class Techtonic extends javax.swing.JFrame {
                 .addGap(0, 0, 0))
         );
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Wells", 0, 0, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+
+        wellCombo.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        wellCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        wellCombo.setBorder(null);
+        wellCombo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                wellComboActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(wellCombo, 0, 404, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(wellCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout toolBarPanelLayout = new javax.swing.GroupLayout(toolBarPanel);
         toolBarPanel.setLayout(toolBarPanelLayout);
         toolBarPanelLayout.setHorizontalGroup(
             toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(toolBarPanelLayout.createSequentialGroup()
-                .addContainerGap(222, Short.MAX_VALUE)
-                .addComponent(axisPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(utilityPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(axisPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 887, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(utilityPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6))
         );
         toolBarPanelLayout.setVerticalGroup(
             toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(axisPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(toolBarPanelLayout.createSequentialGroup()
-                .addComponent(utilityPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(toolBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 101, 1270, 70));
-
-        operatorPanel.setBackground(new java.awt.Color(0, 0, 0));
-
-        combOperator.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        combOperator.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        combOperator.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                combOperatorActionPerformed(evt);
-            }
-        });
-
-        lblOperators.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        lblOperators.setForeground(new java.awt.Color(0, 153, 153));
-        lblOperators.setText("Operators");
-
-        javax.swing.GroupLayout operatorPanelLayout = new javax.swing.GroupLayout(operatorPanel);
-        operatorPanel.setLayout(operatorPanelLayout);
-        operatorPanelLayout.setHorizontalGroup(
-            operatorPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, operatorPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblOperators)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(combOperator, 0, 249, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        operatorPanelLayout.setVerticalGroup(
-            operatorPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(operatorPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(operatorPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(combOperator, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(lblOperators))
+                .addGroup(toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(utilityPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(toolBarPanelLayout.createSequentialGroup()
+                        .addGroup(toolBarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(axisPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
-        getContentPane().add(operatorPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 187, 340, 50));
+        getContentPane().add(toolBarPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 101, 1620, 120));
 
         jspWell.setPreferredSize(new java.awt.Dimension(1173, 2263));
 
@@ -411,20 +424,16 @@ public class Techtonic extends javax.swing.JFrame {
         btnWellPanel.setLayout(btnWellPanelLayout);
         btnWellPanelLayout.setHorizontalGroup(
             btnWellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 164, Short.MAX_VALUE)
+            .addGap(0, 214, Short.MAX_VALUE)
         );
         btnWellPanelLayout.setVerticalGroup(
             btnWellPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 484, Short.MAX_VALUE)
+            .addGap(0, 564, Short.MAX_VALUE)
         );
 
         jspWell.setViewportView(btnWellPanel);
 
-        getContentPane().add(jspWell, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 170, 490));
-
-        lblOperatorName.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        lblOperatorName.setPreferredSize(new java.awt.Dimension(176, 62));
-        getContentPane().add(lblOperatorName, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 248, 160, 30));
+        getContentPane().add(jspWell, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 220, 570));
 
         jspProperty.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0))));
         jspProperty.setPreferredSize(new java.awt.Dimension(1173, 2263));
@@ -469,51 +478,101 @@ public class Techtonic extends javax.swing.JFrame {
             tblProperty.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        getContentPane().add(jspProperty, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 183, 145, 250));
+        getContentPane().add(jspProperty, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 240, 290, 250));
 
         displayAreaPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+
+        jTabbedPane1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout displayAreaPanel1Layout = new javax.swing.GroupLayout(displayAreaPanel1);
+        displayAreaPanel1.setLayout(displayAreaPanel1Layout);
+        displayAreaPanel1Layout.setHorizontalGroup(
+            displayAreaPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 787, Short.MAX_VALUE)
+        );
+        displayAreaPanel1Layout.setVerticalGroup(
+            displayAreaPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 503, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Start Page", displayAreaPanel1);
 
         javax.swing.GroupLayout displayAreaPanelLayout = new javax.swing.GroupLayout(displayAreaPanel);
         displayAreaPanel.setLayout(displayAreaPanelLayout);
         displayAreaPanelLayout.setHorizontalGroup(
             displayAreaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 766, Short.MAX_VALUE)
+            .addGroup(displayAreaPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1)
+                .addContainerGap())
         );
         displayAreaPanelLayout.setVerticalGroup(
             displayAreaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 586, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, displayAreaPanelLayout.createSequentialGroup()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
-        getContentPane().add(displayAreaPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 185, 770, 590));
+        getContentPane().add(displayAreaPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 240, 840, 570));
 
         statusBar.setForeground(new java.awt.Color(0, 51, 204));
         statusBar.setText(" ");
         statusBar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        getContentPane().add(statusBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 790, 1260, -1));
+        getContentPane().add(statusBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 830, 1620, -1));
 
-        jButton1.setText("Set Properties");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 450, 140, -1));
+        btnSetProperties.setText("Set Properties");
+        getContentPane().add(btnSetProperties, new org.netbeans.lib.awtextra.AbsoluteConstraints(1340, 510, 290, 60));
 
-        jspWellBore.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jspWellBore.setPreferredSize(wellBorePanel.getPreferredSize());
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        wellBorePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        wellBorePanel.setPreferredSize(new java.awt.Dimension(0, 0));
+        trajectoryPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Trajectory"));
 
-        javax.swing.GroupLayout wellBorePanelLayout = new javax.swing.GroupLayout(wellBorePanel);
-        wellBorePanel.setLayout(wellBorePanelLayout);
-        wellBorePanelLayout.setHorizontalGroup(
-            wellBorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 174, Short.MAX_VALUE)
+        javax.swing.GroupLayout trajectoryPanelLayout = new javax.swing.GroupLayout(trajectoryPanel);
+        trajectoryPanel.setLayout(trajectoryPanelLayout);
+        trajectoryPanelLayout.setHorizontalGroup(
+            trajectoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-        wellBorePanelLayout.setVerticalGroup(
-            wellBorePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 304, Short.MAX_VALUE)
+        trajectoryPanelLayout.setVerticalGroup(
+            trajectoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 220, Short.MAX_VALUE)
         );
 
-        jspWellBore.setViewportView(wellBorePanel);
+        logsPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Logs"));
 
-        getContentPane().add(jspWellBore, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 180, 310));
+        javax.swing.GroupLayout logsPanelLayout = new javax.swing.GroupLayout(logsPanel);
+        logsPanel.setLayout(logsPanelLayout);
+        logsPanelLayout.setHorizontalGroup(
+            logsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 172, Short.MAX_VALUE)
+        );
+        logsPanelLayout.setVerticalGroup(
+            logsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 216, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(logsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(trajectoryPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(trajectoryPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(logsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 240, 230, 570));
 
         jMenu1.setText("File");
 
@@ -579,7 +638,7 @@ public class Techtonic extends javax.swing.JFrame {
 
         setJMenuBar(menBarTectTonic);
 
-        setSize(new java.awt.Dimension(1305, 870));
+        setSize(new java.awt.Dimension(1670, 982));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -596,13 +655,6 @@ public class Techtonic extends javax.swing.JFrame {
 
         }
     }//GEN-LAST:event_jmiLoadActionPerformed
-
-    private void combOperatorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combOperatorActionPerformed
-        String op = (String) combOperator.getSelectedItem();
-        lblOperatorName.setText(op);
-        loadwellBtnPanel(op);
-
-    }//GEN-LAST:event_combOperatorActionPerformed
 
     private void jmiExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiExitActionPerformed
         // TODO add your handling code here:
@@ -622,16 +674,15 @@ public class Techtonic extends javax.swing.JFrame {
 
     }//GEN-LAST:event_maxBtnActionPerformed
 
-    
-    public static JLabel getStatusBar(){
+    public static JLabel getStatusBar() {
         return statusBar;
     }
     private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
         try {
             ChartUtilities.saveChartAsJPEG(
-                    new File(defaultDirectory, fileName+"."+fileFormat), chart, 800, 600);
+                    new File(defaultDirectory, fileName + "." + fileFormat), chart, 800, 600);
             statusBar.setForeground(Color.blue);
-                    statusBar.setText("File Saved");
+            statusBar.setText("File Saved");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Problem saving this file");
             statusBar.setForeground(Color.red);
@@ -642,60 +693,42 @@ public class Techtonic extends javax.swing.JFrame {
 
     private void exportBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exportBtnActionPerformed
 
-            Exports ex = new Exports(this, true);
-            ex.setVisible(true);   
+        Exports ex = new Exports(this, true);
+        ex.setVisible(true);
     }//GEN-LAST:event_exportBtnActionPerformed
 
     private void btnRenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRenderActionPerformed
-         // get the axis first
+        // get the axis first
         XYSeries series = new XYSeries("series name");
-        
-        
+
         for (WitsmlTrajectoryStation station : currentWitsmlTrajectoryStation) {
-                
-                Value tvd = station.getTvd();
-                
-                if(tvd == null){
+
+            Value tvd = station.getTvd();
+
+            if (tvd == null) {
                 continue;
-                }
-                Value md = station.getNorth();
-                if(md == null){
-                    continue;
-                }
-                series.add(md.getValue(), tvd.getValue());                          
             }
-            XYSeriesCollection data = new XYSeriesCollection();
-            data.addSeries(series);
-            
-            JFreeChart chart = ChartFactory.createXYLineChart(
-                    "Line Chart", // chart title
-                    "x", "y", // x and y axis labels
-                    data); // data
-            
-            ChartPanel cp = new ChartPanel(chart);
-            cp.setMouseZoomable(true, true);
-            displayAreaPanel.setLayout(new java.awt.BorderLayout());
-            displayAreaPanel.add(cp,BorderLayout.CENTER);
-            displayAreaPanel.validate();
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            Value md = station.getNorth();
+            if (md == null) {
+                continue;
+            }
+            series.add(md.getValue(), tvd.getValue());
+        }
+        XYSeriesCollection data = new XYSeriesCollection();
+        data.addSeries(series);
+
+        JFreeChart chart = ChartFactory.createXYLineChart(
+                "Line Chart", // chart title
+                "x", "y", // x and y axis labels
+                data); // data
+
+        ChartPanel cp = new ChartPanel(chart);
+        cp.setMouseZoomable(true, true);
+        displayAreaPanel.setLayout(new java.awt.BorderLayout());
+        displayAreaPanel.add(cp, BorderLayout.CENTER);
+        displayAreaPanel.validate();
+
+
     }//GEN-LAST:event_btnRenderActionPerformed
 
     private void jcbX_AxisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbX_AxisActionPerformed
@@ -706,31 +739,96 @@ public class Techtonic extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jcbX_AxisItemStateChanged
 
+    private void wellComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wellComboActionPerformed
+        String op = (String) wellCombo.getSelectedItem();
+
+        loadwellBtnPanel(op);
+    }//GEN-LAST:event_wellComboActionPerformed
+
     private void jcbY_AxisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbY_AxisActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jcbY_AxisActionPerformed
+//    private void loadwellBtnPanel(String op) {
+//        ArrayList<WitsmlWell> welllist = new ArrayList();
+//        for (int x = 0; x < wells.size(); x++) {
+//            if (op.equals(wells.get(x).getOperator())) {
+//                welllist.add(wells.get(x));
+//            }
+//        }
+//        // load the well panel with well on a button
+//        int welllistsize = welllist.size();
+//        btnWellPanel.removeAll();
+//        //btnWellPanel.setLayout(new GridLayout(welllistsize, 1, 5, 5));
+//        for (int i = 0; i < welllistsize; i++) {
+//
+//            JButton btn = new JButton("<html><b>" + welllist.get(i).getName() + "</b></html>");
+//            btn.setBounds(5, 5, btnWellPanel.getWidth() - 10, 80);
+//            btn.addActionListener(new ButtonListener(btn, welllist.get(i)));
+//            btnWellPanel.add(btn);
+//
+////            repaint();
+//            JButton b = (JButton) btnWellPanel.getComponent(0);
+//            b.doClick();
+//        }
+
     private void loadwellBtnPanel(String op) {
         ArrayList<WitsmlWell> welllist = new ArrayList();
         for (int x = 0; x < wells.size(); x++) {
-            if (op.equals(wells.get(x).getOperator())) {
-                welllist.add(wells.get(x));
-             }
+            if (op.equals(wells.get(x).getName())) {
+//                welllist.add(wells.get(x));
+                currentWell = wells.get(x);
+                break;
+            }
         }
-        // load the well panel with well on a button
-        int welllistsize = welllist.size();
+//        // load the well panel with well on a button
+//        int welllistsize = welllist.size();
+//        btnWellPanel.removeAll();
+//        //btnWellPanel.setLayout(new GridLayout(welllistsize, 1, 5, 5));
+//        for (int i = 0; i < welllistsize; i++) {
+//
+//            JButton btn = new JButton("<html><b>" + welllist.get(i).getName() + "</b></html>");
+//            btn.setBounds(5, 5, btnWellPanel.getWidth() - 10, 80);
+//            btn.addActionListener(new ButtonListener(btn, welllist.get(i)));
+//            btnWellPanel.add(btn);
+//
+////            repaint();
+//            JButton b = (JButton) btnWellPanel.getComponent(0);
+////            b.doClick();
+//        }
+        List<WitsmlWellbore> wellbores = xmlreader.getWellbores(currentWell);
         btnWellPanel.removeAll();
-        //btnWellPanel.setLayout(new GridLayout(welllistsize, 1, 5, 5));
-        for (int i = 0; i < welllistsize; i++) {
+        for (int i = 0; i < wellbores.size(); i++) {
+            WitsmlWellbore get = wellbores.get(i);
+//            JButton btn = new JButton("<html><b>" + get.getName() + "</b></html>");
+            JButton btn = new JButton("<html><b>Name:  " + get.getName()
+                    + "</b><br/> Status:  " + get.getStatus() + "<br> Type:  " + get.getType() + "</br></html>");
+//          btn.setBounds(5, 5, btnWellPanel.getWidth() - 10, 80);
+            btn.setBounds(5, ((100 * i + 5)), btnWellPanel.getWidth() - 20, 100);
+            btn.addActionListener(new ButtonListener(btn, currentWell));
 
-            JButton btn = new JButton("<html><b>" + welllist.get(i).getName() + "</b></html>");
-            btn.setBounds(5, 5, btnWellPanel.getWidth() - 10, 80);
-            btn.addActionListener(new ButtonListener(btn, welllist.get(i)));
             btnWellPanel.add(btn);
 
 //            repaint();
             JButton b = (JButton) btnWellPanel.getComponent(0);
             b.doClick();
+
         }
+//        for (WitsmlWellbore wellbore : wellbores) {
+////          JButton btn = new JButton("<html><b>" + wellbore.getName() + "</b></html>");
+//            JButton btn = new JButton("<html><b>Name:  " + wellbore.getName()
+//                    + "</b><br/> Status:  " + wellbore.getStatus() + "<br> Type:  " + wellbore.getType() + "</br></html>");
+////          btn.setBounds(5, 5, btnWellPanel.getWidth() - 10, 80);
+//            btn.setBounds(5, ((100 * wellbore.hashCode() + 5)), btnWellPanel.getWidth() - 20, 100);
+//            //  btn.addActionListener(new Review.ButtonListener(btn, welllist.get(i)));
+//
+//            btnWellPanel.add(btn);
+//
+////            repaint();
+//            JButton b = (JButton) btnWellPanel.getComponent(0);
+//            b.doClick();
+//        }
+
+        //btnWellPanel.setLayout(new GridLayout(welllistsize, 1, 5, 5));
     }
 
     class ButtonListener implements ActionListener {
@@ -748,16 +846,17 @@ public class Techtonic extends javax.swing.JFrame {
         public void actionPerformed(ActionEvent e) {
 //            System.out.println(btn.getText());
             List<WitsmlWellbore> wellbores = xmlreader.getWellbores(well);
-            wellBorePanel.removeAll();
-            //wellBorePanel.setLayout(new GridLayout(wellbores.size(), 1, 5, 5));
-            wellBorePanel.setPreferredSize(new Dimension(10, (wellbores.size() * 100) + 15));
+            btnWellPanel.removeAll();
+            //btnWellPanel.setLayout(new GridLayout(wellbores.size(), 1, 5, 5));
+            btnWellPanel.setPreferredSize(new Dimension(10, (wellbores.size() * 100) + 15));
             for (int i = 0; i < wellbores.size(); i++) {
                 WitsmlWellbore wellbore = wellbores.get(i);
                 JButton btnWellbore = new JButton("<html><b>Name:  " + wellbore.getName()
                         + "</b><br/> Status:  " + wellbore.getStatus() + "<br> Type:  " + wellbore.getType() + "</br></html>");
 
-                btnWellbore.setBounds(5, ((100 * i) + 5), wellBorePanel.getWidth() - 20, 100);
-                wellBorePanel.add(btnWellbore);
+                btnWellbore.setBounds(5, ((100 * i) + 5), btnWellPanel.getWidth() - 20, 100);
+
+                btnWellPanel.add(btnWellbore);
 
                 btnWellbore.addActionListener(new WellBoreListener(i, wellbore, displayAreaPanel, jcbX_Axis, jcbY_Axis));
 
@@ -812,14 +911,16 @@ public class Techtonic extends javax.swing.JFrame {
 //          opName[] = well.getOperator();
 //        }
         for (int i = 0; i < wells.size(); i++) {
-            opName.add(new Well(i, wells.get(i).getOperator()));
+//            opName.add(new Well(i, wells.get(i).getOperator()));
+            opName.add(new Well(i, wells.get(i).getName()));
         }
         Iterator<Well> iterate = opName.iterator();
         while (iterate.hasNext()) {
             arrName.add(iterate.next().getOperator());
         }
         aModel = new DefaultComboBoxModel<>(arrName);
-        combOperator.setModel(aModel);
+//        combOperator.setModel(aModel);
+        wellCombo.setModel(aModel);
 
 //      displaySheet.append("Number of wells: "+ wellSize+"\n");
 //      displaySheet.append("\n"+loadWells);
@@ -829,17 +930,18 @@ public class Techtonic extends javax.swing.JFrame {
     List<WitsmlWell> wells;
     private int wellIndex;
     private Vector<String> arrName = new Vector<>();
+    WitsmlXMLReader xmlreader = new WitsmlXMLReader();
 //    DefaultPieDataset data = new DefaultPieDataset();
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel axisPanel;
     private javax.swing.JButton btnRender;
+    private javax.swing.JButton btnSetProperties;
     private javax.swing.JPanel btnWellPanel;
-    private javax.swing.JComboBox<String> combOperator;
     private javax.swing.JPanel displayAreaPanel;
+    private javax.swing.JPanel displayAreaPanel1;
     private javax.swing.JButton exportBtn;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -848,6 +950,9 @@ public class Techtonic extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JComboBox<String> jcbX_Axis;
     private javax.swing.JComboBox<String> jcbY_Axis;
     private javax.swing.JMenuItem jmiExit;
@@ -856,21 +961,19 @@ public class Techtonic extends javax.swing.JFrame {
     private javax.swing.JMenuItem jmiSave;
     private javax.swing.JScrollPane jspProperty;
     private javax.swing.JScrollPane jspWell;
-    private javax.swing.JScrollPane jspWellBore;
-    private javax.swing.JLabel lblOperatorName;
-    private javax.swing.JLabel lblOperators;
     private javax.swing.JLabel lblXAxis;
     private javax.swing.JLabel lblYAxis;
+    private javax.swing.JPanel logsPanel;
     private javax.swing.JButton maxBtn;
     private javax.swing.JMenuBar menBarTectTonic;
-    private javax.swing.JPanel operatorPanel;
     private javax.swing.JButton saveBtn;
     private static javax.swing.JLabel statusBar;
     private javax.swing.JTable tblProperty;
     private javax.swing.JPanel titleBarPanel;
     private javax.swing.JPanel toolBarPanel;
+    private javax.swing.JPanel trajectoryPanel;
     private javax.swing.JPanel utilityPanel;
-    private javax.swing.JPanel wellBorePanel;
+    private javax.swing.JComboBox<String> wellCombo;
     // End of variables declaration//GEN-END:variables
 
 }
